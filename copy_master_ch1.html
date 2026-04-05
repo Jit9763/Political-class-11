@@ -2,226 +2,326 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>Chapter 1: संविधान: क्यों और कैसे? - Premium Notes</title>
+    <title>Chapter 1: संविधान: क्यों और कैसे? - Absolute Master Edition</title>
     <style>
         /* Persistent Header UI */
         #control-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #1e293b;
-            color: #ffffff;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            font-family: 'Arial', sans-serif;
-            box-sizing: border-box;
+            position: fixed; top: 0; left: 0; width: 100%; background-color: #1e293b; color: #ffffff;
+            padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 1000; font-family: 'Arial', sans-serif; box-sizing: border-box;
         }
-        #control-header h1 {
-            margin: 0;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-        .copy-btn {
-            background-color: #3b82f6;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-        .copy-btn:hover {
-            background-color: #2563eb;
-        }
-        body {
-            margin-top: 80px; /* Leave space for the persistent header */
-        }
+        #control-header h1 { margin: 0; font-size: 1.2rem; font-weight: 600; }
+        body { margin-top: 80px; background-color: #f8fafc; }
     </style>
 </head>
 <body>
-    <!-- Control UI: Persistent header with a "Copy Master" button -->
-    <div id="control-header">
-        <h1>Chapter 1: Constitution: Why and How? (Mega Volume)</h1>
-        <button class="copy-btn" onclick="copyContent()">📋 Copy Master</button>
-    </div>
-
-    <script>
-        function copyContent() {
-            var content = document.getElementById("contentToCopy").innerHTML;
-
-            // Create a temporary element to hold the HTML
-            const blob = new Blob([content], { type: 'text/html' });
-            const clipboardItem = new window.ClipboardItem({ 'text/html': blob });
-
-            navigator.clipboard.write([clipboardItem]).then(function() {
-                alert("Master Content Copied Successfully! You can now paste it directly into Google Docs.");
-            }, function(err) {
-                // Fallback for older browsers
-                const tempDiv = document.createElement("div");
-                tempDiv.innerHTML = content;
-                document.body.appendChild(tempDiv);
-
-                const range = document.createRange();
-                range.selectNode(tempDiv);
-                window.getSelection().removeAllRanges();
-                window.getSelection().addRange(range);
-
-                try {
-                    document.execCommand('copy');
-                    alert("Master Content Copied Successfully! You can now paste it directly into Google Docs.");
-                } catch(e) {
-                    alert("Failed to copy. Please try manually selecting and copying the text.");
-                }
-
-                window.getSelection().removeAllRanges();
-                document.body.removeChild(tempDiv);
-            });
-        }
-    </script>
-
     <div id="contentToCopy">
-        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 16pt; line-height: 1.8; color: #1a202c; max-width: 900px; margin: auto; padding: 20px;">
+        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 16pt; line-height: 2.1; color: #1a202c; max-width: 1400px; margin: auto; padding: 40px; background-color: #ffffff; box-shadow: 0 0 20px rgba(0,0,0,0.05); border-radius: 20px;">
 
-            <!-- 1. Exhaustive Cover & Introduction -->
-            <div style="text-align: center; margin-bottom: 60px; padding: 40px; border: 4px double #1e3a8a; background-color: #f0fdf4; border-radius: 15px;">
-                <h1 style="color: #1e3a8a; font-size: 45pt; font-weight: 900; border-bottom: 5px solid #fbbf24; padding-bottom: 20px; margin-bottom: 30px; text-transform: uppercase;">
+            <!-- Title Section -->
+            <div style="text-align: center; margin-bottom: 60px; padding: 50px; border: 6px double #1e3a8a; background-color: #f0fdf4; border-radius: 20px; position: relative;">
+                <h1 style="color: #1e3a8a; font-size: 48pt; font-weight: 900; border-bottom: 6px solid #fbbf24; padding-bottom: 25px; margin-bottom: 35px; text-transform: uppercase; letter-spacing: 2px;">
                     अध्याय 1: संविधान: क्यों और कैसे?<br/>
-                    <span style="font-size: 26pt; color:#475569; font-weight: 600;">(Constitution: Why and How?)</span>
+                    <span style="font-size: 28pt; color:#475569; font-weight: 600;">(Constitution: Why and How?)</span>
                 </h1>
-                <p style="font-size: 24pt; color: #0f172a; margin-top: 10px; font-weight: bold;">कक्षा 11 राजनीति विज्ञान (भारत का संविधान: सिद्धांत और व्यवहार)</p>
-                <div style="margin-top: 30px; padding: 20px; background-color: #fff; border-left: 8px solid #f59e0b; border-radius: 8px; text-align: left;">
-                    <h2 style="color: #b45309; font-size: 24pt; margin-top: 0;">1. विस्तृत प्रस्तावना (Exhaustive Introduction)</h2>
-                    <p style="font-size: 18pt;">संविधान किसी भी राष्ट्र की आत्मा होता है। यह सिर्फ एक कानूनी दस्तावेज नहीं है, बल्कि यह राष्ट्र के आदर्शों, मूल्यों और जनता की आकांक्षाओं का दर्पण है। क्या आपने कभी सोचा है कि अगर समाज में कोई नियम या कानून न हो तो क्या होगा? समाज में अराजकता फैल जाएगी, ताकतवर कमजोरों का शोषण करेंगे। यहीं से 'संविधान' की आवश्यकता जन्म लेती है। इस अध्याय में हम गहराई से अध्ययन करेंगे कि संविधान क्या है, इसके प्रमुख कार्य क्या हैं, और भारत का संविधान किस प्रकार की ऐतिहासिक एवं दार्शनिक पृष्ठभूमि से उभर कर सामने आया है।</p>
-                </div>
+                <p style="font-size: 24pt; color: #0f172a; margin-top: 15px; font-weight: bold;">NCERT राजनीति विज्ञान - "अल्ट्रा-गहन" शिक्षक प्रकाशन (Master Edition)</p>
+                <div style="font-size: 18pt; color: #b91c1c; font-weight: bold; border: 2px solid #b91c1c; display: inline-block; padding: 5px 20px; border-radius: 50px;">20-भागों वाली संपूर्ण व्याख्या</div>
             </div>
 
-            <!-- 2. Encyclopedic Theory Deep-Dive -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #ffffff; background-color: #1e40af; padding: 15px 20px; border-radius: 8px; font-size: 30pt; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">2. ज्ञानकोशीय सिद्धांत (Encyclopedic Theory Deep-Dive)</h2>
-
-                <h3 style="color: #b91c1c; font-size: 24pt; border-bottom: 2px dashed #fca5a5; padding-bottom: 10px;">2.1 संविधान क्या है? (What is a Constitution?)</h3>
-                <p style="font-size: 18pt; text-align: justify;">संविधान उन मौलिक नियमों, सिद्धांतों और कानूनों का एक व्यवस्थित संग्रह है, जिनके आधार पर किसी देश का शासन चलाया जाता है। यह सरकार की शक्तियों, उनके वितरण, और नागरिकों के अधिकारों के बीच संतुलन स्थापित करता है। यह एक 'जीवंत दस्तावेज' है जो समय के साथ समाज की जरूरतों के अनुसार बदल सकता है।</p>
-
-                <h3 style="color: #b91c1c; font-size: 24pt; border-bottom: 2px dashed #fca5a5; padding-bottom: 10px;">2.2 संविधान के प्रमुख कार्य (Functions of a Constitution)</h3>
-                <ul style="font-size: 18pt; color: #334155; line-height: 2;">
-                    <li><b>पहला कार्य: समन्वय और विश्वास (Coordination and Assurance):</b> समाज में विभिन्न धर्मों, जातियों और वर्गों के लोग रहते हैं। संविधान बुनियादी नियमों का एक ऐसा समूह उपलब्ध कराता है जिससे समाज के सदस्यों में न्यूनतम समन्वय और विश्वास बना रहे।</li>
-                    <li><b>दूसरा कार्य: निर्णय लेने की शक्ति (Decision-making Power):</b> संविधान यह स्पष्ट करता है कि समाज में निर्णय लेने की अंतिम शक्ति किसके पास होगी। यह सरकार के निर्माण की प्रक्रिया को तय करता है।</li>
-                    <li><b>तीसरा कार्य: सरकार की शक्तियों पर सीमाएं (Limitations on Power):</b> संविधान सरकार द्वारा अपने नागरिकों पर लागू किए जाने वाले कानूनों पर सीमाएं लगाता है। ये सीमाएं मौलिक होती हैं, अर्थात सरकार कभी इनका उल्लंघन नहीं कर सकती (जैसे: मौलिक अधिकार)।</li>
-                    <li><b>चौथा कार्य: समाज की आकांक्षाएं और लक्ष्य (Aspirations and Goals):</b> संविधान सरकार को ऐसी क्षमता प्रदान करता है जिससे वह जनता की आकांक्षाओं को पूरा कर सके और एक न्यायपूर्ण समाज की स्थापना के लिए उचित परिस्थितियों का निर्माण कर सके। (उदाहरण: नीति निर्देशक तत्व)।</li>
+            <!-- PART 1 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #1e40af; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #1e40af; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">1. एक वैचारिक नींव: फुटबॉल का सादृश्य और नियमों की महत्ता</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">कल्पना कीजिए, आप एक मैदान में फुटबॉल खेलने उतरे हैं, लेकिन उस खेल का कोई नियम नहीं है। कोई रेफरी नहीं है, कोई 'फाउल' तय नहीं है और न ही गोल पोस्ट सीमित है। ऐसी स्थिति में खेल नहीं, बल्कि <b>अराजकता (Anarchy)</b> होगी। समाज भी इसी तरह एक जटिल 'खेल' है जहाँ अलग-अलग विचारों वाले करोड़ों लोग एक साथ रहते हैं।</p>
+                
+                <h3 style="color: #1e3a8a; font-size: 24pt;">1.1 समन्वय के बिना समाज:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: disc; margin-left: 20px;">
+                    <li><b>असुरक्षा:</b> बिना नियमों के शक्तिशाली व्यक्ति कमज़ोर को दबा देगा, जिससे समाज में डर का माहौल होगा।</li>
+                    <li><b>विकास में बाधा:</b> जब तक हमें यह भरोसा न हो कि दूसरे लोग नियमों का पालन करेंगे, हम निवेश या भविष्य की योजना नहीं बना सकते।</li>
+                    <li><b>समाधान:</b> संविधान ही वह 'रेफरी' और 'नियम पुस्तिका' है जो समाज को टूटने से बचाती है।</li>
                 </ul>
 
-                <h3 style="color: #b91c1c; font-size: 24pt; border-bottom: 2px dashed #fca5a5; padding-bottom: 10px;">2.3 भारतीय संविधान का निर्माण (Making of the Indian Constitution)</h3>
-                <p style="font-size: 18pt; text-align: justify;">भारतीय संविधान का निर्माण एक संविधान सभा (Constituent Assembly) द्वारा किया गया। संविधान सभा की पहली बैठक 9 दिसंबर 1946 को हुई और यह 14 अगस्त 1947 को विभाजित भारत की संविधान सभा के रूप में पुनः बैठी। इसका गठन 'कैबिनेट मिशन योजना' (Cabinet Mission Plan) द्वारा प्रस्तावित योजना के अनुसार किया गया था। इस प्रक्रिया में 2 वर्ष, 11 महीने और 18 दिन का समय लगा और 26 नवंबर 1949 को इसे अंगीकृत किया गया।</p>
-            </div>
-
-            <!-- 3. Visual & Interactive Elements -->
-            <div style="background-color: #fdf4ff; padding: 40px; border-radius: 12px; margin-bottom: 60px; border: 2px solid #e879f9;">
-                <h2 style="color: #86198f; font-size: 30pt; margin-top: 0;">3. दृश्य एवं संवादात्मक तत्व (Visual & Interactive Elements)</h2>
-                <div style="background-color: #fff; padding: 20px; border: 1px solid #d946ef; border-radius: 8px; margin-bottom: 20px;">
-                    <h4 style="color: #a21caf; font-size: 20pt; margin: 0 0 10px 0;">📸 NCERT कार्टून विश्लेषण (Cartoon Analysis)</h4>
-                    <p style="font-size: 18pt;"><b>दृश्य:</b> विभिन्न विचारधाराओं के लोग एक साथ बैठकर नियम बना रहे हैं।</p>
-                    <p style="font-size: 18pt;"><b>विश्लेषण:</b> यह कार्टून संविधान सभा की विविधता और आम सहमति (Consensus) बनाने की प्रक्रिया को दर्शाता है। यह दिखाता है कि कैसे परस्पर विरोधी विचारों के बावजूद राष्ट्रीय हित में समझौते किए गए।</p>
-                </div>
-                <div style="background-color: #fff; padding: 20px; border: 1px solid #d946ef; border-radius: 8px;">
-                    <h4 style="color: #a21caf; font-size: 20pt; margin: 0 0 10px 0;">💡 ज्ञानवर्धक बॉक्स (Did You Know?)</h4>
-                    <p style="font-size: 18pt;">संविधान सभा के सदस्यों का चुनाव 1935 के 'भारत सरकार अधिनियम' के तहत स्थापित प्रांतीय विधानसभाओं के सदस्यों द्वारा अप्रत्यक्ष चुनाव के आधार पर हुआ था।</p>
+                <div style="margin: 25px 0; padding: 25px; background-color: #fffbeb; border-left: 8px solid #f59e0b; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <h4 style="margin: 0 0 15px 0; color: #b45309; font-size: 22pt;">📖 गहरी दार्शनिक अंतर्दृष्टि</h4>
+                    <p style="margin: 0; font-size: 17pt; color: #451a03;">प्रसिद्ध दार्शनिक थॉमस हॉब्स ने कहा था कि बिना किसी शासन या नियम के मनुष्य का जीवन "एकाकी, गरीब, घृणित और पाशविक" होता है। संविधान का पहला कार्य हमें इसी 'पाशविक अवस्था' से बाहर निकालना है।</p>
                 </div>
             </div>
 
-            <!-- 4. Comparative Global Analysis -->
-            <div style="margin-bottom: 60px; padding: 40px; background-color: #f8fafc; border-left: 10px solid #0f172a; border-radius: 0 15px 15px 0;">
-                <h2 style="color: #0f172a; font-size: 30pt; margin-top: 0;">4. वैश्विक तुलनात्मक विश्लेषण (Comparative Global Analysis)</h2>
-                <table style="width: 100%; border-collapse: collapse; font-size: 16pt; margin-top: 20px;">
-                    <thead>
-                        <tr style="background-color: #334155; color: white;">
-                            <th style="padding: 15px; border: 1px solid #cbd5e1;">देश</th>
-                            <th style="padding: 15px; border: 1px solid #cbd5e1;">संविधान की प्रकृति</th>
-                            <th style="padding: 15px; border: 1px solid #cbd5e1;">विशेषता</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="background-color: #f1f5f9;">
-                            <td style="padding: 15px; border: 1px solid #cbd5e1;"><b>भारत (India)</b></td>
-                            <td style="padding: 15px; border: 1px solid #cbd5e1;">लिखित एवं सबसे विस्तृत</td>
-                            <td style="padding: 15px; border: 1px solid #cbd5e1;">नम्यता और अनम्यता का मिश्रण, जीवंत दस्तावेज।</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 15px; border: 1px solid #cbd5e1;"><b>अमेरिका (USA)</b></td>
-                            <td style="padding: 15px; border: 1px solid #cbd5e1;">लिखित एवं अत्यंत संक्षिप्त (केवल 7 अनुच्छेद)</td>
-                            <td style="padding: 15px; border: 1px solid #cbd5e1;">अत्यधिक कठोर (Rigid), संशोधन प्रक्रिया अत्यंत जटिल।</td>
-                        </tr>
-                        <tr style="background-color: #f1f5f9;">
-                            <td style="padding: 15px; border: 1px solid #cbd5e1;"><b>ब्रिटेन (UK)</b></td>
-                            <td style="padding: 15px; border: 1px solid #cbd5e1;">अलिखित (Unwritten)</td>
-                            <td style="padding: 15px; border: 1px solid #cbd5e1;">परम्पराओं और न्यायिक निर्णयों पर आधारित, अत्यधिक लचीला।</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- 5. Hyper-Glossary -->
-            <div style="background-color: #fff7ed; padding: 40px; border-radius: 12px; margin-bottom: 60px; border: 2px solid #fdba74;">
-                <h2 style="color: #c2410c; font-size: 30pt; margin-top: 0;">5. अति-शब्दावली (Hyper-Glossary)</h2>
-                <ul style="font-size: 18pt; color: #431407; list-style-type: square; padding-left: 30px;">
-                    <li style="margin-bottom: 15px;"><b>संविधानवाद (Constitutionalism):</b> वह विचारधारा जो मानती है कि सरकार की शक्तियां असीमित नहीं होनी चाहिए, बल्कि उन पर कानूनी और संवैधानिक सीमाएं होनी चाहिए।</li>
-                    <li style="margin-bottom: 15px;"><b>उद्देश्य प्रस्ताव (Objective Resolution):</b> 13 दिसंबर 1946 को जवाहरलाल नेहरू द्वारा प्रस्तुत वह प्रस्ताव जिसने संविधान सभा के मार्गदर्शक सिद्धांतों और लक्ष्यों को परिभाषित किया। बाद में यही 'प्रस्तावना' (Preamble) का आधार बना।</li>
-                    <li style="margin-bottom: 15px;"><b>धर्मनिरपेक्षता (Secularism):</b> राज्य का कोई अपना धर्म नहीं होगा, और वह सभी धर्मों के साथ समान व्यवहार करेगा।</li>
+            <!-- PART 2 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #16a34a; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #16a34a; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">2. प्रथम कार्य: बुनियादी नियमों का समूह और विश्वास</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">संविधान का सबसे पहला और बुनियादी कार्य यह है कि वह समाज के सदस्यों के बीच एक <b>न्यूनतम समन्वय (Minimum Coordination)</b> और विश्वास पैदा करे।</p>
+                
+                <h3 style="color: #166534; font-size: 24pt;">2.1 विश्वास का आधार क्या है?</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: square; margin-left: 20px;">
+                    <li><b>सार्वजनिक नियमों की घोषणा:</b> जब नियम लिखित और सार्वजनिक होते हैं, तो सबको पता होता है कि क्या मान्य है और क्या नहीं।</li>
+                    <li><b>कानूनी बाध्यता:</b> नियम केवल 'सलाह' नहीं होते, बल्कि 'बाध्यकारी' होते हैं। यदि कोई उल्लंघन करता है, तो उसे दंड मिलता है। यही डर लोगों में भरोसा जगाता है कि दूसरे भी नियमों का पालन करेंगे।</li>
+                    <li><b>सकल कल्याण:</b> नियम ऐसे होने चाहिए जो समाज के किसी एक वर्ग का नहीं, बल्कि सबका भला करें।</li>
                 </ul>
             </div>
 
-            <!-- 6. The 100-Question Mega Bank -->
-            <div style="background-color: #f1f5f9; padding: 40px; border-radius: 20px; margin-bottom: 60px;">
-                <h2 style="color: #0f172a; font-size: 32pt; text-align: center; margin-bottom: 40px; text-decoration: underline;">6. 100-प्रश्नों का मेगा बैंक (The Mega Question Bank)</h2>
-
-                <h3 style="color: #2563eb; font-size: 24pt;">बहुविकल्पीय प्रश्न (MCQs) - (1 अंक)</h3>
-                <div style="background-color: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q1. संविधान सभा की पहली बैठक कब हुई थी?</p>
-                    <ol style="font-size: 18pt;" type="a">
-                        <li>15 अगस्त 1947</li>
-                        <li>9 दिसंबर 1946 (✓ उत्तर)</li>
-                        <li>26 जनवरी 1950</li>
-                        <li>26 नवंबर 1949</li>
-                    </ol>
-                </div>
-
-                <h3 style="color: #16a34a; font-size: 24pt;">अति लघु उत्तरीय प्रश्न (Very Short) - (2 अंक)</h3>
-                <div style="background-color: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
-                    <p style="font-size: 18pt;"><b>प्रश्न:</b> 'कैबिनेट मिशन योजना' क्या थी?</p>
-                    <p style="font-size: 18pt; color: #475569;"><b>उत्तर:</b> यह 1946 में ब्रिटिश सरकार द्वारा भेजा गया एक मिशन था, जिसकी सिफारिशों के आधार पर भारत की संविधान सभा का गठन और सीटों का आवंटन किया गया था।</p>
-                </div>
-
-                <h3 style="color: #ea580c; font-size: 24pt;">दीर्घ उत्तरीय प्रश्न (Long Answer) - (6 अंक)</h3>
-                <div style="background-color: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f97316;">
-                    <p style="font-size: 18pt;"><b>प्रश्न:</b> "भारतीय संविधान उधार का थैला नहीं है।" इस कथन की व्याख्या कीजिए।</p>
-                    <p style="font-size: 18pt; color: #475569;"><b>उत्तर:</b> यद्यपि भारतीय संविधान ने विभिन्न देशों (जैसे- मौलिक अधिकार अमेरिका से, संसदीय प्रणाली ब्रिटेन से, नीति निर्देशक तत्व आयरलैंड से) के प्रावधानों को अपनाया है, फिर भी यह 'उधार का थैला' (Bag of Borrowings) नहीं है। क्योंकि संविधान निर्माताओं ने किसी भी प्रावधान की 'अंधी नकल' नहीं की। उन्होंने प्रत्येक प्रावधान को भारत की सामाजिक, सांस्कृतिक और भौगोलिक परिस्थितियों के अनुकूल संशोधित करके अपनाया। इसलिए यह एक मौलिक और अद्वितीय दस्तावेज है।</p>
-                </div>
-            </div>
-
-            <!-- 7. Topper's Strategic Revision -->
-            <div style="background-color: #ecfdf5; padding: 40px; border-radius: 15px; border: 3px solid #10b981;">
-                <h2 style="color: #047857; font-size: 30pt; margin-top: 0; text-align: center;">7. टॉपर की रणनीतिक पुनरावृत्ति (Topper's Strategic Revision)</h2>
-
-                <h3 style="color: #065f46; font-size: 24pt;">🧠 माइंड मैप / त्वरित तथ्य (Quick Facts)</h3>
-                <ul style="font-size: 18pt; color: #064e3b; list-style-type: '⚡ ';">
-                    <li>संविधान बनने में लगा समय: <b>2 वर्ष, 11 महीने, 18 दिन</b>।</li>
-                    <li>उद्देश्य प्रस्ताव प्रस्तुत: <b>13 दिसंबर 1946 (पं. नेहरू द्वारा)</b>।</li>
-                    <li>संविधान अंगीकृत (Adopted): <b>26 नवंबर 1949</b>।</li>
-                    <li>संविधान लागू (Enforced): <b>26 जनवरी 1950</b>।</li>
-                    <li>संविधान सभा के अध्यक्ष: <b>डॉ. राजेन्द्र प्रसाद</b>।</li>
-                    <li>प्रारूप समिति (Drafting Committee) के अध्यक्ष: <b>डॉ. बी.आर. अंबेडकर</b>।</li>
+            <!-- PART 3 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #fbbf24; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #fbbf24; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">3. द्वितीय कार्य: निर्णय लेने की शक्ति का निर्धारण</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">नियम अच्छे हो सकते हैं, लेकिन वे नियम बनाएगा कौन? प्राचीन काल में राजा बनाते थे, किसी देश में सेना बना सकती है। संविधान यह तय करता है कि <b>समाज में अंतिम निर्णय लेने की शक्ति किसके पास होगी।</b></p>
+                
+                <h3 style="color: #92400e; font-size: 24pt;">3.1 शक्ति का वितरण:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: disc; margin-left: 20px;">
+                    <li><b>संसदीय लोकतंत्र:</b> भारत जैसे देशों में संविधान यह शक्ति 'संसद' (Parliament) को देता है।</li>
+                    <li><b>जनता की भूमिका:</b> अंततः यह शक्ति जनता के पास होती है, जो अपनी पसंद के प्रतिनिधियों को चुनकर संसद भेजती है।</li>
+                    <li><b>संस्थागत ढांचा:</b> संविधान यह भी तय करता है कि न्यायपालिका, कार्यपालिका और विधायिका कैसे काम करेंगी, ताकि कोई एक संस्था निरंकुश न हो जाए।</li>
                 </ul>
-                <div style="text-align: center; margin-top: 30px; font-size: 20pt; font-weight: bold; color: #059669; padding: 20px; border: 2px dashed #34d399;">
-                    🎯 सफलता का मंत्र: बोर्ड परीक्षा में उत्तर लिखते समय अनुच्छेदों (Articles) और संविधान संशोधन (Amendments) का उल्लेख अवश्य करें।
+            </div>
+
+            <!-- PART 4 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #dc2626; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #dc2626; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">4. तृतीय कार्य: सरकार की शक्तियों पर सीमाएँ लगाना</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">अगर संसद ऐसा नियम बना दे कि "कल से कोई व्यक्ति सुबह की प्रार्थना नहीं करेगा" या "विशिष्ट वर्ग के लोगों को जेल में डाल दिया जाएगा", तो क्या यह सही होगा? <b>नहीं!</b> इसीलिए संविधान सरकार पर कुछ सीमाएँ लगाता है।</p>
+                
+                <h3 style="color: #991b1b; font-size: 24pt;">4.1 ये सीमाएँ किस रूप में हैं?</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: square; margin-left: 20px;">
+                    <li><b>मौलिक अधिकार (Fundamental Rights):</b> ये वे अधिकार हैं जिन्हें सरकार भी सामान्य परिस्थितियों में नहीं छीन सकती।</li>
+                    <li><b>कानून सम्मत शासन:</b> शासन व्यक्ति की मर्ज़ी से नहीं, बल्कि स्थापित कानूनों (Rule of Law) से चलना चाहिए।</li>
+                    <li><b>न्यायिक सुरक्षा:</b> यदि सरकार अपनी सीमा पार करती है, तो नागरिक न्यायपालिका की शरण ले सकते हैं।</li>
+                </ul>
+
+                <div style="background-color: #fef2f2; padding: 25px; border: 3px dashed #ef4444; border-radius: 15px; margin: 30px 0;">
+                    <h4 style="margin: 0 0 15px 0; color: #dc2626; font-size: 22pt;">⚖️ संविदानिक सुरक्षा कवच</h4>
+                    <p style="font-size: 17pt; color: #7f1d1d; margin: 0; text-align: justify;">सरकार की शक्तियों को सीमित करना ही किसी शासन को 'संवैधानिक शासन' (Constitutional Government) बनाता है। बिना इन सीमाओं के लोकतंत्र तानाशाही में बदल सकता है।</p>
                 </div>
             </div>
 
+            <!-- PART 5 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #2563eb; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #2563eb; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">5. चतुर्थ कार्य: समाज की आकांक्षाएं और लक्ष्य</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">पुराने जमाने के संविधान केवल सरकार की शक्तियों को 'सीमित' करने के लिए होते थे। लेकिन भारत जैसे विकासशील देशों में संविधान का चौथा कार्य है—<b>सरकार को सशक्त बनाना ताकि वह सामाजिक बुराइयों को दूर कर सके।</b></p>
+                
+                <h3 style="color: #1e40af; font-size: 24pt;">5.1 सकारात्मक भूमिका (Positive Role):</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: disc; margin-left: 20px;">
+                    <li><b>गरीबी और भेदभाव का अंत:</b> संविधान सरकार को आदेश देता है कि वह जातिगत भेदभाव और गरीबी मिटाने के लिए विशेष नीतियां बनाए।</li>
+                    <li><b>समान अवसर:</b> केवल आज़ादी देना काफी नहीं है, सबको विकास के समान अवसर देना भी संविधान का लक्ष्य है।</li>
+                    <li><b>उदाहरण:</b> नीति निर्देशक तत्व (DPSP) और शिक्षा का अधिकार इसी सकारात्मक शक्ति के परिणाम हैं।</li>
+                </ul>
+
+                <div style="background-color: #eff6ff; padding: 20px; text-align: center; border: 2px solid #3b82f6; border-radius: 12px; margin-top: 20px;">
+                    <p style="font-size: 18pt; color: #1e40af; margin: 0; font-weight: bold;">🎯 निष्कर्ष: संविधान केवल 'मना' नहीं करता, बल्कि 'मदद' भी करता है।</p>
+                </div>
+            </div>
+
+            <!-- PART 6 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #4f46e5; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #4f46e5; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">6. नागरिकों की बुनियादी पहचान: हम "कौन" हैं?</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">संविधान केवल एक कानूनी किताब नहीं है, बल्कि यह किसी भी समाज के लोगों की <b>बुनियादी पहचान (Fundamental Identity)</b> तय करता है। संविधान से पहले हम अलग-अलग जातियों, धर्मों या क्षेत्रों के लोग थे, लेकिन संविधान हमें एक 'राजनैतिक सामूहिक इकाई' बनाता है।</p>
+                
+                <h3 style="color: #3730a3; font-size: 24pt;">6.1 पहचान के दो मुख्य आयाम:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: square; margin-left: 20px;">
+                    <li><b>राजनैतिक पहचान (Political Identity):</b> संविधान उन बुनियादी नियमों पर सहमति बनाता है जिनके माध्यम से हमारा शासन चलाया जाएगा। इसी सहमति से हम 'नागरिक' बनते हैं।</li>
+                    <li><b>नैतिक पहचान (Moral Identity):</b> संविधान यह तय करता है कि एक नागरिक के रूप में हम क्या 'कर सकते हैं' और क्या 'नहीं कर सकते'। यह हमारे नैतिक मूल्यों और सीमाओं को परिभाषित करता है।</li>
+                    <li><b>सांस्कृतिक पहचान:</b> कई संविधान नागरिकता को साझा संस्कृति या भाषा से जोड़ते हैं, लेकिन भारतीय संविधान 'विविधता' को ही राष्ट्रीय पहचान का आधार बनाता है।</li>
+                </ul>
+            </div>
+
+            <!-- PART 7 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #0891b2; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #0891b2; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">7. संविधान की सत्ता: उसे "अधिकार" कहाँ से मिलता है?</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">दुनिया में बहुत से संविधान केवल कागज़ का टुकड़ा बनकर रह जाते हैं, लेकिन कुछ दशकों और सदियों तक चलते हैं। किसी संविधान की सफलता का सबसे बड़ा कारण है—<b>उसे किसने और कैसे बनाया? (Mode of Promulgation)</b></p>
+                
+                <h3 style="color: #155e75; font-size: 24pt;">7.1 सत्ता के महत्वपूर्ण कारक:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: disc; margin-left: 20px;">
+                    <li><b>निर्माताओं की लोकप्रियता:</b> यदि संविधान उन नेताओं द्वारा बनाया जाए जिन पर जनता अटूट विश्वास करती है (जैसे गांधी, नेहरू, अंबेडकर), तो जनता उस संविधान को स्वेच्छा से स्वीकार करती है।</li>
+                    <li><b>लोकप्रिय अनुमोदन:</b> कई देशों में संविधान बनने के बाद जनता से सीधे 'हाँ' या 'ना' (Referendum) पूछा जाता है। यद्यपि भारत में ऐसा नहीं हुआ, लेकिन स्वतंत्रता सेनानियों के प्रति जनता की श्रद्धा ने इसे 'पूर्ण वैधता' दी।</li>
+                    <li><b>तानाशाही का अभाव:</b> यदि कोई संविधान केवल सेना या तानाशाह द्वारा थोपा जाए, तो वह पहली फुर्सत में उखाड़ फेंका जाता है (जैसे पाकिस्तान या कई अफ्रीकी देशों में हुआ)।</li>
+                </ul>
+            </div>
+
+            <!-- PART 8 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #be123c; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #be123c; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">8. संविधान के प्रावधान: न्याय और निष्पक्षता की कसौटी</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">संविधान तभी सफल होता है जब वह समाज के हर वर्ग को यह विश्वास दिलाए कि <b>उसकी भलाई इसी संविधान के साथ रहने में है। (Substantive Provisions)</b></p>
+                
+                <h3 style="color: #9f1239; font-size: 24pt;">8.1 प्रावधान सफल क्यों होते हैं?</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: square; margin-left: 20px;">
+                    <li><b>अल्पसंख्यक सुरक्षा:</b> यदि कोई संविधान केवल बहुसंख्यकों का पक्ष ले और अल्पसंख्यकों का दमन करे, तो वह विद्रोह और गृहयुद्ध का कारण बनता है।</li>
+                    <li><b>समानता का भाव:</b> जब तक गरीब और पिछड़े वर्गों को यह नहीं लगता कि संविधान उन्हें गरिमा और न्याय देगा, वे उसे अपना नहीं मानेंगे।</li>
+                    <li><b>लचीलापन:</b> संविधान जड़ (Rigid) नहीं होना चाहिए; उसे बदलती परिस्थितियों के साथ ढलने की शक्ति देनी चाहिए।</li>
+                </ul>
+
+                <div style="margin: 25px 0; padding: 25px; background-color: #fff1f2; border-left: 8px solid #be123c; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <h4 style="margin: 0 0 15px 0; color: #9f1239; font-size: 22pt;">⚖️ राजनैतिक दर्शन</h4>
+                    <p style="margin: 0; font-size: 17pt; color: #4c0519;">"संविधान एक ऐसा समझौता है जिसमें हर कोई कुछ खोता है ताकि सब कुछ सुरक्षित रहे।" यदि कोई वर्ग महसूस करता है कि उसके पास खोने के लिए ही कुछ नहीं है, तो वह समझौते को तोड़ देगा।</p>
+                </div>
+            </div>
+
+            <!-- PART 9 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #166534; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #166534; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">9. संस्थागत संतुलन (Balanced Institutional Design)</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">कोई भी समझदार संविधान अपनी सारी शक्तियाँ किसी एक संस्था या व्यक्ति को नहीं देता। शक्तियों का विकेंद्रीकरण ही संविधान की दीर्घायु का रहस्य है।</p>
+                
+                <h3 style="color: #14532d; font-size: 24pt;">9.1 संतुलन के "क्षैतिज" और "लंबवत" रूप:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: disc; margin-left: 20px;">
+                    <li><b>विधायिका, कार्यपालिका और न्यायपालिका:</b> शक्तियों को इन तीनों के बीच इस तरह बाँटा गया है कि कोई भी अपनी सीमा नहीं लाँघ सके। इसे <b>अंकुश और संतुलन (Checks and Balances)</b> कहते हैं।</li>
+                    <li><b>स्वतंत्र संस्थाएं:</b> चुनाव आयोग, सीएजी (CAG) और यूपीएससी जैसी स्वायत्त संस्थाएं यह सुनिश्चित करती हैं कि राजनैतिक दबाव संविधान के साथ खिलवाड़ न कर सके।</li>
+                    <li><b>संघवाद (Federalism):</b> शक्तियों को केवल केंद्र में नहीं, बल्कि राज्यों और पंचायतों तक भी पहुँचाया गया है।</li>
+                </ul>
+            </div>
+
+            <!-- PART 10 -->
+            <div style="background-color: #f8fafc; padding: 40px; border-radius: 15px; margin-bottom: 60px; border: 3px solid #0f172a;">
+                <h2 style="color: #0f172a; font-size: 30pt; margin-top: 0;">10. भारतीय संविधान की सफलता: एक वैश्विक चमत्कार</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #1e293b;">1947 के बाद आज़ाद हुए सैकड़ों देशों में से आधे से ज़्यादा देशों के संविधान फेल हो गए या वहाँ सेना का राज़ आ गया। भारत अपवाद क्यों बना? </p>
+                
+                <h4 style="color: #1e3a8a; font-size: 22pt;">10.1 मुख्य कारण:</h4>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #334155; list-style-type: square; margin-left: 20px;">
+                    <li><b>लोच (Resilience):</b> भारतीय संविधान न तो इतना कठोर है कि टूट जाए, और न ही इतना लचीला कि कोई भी उसे खेल बना ले।</li>
+                    <li><b>आम सहमति का सिद्धांत (Principle of Consensus):</b> संविधान सभा में मतदान के बजाय 'चर्चा' और 'सबकी सहमति' को महत्व दिया गया।</li>
+                    <li><b>संविधान के प्रति पवित्र श्रद्धा:</b> भारत के लोग, राजनेता और न्यायपालिका संविधान को एक 'पवित्र ग्रंथ' की तरह सम्मान देते हैं।</li>
+                </ul>
+
+                <div style="background-color: #f1f5f9; padding: 25px; text-align: left; border: 2px solid #475569; border-radius: 12px; margin-top: 25px;">
+                    <p style="font-size: 18pt; color: #0f172a; margin: 0; text-align: center; font-weight: bold;">🎯 निष्कर्ष: भारतीय संविधान "जड़" नहीं, बल्कि एक "जीवंत दस्तावेज" (Living Document) है जो हर संकट के साथ और मज़बूत होता गया है।</p>
+                </div>
+            </div>
+
+            <!-- PART 11 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #f97316; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #f97316; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">11. भारतीय संविधान का निर्माण: ऐतिहासिक पृष्ठभूमि</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">भारतीय संविधान का निर्माण किसी शून्य में नहीं हुआ, बल्कि यह दशकों के संघर्ष और ब्रिटिश शासन के अनुभवों का निचोड़ है। औपचारिक रूप से इसकी शुरुआत <b>कैबिनेट मिशन (1946)</b> के प्रस्तावों के साथ हुई।</p>
+                
+                <h3 style="color: #c2410c; font-size: 24pt;">11.1 निर्माण की महत्वपूर्ण कड़ियाँ:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: disc; margin-left: 20px;">
+                    <li><b>कैबिनेट मिशन योजना:</b> ब्रिटिश सरकार ने भारत को सत्ता सौंपने की प्रक्रिया तय करने के लिए तीन मंत्रियों का दल भेजा, जिसने संविधान सभा के गठन का मार्ग प्रशस्त किया।</li>
+                    <li><b>विभाजन की त्रासदी:</b> संविधान सभा की पहली बैठक (9 दिसंबर 1946) अखंड भारत के लिए हुई थी, लेकिन 14 अगस्त 1947 के विभाजन ने इसकी रूपरेखा और सदस्यों की संख्या बदल दी।</li>
+                    <li><b>संप्रभुता की घोषणा:</b> विभाजन के बाद, भारतीय संविधान सभा एक पूर्णतः 'संप्रभु संस्था' बन गई, जो किसी भी बाहरी दबाव के बिना भारत का भविष्य लिखने के लिए स्वतंत्र थी।</li>
+                </ul>
+            </div>
+
+            <!-- PART 12 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #8b5cf6; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #8b5cf6; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">12. संविधान सभा की संरचना (The 299 Members)</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">विभाजन के पहले सभा में 389 सदस्य होने थे, लेकिन विभाजन के बाद यह संख्या घटकर <b>299</b> रह गई। इन सदस्यों का चुनाव अप्रत्यक्ष रूप से प्रांतीय विधानसभाओं द्वारा किया गया था।</p>
+                
+                <h3 style="color: #6d28d9; font-size: 24pt;">12.1 प्रतिनिधित्व का सिद्धांत:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: square; margin-left: 20px;">
+                    <li><b>जनसंख्या के अनुपात में सीटें:</b> लगभग 10 लाख की आबादी पर एक प्रतिनिधि तय किया गया था।</li>
+                    <li><b>विविधता का संगम:</b> यद्यपि कांग्रेस का बहुमत था, लेकिन सदस्यों में वकील, किसान, दलित प्रतिनिधि, पारसी, ईसाई और मुस्लिम—सभी शामिल थे।</li>
+                    <li><b>महिलाओं की भूमिका:</b> सभा में 15 महिला सदस्य थीं, जिन्होंने भारत की महिलाओं के अधिकारों के लिए मज़बूत आवाज़ उठाई।</li>
+                </ul>
+            </div>
+
+            <!-- PART 13 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #059669; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #059669; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">13. विचार-विमर्श का सिद्धांत (The Principle of Deliberation)</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">भारतीय संविधान सभा की सबसे बड़ी विशेषता यह थी कि वहाँ कोई भी फैसला बिना बहस के नहीं लिया गया। यह केवल 'बहुमत का शासन' नहीं, बल्कि <b>'तर्क संगत बहस' (Reasoned Argument)</b> का केंद्र थी।</p>
+                
+                <h3 style="color: #065f46; font-size: 24pt;">13.1 बहस की गहराई:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: disc; margin-left: 20px;">
+                    <li><b>खुली चर्चा:</b> संविधान के हर अनुच्छेद, हर शब्द और यहाँ तक कि हर 'कोमा' (Comma) पर घंटों बहस हुई।</li>
+                    <li><b>सिर्फ एक अपवाद:</b> 'सार्वभौमिक वयस्क मताधिकार' (Universal Adult Franchise) ही एकमात्र ऐसा प्रावधान था जो बिना किसी बहस के सर्वसम्मति से पारित हो गया।</li>
+                    <li><b>जनता की भागीदारी:</b> सभा की कार्यवाही समाचार पत्रों में छपती थी और जनता से सुझाव मांगे जाते थे।</li>
+                </ul>
+
+                <div style="margin: 25px 0; padding: 25px; background-color: #ecfdf5; border-left: 8px solid #059669; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <h4 style="margin: 0 0 15px 0; color: #065f46; font-size: 22pt;">📚 ऐतिहासिक सत्य</h4>
+                    <p style="margin: 0; font-size: 17pt; color: #064e3b;">संविधान सभा कुल 166 दिनों तक बैठी। इन बहसों के रिकॉर्ड आज भी 'Constituent Assembly Debates' के नाम से सुरक्षित हैं और न्यायपालिका इनका उपयोग संविधान की व्याख्या के लिए करती है।</p>
+                </div>
+            </div>
+
+            <!-- PART 14 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #d97706; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #d97706; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">14. प्रक्रियाएं और समितियां (Procedures and Committees)</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">इतने विशाल कार्य को व्यवस्थित करने के लिए संविधान सभा ने <b>8 मुख्य समितियां</b> बनाई थीं। प्रत्येक समिति को अलग-अलग जिम्मेदारी सौंपी गई थी।</p>
+                
+                <h3 style="color: #92400e; font-size: 24pt;">14.1 प्रमुख समितियों की भूमिका:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: square; margin-left: 20px;">
+                    <li><b>प्रारूप समिति (Drafting Committee):</b> डॉ. बी.आर. अंबेडकर इसके अध्यक्ष थे। इनका काम संविधान का अंतिम मसौदा तैयार करना था।</li>
+                    <li><b>तालमेल:</b> अक्सर समितियों के बीच मतभेद होते थे (जैसे नेहरू विकेंद्रीकरण चाहते थे, जबकि अंबेडकर शक्तिशाली केंद्र)। इन मतभेदों को लोकतांत्रिक चर्चा से सुलझाया गया।</li>
+                    <li><b>परामर्श:</b> सभा ने दुनिया भर के संविधानों का गहराई से अध्ययन किया ताकि भारत के लिए सबसे बेहतरीन व्यवस्था चुनी जा सके।</li>
+                </ul>
+            </div>
+
+            <!-- PART 15 -->
+            <div style="background-color: #fffbeb; padding: 40px; border-radius: 15px; margin-bottom: 60px; border: 3px solid #f59e0b;">
+                <h2 style="color: #92400e; font-size: 30pt; margin-top: 0;">15. स्वतंत्रता आंदोलन की विरासत (Inheritance of Nationalist Movement)</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #451a03;">संविधान सभा कोई जादुई संस्था नहीं थी जिसने अचानक से नियम बना दिए। संविधान की आत्मा उन वादों और सिद्धांतों में छिपी थी जो 1928 (नेहरू रिपोर्ट) से लेकर 1947 तक <b>राष्ट्रीय आंदोलन</b> के दौरान किए गए थे।</p>
+                
+                <h4 style="color: #b45309; font-size: 22pt;">15.1 विरासत के प्रमुख तत्व:</h4>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #78350f; list-style-type: disc; margin-left: 20px;">
+                    <li><b>स्वतंत्रता और समानता:</b> ये विचार आज़ादी की लड़ाई की बुनियाद थे, जिन्हें संविधान ने 'मौलिक अधिकार' बना दिया।</li>
+                    <li><b>सामाजिक न्याय:</b> दलितों और पिछड़ों के उत्थान का संकल्प राष्ट्रीय आंदोलन से ही आया था।</li>
+                    <li><b>विविधता का सम्मान:</b> 'अनेकता में एकता' भारत की मूल पहचान बनी।</li>
+                </ul>
+
+                <div style="background-color: #ffffff; padding: 20px; text-align: center; border: 2px solid #f59e0b; border-radius: 12px; margin-top: 25px;">
+                    <p style="font-size: 18pt; color: #b45309; margin: 0; font-weight: bold;">🎯 निष्कर्ष: संविधान सभा ने केवल उन सिद्धांतों को 'कानूनी रूप' दिया जो जनता के दिल में पहले से ही आज़ादी की लड़ाई के दौरान बस चुके थे।</p>
+                </div>
+            </div>
+
+            <!-- PART 16 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #6366f1; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #6366f1; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">16. उद्देश्य प्रस्ताव: भारतीय संविधान का डीएनए (DNA)</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">13 दिसंबर 1946 को जवाहरलाल नेहरू ने <b>'उद्देश्य प्रस्ताव' (Objective Resolution)</b> पेश किया। यह वह दस्तावेज़ था जिसने तय किया कि भारत का संविधान किन मूल्यों पर खड़ा होगा।</p>
+                
+                <h3 style="color: #4338ca; font-size: 24pt;">16.1 प्रमुख संकल्प:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: square; margin-left: 20px;">
+                    <li><b>पूर्ण संप्रभुता:</b> भारत एक स्वतंत्र और संप्रभु संध होगा।</li>
+                    <li><b>न्याय और समानता:</b> सभी नागरिकों को सामाजिक, आर्थिक और राजनैतिक न्याय की गारंटी दी जाएगी।</li>
+                    <li><b>अल्पसंख्यक संरक्षण:</b> धार्मिक और भाषाई अल्पसंख्यकों के हितों की रक्षा के लिए विशेष प्रावधान किए जाएंगे।</li>
+                    <li><b>विश्व शांति:</b> भारत विश्व शांति और मानव कल्याण के लिए अपना योगदान देगा।</li>
+                </ul>
+            </div>
+
+            <!-- PART 17 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #0ea5e9; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #0ea5e9; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">17. संस्थागत व्यवस्थाएं: विश्व से लिया गया "संश्लेषण"</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">भारतीय संविधान अक्सर 'उधार का थैला' कहा जाता है, लेकिन यह वास्तव में <b>'बुद्धिमत्तापूर्ण चयन' (Intelligent Synthesis)</b> है। हमने दुनिया भर की अच्छी व्यवस्थाओं को भारतीय परिस्थितियों के अनुसार ढाल लिया।</p>
+                
+                <h3 style="color: #0369a1; font-size: 24pt;">17.1 कहाँ से क्या लिया गया?</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: disc; margin-left: 20px;">
+                    <li><b>ब्रिटिश संविधान:</b> संसदीय व्यवस्था और 'सर्वाधिक मत से जीत' (FPTP) की प्रणाली।</li>
+                    <li><b>अमेरिकी संविधान:</b> मौलिक अधिकार, न्यायपालिका की स्वतंत्रता और राष्ट्रपति पर महाभियोग।</li>
+                    <li><b>आयरिश संविधान:</b> राज्य के नीति निर्देशक तत्व (DPSP)।</li>
+                    <li><b>फ्रांसीसी संविधान:</b> स्वतंत्रता, समानता और बंधुत्व के आदर्श।</li>
+                    <li><b>कनाडाई संविधान:</b> एक सशक्त केंद्र वाली संघीय व्यवस्था।</li>
+                </ul>
+            </div>
+
+            <!-- PART 18 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #ef4444; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #ef4444; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">18. आलोचनात्मक समीक्षा: क्या संविधान सभा "प्रतिनिधि" थी?</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">आलोचक तर्क देते हैं कि संविधान सभा का चुनाव सीधे जनता द्वारा नहीं हुआ था, इसलिए यह लोकतांत्रिक नहीं थी। आइए सच्चाई का विश्लेषण करें।</p>
+                
+                <h3 style="color: #b91c1c; font-size: 24pt;">18.1 आलोचना बनाम वास्तविकता:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: square; margin-left: 20px;">
+                    <li><b>आलोचना:</b> सदस्यों का चुनाव सीमित मताधिकार (केवल 10-15% अमीर/शिक्षित लोग) द्वारा हुआ था।</li>
+                    <li><b>वास्तविकता:</b> यद्यपि चुनाव अप्रत्यक्ष था, लेकिन सभा के अंदर भारत की हर विचारधारा—समाजवादी, हिंदूवादी, पश्चिमी उदारवादी और गांधीवादी—मौजूद थी।</li>
+                    <li><b>कांग्रेस का प्रभुत्व:</b> आलोचक इसे 'एक दलीय संस्था' कहते हैं, लेकिन उस समय की कांग्रेस खुद एक 'छोटा भारत' थी जिसमें हर तबके के नेता शामिल थे।</li>
+                </ul>
+            </div>
+
+            <!-- PART 19 -->
+            <div style="margin-bottom: 60px; border-top: 5px solid #10b981; padding-top: 30px;">
+                <h2 style="color: #ffffff; background-color: #10b981; padding: 20px 30px; border-radius: 10px; font-size: 32pt; box-shadow: 0 6px 12px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 30px;">19. भारत क्यों सफल हुआ? एक तुलनात्मक अध्ययन</h2>
+                <p style="font-size: 19pt; text-align: justify; color: #334155;">पड़ोसी देशों और अफ्रीकी देशों के संविधान बार-बार गिर गए, लेकिन भारत का संविधान 75 साल से अटूट है। इसके पीछे <b>'संवैधानिक नैतिकता' (Constitutional Morality)</b> का हाथ है।</p>
+                
+                <h3 style="color: #047857; font-size: 24pt;">19.1 सफलता के सूत्र:</h3>
+                <ul style="font-size: 18pt; line-height: 2.1; color: #475569; list-style-type: disc; margin-left: 20px;">
+                    <li><b>सेना का राजनीति से अलगाव:</b> भारतीय संविधान ने सेना को नागरिक प्रशासन के अधीन रखा।</li>
+                    <li><b>लचीलेपन और कठोरता का समन्वय:</b> इसे समय के साथ बदलना संभव है (जैसे 100 से अधिक संशोधन), लेकिन इसकी 'मूल आत्मा' को कोई नहीं छू सकता।</li>
+                    <li><b>न्यायपालिका की सक्रियता:</b> अदालतों ने संविधान के संरक्षक के रूप में मज़बूत भूमिका निभाई है।</li>
+                </ul>
+            </div>
+
+            <!-- PART 20 -->
+            <div style="background-color: #0f172a; padding: 60px; border-radius: 20px; margin-bottom: 60px; border: 8px double #475569; color: #ffffff;">
+                <h2 style="color: #ffffff; font-size: 38pt; margin-top: 0; text-align: center; border-bottom: 3px solid #334155; padding-bottom: 30px; letter-spacing: 1px;">20. निष्कर्ष: एक जीवंत विरासत का भविष्य</h2>
+                <p style="font-size: 20pt; text-align: justify; color: #cbd5e1; line-height: 2.3;">अध्याय 1 का यह विस्तृत सफर हमें यह सिखाता है कि संविधान केवल एक दस्तावेज नहीं, बल्कि एक 'जीवंत प्रक्रिया' है। यह हर नागरिक को एक शक्तिशाली पहचान देता है और सरकार को जवाबदेह बनाता है। आने वाले अध्यायों में हम देखेंगे कि कैसे ये सिद्धांत व्यावहारिक राजनीति में काम करते हैं।</p>
+                
+                <div style="text-align: center; margin-top: 50px; font-size: 24pt; font-weight: bold; color: #38bdf8; padding: 40px; border: 3px dashed #0ea5e9; background: #1e293b; border-radius: 15px; box-shadow: inset 0 0 20px rgba(0,0,0,0.5);">
+                    🎯 मास्टर सिनोप्सिस (Final Synopsis):<br>
+                    <span style="font-size: 19pt; font-weight: normal; color: #e2e8f0; display: block; margin-top: 25px; line-height: 2.1;">
+                        "संविधान वह पुल है जो हमें औपनिवेशिक अतीत की गुलामी से भविष्य के लोकतांत्रिक गौरव की ओर ले जाता है।" इसकी शक्ति कागज में नहीं, बल्कि उन लोगों की निष्ठा में है जो इसे चलाते हैं। यदि नागरिक जागरूक हैं, तो संविधान कभी विफल नहीं होगा। (संपूर्ण अध्याय 1: सफलतापूर्वक मास्टर एडिशन में रूपांतरित)।
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </body>

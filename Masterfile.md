@@ -1,38 +1,50 @@
 # 📚 Political Science Class 11 Master Plan (ULTRA-VOLUME Series)
 
-This plan ensures every chapter reaches maximum possible depth (exceeding 50-page equivalent in Google Docs) followed by a 100-question mega bank.
+This plan ensures every chapter reaches maximum possible depth (exceeding 70-page equivalent in Google Docs) followed by a separate 20+ question mega bank.
 
 ## 🏗️ Chapter Structure (The "Mega Volume" Framework)
-1.  **Exhaustive Cover & Introduction (3-5 Pages):** High-impact title, deep historical background, and every possible context.
-2.  **Encyclopedic Theory Deep-Dive (30+ Pages):** 
-    - Every paragraph of NCERT explained with extreme depth.
-    - Historical evolution of every concept (e.g., from 1773 to 1947 for Chapter 1).
-    - Scholarly debates, legal interpretations (Supreme Court cases), and philosophical nuances.
-    - Real-world current affairs links.
-3.  **Visual & Interactive Elements (5+ Pages):** Every 'Box', 'Cartoon', and 'Activity' in NCERT fully analyzed for long-answer points.
-4.  **Comparative Global Analysis (5+ Pages):** In-depth comparison of Indian constitutionalism with USA, UK, South Africa, Nepal, etc.
-5.  **Hyper-Glossary (3-5 Pages):** Precise and detailed definitions of every political and legal term mentioned.
-6.  **The 100-Question Mega Bank (15-20 Pages):** 
-    - 40 MCQs (Precise solutions)
-    - 30 Very Short (2 marks each)
-    - 15 Short (4 marks each)
-    - 15 Long / Case-based (6 marks each)
-7.  **Topper's Strategic Revision (3-5 Pages):** Complex flowcharts, mind maps, detailed timelines, and writing tips.
+
+**UI/UX Concept:** Each chapter in the portal is powered by two distinct actions (Buttons):
+1. **📖 70+ Pages Mega Notes**
+2. **📝 20+ Questions Q&A**
+
+### 1. Mega Notes File (`copy_master_ch*.html`)
+- **10-Part Master Framework:** EVERY chapter must be deeply divided into strictly 10 massive parts. This ensures the output genuinely achieves a 100+ pages length equivalent. 
+- **Comparative Tables & Debates:** Explicitly include comparative tables and PROS vs CONS debates for major topics.
+- **Exhaustive Theory Deep-Dive:** Every paragraph of NCERT explained with extreme depth, incorporating historical examples and current affairs.
+- **Inline Dictionary (महत्वपूर्ण शब्दावली):** Any complex phrase or keyword is defined IMMEDIATELY in a dedicated, visually distinct block.
+- *Notes: No Q&A exists in this file.*
+
+### 2. Q&A Bank File (`qa_master_ch*.html`)
+- At least 20 highly curated questions.
+- **Format:**
+  - MCQs (1 Mark)
+  - Very Short Answer (2 Marks)
+  - Short Answer (4 Marks)
+  - Long Answer / Analytical (6 Marks)
+  - Assertion-Reasoning Type
+- Integrated with examination tips.
 
 ## 📅 Roadmap (18 Chapters)
-- [x] **Chapter 1:** Constitution: Why and How? (Ultra-Expanded to 50+ Pages)
-- [ ] **Chapter 2:** Rights in the Indian Constitution (Expansion In-Progress)
-- [ ] **Chapter 3:** Election and Representation (Upcoming)
-- [ ] **Chapter 4:** Executive (Upcoming)
-- [ ] **Chapter 5:** Legislature (Upcoming)
-- [ ] **Chapter 6:** Judiciary (Upcoming)
-- [ ] **Chapter 7:** Federalism (Upcoming)
-- [ ] **Chapter 8:** Local Governments (Upcoming)
-- [ ] **Chapter 9:** Constitution as a Living Document (Upcoming)
-- [ ] **Chapter 10:** The Philosophy of the Constitution (Upcoming)
-- [ ] **Political Theory Part:** (Chapters 11-18)
+- [x] **Chapter 1:** Constitution: Why and How? (70+ Pages Theory created, 20+ Q&A created)
+- [x] **Chapter 2:** Rights in the Indian Constitution (70+ Pages Theory created, 20+ Q&A created)
+- [x] **Chapter 3:** Election and Representation (70+ Pages Theory created, 20+ Q&A created)
+- [x] **Chapter 4:** Executive (Massive 100+ Pages 10-Part Theory created, 20+ Q&A created)
+- [x] **Chapter 5:** Legislature (Massive 100+ Pages 10-Part Theory created, 20+ Q&A created)
+- [x] **Chapter 6:** Judiciary (Massive 100+ Pages 10-Part Theory created, 20+ Q&A created)
+- [x] **Chapter 7:** Federalism (Massive 100+ Pages 10-Part Premium Theory created, 20+ Q&A created)
+- [x] **Chapter 8:** Local Governments (Massive 100+ Pages 10-Part Premium Theory created, 20+ Q&A created)
+- [x] **Chapter 9:** Constitution as a Living Document (Massive 100+ Pages 10-Part Premium Theory created, 20+ Q&A created)
+- [x] **Chapter 11:** राजनीतिक सिद्धांत: एक परिचय (20-Part Detailed Notes & Q&A)
+- [x] **Chapter 12:** स्वतंत्रता (Freedom) (20-Part Detailed Notes & Q&A)
+- [x] **Chapter 13:** समानता (Equality) (20-Part Detailed Notes & Q&A)
+- [x] **Chapter 14:** सामाजिक न्याय (Social Justice) (20-Part Detailed Notes & Q&A)
+- [x] **Chapter 15:** अधिकार (Rights) (20-Part Detailed Notes & Q&A)
+- [x] **Chapter 16:** नागरिकता (Citizenship) (20-Part Detailed Notes & Q&A)
+- [x] **Chapter 17:** राष्ट्रवाद (Nationalism) (20-Part Detailed Notes & Q&A)
+- [x] **Chapter 18:** धर्मनिरपेक्षता (Secularism) (20-Part Detailed Notes & Q&A)
 
 ## 🛠️ Technical Requirement
 - **Format:** Pure HTML with **INLINE CSS** only (for perfect clipboard compatibility with Google Docs).
-- **Control UI:** Persistent header with a "Copy Master" button for seamless transfer of the massive content.
-- **Visual Depth:** Use of high-quality styling for headings, tables, and emphasized blocks to maintain readability across 50+ pages.
+- **Navigation:** Separate `notes_html_view.html` and `qa_html_view.html` handlers.
+- **Control UI:** Persistent header with a "Copy Master" button for seamless transfer.
