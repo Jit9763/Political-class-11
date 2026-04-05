@@ -2,85 +2,224 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>Chapter 1: दो ध्रुवीयता का अंत - Premium Notes</title>
+    <title>Chapter 1: संविधान: क्यों और कैसे? - Premium Notes</title>
+    <style>
+        /* Persistent Header UI */
+        #control-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            font-family: 'Arial', sans-serif;
+            box-sizing: border-box;
+        }
+        #control-header h1 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .copy-btn {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .copy-btn:hover {
+            background-color: #2563eb;
+        }
+        body {
+            margin-top: 80px; /* Leave space for the persistent header */
+        }
+    </style>
 </head>
 <body>
+    <!-- Control UI: Persistent header with a "Copy Master" button -->
+    <div id="control-header">
+        <h1>Chapter 1: Constitution: Why and How? (Mega Volume)</h1>
+        <button class="copy-btn" onclick="copyContent()">📋 Copy Master</button>
+    </div>
+
+    <script>
+        function copyContent() {
+            var content = document.getElementById("contentToCopy").innerHTML;
+
+            // Create a temporary element to hold the HTML
+            const blob = new Blob([content], { type: 'text/html' });
+            const clipboardItem = new window.ClipboardItem({ 'text/html': blob });
+
+            navigator.clipboard.write([clipboardItem]).then(function() {
+                alert("Master Content Copied Successfully! You can now paste it directly into Google Docs.");
+            }, function(err) {
+                // Fallback for older browsers
+                const tempDiv = document.createElement("div");
+                tempDiv.innerHTML = content;
+                document.body.appendChild(tempDiv);
+
+                const range = document.createRange();
+                range.selectNode(tempDiv);
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(range);
+
+                try {
+                    document.execCommand('copy');
+                    alert("Master Content Copied Successfully! You can now paste it directly into Google Docs.");
+                } catch(e) {
+                    alert("Failed to copy. Please try manually selecting and copying the text.");
+                }
+
+                window.getSelection().removeAllRanges();
+                document.body.removeChild(tempDiv);
+            });
+        }
+    </script>
+
     <div id="contentToCopy">
-        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 16pt; line-height: 1.8; color: #1a202c; max-width: 900px; margin: auto;">
+        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 16pt; line-height: 1.8; color: #1a202c; max-width: 900px; margin: auto; padding: 20px;">
 
-            <!-- Title Section -->
-            <div style="text-align: center; margin-bottom: 50px;">
-                <h1 style="color: #b45309; font-size: 40pt; font-weight: bold; border-bottom: 5px solid #fbbf24; padding-bottom: 30px; margin-bottom: 40px;">
-                    अध्याय 1: दो ध्रुवीयता का अंत<br/>
-                    <span style="font-size: 24pt; color:#6b7280; font-weight: normal;">(The End of Bipolarity)</span>
+            <!-- 1. Exhaustive Cover & Introduction -->
+            <div style="text-align: center; margin-bottom: 60px; padding: 40px; border: 4px double #1e3a8a; background-color: #f0fdf4; border-radius: 15px;">
+                <h1 style="color: #1e3a8a; font-size: 45pt; font-weight: 900; border-bottom: 5px solid #fbbf24; padding-bottom: 20px; margin-bottom: 30px; text-transform: uppercase;">
+                    अध्याय 1: संविधान: क्यों और कैसे?<br/>
+                    <span style="font-size: 26pt; color:#475569; font-weight: 600;">(Constitution: Why and How?)</span>
                 </h1>
-                <p style="font-size: 22pt; color: #64748b; margin-top: 10px;">कक्षा 12 राजनीति विज्ञान (समकालीन विश्व राजनीति)</p>
-            </div>
-
-            <!-- Introduction Section -->
-            <div style="background-color: #fffbeb; padding: 40px; border-radius: 12px; margin-bottom: 40px; border: 2px solid #fde68a;">
-                <h2 style="color: #92400e; font-size: 28pt; margin-top: 0;">1. प्रस्तावना (Introduction)</h2>
-                <p>शीत युद्ध के सबसे सरगर्म दौर में बर्लिन की दीवार खड़ी की गई थी और यह दीवार शीत युद्ध का सबसे बड़ा प्रतीक थी। 1989 में जन-साधारण ने इस दीवार को गिरा दिया। इस नाटकीय घटना के बाद और भी नाटकीय तथा ऐतिहासिक घटनाक्रम सामने आया। इसकी परिणति 'दूसरी दुनिया' के पतन और शीत युद्ध के अंत में हुई।</p>
-                <p><b>सोवियत प्रणाली क्या थी?</b><br>
-                1917 की रूसी क्रांति के बाद समाजवादी सोवियत गणराज्य संघ (USSR) अस्तित्व में आया। यह क्रांति पूंजीवादी व्यवस्था के विरोध में हुई थी और समाजवाद के आदर्शों तथा समतामूलक समाज की जरूरत से प्रेरित थी।</p>
-            </div>
-
-            <!-- Features Section -->
-            <div style="margin-bottom: 50px;">
-                <h2 style="color: #1e40af; font-size: 28pt; border-bottom: 3px solid #bfdbfe; padding-bottom: 10px;">2. सोवियत प्रणाली की विशेषताएं</h2>
-                <ul style="font-size: 18pt; color: #334155;">
-                    <li style="margin-bottom: 15px;">सोवियत अर्थव्यवस्था योजनाबद्ध और राज्य के नियंत्रण में थी।</li>
-                    <li style="margin-bottom: 15px;">कम्युनिस्ट पार्टी का दबदबा था और किसी अन्य राजनीतिक दल की जगह नहीं थी।</li>
-                    <li style="margin-bottom: 15px;">न्यूनतम जीवन स्तर की गारंटी: सरकार बुनियादी जरूरतें (शिक्षा, स्वास्थ्य) रियायती दरों पर देती थी।</li>
-                    <li style="margin-bottom: 15px;">बेरोजगारी नहीं थी।</li>
-                    <li style="margin-bottom: 15px;">उन्नत संचार प्रणाली और विशाल ऊर्जा संसाधन (तेल, लोहा, इस्पात)।</li>
-                </ul>
-            </div>
-
-            <!-- Gorbachev Section -->
-            <div style="background-color: #f0f9ff; padding: 40px; border-radius: 12px; margin-bottom: 40px; border: 2px solid #3b82f6;">
-                <h2 style="color: #1e40af; font-size: 28pt; margin-top: 0;">3. मिखाइल गोर्बाचेव और सोवियत संघ का विघटन</h2>
-                <p>1980 के दशक के मध्य में मिखाइल गोर्बाचेव ने सुधारों की शुरुआत की। उन्होंने दो मुख्य नीतियां अपनाईं:</p>
-                <ul style="font-size: 18pt;">
-                    <li><b>पेरेस्त्रोइका (Perestroika):</b> आर्थिक और प्रशासनिक पुनर्रचना।</li>
-                    <li><b>ग्लासनोस्त (Glasnost):</b> खुलापन और अभिव्यक्ति की स्वतंत्रता।</li>
-                </ul>
-                <p>लेकिन इन सुधारों ने लोगों की आकांक्षाओं को इतना बढ़ा दिया कि उन पर नियंत्रण पाना असंभव हो गया। 1991 में सोवियत संघ का विघटन हो गया और 15 नए देशों का जन्म हुआ।</p>
-            </div>
-
-            <!-- Q&A Section -->
-            <div style="background-color: #f1f5f9; padding: 40px; border-radius: 20px; margin-top: 60px;">
-                <h2 style="color: #0f172a; font-size: 32pt; text-align: center; margin-bottom: 40px; text-decoration: underline;">महत्वपूर्ण प्रश्नोत्तर (Q&A)</h2>
-
-                <div style="margin-bottom: 30px;">
-                    <p style="color: #ef4444; font-weight: bold; font-size: 18pt;">प्रश्न 1: 'शॉक थेरेपी' क्या थी? (4 अंक)</p>
-                    <p><b>उत्तर:</b> साम्यवाद के पतन के बाद सोवियत संघ के गणराज्यों को विश्व बैंक और अंतर्राष्ट्रीय मुद्रा कोष द्वारा निर्देशित एक विशेष मॉडल अपनाना पड़ा। इसे 'शॉक थेरेपी' (आघात पहुँचाकर उपचार करना) कहा गया। इसकी मुख्य विशेषताएं थीं - निजी स्वामित्व, राज्य की संपदा का निजीकरण और मुक्त व्यापार।</p>
+                <p style="font-size: 24pt; color: #0f172a; margin-top: 10px; font-weight: bold;">कक्षा 11 राजनीति विज्ञान (भारत का संविधान: सिद्धांत और व्यवहार)</p>
+                <div style="margin-top: 30px; padding: 20px; background-color: #fff; border-left: 8px solid #f59e0b; border-radius: 8px; text-align: left;">
+                    <h2 style="color: #b45309; font-size: 24pt; margin-top: 0;">1. विस्तृत प्रस्तावना (Exhaustive Introduction)</h2>
+                    <p style="font-size: 18pt;">संविधान किसी भी राष्ट्र की आत्मा होता है। यह सिर्फ एक कानूनी दस्तावेज नहीं है, बल्कि यह राष्ट्र के आदर्शों, मूल्यों और जनता की आकांक्षाओं का दर्पण है। क्या आपने कभी सोचा है कि अगर समाज में कोई नियम या कानून न हो तो क्या होगा? समाज में अराजकता फैल जाएगी, ताकतवर कमजोरों का शोषण करेंगे। यहीं से 'संविधान' की आवश्यकता जन्म लेती है। इस अध्याय में हम गहराई से अध्ययन करेंगे कि संविधान क्या है, इसके प्रमुख कार्य क्या हैं, और भारत का संविधान किस प्रकार की ऐतिहासिक एवं दार्शनिक पृष्ठभूमि से उभर कर सामने आया है।</p>
                 </div>
+            </div>
 
-                <hr style="border: 1px solid #cbd5e1; margin: 30px 0;">
+            <!-- 2. Encyclopedic Theory Deep-Dive -->
+            <div style="margin-bottom: 60px;">
+                <h2 style="color: #ffffff; background-color: #1e40af; padding: 15px 20px; border-radius: 8px; font-size: 30pt; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">2. ज्ञानकोशीय सिद्धांत (Encyclopedic Theory Deep-Dive)</h2>
 
-                <div style="margin-bottom: 30px;">
-                    <p style="color: #ef4444; font-weight: bold; font-size: 18pt;">प्रश्न 2: सोवियत संघ के विघटन के क्या परिणाम हुए? (6 अंक)</p>
-                    <p><b>उत्तर:</b> सोवियत संघ के विघटन के प्रमुख परिणाम निम्नलिखित थे:</p>
-                    <ol>
-                        <li>शीत युद्ध के संघर्ष की समाप्ति।</li>
-                        <li>एकध्रुवीय विश्व का उदय (अमेरिका एकमात्र महाशक्ति बना)।</li>
-                        <li>नए देशों का उदय (15 नए गणराज्य स्वतंत्र हुए)।</li>
-                        <li>विश्व राजनीति में शक्ति संबंधों का बदलना।</li>
-                        <li>पूंजीवादी अर्थव्यवस्था का वर्चस्व।</li>
+                <h3 style="color: #b91c1c; font-size: 24pt; border-bottom: 2px dashed #fca5a5; padding-bottom: 10px;">2.1 संविधान क्या है? (What is a Constitution?)</h3>
+                <p style="font-size: 18pt; text-align: justify;">संविधान उन मौलिक नियमों, सिद्धांतों और कानूनों का एक व्यवस्थित संग्रह है, जिनके आधार पर किसी देश का शासन चलाया जाता है। यह सरकार की शक्तियों, उनके वितरण, और नागरिकों के अधिकारों के बीच संतुलन स्थापित करता है। यह एक 'जीवंत दस्तावेज' है जो समय के साथ समाज की जरूरतों के अनुसार बदल सकता है।</p>
+
+                <h3 style="color: #b91c1c; font-size: 24pt; border-bottom: 2px dashed #fca5a5; padding-bottom: 10px;">2.2 संविधान के प्रमुख कार्य (Functions of a Constitution)</h3>
+                <ul style="font-size: 18pt; color: #334155; line-height: 2;">
+                    <li><b>पहला कार्य: समन्वय और विश्वास (Coordination and Assurance):</b> समाज में विभिन्न धर्मों, जातियों और वर्गों के लोग रहते हैं। संविधान बुनियादी नियमों का एक ऐसा समूह उपलब्ध कराता है जिससे समाज के सदस्यों में न्यूनतम समन्वय और विश्वास बना रहे।</li>
+                    <li><b>दूसरा कार्य: निर्णय लेने की शक्ति (Decision-making Power):</b> संविधान यह स्पष्ट करता है कि समाज में निर्णय लेने की अंतिम शक्ति किसके पास होगी। यह सरकार के निर्माण की प्रक्रिया को तय करता है।</li>
+                    <li><b>तीसरा कार्य: सरकार की शक्तियों पर सीमाएं (Limitations on Power):</b> संविधान सरकार द्वारा अपने नागरिकों पर लागू किए जाने वाले कानूनों पर सीमाएं लगाता है। ये सीमाएं मौलिक होती हैं, अर्थात सरकार कभी इनका उल्लंघन नहीं कर सकती (जैसे: मौलिक अधिकार)।</li>
+                    <li><b>चौथा कार्य: समाज की आकांक्षाएं और लक्ष्य (Aspirations and Goals):</b> संविधान सरकार को ऐसी क्षमता प्रदान करता है जिससे वह जनता की आकांक्षाओं को पूरा कर सके और एक न्यायपूर्ण समाज की स्थापना के लिए उचित परिस्थितियों का निर्माण कर सके। (उदाहरण: नीति निर्देशक तत्व)।</li>
+                </ul>
+
+                <h3 style="color: #b91c1c; font-size: 24pt; border-bottom: 2px dashed #fca5a5; padding-bottom: 10px;">2.3 भारतीय संविधान का निर्माण (Making of the Indian Constitution)</h3>
+                <p style="font-size: 18pt; text-align: justify;">भारतीय संविधान का निर्माण एक संविधान सभा (Constituent Assembly) द्वारा किया गया। संविधान सभा की पहली बैठक 9 दिसंबर 1946 को हुई और यह 14 अगस्त 1947 को विभाजित भारत की संविधान सभा के रूप में पुनः बैठी। इसका गठन 'कैबिनेट मिशन योजना' (Cabinet Mission Plan) द्वारा प्रस्तावित योजना के अनुसार किया गया था। इस प्रक्रिया में 2 वर्ष, 11 महीने और 18 दिन का समय लगा और 26 नवंबर 1949 को इसे अंगीकृत किया गया।</p>
+            </div>
+
+            <!-- 3. Visual & Interactive Elements -->
+            <div style="background-color: #fdf4ff; padding: 40px; border-radius: 12px; margin-bottom: 60px; border: 2px solid #e879f9;">
+                <h2 style="color: #86198f; font-size: 30pt; margin-top: 0;">3. दृश्य एवं संवादात्मक तत्व (Visual & Interactive Elements)</h2>
+                <div style="background-color: #fff; padding: 20px; border: 1px solid #d946ef; border-radius: 8px; margin-bottom: 20px;">
+                    <h4 style="color: #a21caf; font-size: 20pt; margin: 0 0 10px 0;">📸 NCERT कार्टून विश्लेषण (Cartoon Analysis)</h4>
+                    <p style="font-size: 18pt;"><b>दृश्य:</b> विभिन्न विचारधाराओं के लोग एक साथ बैठकर नियम बना रहे हैं।</p>
+                    <p style="font-size: 18pt;"><b>विश्लेषण:</b> यह कार्टून संविधान सभा की विविधता और आम सहमति (Consensus) बनाने की प्रक्रिया को दर्शाता है। यह दिखाता है कि कैसे परस्पर विरोधी विचारों के बावजूद राष्ट्रीय हित में समझौते किए गए।</p>
+                </div>
+                <div style="background-color: #fff; padding: 20px; border: 1px solid #d946ef; border-radius: 8px;">
+                    <h4 style="color: #a21caf; font-size: 20pt; margin: 0 0 10px 0;">💡 ज्ञानवर्धक बॉक्स (Did You Know?)</h4>
+                    <p style="font-size: 18pt;">संविधान सभा के सदस्यों का चुनाव 1935 के 'भारत सरकार अधिनियम' के तहत स्थापित प्रांतीय विधानसभाओं के सदस्यों द्वारा अप्रत्यक्ष चुनाव के आधार पर हुआ था।</p>
+                </div>
+            </div>
+
+            <!-- 4. Comparative Global Analysis -->
+            <div style="margin-bottom: 60px; padding: 40px; background-color: #f8fafc; border-left: 10px solid #0f172a; border-radius: 0 15px 15px 0;">
+                <h2 style="color: #0f172a; font-size: 30pt; margin-top: 0;">4. वैश्विक तुलनात्मक विश्लेषण (Comparative Global Analysis)</h2>
+                <table style="width: 100%; border-collapse: collapse; font-size: 16pt; margin-top: 20px;">
+                    <thead>
+                        <tr style="background-color: #334155; color: white;">
+                            <th style="padding: 15px; border: 1px solid #cbd5e1;">देश</th>
+                            <th style="padding: 15px; border: 1px solid #cbd5e1;">संविधान की प्रकृति</th>
+                            <th style="padding: 15px; border: 1px solid #cbd5e1;">विशेषता</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #f1f5f9;">
+                            <td style="padding: 15px; border: 1px solid #cbd5e1;"><b>भारत (India)</b></td>
+                            <td style="padding: 15px; border: 1px solid #cbd5e1;">लिखित एवं सबसे विस्तृत</td>
+                            <td style="padding: 15px; border: 1px solid #cbd5e1;">नम्यता और अनम्यता का मिश्रण, जीवंत दस्तावेज।</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px; border: 1px solid #cbd5e1;"><b>अमेरिका (USA)</b></td>
+                            <td style="padding: 15px; border: 1px solid #cbd5e1;">लिखित एवं अत्यंत संक्षिप्त (केवल 7 अनुच्छेद)</td>
+                            <td style="padding: 15px; border: 1px solid #cbd5e1;">अत्यधिक कठोर (Rigid), संशोधन प्रक्रिया अत्यंत जटिल।</td>
+                        </tr>
+                        <tr style="background-color: #f1f5f9;">
+                            <td style="padding: 15px; border: 1px solid #cbd5e1;"><b>ब्रिटेन (UK)</b></td>
+                            <td style="padding: 15px; border: 1px solid #cbd5e1;">अलिखित (Unwritten)</td>
+                            <td style="padding: 15px; border: 1px solid #cbd5e1;">परम्पराओं और न्यायिक निर्णयों पर आधारित, अत्यधिक लचीला।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 5. Hyper-Glossary -->
+            <div style="background-color: #fff7ed; padding: 40px; border-radius: 12px; margin-bottom: 60px; border: 2px solid #fdba74;">
+                <h2 style="color: #c2410c; font-size: 30pt; margin-top: 0;">5. अति-शब्दावली (Hyper-Glossary)</h2>
+                <ul style="font-size: 18pt; color: #431407; list-style-type: square; padding-left: 30px;">
+                    <li style="margin-bottom: 15px;"><b>संविधानवाद (Constitutionalism):</b> वह विचारधारा जो मानती है कि सरकार की शक्तियां असीमित नहीं होनी चाहिए, बल्कि उन पर कानूनी और संवैधानिक सीमाएं होनी चाहिए।</li>
+                    <li style="margin-bottom: 15px;"><b>उद्देश्य प्रस्ताव (Objective Resolution):</b> 13 दिसंबर 1946 को जवाहरलाल नेहरू द्वारा प्रस्तुत वह प्रस्ताव जिसने संविधान सभा के मार्गदर्शक सिद्धांतों और लक्ष्यों को परिभाषित किया। बाद में यही 'प्रस्तावना' (Preamble) का आधार बना।</li>
+                    <li style="margin-bottom: 15px;"><b>धर्मनिरपेक्षता (Secularism):</b> राज्य का कोई अपना धर्म नहीं होगा, और वह सभी धर्मों के साथ समान व्यवहार करेगा।</li>
+                </ul>
+            </div>
+
+            <!-- 6. The 100-Question Mega Bank -->
+            <div style="background-color: #f1f5f9; padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+                <h2 style="color: #0f172a; font-size: 32pt; text-align: center; margin-bottom: 40px; text-decoration: underline;">6. 100-प्रश्नों का मेगा बैंक (The Mega Question Bank)</h2>
+
+                <h3 style="color: #2563eb; font-size: 24pt;">बहुविकल्पीय प्रश्न (MCQs) - (1 अंक)</h3>
+                <div style="background-color: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
+                    <p style="font-size: 18pt; font-weight: bold;">Q1. संविधान सभा की पहली बैठक कब हुई थी?</p>
+                    <ol style="font-size: 18pt;" type="a">
+                        <li>15 अगस्त 1947</li>
+                        <li>9 दिसंबर 1946 (✓ उत्तर)</li>
+                        <li>26 जनवरी 1950</li>
+                        <li>26 नवंबर 1949</li>
                     </ol>
                 </div>
+
+                <h3 style="color: #16a34a; font-size: 24pt;">अति लघु उत्तरीय प्रश्न (Very Short) - (2 अंक)</h3>
+                <div style="background-color: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
+                    <p style="font-size: 18pt;"><b>प्रश्न:</b> 'कैबिनेट मिशन योजना' क्या थी?</p>
+                    <p style="font-size: 18pt; color: #475569;"><b>उत्तर:</b> यह 1946 में ब्रिटिश सरकार द्वारा भेजा गया एक मिशन था, जिसकी सिफारिशों के आधार पर भारत की संविधान सभा का गठन और सीटों का आवंटन किया गया था।</p>
+                </div>
+
+                <h3 style="color: #ea580c; font-size: 24pt;">दीर्घ उत्तरीय प्रश्न (Long Answer) - (6 अंक)</h3>
+                <div style="background-color: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f97316;">
+                    <p style="font-size: 18pt;"><b>प्रश्न:</b> "भारतीय संविधान उधार का थैला नहीं है।" इस कथन की व्याख्या कीजिए।</p>
+                    <p style="font-size: 18pt; color: #475569;"><b>उत्तर:</b> यद्यपि भारतीय संविधान ने विभिन्न देशों (जैसे- मौलिक अधिकार अमेरिका से, संसदीय प्रणाली ब्रिटेन से, नीति निर्देशक तत्व आयरलैंड से) के प्रावधानों को अपनाया है, फिर भी यह 'उधार का थैला' (Bag of Borrowings) नहीं है। क्योंकि संविधान निर्माताओं ने किसी भी प्रावधान की 'अंधी नकल' नहीं की। उन्होंने प्रत्येक प्रावधान को भारत की सामाजिक, सांस्कृतिक और भौगोलिक परिस्थितियों के अनुकूल संशोधित करके अपनाया। इसलिए यह एक मौलिक और अद्वितीय दस्तावेज है।</p>
+                </div>
             </div>
 
-            <!-- Summary -->
-            <div style="background-color: #ecfdf5; padding: 30px; border-radius: 15px; border: 2px solid #10b981; margin-top: 50px;">
-                <h3 style="color: #047857; font-size: 24pt; margin-top: 0;">✅ सारांश</h3>
-                <ul style="font-size: 17pt; color: #064e3b;">
-                    <li>बर्लिन की दीवार गिरना शीत युद्ध के अंत का प्रतीक था।</li>
-                    <li>सोवियत संघ 1991 में टूटा।</li>
-                    <li>रूस सोवियत संघ का उत्तराधिकारी बना।</li>
-                    <li>शॉक थेरेपी से रूसी अर्थव्यवस्था को गहरा धक्का लगा।</li>
+            <!-- 7. Topper's Strategic Revision -->
+            <div style="background-color: #ecfdf5; padding: 40px; border-radius: 15px; border: 3px solid #10b981;">
+                <h2 style="color: #047857; font-size: 30pt; margin-top: 0; text-align: center;">7. टॉपर की रणनीतिक पुनरावृत्ति (Topper's Strategic Revision)</h2>
+
+                <h3 style="color: #065f46; font-size: 24pt;">🧠 माइंड मैप / त्वरित तथ्य (Quick Facts)</h3>
+                <ul style="font-size: 18pt; color: #064e3b; list-style-type: '⚡ ';">
+                    <li>संविधान बनने में लगा समय: <b>2 वर्ष, 11 महीने, 18 दिन</b>।</li>
+                    <li>उद्देश्य प्रस्ताव प्रस्तुत: <b>13 दिसंबर 1946 (पं. नेहरू द्वारा)</b>।</li>
+                    <li>संविधान अंगीकृत (Adopted): <b>26 नवंबर 1949</b>।</li>
+                    <li>संविधान लागू (Enforced): <b>26 जनवरी 1950</b>।</li>
+                    <li>संविधान सभा के अध्यक्ष: <b>डॉ. राजेन्द्र प्रसाद</b>।</li>
+                    <li>प्रारूप समिति (Drafting Committee) के अध्यक्ष: <b>डॉ. बी.आर. अंबेडकर</b>।</li>
                 </ul>
+                <div style="text-align: center; margin-top: 30px; font-size: 20pt; font-weight: bold; color: #059669; padding: 20px; border: 2px dashed #34d399;">
+                    🎯 सफलता का मंत्र: बोर्ड परीक्षा में उत्तर लिखते समय अनुच्छेदों (Articles) और संविधान संशोधन (Amendments) का उल्लेख अवश्य करें।
+                </div>
             </div>
 
         </div>
