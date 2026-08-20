@@ -11,15 +11,15 @@
         .preview { background: white; padding: 40px; border-radius: 15px; margin-top: 30px; text-align: left; max-width: 1000px; margin-left: auto; margin-right: auto; border: 1px solid #e2e8f0; }
         #status { margin-top: 20px; font-weight: bold; color: #059669; font-size: 18pt; display: none; }
         
-        /* Premium Layout Styles */
-        .bio-box { background-color: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; padding: 25px; margin: 30px 0; display: flex; gap: 20px; align-items: center; }
+        /* Premium Layout Styles (High Contrast for Projector) */
+        .bio-box { background-color: #ffffff; border: 3px solid #000000; border-radius: 12px; padding: 25px; margin: 30px 0; display: flex; gap: 20px; align-items: center; color: #000000; font-weight: 600; }
         .bio-img-container { flex: 0 0 130px; text-align: center; }
-        .bio-img { width: 120px; height: auto; border: 3px solid #cbd5e1; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .bio-text { flex: 1; }
+        .bio-img { width: 120px; height: auto; border: 3px solid #000000; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .bio-text { flex: 1; color: #000000; font-weight: 600; }
         
-        .illustration-box { background-color: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; padding: 20px; margin: 40px 0; text-align: center; }
-        .illustration-img { max-width: 85%; height: auto; border: 5px solid #cbd5e1; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
-        .illustration-explanation { font-size: 16pt; color: #334155; text-align: left; background-color: #f1f5f9; padding: 20px; border-radius: 8px; margin-top: 15px; border-left: 6px solid #3b82f6; line-height: 1.7; }
+        .illustration-box { background-color: #ffffff; border: 3px solid #000000; border-radius: 12px; padding: 20px; margin: 40px 0; text-align: center; }
+        .illustration-img { max-width: 85%; height: auto; border: 5px solid #000000; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.2); }
+        .illustration-explanation { font-size: 18pt; color: #000000; font-weight: 600; text-align: left; background-color: #f8fafc; padding: 20px; border-radius: 8px; margin-top: 15px; border-left: 8px solid #000000; line-height: 1.8; }
         
         /* Gallery Layout Styles */
         .gallery-box { background-color: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; padding: 25px; margin: 45px 0; }
@@ -27,7 +27,7 @@
         .gallery-grid { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 20px; }
         .gallery-item { background: white; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px; text-align: center; width: 150px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         .gallery-item img { max-width: 100%; height: auto; border-radius: 4px; border: 1px solid #e2e8f0; }
-        .gallery-item-desc { font-size: 10pt; color: #64748b; margin-top: 8px; font-weight: bold; }
+        .gallery-item-desc { font-size: 10pt; color: #000000; font-weight: 600; margin-top: 8px; font-weight: bold; }
         
         @media (max-width: 600px) {
             .bio-box { flex-direction: column; text-align: center; }
@@ -48,7 +48,7 @@
     <p id="status">✅ Copied Successfully! Now go to your Google Doc and Press Ctrl+V</p>
 
     <div class="preview" id="contentToCopy">
-        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 16pt; line-height: 1.8; color: #1a202c; padding: 20px;">
+        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 18pt; line-height: 1.9; color: #000000; font-weight: 600; padding: 20px;">
             
             <!-- BIG HERO HEADER -->
             <h1 style="text-align: center; color: #1e3a8a; font-size: 40pt; font-weight: bold; border-bottom: 5px solid #3b82f6; padding-bottom: 30px; margin-bottom: 40px;">
@@ -122,7 +122,7 @@
                 <div class="bio-box" style="border-color: #84cc16; margin-bottom: 40px;">
                     <div class="bio-text">
                         <h3 style="margin: 0 0 10px 0; color: #3f6212; font-size: 20pt; font-weight: bold;">विश्वनाथ प्रताप सिंह (वी. पी. सिंह) (1931-2008)</h3>
-                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #334155;">
+                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #000000; font-weight: 600;">
                             <b>जीवन परिचय व योगदान:</b> भारत के आठवें प्रधानमंत्री (1989-1990) जिन्होंने राष्ट्रीय मोर्चा (National Front) गठबंधन सरकार का नेतृत्व किया। उन्होंने मंडल आयोग की सिफारिशों को लागू कर सरकारी नौकरियों में अन्य पिछड़े वर्गों (OBC) को 27% आरक्षण देने का ऐतिहासिक निर्णय लिया, जिसने देश की सामाजिक-राजनीतिक दिशा बदल दी।
                         </p>
                     </div>
@@ -148,7 +148,7 @@
                     </div>
                     <div class="bio-text">
                         <h3 style="margin: 0 0 10px 0; color: #1e3a8a; font-size: 20pt; font-weight: bold;">हरदनहल्ली डोड्डेगौड़ा देवेगौड़ा (1933)</h3>
-                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #334155;">
+                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #000000; font-weight: 600;">
                             <b>जीवन परिचय व योगदान:</b> कर्नाटक के पूर्व मुख्यमंत्री और भारत के ग्यारहवें प्रधानमंत्री (1996-1997)। उन्होंने संयुक्त मोर्चा (United Front) गठबंधन सरकार का नेतृत्व किया, जिसे कांग्रेस और वामपंथी दलों का बाहर से समर्थन प्राप्त था। उन्होंने क्षेत्रीय दलों को राष्ट्रीय स्तर पर एकजुट करने में महत्वपूर्ण भूमिका निभाई।
                         </p>
                     </div>
@@ -201,7 +201,7 @@
                     </div>
                     <div class="bio-text">
                         <h3 style="margin: 0 0 10px 0; color: #1e3a8a; font-size: 20pt; font-weight: bold;">बिंदेश्वरी प्रसाद मंडल (B. P. Mandal) (1918-1982)</h3>
-                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #334155;">
+                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #000000; font-weight: 600;">
                             <b>जीवन परिचय व योगदान:</b> बिहार के प्रमुख समाजवादी नेता और सांसद। वे 1968 में बिहार के मुख्यमंत्री भी रहे। उन्होंने द्वितीय पिछड़ा वर्ग आयोग (मंडल आयोग) की अध्यक्षता की, जिसने अन्य पिछड़े वर्गों (OBC) को 27% आरक्षण देने की सिफारिश की। यह सिफारिश 1990 में लागू की गई, जिसने भारतीय राजनीति को बदल दिया।
                         </p>
                     </div>
@@ -246,7 +246,7 @@
                         </div>
                         <div class="bio-text">
                             <h3 style="margin: 0 0 10px 0; color: #1e3a8a; font-size: 20pt; font-weight: bold;">कांशीराम (Kanshi Ram) (1934-2006)</h3>
-                            <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #334155;">
+                            <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #000000; font-weight: 600;">
                                 <b>जीवन परिचय व योगदान:</b> बहुजन समाज के अधिकारों के लिए संघर्ष करने वाले प्रमुख राजनेता और विचारक। उन्होंने 'बामसेफ' (BAMCEF), DS4 और अंततः 'बहुजन समाज पार्टी' (BSP) की स्थापना की। उन्होंने दलितों, पिछड़ों और अल्पसंख्यकों (बहुजन) को संगठित कर भारतीय राजनीति में दलित सशक्तीकरण की एक नई लहर पैदा की।
                             </p>
                         </div>
@@ -304,7 +304,7 @@
                 <div class="bio-box" style="border-color: #a7f3d0;">
                     <div class="bio-text">
                         <h3 style="margin: 0 0 10px 0; color: #065f46; font-size: 20pt; font-weight: bold;">पामुलापति वेंकट नरसिम्हा राव (1921-2004)</h3>
-                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #334155;">
+                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #000000; font-weight: 600;">
                             <b>जीवन परिचय व योगदान:</b> भारत के नववें प्रधानमंत्री (1991-1996) जिन्होंने राजीव गांधी की हत्या के बाद देश का नेतृत्व किया। उनके कार्यकाल में वित्त मंत्री डॉ. मनमोहन सिंह के साथ मिलकर ऐतिहासिक 'नई आर्थिक नीति' (LPG - उदारीकरण, निजीकरण, वैश्वीकरण) की शुरुआत की गई, जिसने भारतीय अर्थव्यवस्था का चेहरा बदल दिया।
                         </p>
                     </div>
@@ -357,7 +357,7 @@
                 <div class="bio-box">
                     <div class="bio-text">
                         <h3 style="margin: 0 0 10px 0; color: #1e3a8a; font-size: 20pt; font-weight: bold;">अटल बिहारी वाजपेयी (1924-2018)</h3>
-                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #334155;">
+                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #000000; font-weight: 600;">
                             <b>जीवन परिचय व योगदान:</b> भारतीय जनता पार्टी के सह-संस्थापक और भारत के तीन बार प्रधानमंत्री बनने वाले महान राजनेता। उनके नेतृत्व में राष्ट्रीय जनतांत्रिक गठबंधन (NDA) की पहली गैर-कांग्रेसी सरकार ने अपना 5 साल का कार्यकाल (1999-2004) पूरा किया। वे एक कुशल वक्ता, कवि और उदारवादी राष्ट्रवादी नेता थे।
                         </p>
                     </div>
@@ -381,7 +381,7 @@
                     </div>
                     <div class="bio-text">
                         <h3 style="margin: 0 0 10px 0; color: #1e3a8a; font-size: 20pt; font-weight: bold;">डॉ. मनमोहन सिंह (1932)</h3>
-                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #334155;">
+                        <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #000000; font-weight: 600;">
                             <b>जीवन परिचय व योगदान:</b> भारत के प्रसिद्ध अर्थशास्त्री, 1991 के ऐतिहासिक आर्थिक सुधारों के सूत्रधार वित्त मंत्री, और 2004 से 2014 तक देश के प्रधानमंत्री। उनके कार्यकाल (UPA-1 व UPA-2) में आरटीआई (RTI), मनरेगा (MGNREGA) और भारत-अमेरिका परमाणु समझौता जैसे ऐतिहासिक कार्य और जनकल्याणकारी कानून लागू किए गए।
                         </p>
                     </div>
