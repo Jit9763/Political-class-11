@@ -89,6 +89,14 @@
                 background: white !important;
             }
         }
+        /* Prevent images and containers from overflowing */
+        * {
+            box-sizing: border-box;
+        }
+        #notes-content img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -163,6 +171,12 @@
                     const content = doc.getElementById('contentToCopy');
                     
                     if (content) {
+                        // Append style tags from the fetched copy master to document.head
+                        const styleTags = doc.querySelectorAll('style');
+                        styleTags.forEach(style => {
+                            document.head.appendChild(style.cloneNode(true));
+                        });
+                        
                         document.getElementById('notes-content').innerHTML = content.innerHTML;
                         document.title = "नोट्स - चैप्टर " + id;
                     } else {
