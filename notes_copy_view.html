@@ -8,12 +8,12 @@
     <style>
         .page-container {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 15px auto;
             background: white;
             color: #1a202c;
-            padding: 60px;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
         }
         .nav-back {
             margin-bottom: 20px;
@@ -127,38 +127,12 @@
             color: #1e3a8a !important;
             font-weight: bold !important;
         }
-        /* Keep biography cards looking clean with normal font weights */
+        /* Hide all illustrations, cartoons, and biography cards to keep student notes compact */
         #notes-content .bio-box,
-        #notes-content .bio-text,
-        #notes-content .bio-text p,
-        #notes-content .bio-text h3 {
-            color: #1a202c !important;
-            background-color: #f8fafc !important;
-            border: 2px solid #e2e8f0 !important;
-        }
-        #notes-content .bio-text p {
-            font-weight: normal !important;
-            font-size: 14pt !important;
-        }
-        #notes-content .bio-text h3 {
-            font-weight: bold !important;
-            font-size: 18pt !important;
-        }
-        /* Keep cartoon/illustration boxes clean */
-        #notes-content .illustration-box {
-            border: 2px solid #cbd5e1 !important;
-            background-color: #ffffff !important;
-        }
+        #notes-content .illustration-box,
+        #notes-content img,
         #notes-content .illustration-explanation {
-            font-weight: normal !important;
-            font-size: 14pt !important;
-            color: #4b5563 !important;
-            border-left: 6px solid #3b82f6 !important;
-            background-color: #f3f4f6 !important;
-        }
-        #notes-content .illustration-explanation b {
-            font-weight: bold !important;
-            color: #1f2937 !important;
+            display: none !important;
         }
     </style>
 </head>
