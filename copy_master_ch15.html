@@ -21,10 +21,19 @@
         .illustration-img { max-width: 85%; height: auto; border: 5px solid #cbd5e1; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
         .illustration-explanation { font-size: 16pt; color: #334155; text-align: left; background-color: #f1f5f9; padding: 20px; border-radius: 8px; margin-top: 15px; border-left: 6px solid #3b82f6; line-height: 1.7; }
         
+        /* Gallery Layout Styles */
+        .gallery-box { background-color: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; padding: 25px; margin: 45px 0; }
+        .gallery-title { font-size: 20pt; font-weight: bold; color: #1e3a8a; margin-bottom: 20px; border-bottom: 3px solid #cbd5e1; padding-bottom: 10px; }
+        .gallery-grid { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 20px; }
+        .gallery-item { background: white; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px; text-align: center; width: 150px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .gallery-item img { max-width: 100%; height: auto; border-radius: 4px; border: 1px solid #e2e8f0; }
+        .gallery-item-desc { font-size: 10pt; color: #64748b; margin-top: 8px; font-weight: bold; }
+        
         @media (max-width: 600px) {
             .bio-box { flex-direction: column; text-align: center; }
             .bio-img-container { flex: 0 0 auto; }
             .illustration-img { max-width: 100%; }
+            .gallery-item { width: 45%; }
         }
     </style>
 </head>
@@ -50,16 +59,30 @@
             <!-- PART 1: Introduction & End of Congress System -->
             <div style="background-color: #eff6ff; padding: 40px; border-radius: 12px; margin-bottom: 40px; border: 2px solid #93c5fd;">
                 <h2 style="color: #1e40af; font-size: 28pt; margin-top: 0;">1. 1989 के बाद भारतीय राजनीति और कांग्रेस प्रणाली का अंत</h2>
+                
+                <!-- Selected Image: page_1_img_2.png -->
+                <div style="text-align: center; margin: 20px 0;">
+                    <img alt="NCERT Image" src="images/ch15/page_1_img_2.png" style="max-width: 50%; border: 3px solid #cbd5e1; border-radius: 8px;"/>
+                </div>
+
                 <p>प्रिय विद्यार्थियों, 1980 के दशक के अंतिम वर्षों में भारत ने कई बड़े राजनीतिक, आर्थिक और सामाजिक बदलाव देखे। 1989 का चुनाव भारतीय राजनीति में एक ऐतिहासिक विभाजक रेखा (Watershed moment) है।</p>
                 <p><b>कांग्रेस प्रणाली का अंत (End of Congress System):</b> 1984 में इंदिरा गांधी की हत्या के बाद हुए चुनावों में कांग्रेस ने रिकॉर्ड 415 सीटें जीती थीं। लेकिन 1989 के आम चुनावों में कांग्रेस केवल 197 सीटें हासिल कर पाई। हालांकि वह अभी भी सबसे बड़ी पार्टी थी, लेकिन बहुमत न होने के कारण उसने विपक्ष में बैठने का फैसला किया। इसके साथ ही आज़ादी के बाद से चली आ रही 'कांग्रेस प्रभुत्व की प्रणाली' का अंत हो गया।</p>
                 
                 <h3 style="color: #1e3a8a; font-size: 22pt;">गठबंधन राजनीति का उदय (Era of Coalitions):</h3>
                 <ul style="font-size: 18pt; line-height: 2.2;">
                     <li>1989 के बाद केंद्र में **'बहु-दलीय व्यवस्था'** (Multi-party system) का वास्तविक युग शुरू हुआ। अब किसी एक दल को पूर्ण बहुमत मिलना कठिन हो गया और क्षेत्रीय दल सरकार बनाने में 'किंगमेकर' बन गए।</li>
+                </ul>
+
+                <!-- Selected Image: page_2_img_2.png -->
+                <div style="text-align: center; margin: 20px 0;">
+                    <img alt="NCERT Image" src="images/ch15/page_2_img_2.png" style="max-width: 60%; border: 3px solid #cbd5e1; border-radius: 8px;"/>
+                </div>
+
+                <ul style="font-size: 18pt; line-height: 2.2;">
                     <li><b>राष्ट्रीय मोर्चा (National Front) सरकार:</b> 1989 में जनता दल और कुछ क्षेत्रीय दलों ने मिलकर राष्ट्रीय मोर्चा बनाया और **वी. पी. सिंह** प्रधानमंत्री बने। इस सरकार को **भारतीय जनता पार्टी (BJP)** और **वामपंथियों (Left)** ने बाहर से बिना सरकार में शामिल हुए समर्थन दिया।</li>
                 </ul>
 
-                <!-- LEADER BIO BOX 1: V. P. Singh (Text only box since no portrait exists in book) -->
+                <!-- LEADER BIO BOX 1: V. P. Singh (Text only) -->
                 <div class="bio-box">
                     <div class="bio-text">
                         <h3 style="margin: 0 0 10px 0; color: #1e3a8a; font-size: 20pt; font-weight: bold;">विश्वनाथ प्रताप सिंह (वी. पी. सिंह) (1931-2008)</h3>
@@ -96,7 +119,7 @@
                 </div>
 
                 <ul style="font-size: 18pt; line-height: 2.2;">
-                    <li><b>मंडल आयोग की सिफारिशें:</b> आयोग ने 1980 में अपनी रिपोर्ट सौंपी and सिफारिश की कि अनुसूचित जातियों (SC) और जनजातियों (ST) के अलावा समाज में एक बड़ा वर्ग **'अन्य पिछड़ा वर्ग' (OBC)** है, जो शैक्षणिक और सामाजिक रूप से पिछड़ा है। इन्हें केंद्र सरकार की नौकरियों और शिक्षण संस्थाओं में **27% आरक्षण** मिलना चाहिए।</li>
+                    <li><b>मंडल आयोग की सिफारिशें:</b> आयोग ने 1980 में अपनी रिपोर्ट सौंपी और सिफारिश की कि अनुसूचित जातियों (SC) और जनजातियों (ST) के अलावा समाज में एक बड़ा वर्ग **'अन्य पिछड़ा वर्ग' (OBC)** है, जो शैक्षणिक और सामाजिक रूप से पिछड़ा है। इन्हें केंद्र सरकार की नौकरियों और शिक्षण संस्थाओं में **27% आरक्षण** मिलना चाहिए।</li>
                     <li><b>सिफारिशों को लागू करना (August 1990):</b> राष्ट्रीय मोर्चा सरकार के प्रधानमंत्री वी. पी. सिंह ने संसद में इस सिफारिश को लागू करने की घोषणा की। इस घोषणा के बाद देश में विशेषकर उत्तर भारत में बड़े पैमाने पर हिंसक छात्र आंदोलन और विरोध प्रदर्शन हुए। इसे **'एंटी-मंडल आंदोलन'** कहा गया।</li>
                 </ul>
 
@@ -109,6 +132,21 @@
                     </div>
                 </div>
 
+                <!-- Gallery 1: Mandal Agitation News Clippings Gallery -->
+                <div class="gallery-box">
+                    <div class="gallery-title">📰 मंडल आयोग आंदोलन: प्रमुख समाचार पत्रों की सुर्खियां (News Headlines)</div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/ch15/page_10_img_1.png" alt="Headline 1"/><div class="gallery-item-desc">सुर्ख़ी 1</div></div>
+                        <div class="gallery-item"><img src="images/ch15/page_10_img_3.png" alt="Headline 3"/><div class="gallery-item-desc">सुर्ख़ी 2</div></div>
+                        <div class="gallery-item"><img src="images/ch15/page_10_img_4.png" alt="Headline 4"/><div class="gallery-item-desc">सुर्ख़ी 3</div></div>
+                        <div class="gallery-item"><img src="images/ch15/page_10_img_5.png" alt="Headline 5"/><div class="gallery-item-desc">सुर्ख़ी 4</div></div>
+                        <div class="gallery-item"><img src="images/ch15/page_10_img_6.png" alt="Headline 6"/><div class="gallery-item-desc">सुर्ख़ी 5</div></div>
+                    </div>
+                    <p style="font-size: 15pt; color: #475569; font-style: italic; margin-top: 10px; text-align: left; line-height: 1.6; background-color: #f1f5f9; padding: 15px; border-radius: 8px;">
+                        <b>चित्र गैलरी की व्याख्या:</b> यह समाचार पत्रों की विभिन्न कतरनें आरक्षण विरोधी आंदोलन की व्यापकता और समाज में इसके लेकर तीव्र प्रतिक्रिया को दर्शाती हैं। "Storm over additional quota" और हिंसक झड़पों के शीर्षकों से यह साफ़ पता चलता है कि उस समय आरक्षण एक अत्यंत संवेदनशील मुद्दा बन चुका था।
+                    </p>
+                </div>
+
                 <ul style="font-size: 18pt; line-height: 2.2;">
                     <li><b>इन्दिरा साहनी मामला (1992):</b> सर्वोच्च न्यायालय ने इस निर्णय को चुनौती देने वाली याचिकाओं पर सुनवाई करते हुए सरकार के फैसले को संवैधानिक रूप से सही माना, लेकिन यह शर्त जोड़ी कि पिछड़े वर्गों के संपन्न लोगों (क्रीमी लेयर) को आरक्षण का लाभ नहीं मिलेगा।</li>
                 </ul>
@@ -117,7 +155,7 @@
                     <h2 style="color: #b45309; font-size: 26pt; margin-top: 0;">2. दलित चेतना का उदय और बहुजन समाज पार्टी</h2>
                     <p>1980 के दशक में ही शोषित और वंचित जातियों के बीच एक मजबूत राजनीतिक चेतना का प्रसार हुआ।</p>
                     <ul style="font-size: 18pt; line-height: 2.2;">
-                        <li><b>बामсеफ (BAMCEF - 1978):</b> 'बैकवर्ड एंड माइनॉरिटी कम्युनिटीज एम्प्लॉइज फेडरेशन' का गठन हुआ, जिसने सरकारी कर्मचारियों के बीच सामाजिक न्याय की भावना को मजबूत किया।</li>
+                        <li><b>बामसेफ (BAMCEF - 1978):</b> 'बैकवर्ड एंड माइनॉरिटी कम्युनिटीज एम्प्लॉइज फेडरेशन' का गठन हुआ, जिसने सरकारी कर्मचारियों के बीच सामाजिक न्याय की भावना को मजबूत किया।</li>
                         <li><b>बहुजन समाज पार्टी (BSP) का गठन (1984):</b> **कांशीराम** के कुशल नेतृत्व में बसपा का गठन हुआ। इस पार्टी ने दलितों, पिछड़ों और अल्पसंख्यकों (जिन्हें कांशीराम ने 'बहुजन' कहा) के अधिकारों की बात की। बसपा ने उत्तर प्रदेश में कई बार गठबंधन सरकारें बनाईं, जिससे दलितों में गहरा राजनीतिक आत्मविश्वास जगा।</li>
                     </ul>
 
@@ -153,6 +191,11 @@
                     <li><b>वैश्वीकरण (Globalization - G):</b> आयात शुल्क घटाकर भारतीय अर्थव्यवस्था को विश्व बाजार से जोड़ा गया।</li>
                 </ul>
 
+                <!-- Selected Image: page_3_img_2.png -->
+                <div style="text-align: center; margin: 20px 0;">
+                    <img alt="NCERT Image" src="images/ch15/page_3_img_2.png" style="max-width: 50%; border: 3px solid #cbd5e1; border-radius: 8px;"/>
+                </div>
+
                 <!-- Illustration 2: LPG Reforms Cartoon -->
                 <div class="illustration-box">
                     <img src="images/ch15/economic_reform.png" alt="आर्थिक सुधार 1991 कार्टून" class="illustration-img"/>
@@ -162,7 +205,7 @@
                     </div>
                 </div>
 
-                <!-- LEADER BIO BOX 4: P.V. Narasimha Rao (Text only box since no portrait exists in book) -->
+                <!-- LEADER BIO BOX 4: P.V. Narasimha Rao (Text only) -->
                 <div class="bio-box" style="border-color: #a7f3d0;">
                     <div class="bio-text">
                         <h3 style="margin: 0 0 10px 0; color: #065f46; font-size: 20pt; font-weight: bold;">पामुलापति वेंकट नरसिम्हा राव (1921-2004)</h3>
@@ -175,7 +218,7 @@
 
             <br><hr style="border: 2px solid #e2e8f0;"><br>
 
-            <!-- PART 4: Ayodhya Dispute & Rise of Hindutva (Removed incorrect Integrity Pledge image) -->
+            <!-- PART 4: Ayodhya Dispute & Rise of Hindutva -->
             <div style="background-color: #fff7ed; padding: 40px; border-radius: 12px; margin-bottom: 40px; border: 2px solid #ffedd5;">
                 <h1 style="color: #c2410c; font-size: 34pt; margin-top: 0; border-bottom: 4px solid #ea580c; padding-bottom: 10px;">
                     भाग 4: अयोध्या विवाद और हिंदुत्व की राजनीति (Ayodhya Issue)
@@ -219,8 +262,32 @@
                     <div class="bio-text">
                         <h3 style="margin: 0 0 10px 0; color: #9f1239; font-size: 20pt; font-weight: bold;">हरदनहल्ली डोड्डेगौड़ा देवेगौड़ा (1933)</h3>
                         <p style="margin: 0; font-size: 16pt; line-height: 1.6; color: #334155;">
-                            <b>जीवन परिचय व योगदान:</b> कर्नाटक के पूर्व मुख्यमंत्री और भारत के ग्यारहवें प्रधानमंत्री (1996-1997)। उन्होंने संयुक्त मोर्चा (United Front) गठबंधन सरकार का नेतृत्व किया, जिसे कांग्रेस और वामपंथी दलों का बाहर से समर्थन प्राप्त था। उन्होंने क्षेत्रीय दलों को राष्ट्रीय स्तर पर एकजुट करने में महत्वपूर्ण भूमिका निभाई।
+                            <b>जीवन परिचय व योगदान:</b> पानाजी और कर्नाटक के पूर्व मुख्यमंत्री और भारत के ग्यारहवें प्रधानमंत्री (1996-1997)। उन्होंने संयुक्त मोर्चा (United Front) गठबंधन सरकार का नेतृत्व किया, जिसे कांग्रेस और वामपंथी दलों का बाहर से समर्थन प्राप्त था। उन्होंने क्षेत्रीय दलों को राष्ट्रीय स्तर पर एकजुट करने में महत्वपूर्ण भूमिका निभाई।
                         </p>
+                    </div>
+                </div>
+
+                <!-- Gallery 2: Coalition Era Prime Ministers Magazine Covers -->
+                <div class="gallery-box">
+                    <div class="gallery-title">📚 गठबंधन राजनीति: समकालीन राष्ट्रीय पत्रिकाओं के मुखपृष्ठ (Magazine Covers)</div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/ch15/page_4_img_2.png" alt="Cover 2"/><div class="gallery-item-desc">गठबंधन दौर 1</div></div>
+                        <div class="gallery-item"><img src="images/ch15/page_4_img_3.png" alt="Cover 3"/><div class="gallery-item-desc">गठबंधन दौर 2</div></div>
+                        <div class="gallery-item"><img src="images/ch15/page_4_img_4.png" alt="Deve Gowda Outlook"/><div class="gallery-item-desc">एच.डी. देवेगौड़ा</div></div>
+                        <div class="gallery-item"><img src="images/ch15/page_4_img_5.png" alt="Cover 5"/><div class="gallery-item-desc">गठबंधन दौर 3</div></div>
+                        <div class="gallery-item"><img src="images/ch15/page_4_img_6.png" alt="Manmohan Singh Cover"/><div class="gallery-item-desc">डॉ. मनमोहन सिंह</div></div>
+                    </div>
+                    <p style="font-size: 15pt; color: #475569; font-style: italic; margin-top: 10px; text-align: left; line-height: 1.6; background-color: #f1f5f9; padding: 15px; border-radius: 8px;">
+                        <b>चित्र गैलरी की व्याख्या:</b> यह चित्र 1990 के दशक की गठबंधन राजनीति के उतार-चढ़ाव और अस्थिरता को राष्ट्रीय पत्रिकाओं के कवर्स के ज़रिए दर्शाते हैं। इसमें विभिन्न गठबंधन प्रधानमंत्रियों को केंद्र सरकार चलाने की चुनौतियों से जूझते हुए दिखाया गया है, जो इस युग के राजनीतिक परिदृश्य को बयाँ करते हैं।
+                    </p>
+                </div>
+
+                <!-- Selected Image: page_8_img_1.png (PM List Timeline Chart) -->
+                <div class="illustration-box">
+                    <img src="images/ch15/page_8_img_1.png" alt="भारत के प्रधानमंत्रियों की सूची 1989 से वर्तमान तक" class="illustration-img"/>
+                    <div class="illustration-explanation">
+                        <b>चित्र की व्याख्या (PM List Chart Analysis):</b> 
+                        यह चार्ट 1989 से लेकर आज तक के विभिन्न प्रधानमंत्रियों और उनके गठबंधनों (राष्ट्रीय मोर्चा, संयुक्त मोर्चा, एनडीए, यूपीए) के कालक्रम को दर्शाता है। इससे यह साफ़ होता है कि कैसे देश में एक लंबी अस्थिरता के बाद क्रमशः एनडीए और यूपीए के रूप में द्वि-ध्रुवीय गठबंधन सरकारों की स्थिरता स्थापित हुई।
                     </div>
                 </div>
             </div>
@@ -237,7 +304,7 @@
                 <h2 style="color: #1e40af; font-size: 26pt; margin-top: 30px;">1. राष्ट्रीय जनतांत्रिक गठबंधन (NDA)</h2>
                 <p>भाजपा के नेतृत्व में बने इस गठबंधन (NDA) ने 1998 से 2004 तक देश पर शासन किया। प्रधानमंत्री **अटल बिहारी वाजपेयी** के कुशल नेतृत्व में इस सरकार ने पोखरण-II परमाणु परीक्षण, कारगिल विजय, और बुनियादी ढांचे (स्वर्णिम चतुर्भुज) के विकास के साथ-साथ गठबंधन धर्म का बखूबी पालन किया।</p>
 
-                <!-- LEADER BIO BOX 6: Atal Bihari Vajpayee (Text only box since no portrait exists in book) -->
+                <!-- LEADER BIO BOX 6: Atal Bihari Vajpayee (Text only) -->
                 <div class="bio-box">
                     <div class="bio-text">
                         <h3 style="margin: 0 0 10px 0; color: #1e3a8a; font-size: 20pt; font-weight: bold;">अटल बिहारी वाजपेयी (1924-2018)</h3>
@@ -299,16 +366,9 @@
 
                 <h2 style="color: #4c1d95; font-size: 26pt; margin-top: 30px;">2014 और 'एक-पार्टी बहुमत' की वापसी</h2>
                 <p>लगभग 30 वर्षों के गठबंधन युग के बाद, 2014 में अचानक एक नया बदलाव आया जब प्रधानमंत्री **नरेन्द्र मोदी** के नेतृत्व में भाजपा ने 282 सीटें जीतकर अपने दम पर बहुमत हासिल किया। इसके साथ ही एक नया राजनैतिक युग शुरू हुआ जिसे **'भाजपा प्रभुत्व की प्रणाली'** भी कहा जा सकता है। 2019 में भाजपा ने और बड़ी जीत (303 सीटें) हासिल की। यद्यपि भाजपा को पूर्ण बहुमत प्राप्त हुआ, लेकिन उसने गठबंधन धर्म का सम्मान करते हुए अपनी राष्ट्रीय जनतांत्रिक गठबंधन (NDA) सरकार को बनाए रखा।</p>
-
-                <!-- Illustration 6: Parliament Seat Evolution (Corrected with page_23_img_1.png) -->
-                <div class="illustration-box">
-                    <img src="images/ch15/page_23_img_1.png" alt="लोकसभा में सीटों की राजनैतिक संरचना का विकास" class="illustration-img"/>
-                    <div class="illustration-explanation">
-                        <b>चित्र की व्याख्या (Parliament Seat distribution evolution Analysis):</b> 
-                        यह तुलनात्मक रेखाचित्र लोकसभा की सीटों की दलीय स्थिति को ऐतिहासिक परिप्रेक्ष्य में दर्शाता है। यह स्पष्ट करता है कि कैसे 1989 के बाद का काल त्रिशंकु संसदों और राष्ट्रीय दलों के संकुचन का दौर था, तथा 2014 के बाद देश पुनः एक मजबूत बहुमत और केंद्रीय सत्ता के दौर में प्रवेश कर चुका है।
-                    </div>
-                </div>
             </div>
+
+            <br><hr style="border: 2px solid #e2e8f0;"><br>
 
             <!-- PART 8: Board Q&A Bank -->
             <div style="background-color: #fff1f2; padding: 40px; border-radius: 12px; margin-bottom: 40px; border: 2px solid #fecaca;">
@@ -386,6 +446,29 @@
                     <li>5. अयोध्या विवाद (6 दिसंबर 1992 विध्वंस) और 2019 के सुप्रीम कोर्ट के फैसले ने आस्था व न्याय के संतुलन का नया अध्याय लिखा।</li>
                     <li>6. 2014 में नरेन्द्र मोदी के नेतृत्व में भाजपा ने 30 साल बाद पहली बार 'पूर्ण बहुमत' की सरकार बनाकर नया इतिहास रचा।</li>
                 </ul>
+            </div>
+
+            <!-- PART 10: How to Cast a Vote (Placed at the very end of the page as requested) -->
+            <div style="background-color: #eff6ff; padding: 40px; border-radius: 12px; margin-top: 50px; border: 2px solid #93c5fd;">
+                <h2 style="color: #1e40af; font-size: 28pt; margin-top: 0; text-align: center;">🗳️ मतदान प्रक्रिया: वोट कैसे डालें? (How to Cast a Vote)</h2>
+                <p>स्वतंत्र और निष्पक्ष चुनाव (Free and Fair Elections) हमारे लोकतंत्र की सबसे बड़ी ताकत हैं। भारत का प्रत्येक नागरिक जो 18 वर्ष या उससे अधिक आयु का है, उसे मतदान का अधिकार प्राप्त है। मतदान केंद्रों पर यह प्रक्रिया किस प्रकार संपन्न होती है, इसे पुस्तक में दिए गए निम्नलिखित चार्ट के माध्यम से समझाया गया है:</p>
+
+                <!-- Illustration 6: How to Cast a Vote -->
+                <div class="illustration-box">
+                    <img src="images/ch15/page_23_img_1.png" alt="मतदान कैसे करें पोस्टर" class="illustration-img"/>
+                    <div class="illustration-explanation">
+                        <b>मतदान प्रक्रिया और पोस्टर की व्याख्या (How to Cast a Vote Poster Analysis):</b>
+                        यह पोस्टर मतदान केंद्र (Polling Station) के भीतर की चरणबद्ध प्रक्रिया को दिखाता है:
+                        <br/>
+                        1. **प्रथम मतदान अधिकारी:** मतदाता सूची में नाम और पहचान पत्र (Voter ID) की जाँच करता है।
+                        <br/>
+                        2. **द्वितीय मतदान अधिकारी:** मतदाता की बाएँ हाथ की तर्जनी उंगली पर **अमिट स्याही (Indelible Ink)** लगाता है, हस्ताक्षर लेता है और एक पर्ची जारी करता है।
+                        <br/>
+                        3. **तृतीय मतदान अधिकारी:** पर्ची लेकर मतदाता को वोट डालने के लिए वोटिंग कम्पार्टमेंट (Voting Compartment) की ओर जाने की अनुमति देता है।
+                        <br/>
+                        4. **EVM / VVPAT:** मतदाता वोटिंग मशीन (EVM) पर अपनी पसंद के उम्मीदवार के सामने का **नीला बटन दबाकर** वोट डालता है। वीवीपीएटी (VVPAT) मशीन की खिड़की में 7 सेकंड तक उस पर्ची को देखा जा सकता है जिसपर उम्मीदवार का नाम और चुनाव चिह्न अंकित होता है, जिससे वोट की पुष्टि होती है।
+                    </div>
+                </div>
             </div>
 
         </div>
