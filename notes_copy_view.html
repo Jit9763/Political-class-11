@@ -127,12 +127,69 @@
             color: #1e3a8a !important;
             font-weight: bold !important;
         }
-        /* Hide all illustrations, cartoons, and biography cards to keep student notes compact */
-        #notes-content .bio-box,
-        #notes-content .illustration-box,
-        #notes-content img,
+        /* Style biography boxes to be compact and space-saving */
+        #notes-content .bio-box {
+            display: flex !important;
+            padding: 15px !important;
+            margin: 15px 0 !important;
+            border: 2px solid #cbd5e1 !important;
+            background-color: #f8fafc !important;
+            border-radius: 8px !important;
+            gap: 15px !important;
+            align-items: center !important;
+        }
+        #notes-content .bio-img-container {
+            flex: 0 0 90px !important;
+        }
+        #notes-content .bio-img {
+            width: 80px !important;
+            border: 2px solid #000000 !important;
+        }
+        #notes-content .bio-text p {
+            font-size: 13pt !important;
+            line-height: 1.5 !important;
+            font-weight: normal !important;
+            color: #1a202c !important;
+        }
+        #notes-content .bio-text h3 {
+            font-size: 16pt !important;
+            font-weight: bold !important;
+            margin: 0 0 5px 0 !important;
+            color: #1e3a8a !important;
+        }
+
+        /* Style illustrations and cartoons to be visible but compact */
+        #notes-content .illustration-box {
+            display: block !important;
+            border: 2px solid #cbd5e1 !important;
+            background-color: #ffffff !important;
+            border-radius: 8px !important;
+            padding: 12px !important;
+            margin: 20px 0 !important;
+        }
+        #notes-content .illustration-img {
+            max-width: 75% !important;
+            border: 3px solid #000000 !important;
+            border-radius: 6px !important;
+        }
         #notes-content .illustration-explanation {
-            display: none !important;
+            display: block !important;
+            font-size: 12pt !important;
+            line-height: 1.5 !important;
+            color: #4b5563 !important;
+            padding: 10px !important;
+            margin-top: 8px !important;
+            border-left: 4px solid #3b82f6 !important;
+            background-color: #f3f4f6 !important;
+            border-radius: 4px !important;
+        }
+        #notes-content .illustration-explanation b {
+            font-weight: bold !important;
+            color: #1f2937 !important;
+        }
+        #notes-content img {
+            max-width: 100% !important;
+            height: auto !important;
         }
     </style>
 </head>
