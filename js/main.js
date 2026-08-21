@@ -1,33 +1,30 @@
 /**
- * Navigation and Dynamic Content Logic for Class 11 Political Science
+ * Navigation, Modal and Dynamic Content Logic for Political Science
  */
 
 const chapters = [
-  // Book 1: भारत का संविधान: सिद्धांत और व्यवहार
-  { id: 1, title: "संविधान: क्यों और कैसे?" },
-  { id: 2, title: "भारतीय संविधान में अधिकार" },
-  { id: 3, title: "चुनाव और प्रतिनिधित्व" },
-  { id: 4, title: "कार्यपालिका" },
-  { id: 5, title: "विधायिका" },
-  { id: 6, title: "न्यायपालिका" },
-  { id: 7, title: "संघवाद" },
-  { id: 8, title: "स्थानीय शासन" },
-  { id: 9, title: "संविधान एक जीवंत दस्तावेज" },
-  { id: 10, title: "संविधान का राजनीतिक दर्शन" },
-  // Book 2: राजनीतिक सिद्धांत
-  { id: 11, title: "राजनीतिक सिद्धांत: एक परिचय" },
-  { id: 12, title: "स्वतंत्रता" },
-  { id: 13, title: "समानता" },
-  { id: 14, title: "सामाजिक न्याय" },
-  { id: 15, title: "अधिकार" },
-  { id: 16, title: "नागरिकता" },
-  { id: 17, title: "राष्ट्रवाद" },
-  { id: 18, title: "धर्मनिरपेक्षता" }
+  // Book 1: समकालीन विश्व राजनीति
+  { id: 1, title: "दो ध्रुवीयता का अंत" },
+  { id: 2, title: "सत्ता के समकालीन केंद्र" },
+  { id: 3, title: "समकालीन दक्षिण एशिया" },
+  { id: 4, title: "अंतर्राष्ट्रीय संगठन" },
+  { id: 5, title: "समकालीन विश्व में सुरक्षा" },
+  { id: 6, title: "पर्यावरण और प्राकृतिक संसाधन" },
+  { id: 7, title: "वैश्वीकरण" },
+  // Book 2: स्वतंत्र भारत में राजनीति
+  { id: 8, title: "राष्ट्र-निर्माण की चुनौतियाँ" },
+  { id: 9, title: "एक दल के प्रभुत्व का दौर" },
+  { id: 10, title: "नियोजित विकास की राजनीति" },
+  { id: 11, title: "भारत के विदेश संबंध" },
+  { id: 12, title: "कांग्रेस प्रणाली: चुनौतियाँ और पुनर्स्थापना" },
+  { id: 13, title: "लोकतांत्रिक व्यवस्था का संकट" },
+  { id: 14, title: "क्षेत्रीय आकांक्षाएँ" },
+  { id: 15, title: "भारतीय राजनीति: नए बदलाव" }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
   renderChapters(chapters);
-
+  
   const searchBar = document.getElementById('searchBar');
   if(searchBar) {
     searchBar.addEventListener('input', (e) => {
@@ -40,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function renderChapters(data) {
   const grid = document.getElementById('chapter-grid');
-  if(!grid) return;
-
+  if(!grid) return; // If on notes_view.html, grid might not exist, that's fine.
+  
   grid.innerHTML = '';
 
   data.forEach(chapter => {
@@ -51,10 +48,32 @@ function renderChapters(data) {
       <div class="chapter-num">${String(chapter.id).padStart(2, '0')}</div>
       <h3 class="chapter-title">${chapter.title}</h3>
       <div class="chapter-actions" style="display:flex; gap:10px; flex-direction: column; margin-top:20px; position:relative; z-index:10;">
-        <button class="btn-primary" onclick="window.open('notes_html_view.html?id=${chapter.id}', '_blank')">📖 NOTES</button>
-        <button class="btn-primary" style="background: #059669; border-color: #047857;" onclick="window.open('qa_html_view.html?id=${chapter.id}', '_blank')">📝 Q&A</button>
+        <button class="btn-primary" onclick="window.open('notes_html_view.html?id=${chapter.id}', '_blank')">🌍 संपूर्ण नोट्स देखें (Premium HTML)</button>
+        <button class="btn-secondary" onclick="window.open('notes_copy_view.html?id=${chapter.id}', '_blank')" style="background: #3b82f6; border-color: #2563eb;">📝 नोट्स</button>
+        <button class="btn-secondary" onclick="window.open('qa_view.html?id=${chapter.id}', '_blank')" style="background: #8b5cf6; border-color: #7c3aed;">❓ प्रश्न-उत्तर (Master Q&A)</button>
       </div>
     `;
     grid.appendChild(card);
   });
 }
+
+
+// Google Docs Mapping Output
+// Placeholder for Political Science IDs. You can map real IDs later.
+const googleDocsDb = {
+  1: "1hYhC1msvAKvKHVSnvwGY9OgVvFOBTAsLQUqL5c31RNE",
+  2: "19xSt-WJ93KIim1DCuWYiUny-6wv5AXXr0FSdV5HslQU",
+  3: "1H3hdN0UertSnUctAEVUw9WHHYuKHGcWX-avxSlo6hyk",
+  4: "18HNdLmo2qy534M6riMmFIbLH0cL95W0aCkDX94twzLE",
+  5: "1iAxEwHhC9SvDT-KRUvp9UFNI376c_1_XFgr7jP_QrfI",
+  6: "162kl67LIAi6W8H2gdVhT0oKp4a6I5ulvL4YioHWFb_A",
+  7: "1EekWASRVb1Tr0ZRMUdQPgM3qMu4IU3heh4TDPE20MYw",
+  8: "1pLZ6-8bDeRHvFctm4HAsDO17puDweWqTWbF38uAyA9w",
+  9: "1QqiRghZsix4e8jGgKaU5_m4m3AI0GulR_rDJeeR4NPs",
+  10: "1xupgSfF_kZY7Qgx12NhVyNgpsNpYdrE3VeQcJ_A63BU",
+  11: "1HfJtvlT6V0MreB9UJ5XoYlrfhsWnCgAducSW0YnXwPA",
+  12: "1x3f7wele1kkvvSGbEhwug213Syg7ifIVytBLfTrUe5w",
+  13: "1NS5F78ot0NueuAqhgMFu0ECa6Gb1YLtBDhKUQfHYS_c",
+  14: "1sWyuhddMf_eeqvFh_6lJnXMJahA5jIRj62V96SaghQU",
+  15: "1VMG8Af6dn4RtZ7hOcF8NaaN3cmhi1IKm__QNQJQn4gE"
+};
