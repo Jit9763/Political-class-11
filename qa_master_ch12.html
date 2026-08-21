@@ -2,87 +2,485 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>अध्याय 12: स्वतंत्रता - 30+ Mega Q&A BANK</title>
+    <title>Chapter 12: स्वतंत्रता - Professional Edition (2026-27)</title>
     <style>
-        #control-header {
-            position: fixed; top: 0; left: 0; width: 100%; background-color: #1e3a8a; color: #ffffff;
-            padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 1000; font-family: 'Arial', sans-serif; box-sizing: border-box;
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 0; background-color: #f0f9ff; font-family: 'Segoe UI', Tahoma, sans-serif; color: #0c4a6e; }
+        
+        .home-btn {
+            position: fixed; bottom: 30px; right: 30px; z-index: 2000;
+            background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
+            color: white; width: 70px; height: 70px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem; text-decoration: none; box-shadow: 0 10px 25px rgba(3, 105, 161, 0.4);
+            border: 4px solid #ffffff; transition: transform 0.3s;
         }
-        #control-header h1 { margin: 0; font-size: 1.2rem; font-weight: 600; }
-        body { margin-top: 80px; background-color: #f0f9ff; }
-        ul, ol { padding-left: 60px !important; margin-left: 20px !important; }
-        li { padding-left: 15px; margin-bottom: 25px; text-align: justify; line-height: 2.2;}
-        .qa-container {
-            margin-bottom: 40px; padding: 40px; background-color: #ffffff;
-            border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            border: 3px solid #bfdbfe;
+        .home-btn:hover { transform: scale(1.1) rotate(15deg); }
+
+        .master-container {
+            max-width: 1250px; margin: 50px auto; padding: 60px; background-color: #ffffff;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1); border-radius: 40px; border-top: 15px solid #0ea5e9;
         }
+        
+        .header-box {
+            text-align: center; margin-bottom: 70px; padding: 75px; 
+            border: 10px double #0ea5e9; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); 
+            border-radius: 35px;
+        }
+        
+        .qa-block {
+            margin-bottom: 70px; padding: 45px; border: 4px solid #f1f5f9; 
+            border-radius: 30px; background-color: #ffffff;
+        }
+        .question-text { 
+            font-size: 25pt; font-weight: 900; color: #075985; line-height: 1.5; 
+            margin-bottom: 30px; border-bottom: 5px solid #e2e8f0; padding-bottom: 20px;
+        }
+        .options-list { font-size: 20pt; list-style-type: upper-alpha; padding-left: 70px; color: #334155; font-weight: 700; }
+        .options-list li { margin-bottom: 20px; }
+
         .answer-box {
-            background-color: #f1f5f9; padding: 25px; border-left: 8px solid #1d4ed8; 
-            margin-top: 15px; border-radius: 5px; font-size: 17pt;
+            margin-top: 35px; padding: 40px; border-radius: 25px; font-size: 20pt; line-height: 2.2;
+            background-color: #f8fafc; border-left: 15px solid #0ea5e9;
+        }
+        
+        /* Premium Highlights */
+        .hl-ocean { color: #0369a1; font-weight: 800; border-bottom: 2px solid #bae6fd; }
+        .hl-sky { color: #0ea5e9; font-weight: 800; }
+        .hl-rose { color: #be123c; font-weight: 800; }
+        .hl-slate { color: #475569; font-weight: 800; }
+        
+        .correct-ans { 
+            background: #e0f2fe; color: #0369a1; padding: 12px 25px; 
+            border-radius: 12px; font-weight: 900; display: inline-block; margin-bottom: 25px;
+        }
+        .explanation-title { 
+            display: block; font-size: 22pt; font-weight: 900; color: #0369a1; 
+            margin-top: 25px; border-bottom: 3px solid #cbd5e1; width: fit-content;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, #075985, #0ea5e9); color: white; 
+            padding: 25px; border-radius: 20px; text-align: center; 
+            font-size: 28pt; font-weight: 900; margin: 90px 0 50px 0;
+            box-shadow: 0 15px 30px rgba(14, 165, 233, 0.2);
         }
     </style>
-</head>
+head>
 <body>
+    <a href="index.html" class="home-btn" title="Home Screen">🏠</a>
+
     <div id="contentToCopy">
-        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 18pt; line-height: 2.1; color: #1e293b; max-width: 1400px; margin: auto; padding: 20px;">
+        <div class="master-container">
 
-            <!-- Header -->
-            <div style="text-align: center; margin-bottom: 60px; padding: 50px; border: 6px solid #1e3a8a; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-radius: 25px;">
-                <h1 style="color: #1e3a8a; font-size: 48pt; font-weight: 900; margin-bottom: 0px;">अध्याय 12: स्वतंत्रता</h1>
-                <h2 style="color: #2563eb; font-size: 28pt; font-weight: 700;">(30+ Mega Analytical Q&A Bank)</h2>
+            <div class="header-box">
+                <h1 style="color: #075985; font-size: 52pt; font-weight: 900; margin: 0;">अध्याय 12</h1>
+                <div style="font-size: 42pt; color: #0ea5e9; font-weight: 900; margin-top: 15px;">स्वतंत्रता (Freedom)</div>
+                <div style="height: 8px; width: 250px; background: #0ea5e9; margin: 35px auto; border-radius: 4px;"></div>
+                <p style="font-size: 22pt; color: #075985; font-weight: 900; text-transform: uppercase;">Academic Session 2026-27 | Professional Edition</p>
             </div>
 
-            <!-- MCQs -->
-            <div class="qa-container" style="border-left: 12px solid #1e3a8a;">
-                <h2 style="color: #ffffff; background-color: #1e3a8a; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग A: अवधारणात्मक बहुविकल्पीय प्रश्न (MCQs)</h2>
-                <div>
-                    <p style="font-weight: bold;">Q1. 'लॉन्ग वॉक टू फ्रीडम' (Long Walk to Freedom) किसकी आत्मकथा है?</p>
-                    <ol type="A">
-                        <li>मार्टिन लूथर किंग</li>
-                        <li>नेल्सन मंडेला (✓ उत्तर)</li>
-                        <li>महात्मा गांधी</li>
-                        <li>आंग सान सू की</li>
-                    </ol>
+            <div class="section-divider">भाग 1: वस्तुनिष्ठ प्रश्न (MCQs) - सेगमेंट 1</div>
+
+            <div class="qa-block">
+                <div class="question-text">Q1. स्वतंत्रता (Individual Liberty) का शाब्दिक अर्थ क्या है?</div>
+                <ol class="options-list">
+                    <li>बिना किसी रोक-टोक के कुछ भी करना</li>
+                    <li>बाहरी प्रतिबंधों का अभाव और आत्म-विकास का अवसर</li>
+                    <li>केवल अमीर होना</li>
+                    <li>जेल से बाहर होना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) प्रतिबंधों का अभाव व विकास का अवसर</span>
+                    <span class="explanation-title hl-ocean">संतुलित परिभाषा:</span>
+                    स्वतंत्रता का अर्थ केवल <span class="hl-sky">"बंधनों का न होना"</span> नहीं है, बल्कि ऐसी परिस्थितियों का होना है जहाँ व्यक्ति अपनी <span class="hl-rose">"क्षमताओं"</span> को पूरी तरह विकसित कर सके। यह मनमानी नहीं, बल्कि <span class="hl-slate">नियमबद्ध आज़ादी</span> है।
                 </div>
             </div>
 
-            <!-- Analytical Questions -->
-            <div class="qa-container" style="border-left: 12px solid #dc2626;">
-                <h2 style="color: #ffffff; background-color: #b91c1c; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग B: विश्लेषणात्मक लघु एवं दीर्घ प्रश्न</h2>
-                
-                <div>
-                    <h3 style="color: #991b1b; font-size: 26pt;">Q2. जे.एस. मिल के 'हानि सिद्धांत' (Harm Principle) का मुख्य आशय क्या है? उदाहरण सहित समझाइए।</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> मिल का मानना था कि राज्य को व्यक्ति के जीवन में तभी दखल देना चाहिए जब उसके काम से **'दूसरों को नुकसान'** (Other-Regarding Actions) पहुँच रहा हो। <br>
-                        - **तर्क:** यदि कोई व्यक्ति शराब पीकर अपने घर में सोता है, तो राज्य को उसे नहीं पकड़ना चाहिए (क्योंकि यह उसकी निजी स्वतंत्रता है)। लेकिन यदि वह शराब पीकर सड़क पर गाड़ी चलाता है, तो वह दूसरों की जान जोखिम में डाल रहा है। यहाँ राज्य उसे 'जेल' में डाल सकता है। <br>
-                        - **निष्कर्ष:** मिल के अनुसार, छोटी-मोटी शिकायतों पर आज़ादी नहीं छिननी चाहिए, केवल गंभीर क्षति होने पर ही कानूनी बल का प्रयोग होना चाहिए।
-                    </div>
-                </div>
-
-                <div style="margin-top: 50px;">
-                    <h3 style="color: #991b1b; font-size: 26pt;">Q3. 'नकारात्मक' (Negative) एवं 'सकारात्मक' (Positive) स्वतंत्रता के बीच मुख्य अंतर स्पष्ट करें।</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> <br>
-                        1. **नकारात्मक स्वतंत्रता:** इसका मतलब है "हस्तक्षेप का अभाव"। यह सवाल पूछती है— "वह क्षेत्र क्या है जहाँ व्यक्ति बिना किसी बाधा के जो चाहे कर सकता है?" (जैसे—क्या पहनना है)। <br>
-                        2. **सकारात्मक स्वतंत्रता:** इसका मतलब है "काबिलियत का होना"। यह सवाल पूछती है— "ऐसी परिस्थितियां कैसे बनाई जाएँ जहाँ व्यक्ति अपना विकास कर सके?" (जैसे—गरीब बच्चे को शिक्षा मिलना ताकि वह स्वतंत्र निर्णय ले सके)। सकारात्मक आज़ादी केवल 'पिंजरा खोल' देने की बात नहीं करती, बल्कि व्यक्ति को 'उड़ना' भी सिखाती है।
-                    </div>
+            <div class="qa-block">
+                <div class="question-text">Q2. 'लॉन्ग वॉक टू फ्रीडम' (Long Walk to Freedom) किसकी आत्मकथा है?</div>
+                <ol class="options-list">
+                    <li>महात्मा गांधी</li>
+                    <li>नेल्सन मंडेला (Nelson Mandela)</li>
+                    <li>आंग सान सू की</li>
+                    <li>मार्टिन लूथर किंग</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) नेल्सन मंडेला</span>
+                    <span class="explanation-title hl-sky">रंगभेद के विरुद्ध संघर्ष:</span>
+                    मंडेला ने दक्षिण अफ्रीका में <span class="hl-ocean">"रंगभेद"</span> (Apartheid) के खिलाफ 27 साल जेल में बिताए। उन्होंने दिखाया कि स्वतंत्रता का मूल्य बहुत भारी होता है और यह <span class="hl-rose">"पूरी मानवता"</span> के लिए अनिवार्य है।
                 </div>
             </div>
 
-            <div class="qa-container" style="border-left: 12px solid #ea580c;">
-                <h2 style="color: #ffffff; background-color: #c2410c; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग C: अभिव्यक्ति की स्वतंत्रता (Freedom of Expression)</strong></h2>
-                <div>
-                    <h3 style="color: #9a3412; font-size: 26pt;">Q4. वाल्टेयर का प्रसिद्ध कथन— "मैं आपकी बात से असहमत हो सकता हूँ, लेकिन इसे कहने के आपके अधिकार की रक्षा अपनी जान देकर भी करूँगा"—लोकतंत्र के लिए क्यों महत्वपूर्ण है?</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> यह लोकतंत्र की सबसे बुनियादी शर्त 'सहिष्णुता' (Tolerance) को रेखांकित करता है। <br>
-                        - **तर्क:** यदि हम केवल उन्हीं विचारों को सुनें जो हमें पसंद हैं, तो नए विचार कभी पैदा नहीं होंगे। <br>
-                        - **निष्कर्ष:** अभिव्यक्ति की स्वतंत्रता का अर्थ है 'गलत होने की आज़ादी' (Right to be wrong)। जब तक कोई हिंसा नहीं भड़काता, तब तक हर व्यक्ति को अपनी बात रखने का अधिकार मिलना चाहिए।
-                    </div>
+            <div class="qa-block">
+                <div class="question-text">Q3. 'स्वराज' (Swaraj) शब्द का अर्थ भारत के संदर्भ में क्या है?</div>
+                <ol class="options-list">
+                    <li>केवल विदेशी शासन से आज़ादी</li>
+                    <li>स्वशासन और आत्म-नियंत्रण (Self-rule & Self-mastery)</li>
+                    <li>अपनी मर्जी का मालिक होना</li>
+                    <li>कोई नियम न मानना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) स्वशासन और आत्म-नियंत्रण</span>
+                    <span class="explanation-title hl-ocean">गांधीवादी दर्शन:</span>
+                    गांधीजी के लिए <span class="hl-sky">"स्वराज"</span> का अर्थ केवल अंग्रेजों को भगाना नहीं था, बल्कि खुद पर शासन करना और अपने <span class="hl-rose">"भीतर के डर"</span> से मुक्त होना था। यह <span class="hl-slate">नैतिक स्वतंत्रता</span> का नाम है।
                 </div>
             </div>
 
+            <div class="qa-block">
+                <div class="question-text">Q4. 'हानि सिद्धांत' (Harm Principle) किसने प्रतिपादित किया था?</div>
+                <ol class="options-list">
+                    <li>जे.एस. मिल (J.S. Mill)</li>
+                    <li>टी.एच. ग्रीन</li>
+                    <li>रूसो</li>
+                    <li>हेरोल्ड लास्की</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) जे.एस. मिल</span>
+                    <span class="explanation-title hl-sky">स्वतंत्रता की सीमा:</span>
+                    मिल ने अपनी पुस्तक <span class="hl-ocean">'On Liberty'</span> में कहा कि राज्य व्यक्ति की स्वतंत्रता में तभी हस्तक्षेप कर सकता है जब उसके कार्य से <span class="hl-rose">"किसी दूसरे को हानि"</span> पहुँच रही हो। यह <span class="hl-slate">आधुनिक लोकतंत्र</span> का आधार है।
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question-text">Q5. 'नकारात्मक स्वतंत्रता' (Negative Liberty) का मुख्य तर्क क्या है?</div>
+                <ol class="options-list">
+                    <li>बुरी स्वतंत्रता</li>
+                    <li>हस्तक्षेप का अभाव (No interference) - व्यक्ति का अपना एक निजी क्षेत्र हो जहाँ कोई दखल न दे</li>
+                    <li>सरकार का पूर्ण नियंत्रण</li>
+                    <li>केवल भाषण देने की आज़ादी</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) हस्तक्षेप का अभाव</span>
+                    <span class="explanation-title hl-ocean">निजी स्वायत्तता:</span>
+                    यह संकल्पना इस प्रश्न का उत्तर देती है कि <span class="hl-sky">"वह क्षेत्र कितना बड़ा है जिसमें कोई दूसरा हस्तक्षेप न करे?"</span>। यह व्यक्ति को अपनी पसंद का <span class="hl-rose">"मालिक"</span> बनाने पर ज़ोर देती है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 2: 6-10 (MCQs) -->
+            <div style="background-color: #0ea5e9; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 2: सकारात्मकता व वैधानिक सीमाएँ</div>
+
+            <!-- Q6 -->
+            <div class="qa-block">
+                <div class="question-text">Q6. 'सकारात्मक स्वतंत्रता' (Positive Liberty) का मुख्य पक्ष क्या है?</div>
+                <ol class="options-list">
+                    <li>केवल नियमों को मानना</li>
+                    <li>समाज में ऐसी परिस्थितियों का निर्माण करना जिससे व्यक्ति अपनी क्षमता बढ़ा सके (जैसे शिक्षा, स्वास्थ्य)</li>
+                    <li>सरकार का विरोध करना</li>
+                    <li>पैसों की आज़ादी</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) क्षमता संवर्धन की परिस्थितियाँ</span>
+                    <span class="explanation-title hl-ocean">विकासोन्मुख दृष्टिकोण:</span>
+                    सकारात्मक स्वतंत्रता इस बात पर ज़ोर देती है कि <span class="hl-sky">"स्वतंत्र होने"</span> का कोई मतलब नहीं है यदि व्यक्ति <span class="hl-rose">भूखा या अशिक्षित</span> हो। यह व्यक्ति को <span class="hl-slate">आत्म-साक्षात्कार</span> (Self-realization) के योग्य बनाने का नाम है।
+                </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="qa-block">
+                <div class="question-text">Q7. जे.एस. मिल के अनुसार 'स्व-संबद्ध' (Self-regarding) कार्य वे हैं:</div>
+                <ol class="options-list">
+                    <li>जिनका प्रभाव केवल व्यक्ति के अपने ऊपर पड़ता है</li>
+                    <li>जिनका प्रभाव पूरे समाज पर पड़ता है</li>
+                    <li>जो गैर-कानूनी हैं</li>
+                    <li>जो दूसरों को नुकसान पहुँचाते हैं</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) केवल स्वयं पर प्रभाव</span>
+                    <span class="explanation-title hl-sky">निजी प्रभुत्व:</span>
+                    मिल का तर्क था कि <span class="hl-ocean">"अपने शरीर और दिमाग पर"</span> व्यक्ति संप्रभु है। ऐसे कार्यों में राज्य को <span class="hl-rose">हस्तक्षेप नहीं</span> करना चाहिए (जैसे क्या पहनना है या क्या खाना है)। यह <span class="hl-slate">आजादी का बुनियादी घेरा</span> है।
+                </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="qa-block">
+                <div class="question-text">Q8. क्या 'कानून' स्वतंत्रता का विरोधी है या उसे मज़बूत बनाता है?</div>
+                <ol class="options-list">
+                    <li>कानून स्वतंत्रता का दुश्मन है।</li>
+                    <li>उचित कानून स्वतंत्रता की रक्षा करते हैं और उसे सुरक्षित बनाते हैं (जहाँ कानून नहीं, वहाँ स्वतंत्रता नहीं)।</li>
+                    <li>दोनों का कोई संबंध नहीं है।</li>
+                    <li>कानून केवल सजा के लिए होते हैं।</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) कानून स्वतंत्रता का रक्षक है</span>
+                    <span class="explanation-title hl-ocean">सुरक्षा और सुव्यवस्था:</span>
+                    बिना कानून के, <span class="hl-sky">"जिसकी लाठी उसकी भैंस"</span> वाली स्थिति होगी जहाँ ताकतवर ही आज़ाद होगा। उचित <span class="hl-rose">संवैधानिक कानून</span> ही कमज़ोर व्यक्ति की <span class="hl-slate">आजादी की गारंटी</span> देते हैं।
+                </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="qa-block">
+                <div class="question-text">Q9. 'अभिव्यक्ति की स्वतंत्रता' (Freedom of Expression) का सबसे बड़ा लाभ क्या है?</div>
+                <ol class="options-list">
+                    <li>शोर मचाना</li>
+                    <li>सत्य की खोज में मदद मिलना और सरकार की आलोचना कर उसे सही रखना</li>
+                    <li>केवल अफ़वाहें फैलाना</li>
+                    <li>अपनी बात थोपना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) सत्य की खोज व लोकतांत्रिक नियंत्रण</span>
+                    <span class="explanation-title hl-sky">मानसिक जागृति:</span>
+                    यदि किसी गलत विचार को भी बोलने की आज़ादी होगी, तो समाज <span class="hl-ocean">"तर्क"</span> के माध्यम से सत्य जान सकेगा। यह लोकतंत्र की <span class="hl-rose">प्राणवायु</span> है, जिसके बिना शासन <span class="hl-slate">"तानाशाही"</span> बन जाता है।
+                </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="qa-block">
+                <div class="question-text">Q10. स्वतंत्रता पर 'प्रतिबंध' (Constraints) लगाने का उचित आधार क्या हो सकता है?</div>
+                <ol class="options-list">
+                    <li>दूसरे नागरिकों के अधिकारों और समाज की सुरक्षा को बचाना</li>
+                    <li>नेताओं की मर्जी</li>
+                    <li>धर्म की मर्जी</li>
+                    <li>पुलिस की मर्जी</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) दूसरों के अधिकारों व समाज की सुरक्षा</span>
+                    <span class="explanation-title hl-ocean">न्यायोचित सीमाएं:</span>
+                    एक व्यक्ति की स्वतंत्रता वहाँ खत्म होती है जहाँ से दूसरे की <span class="hl-sky">"नाक शुरू"</span> होती है। <span class="hl-rose">"सार्वजनिक व्यवस्था"</span> बनाए रखने के लिए प्रतिबंध <span class="hl-slate">"तर्कसंगत"</span> (Reasonable) होने चाहिए।
+                </div>
+            </div>
+
+            <!-- SEGMENT 3: 11-15 (Short/Assertion) -->
+            <div style="background-color: #0369a1; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 3: लघु उत्तरीय एवं कथन-कारण पृष्ठ</div>
+
+            <!-- Q11 -->
+            <div class="qa-block">
+                <div class="question-text">Q11. स्वतंत्रता पर 'प्रतिबंधों' (Constraints) की आवश्यकता क्यों होती है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ocean">सामाजिक अस्तित्व का आधार:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-sky">टकराव को रोकना:</span> समाज में अलग-अलग विचारों के लोग होते हैं। बिना किसी नियम और प्रतिबंध के, लोगों के बीच <span class="hl-rose">"हिंसक टकराव"</span> हो सकता है।</li>
+                        <li><span class="hl-slate">दूसरों की आजादी:</span> प्रतिबंध यह सुनिश्चित करते हैं कि किसी एक व्यक्ति की आज़ादी दूसरे के लिए <span class="hl-sky">"गुलामी"</span> न बन जाए।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="qa-block">
+                <div class="question-text">Q12. 'स्वराज' (Swaraj) और 'स्वतंत्रता' में क्या बुनियादी अंतर है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-sky">आत्म-संयम का विचार:</span>
+                    स्वतंत्रता का अर्थ अक्सर <span class="hl-ocean">"बाहरी बंधनों की मुक्ति"</span> होता है। लेकिन <span class="hl-rose">"स्वराज"</span> का अर्थ है—स्वयं का स्वयं पर शासन। इसमें व्यक्ति अपनी इंद्रियों और इच्छाओं पर <span class="hl-slate">नियंत्रण</span> रखता है। स्वराज एक उच्चतर <span class="hl-sky">नैतिक स्थिति</span> है जहाँ व्यक्ति न केवल आजाद है, बल्कि अपनी आजादी का प्रयोग <span class="hl-rose">"लोक कल्याण"</span> के लिए करता है।
+                </div>
+            </div>
+
+            <!-- Q13 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #0369a1;">
+                <div class="question-text">Q13. कथन (Assertion): अभिव्यक्ति की स्वतंत्रता पूर्ण (Absolute) नहीं हो सकती।<br>
+                कारण (Reason): यदि अभिव्यक्ति से समाज में नफ़रत या हिंसा फैलती है, तो उस पर रोक लगाना उचित है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-ocean">मर्यादित अधिकार:</span>
+                    लोकतंत्र में <span class="hl-sky">"गाली देने"</span> या <span class="hl-rose">"हिंसा भड़काने"</span> की आज़ादी नहीं दी जा सकती। स्वतंत्रता के साथ <span class="hl-slate">जिम्मेदारी</span> का जुड़ा होना अनिवार्य है।
+                </div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="qa-block" style="border-left: 12px solid #0369a1;">
+                <div class="question-text">Q14. कथन (Assertion): 'नकारात्मक स्वतंत्रता' हस्तक्षेप के अभाव पर ज़ोर देती है।<br>
+                कारण (Reason): यह मानती है कि व्यक्ति अपना भला-बुरा सोचने में सक्षम है और उसे अकेला छोड़ देना चाहिए।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-sky">व्यक्तिवाद:</span>
+                    यह दर्शन व्यक्ति को समाज की इकाई के बजाय एक <span class="hl-ocean">"स्वतंत्र टापू"</span> की तरह देखता है।
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="qa-block">
+                <div class="question-text">Q15. स्वतंत्रता और 'अनुशासन' (Discipline) के बीच क्या संबंध है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ocean">पूरक संबंध:</span>
+                    अनुशासन स्वतंत्रता का विरोधी नहीं, बल्कि उसका <span class="hl-sky">"आधार"</span> है। एक संगीतकार तभी वास्तव में संगीत बजाने के लिए <span class="hl-rose">"स्वतंत्र"</span> होता है जब उसने कठिन <span class="hl-slate">अनुशासन और अभ्यास</span> किया हो। बिना अनुशासन के स्वतंत्रता <span class="hl-ocean">"अराजकता"</span> (Chaos) बन जाती है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 4: 16-20 (Short/Assertion) -->
+            <div style="background-color: #0ea5e9; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 4: चुनाव, सेंसरशिप व डिजिटल चुनौतियां</div>
+
+            <!-- Q16 -->
+            <div class="qa-block">
+                <div class="question-text">Q16. 'पसंद की स्वतंत्रता' (Freedom of Choice) स्वतंत्रता के विचार के लिए क्यों केंद्रीय है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ocean">विवेकपूर्ण मनुष्य:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-sky">व्यक्तित्व का विकास:</span> जब व्यक्ति को अपनी पसंद का पेशा, जीवनसाथी या विचारधारा चुनने की आज़ादी होती है, तभी वह अपनी <span class="hl-rose">"अद्वितीय पहचान"</span> बना पाता है।</li>
+                        <li><span class="hl-slate">उत्तरदायित्व:</span> पसंद की आज़ादी व्यक्ति को उसके <span class="hl-blue">"कार्यों के परिणामों"</span> के प्रति ज़िम्मेदार बनाती है। बिना पसंद के व्यक्ति केवल एक <span class="hl-sky">"मशीन"</span> की तरह है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q17 -->
+            <div class="qa-block">
+                <div class="question-text">Q17. 'सेंसरशिप' (Censorship) क्या है और यह स्वतंत्रता के लिए खतरा कब बन जाती है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-sky">अभिव्यक्ति पर लगाम:</span>
+                    सेंसरशिप का अर्थ है—सरकार द्वारा किसी विचार, फिल्म या किताब के प्रकाशन पर <span class="hl-ocean">"रोक"</span> लगाना। यह तब खतरा बन जाती है जब इसका प्रयोग <span class="hl-rose">"तर्कसंगत कारणों"</span> (जैसे सुरक्षा) के बजाय <span class="hl-slate">"राजनीतिक विरोध"</span> को दबाने के लिए किया जाता है। एक स्वस्थ लोकतंत्र में विचारों के मुकाबले के लिए <span class="hl-sky">"अधिक विचार"</span> होने चाहिए, न कि पाबंदी।
+                </div>
+            </div>
+
+            <!-- Q18 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #0369a1;">
+                <div class="question-text">Q18. कथन (Assertion): डिजिटल दौर में सोशल मीडिया ने 'स्वतंत्रता' के लिए नई चुनौतियां खड़ी की हैं।<br>
+                कारण (Reason): एल्गोरिदम और 'फ़िल्टर बबल्स' अक्सर हमें केवल वही दिखाते हैं जो हम देखना चाहते हैं, जिससे हमारी सोच संकुचित हो जाती है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-ocean">बौद्धिक घेराबंदी:</span>
+                    तकनीक ने हमें आज़ादी तो दी है, लेकिन उसने हमें <span class="hl-sky">"वैचारिक जेलों"</span> में भी बंद कर दिया है। यह <span class="hl-rose">"स्वतंत्र सोच"</span> के लिए एक नया <span class="hl-slate">अदृश्य प्रतिबंध</span> है।
+                </div>
+            </div>
+
+            <!-- Q19 -->
+            <div class="qa-block" style="border-left: 12px solid #0369a1;">
+                <div class="question-text">Q19. कथन (Assertion): आर्थिक स्वतंत्रता के बिना राजनीतिक स्वतंत्रता 'खोखली' है।<br>
+                कारण (Reason): यदि कोई व्यक्ति अपनी बुनियादी ज़रूरतों (रोटी, कपड़ा, मकान) के लिए दूसरों पर निर्भर है, तो वह स्वतंत्र निर्णय नहीं ले सकता।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-sky">तात्विक स्वतंत्रता:</span>
+                    एक भूखा व्यक्ति अपने वोट का प्रयोग अपनी <span class="hl-ocean">"स्वतंत्र इच्छा"</span> से नहीं, बल्कि मजबूरी में कर सकता है। अतः <span class="hl-rose">"आर्थिक सुरक्षा"</span> आज़ादी की पहली शर्त है।
+                </div>
+            </div>
+
+            <!-- Q20 -->
+            <div class="qa-block">
+                <div class="question-text">Q20. 'अनुचित प्रतिबंध' (Unjustifiable Constraints) की पहचान कैसे की जाए?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ocean">तर्क की कसौटी:</span>
+                    कोई प्रतिबंध अनुचित है यदि:
+                    <ul style="list-style-type: circle; margin-top: 10px;">
+                        <li>वह केवल <span class="hl-sky">"सत्ता की सुविधा"</span> के लिए लगाया गया हो।</li>
+                        <li>उसका कोई <span class="hl-rose">"तार्किक आधार"</span> (Reasonable ground) न हो।</li>
+                        <li>वह समाज के <span class="hl-slate">"विकास को रोकता"</span> हो।</li>
+                    </ul>
+                    अदालतें ऐसे प्रतिबंधों को रद कर <span class="hl-sky">"स्वतंत्रता की रक्षा"</span> करती हैं।
+                </div>
+            </div>
+
+            <!-- SEGMENT 5: 21-25 (Long/Analytical) -->
+            <div style="background-color: #0c4a6e; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">भाग 3: दीर्घ उत्तरीय एवं विश्लेषणात्मक प्रश्न</div>
+
+            <!-- Q21 -->
+            <div class="qa-block">
+                <div class="question-text">Q21. 'नकारात्मक' और 'सकारात्मक' स्वतंत्रता के बीच अंतर को सविस्तार स्पष्ट कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ocean">स्वतंत्रता के दो आयाम:</span>
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-sky">नकारात्मक स्वतंत्रता:</span> यह "हस्तक्षेप के अभाव" पर टिकी है। इसका तर्क है कि व्यक्ति का एक ऐसा निजी क्षेत्र होना चाहिए जहाँ कोई भी (राज्य या समाज) दखल न दे। यह <span class="hl-rose">"व्यक्तिगत स्वायत्तता"</span> की सुरक्षा करती है।</li>
+                        <li><span class="hl-ocean">सकारात्मक स्वतंत्रता:</span> यह "क्षमता के विकास" पर टिकी है। यह मानती है कि व्यक्ति तभी स्वतंत्र है जब उसके पास अपनी पसंद पूरी करने के <span class="hl-blue">साधन</span> हों (जैसे शिक्षा और स्वास्थ्य)। यह <span class="hl-slate">"सामाजिक कल्याण"</span> और अवसर की समानता पर ज़ोर देती है।</li>
+                    </ul>
+                    निष्कर्षतः, नकारात्मक स्वतंत्रता <span class="hl-sky">"क्या नहीं करना चाहिए"</span> बताती है, जबकि सकारात्मक स्वतंत्रता <span class="hl-ocean">"क्या होना चाहिए"</span> पर ध्यान देती है।
+                </div>
+            </div>
+
+            <!-- Q22 -->
+            <div class="qa-block">
+                <div class="question-text">Q22. जे.एस. मिल के 'हानि सिद्धांत' (Harm Principle) का आलोचनात्मक विश्लेषण कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-sky">सिद्धांत का मूल:</span>
+                    मिल के अनुसार, राज्य किसी व्यक्ति की आज़ादी में केवल तभी दखल दे सकता है जब उसके कार्य से किसी <span class="hl-rose">"दूसरे को नुकसान"</span> पहुँच रहा हो।
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-ocean">सीमित हस्तक्षेप:</span> छोटे-मोटे नुकसान के लिए केवल सामाजिक निंदा काफी है, लेकिन <span class="hl-blue">"गंभीर हानि"</span> होने पर ही कानूनी प्रतिबंध लगाए जाने चाहिए।</li>
+                        <li><span class="hl-slate">आलोचना:</span> आज के जटिल समाज में यह तय करना कठिन है कि कौन सा कार्य केवल <span class="hl-sky">"निजी"</span> है। उदाहरण के लिए, प्रदूषण फैलाना या नशा करना समाज के अन्य लोगों को भी अप्रत्यक्ष रूप से <span class="hl-rose">नुकसान</span> पहुँचाता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q23 -->
+            <div class="qa-block">
+                <div class="question-text">Q23. "अभिव्यक्ति की स्वतंत्रता को समाज में क्यों सबसे बुनियादी अधिकार माना जाता है?"</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ocean">लोकतंत्र का आधार:</span>
+                    जे.एस. मिल ने अभिव्यक्ति की स्वतंत्रता के लिए चार तर्क दिए थे:
+                    <ul style="list-style-type: circle; margin-top: 10px;">
+                        <li><span class="hl-sky">सत्य की खोज:</span> कोई भी विचार पूरी तरह गलत नहीं होता, उसमें सत्य का अंश हो सकता है।</li>
+                        <li><span class="hl-blue">विचारों का संघर्ष:</span> सत्य तभी निखरता है जब वह <span class="hl-rose">विरोधी विचारों</span> से टकराता है।</li>
+                        <li><span class="hl-slate">विश्वास की मज़बूती:</span> जब हम अपने विचारों का बचाव करते हैं, तभी हम उन पर <span class="hl-ocean">गहराई</span> से विश्वास कर पाते हैं।</li>
+                        <li><span class="hl-sky">सामाजिक सुधार:</span> आलोचना के बिना समाज की <span class="hl-rose">बुराइयों</span> को पहचानना और बदलना असंभव है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q24 -->
+            <div class="qa-block">
+                <div class="question-text">Q24. आधुनिक लोकतंत्र में स्वतंत्रता पर 'तर्कसंगत प्रतिबंधों' की क्या भूमिका है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-sky">व्यवस्था और आज़ादी का मेल:</span>
+                    स्वतंत्रता <span class="hl-ocean">"लाइसेंस"</span> (निरंकुशता) नहीं है। एक सभ्य समाज में प्रतिबंध ज़रूरी हैं क्योंकि:
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-blue">राष्ट्रीय सुरक्षा:</span> देश की एकता और अखंडता को बचाना आवश्यक है।</li>
+                        <li><span class="hl-rose">सार्वजनिक व्यवस्था:</span> शांति बनाए रखने के लिए कुछ पाबंदियाँ ज़रूरी हैं।</li>
+                        <li><span class="hl-slate">न्यायालय की अवमानना:</span> संस्थाओं के सम्मान की रक्षा करना।</li>
+                    </ul>
+                    महत्वपूर्ण यह है कि ये प्रतिबंध <span class="hl-sky">"आवश्यकता से अधिक"</span> नहीं होने चाहिए और इनका आधार <span class="hl-ocean">अदालतों</span> में परखा जा सके।
+                </div>
+            </div>
+
+            <!-- Q25 -->
+            <div class="qa-block">
+                <div class="question-text">Q25. "स्वतंत्रता केवल एक राजनीतिक अधिकार नहीं, बल्कि एक मानवीय आवश्यकता है।" टिप्पणी कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ocean">दार्शनिक महत्व:</span>
+                    बिना स्वतंत्रता के मनुष्य अपनी <span class="hl-sky">"विवेकशीलता"</span> (Reasoning) का प्रयोग नहीं कर सकता। यह मनुष्य के <span class="hl-blue">"गरिमापूर्ण जीवन"</span> के लिए वैसी ही ज़रूरी है जैसे शरीर के लिए ऑक्सीजन। जब व्यक्ति स्वतंत्र होता है, तभी वह <span class="hl-rose">"नैतिक निर्णय"</span> ले पाता है और समाज के विकास में योगदान देता है। अतः स्वतंत्रता का अभाव व्यक्ति को एक <span class="hl-slate">"मानसिक और आध्यात्मिक"</span> जकड़न में डाल देता है, जो मानव सभ्यता के लिए घातक है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 6: 26-30 (Long/Analytical) -->
+            <div style="background-color: #0369a1; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">अंतिम खंड: आधुनिक संदर्भ एवं निष्कर्ष</div>
+
+            <!-- Q26 -->
+            <div class="qa-block">
+                <div class="question-text">Q26. 'प्राचीन' और 'आधुनिक' स्वतंत्रता के विचारों के बीच मुख्य अंतर क्या है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ocean">ऐतिहासिक विकास:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-sky">प्राचीन स्वतंत्रता (जैसे यूनान):</span> इसका अर्थ "सार्वजनिक शक्ति" में भाग लेना था। नागरिक राज्य के कार्यों में सीधे शामिल होकर स्वतंत्र महसूस करते थे।</li>
+                        <li><span class="hl-ocean">आधुनिक स्वतंत्रता:</span> इसका ध्यान "व्यक्तिगत स्वायत्तता" और <span class="hl-rose">"निजी क्षेत्र"</span> की रक्षा पर अधिक है। आज स्वतंत्रता का अर्थ राज्य से अपनी <span class="hl-blue">"निजी आज़ादी"</span> को बचाना है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q27 -->
+            <div class="qa-block">
+                <div class="question-text">Q27. डिजिटल युग में 'नेट न्यूट्रैलिटी' (Net Neutrality) स्वतंत्रता का मुद्दा क्यों बन गई है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-sky">सूचना की समानता:</span>
+                    नेट न्यूट्रैलिटी का अर्थ है कि इंटरनेट प्रदाता सभी डेटा को <span class="hl-ocean">"समान"</span> मानेंगे। यदि यह खत्म होती है, तो बड़ी कंपनियाँ सूचना के <span class="hl-rose">"प्रवाह को नियंत्रित"</span> कर सकती हैं। यह हमारी <span class="hl-blue">"जानने की स्वतंत्रता"</span> और <span class="hl-slate">अभिव्यक्ति</span> पर एक नया डिजिटल प्रतिबंध होगा। अतः स्वतंत्र इंटरनेट आज की <span class="hl-sky">"बुनियादी ज़रूरत"</span> है।
+                </div>
+            </div>
+
+            <!-- Q28 -->
+            <div class="qa-block">
+                <div class="question-text">Q28. "स्वतंत्रता केवल एक अधिकार नहीं, बल्कि एक कठिन जिम्मेदारी भी है।" स्पष्ट कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ocean">आज़ादी का बोझ:</span>
+                    जब हम स्वतंत्र होते हैं, तो हमें अपने हर <span class="hl-sky">"चुनाव"</span> (Choice) का परिणाम भुगतना पड़ता है। बहुत से लोग इस <span class="hl-rose">"ज़िम्मेदारी"</span> से डरते हैं और किसी तानाशाही को पसंद करने लगते हैं। सच्चा स्वतंत्र व्यक्ति वही है जो अपने <span class="hl-blue">"विवेक"</span> से निर्णय ले और उसकी <span class="hl-slate">नैतिक जिम्मेदारी</span> स्वीकार करे। स्वतंत्रता <span class="hl-ocean">"अकर्मण्यता"</span> नहीं, बल्कि <span class="hl-sky">सक्रिय भागीदारी</span> है।
+                </div>
+            </div>
+
+            <!-- Q29 -->
+            <div class="qa-block">
+                <div class="question-text">Q29. 21वीं सदी में व्यक्तिगत स्वतंत्रता पर लगने वाले 'नए अदृश्य प्रतिबंधों' का विश्लेषण कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-sky">नई चुनौतियाँ:</span>
+                    आज प्रतिबंध केवल जेल या कानून नहीं हैं, बल्कि:
+                    <ul style="list-style-type: circle; margin-top: 10px;">
+                        <li><span class="hl-ocean">डिजिटल निगरानी (Surveillance):</span> हमारी हर हरकत पर नज़र रखी जा रही है।</li>
+                        <li><span class="hl-rose">बाज़ार का दबाव:</span> विज्ञापन हमारी पसंद को <span class="hl-blue">"चोरी छुपे"</span> बदल रहे हैं।</li>
+                        <li><span class="hl-slate">सोशल मीडिया का 'भीड़ तंत्र':</span> अलग विचार रखने पर <span class="hl-sky">"ट्रॉलिंग"</span> का डर व्यक्ति को बोलने से रोकता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q30 -->
+            <div class="qa-block" style="background-color: #f0f9ff; border: 4px solid #0c4a6e;">
+                <div class="question-text">Q30. निष्कर्ष: स्वतंत्रता के विचार को जीवित रखने के लिए क्या आवश्यक है?</div>
+                <div class="answer-box" style="background-color: #ffffff; border-left-color: #0ea5e9;">
+                    <span class="explanation-title hl-ocean">अंतिम विचार:</span>
+                    स्वतंत्रता कोई ऐसी चीज़ नहीं है जिसे एक बार पाकर बैठ जाया जाए। इसे <span class="hl-sky">"हर दिन बचाना"</span> पड़ता है। इसके लिए नागरिकों में <span class="hl-blue">"सतर्कता"</span> (Vigilance) और <span class="hl-rose">"साहस"</span> का होना ज़रूरी है। 2026-27 के दौर में, जब दुनिया बदल रही है, हमें यह याद रखना होगा कि <span class="hl-slate">"आज़ादी का मूल्य सदैव जागरूक रहना है"</span>। 
+                    <br><br>
+                    <div style="text-align: center; color: #0c4a6e; font-weight: 900; letter-spacing: 2px;">**[अध्याय 12: स्वतंत्रता - मुकम्मल 30 प्रश्नों का प्रीमियम बैंक (2026-27)]**</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

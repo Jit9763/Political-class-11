@@ -2,74 +2,464 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>अध्याय 9: Q&A - संसद बनाम न्यायपालिका विशेष बैंक</title>
+    <title>Chapter 9: संविधान एक जीवंत दस्तावेज़ - Professional Edition (2026-27)</title>
     <style>
-        #control-header {
-            position: fixed; top: 0; left: 0; width: 100%; background-color: #4c1d95; color: #ffffff;
-            padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 1000; font-family: 'Arial', sans-serif; box-sizing: border-box;
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 0; background-color: #f5f3ff; font-family: 'Segoe UI', Tahoma, sans-serif; color: #1e1b4b; }
+        
+        .home-btn {
+            position: fixed; bottom: 30px; right: 30px; z-index: 2000;
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+            color: white; width: 70px; height: 70px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem; text-decoration: none; box-shadow: 0 10px 25px rgba(30, 27, 75, 0.4);
+            border: 4px solid #ffffff; transition: transform 0.3s;
         }
-        #control-header h1 { margin: 0; font-size: 1.2rem; font-weight: 600; }
-        body { margin-top: 80px; background-color: #f5f3ff; }
-        ul, ol { padding-left: 60px !important; margin-left: 20px !important; }
-        li { padding-left: 15px; margin-bottom: 25px; text-align: justify;}
-        .qa-container {
-            margin-bottom: 40px; padding: 40px; background-color: #ffffff;
-            border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            border: 3px solid #ddd6fe;
+        .home-btn:hover { transform: scale(1.1) rotate(15deg); }
+
+        .master-container {
+            max-width: 1250px; margin: 50px auto; padding: 60px; background-color: #ffffff;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12); border-radius: 40px; border-top: 15px solid #4338ca;
         }
+        
+        .header-box {
+            text-align: center; margin-bottom: 70px; padding: 75px; 
+            border: 10px double #4338ca; background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); 
+            border-radius: 35px;
+        }
+        
+        .qa-block {
+            margin-bottom: 70px; padding: 45px; border: 4px solid #f1f5f9; 
+            border-radius: 30px; background-color: #ffffff;
+        }
+        .question-text { 
+            font-size: 25pt; font-weight: 900; color: #1e1b4b; line-height: 1.5; 
+            margin-bottom: 30px; border-bottom: 5px solid #e2e8f0; padding-bottom: 20px;
+        }
+        .options-list { font-size: 20pt; list-style-type: upper-alpha; padding-left: 70px; color: #334155; font-weight: 700; }
+        .options-list li { margin-bottom: 20px; }
+
         .answer-box {
-            background-color: #f3f4f6; padding: 25px; border-left: 8px solid #5b21b6; 
-            margin-top: 15px; border-radius: 5px; font-size: 17pt;
+            margin-top: 35px; padding: 40px; border-radius: 25px; font-size: 20pt; line-height: 2.2;
+            background-color: #f8fafc; border-left: 15px solid #4338ca;
+        }
+        
+        /* Premium Highlights */
+        .hl-indigo { color: #4338ca; font-weight: 800; border-bottom: 2px solid #c7d2fe; }
+        .hl-bronze { color: #92400e; font-weight: 800; }
+        .hl-rose { color: #be123c; font-weight: 800; }
+        .hl-blue { color: #1d4ed8; font-weight: 800; }
+        
+        .correct-ans { 
+            background: #e0e7ff; color: #1e1b4b; padding: 12px 25px; 
+            border-radius: 12px; font-weight: 900; display: inline-block; margin-bottom: 25px;
+        }
+        .explanation-title { 
+            display: block; font-size: 22pt; font-weight: 900; color: #1e1b4b; 
+            margin-top: 25px; border-bottom: 3px solid #cbd5e1; width: fit-content;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, #1e1b4b, #4338ca); color: white; 
+            padding: 25px; border-radius: 20px; text-align: center; 
+            font-size: 28pt; font-weight: 900; margin: 90px 0 50px 0;
+            box-shadow: 0 15px 30px rgba(67, 56, 202, 0.2);
         }
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-btn" title="Home Screen">🏠</a>
+
     <div id="contentToCopy">
-        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 18pt; line-height: 2.1; color: #1e293b; max-width: 1400px; margin: auto; padding: 20px;">
+        <div class="master-container">
 
-            <!-- Header -->
-            <div style="text-align: center; margin-bottom: 60px; padding: 50px; border: 6px solid #5b21b6; background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%); border-radius: 25px;">
-                <h1 style="color: #4c1d95; font-size: 48pt; font-weight: 900; margin-bottom: 0px;">अध्याय 9: Q&A बैंक</h1>
-                <h2 style="color: #7c3aed; font-size: 28pt; font-weight: 700;">(संसद बनाम न्यायपालिका: विशेष विश्लेषणात्मक संस्करण)</h2>
+            <div class="header-box">
+                <h1 style="color: #1e1b4b; font-size: 52pt; font-weight: 900; margin: 0;">अध्याय 9</h1>
+                <div style="font-size: 42pt; color: #312e81; font-weight: 900; margin-top: 15px;">संविधान: एक जीवंत दस्तावेज़</div>
+                <div style="height: 8px; width: 250px; background: #4338ca; margin: 35px auto; border-radius: 4px;"></div>
+                <p style="font-size: 22pt; color: #1e1b4b; font-weight: 900; text-transform: uppercase;">Academic Session 2026-27 | Professional Edition</p>
             </div>
 
-            <!-- SECTION A -->
-            <div class="qa-container" style="border-left: 12px solid #5b21b6;">
-                <h2 style="color: #ffffff; background-color: #5b21b6; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग A: गहन विश्लेषणात्मक प्रश्न</h2>
-                
-                <div>
-                    <h3 style="color: #4c1d95; font-size: 26pt;">Q1. "नौवीं अनुसूची" (9th Schedule) के निर्माण का मुख्य 'कारण' क्या था और इसकी संवैधानिक 'उपयोगिता' क्या है?</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> <br>
-                        - **कारण:** 1951 में भू-सुधार कानूनों को ज़मींदारों की याचिकाओं (राइट टू प्रॉपर्टी) से बचाने के लिए इसकी ज़रूरत पड़ी। <br>
-                        - **प्रक्रिया:** पहला संशोधन करके एक ऐसा बक्सा बनाया गया जहाँ डाले गए कानून कोर्ट की समीक्षा से बाहर थे। <br>
-                        - **परिणाम:** इसने सामाजिक न्याय का रास्ता साफ किया, लेकिन भविष्य में सरकारों ने इसका दुरुपयोग अपनी सुविधा के कानूनों को छिपाने के लिए भी किया।
-                    </div>
-                </div>
+            <div class="section-divider">भाग 1: वस्तुनिष्ठ प्रश्न (MCQs) - सेगमेंट 1</div>
 
-                <div style="margin-top: 50px;">
-                    <h3 style="color: #4c1d95; font-size: 26pt;">Q2. 42वें और 44वें संशोधनों के बीच के "कारण-प्रभाव" (Cause and Effect) संबंधों की चर्चा करें।</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> <br>
-                        - **कारण (42वां):** प्रधानमंत्री इंदिरा गांधी संसद को न्यायपालिका से ऊपर रखना चाहती थीं। <br>
-                        - **प्रभाव (42वां):** कोर्ट की शक्तियां कम हुईं, लोकतंत्र केंद्र की मुट्ठी में आ गया। <br>
-                        - **कारण (44वां):** जनता पार्टी सरकार ने 1978 में लोकतंत्र की मर्यादा बचाने और आपातकाल के 'ज़हर' को काटने के लिए सुधार किए। <br>
-                        - **प्रभाव (44वां):** अनुच्छेद 352 के तहत 'आंतरिक अशांति' को 'सशस्त्र विद्रोह' में बदला गया, जिससे भविष्य में तानाशाही कठिन हो गई।
-                    </div>
+            <div class="qa-block">
+                <div class="question-text">Q1. भारतीय संविधान को 'जीवंत दस्तावेज़' (Living Document) क्यों कहा जाता है?</div>
+                <ol class="options-list">
+                    <li>क्योंकि इसमें चित्र बने हुए हैं।</li>
+                    <li>क्योंकि यह समय की ज़रूरतों के अनुसार बदला जा सकता है और विकास कर सकता है।</li>
+                    <li>क्योंकि यह कभी नहीं बदला जा सकता।</li>
+                    <li>क्योंकि यह केवल कागज़ पर जीवित है।</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) समय के अनुसार बदलने की क्षमता</span>
+                    <span class="explanation-title hl-indigo">गतिशील स्वभाव:</span>
+                    संविधान कोई <span class="hl-blue">"पवित्र जड़ पत्थर"</span> नहीं है, बल्कि यह समाज के साथ बढ़ने वाला अंग है। इसमें <span class="hl-rose">अनुच्छेद 368</span> के तहत संशोधन की शक्ति दी गई है, जो इसे हर युग के लिए <span class="hl-bronze">"प्रासंगिक"</span> (Relevant) बनाए रखती है।
                 </div>
             </div>
 
-            <div class="qa-container" style="border-left: 12px solid #db2777;">
-                <h2 style="color: #ffffff; background-color: #be123c; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग B: केस स्टडी आधारित प्रश्न</h2>
-                <div>
-                    <h3 style="color: #9d174d; font-size: 26pt;">Q3. कल्पना कीजिए कि संसद एक ऐसा कानून बनाती है जो चुनाव प्रक्रिया को ही खत्म कर दे। क्या न्यायपालिका इसे रोक सकती है? 'मूल ढांचा' सिद्धांत के आलोक में उत्तर दें।</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> हाँ, न्यायपालिका इसे निश्चित रूप से रोक सकती है। **केशवानंद भारती केस (1973)** के अनुसार, 'लोकतंत्र' और 'स्वतंत्र चुनाव' संविधान के **बुनियादी ढांचे** का हिस्सा हैं। संसद संशोधन की शक्ति का उपयोग करके लोकतंत्र को ही ख़त्म नहीं कर सकती। जुडिशियल रिव्यू के तहत कोर्ट इस कानून को 'अल्ट्रा वायर्स' (Null and Void) घोषित कर देगा।
-                    </div>
+            <div class="qa-block">
+                <div class="question-text">Q2. भारतीय संविधान में संशोधन की शक्ति किस अनुच्छेद (Article) में दी गई है?</div>
+                <ol class="options-list">
+                    <li>अनुच्छेद 370</li>
+                    <li>अनुच्छेद 368</li>
+                    <li>अनुच्छेद 356</li>
+                    <li>अनुच्छेद 12</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) अनुच्छेद 368</span>
+                    <span class="explanation-title hl-bronze">संवैधानिक प्रक्रिया:</span>
+                    यह अनुच्छेद <span class="hl-indigo">संसद</span> को संविधान के किसी भी हिस्से में संशोधन करने का अधिकार देता है। हालांकि, सुप्रीम कोर्ट के अनुसार संसद संविधान के <span class="hl-rose">"मूल ढांचे"</span> (Basic Structure) को नहीं बदल सकती।
                 </div>
             </div>
 
+            <div class="qa-block">
+                <div class="question-text">Q3. 'कठोर' और 'लचीले' संविधान का मिश्रण भारतीय संविधान में कैसे दिखता है?</div>
+                <ol class="options-list">
+                    <li>इसमें केवल कठोर नियम हैं।</li>
+                    <li>इसमें कुछ प्रावधान साधारण बहुमत से और कुछ विशेष बहुमत से बदले जा सकते हैं।</li>
+                    <li>यह केवल लचीला है।</li>
+                    <li>इसका कोई नियम नहीं है।</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) साधारण और विशेष बहुमत का मिश्रण</span>
+                    <span class="explanation-title hl-rose">संतुलन:</span>
+                    हमारा संविधान न तो अमेरिका की तरह बहुत <span class="hl-indigo">"कठोर"</span> है और न ही ब्रिटेन की तरह बहुत <span class="hl-blue">"लचीला"</span>। यह <span class="hl-bronze">"दोनों का मिश्रण"</span> (Synthesis) है, ताकि स्थिरता और प्रगति दोनों बनी रहे।
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question-text">Q4. अब तक भारतीय संविधान में लगभग कितने संशोधन किए जा चुके हैं?</div>
+                <ol class="options-list">
+                    <li>केवल 10</li>
+                    <li>100 से अधिक (105+)</li>
+                    <li>0</li>
+                    <li>500</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) 100 से अधिक</span>
+                    <span class="explanation-title hl-blue">निरंतर सुधार:</span>
+                    75 वर्षों में <span class="hl-indigo">100 से अधिक संशोधनों</span> का होना यह दर्शाता है कि भारतीय लोकतंत्र अपनी कमियों को दूर करने और नई चुनौतियों का सामना करने के लिए <span class="hl-rose">"सचेत"</span> है। GST और <span class="hl-bronze">महिला आरक्षण</span> इसके ताज़ा उदाहरण हैं।
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question-text">Q5. 'संविधान के मूल ढांचे' (Basic Structure) का सिद्धांत किस प्रसिद्ध वाद (Case) में दिया गया था?</div>
+                <ol class="options-list">
+                    <li>गोलकनाथ केस</li>
+                    <li>केशवानंद भारती केस (1973)</li>
+                    <li>मिनर्वा मिल्स केस</li>
+                    <li>शाह बानो केस</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) केशवानंद भारती केस</span>
+                    <span class="explanation-title hl-indigo">ऐतिहासिक फैसला:</span>
+                    सर्वोच्च न्यायालय ने ऐतिहासिक रूप से कहा कि संसद की <span class="hl-blue">"संशोधन शक्ति"</span> असीमित नहीं है। संविधान की कुछ आत्मा (जैसे लोकतंत्र, धर्मनिरपेक्षता, संघीय ढांचा) को कभी <span class="hl-rose">"मिटाया"</span> नहीं जा सकता।
+                </div>
+            </div>
+
+            <!-- SEGMENT 2: 6-10 (MCQs) -->
+            <div style="background-color: #312e81; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 2: संशोधन की विधियाँ व न्यायिक भूमिका</div>
+
+            <!-- Q6 -->
+            <div class="qa-block">
+                <div class="question-text">Q6. किस संविधान संशोधन को 'लघु संविधान' (Mini Constitution) कहा जाता है?</div>
+                <ol class="options-list">
+                    <li>42वां संशोधन (1976)</li>
+                    <li>44वां संशोधन (1978)</li>
+                    <li>73वां संशोधन (1992)</li>
+                    <li>101वां संशोधन</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) 42वां संशोधन</span>
+                    <span class="explanation-title hl-indigo">विस्तृत परिवर्तन:</span>
+                    आपातकाल के दौरान हुए इस संशोधन ने संविधान के <span class="hl-rose">"प्रस्तावना"</span> (Preamble) और मौलिक कर्तव्यों समेत कई हिस्सों में बड़े बदलाव किए। इसने समाजवादी और <span class="hl-blue">धर्मनिरपेक्ष</span> जैसे शब्दों को भी जोड़ा। यह भारतीय इतिहास का सबसे <span class="hl-bronze">"महत्वाकांक्षी"</span> संशोधन था।
+                </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="qa-block">
+                <div class="question-text">Q7. भारतीय संविधान में संशोधन की कितनी विधियाँ (Methods) अपनाई गई हैं?</div>
+                <ol class="options-list">
+                    <li>केवल एक (संसद द्वारा)</li>
+                    <li>तीन (साधारण, विशेष और विशेष + राज्यों का समर्थन)</li>
+                    <li>दो (केवल केंद्र और राज्य)</li>
+                    <li>पाँच विधियाँ</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) तीन विधियाँ</span>
+                    <span class="explanation-title hl-blue">प्रक्रियात्मक विविधता:</span>
+                    1. <span class="hl-indigo">साधारण बहुमत:</span> नए राज्यों का गठन। <br>
+                    2. <span class="hl-rose">विशेष बहुमत:</span> अधिकांश संशोधन (मौलिक अधिकार)। <br>
+                    3. <span class="hl-bronze">विशेष + आधे राज्यों की सहमति:</span> संघीय मामले (जैसे राष्ट्रपति का चुनाव)।
+                </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="qa-block">
+                <div class="question-text">Q8. न्यायपालिका संविधान को 'जीवंत' बनाने में कैसे मदद करती है?</div>
+                <ol class="options-list">
+                    <li>संविधान को फिर से लिखकर</li>
+                    <li>संविधान की नई व्यावहारिक 'व्याख्या' (Interpretation) के माध्यम से</li>
+                    <li>आदेश देकर</li>
+                    <li>संसद को बंद करके</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) व्याख्या के माध्यम से</span>
+                    <span class="explanation-title hl-indigo">न्यायिक विज़न:</span>
+                    संविधान के शब्द <span class="hl-blue">"स्थिर"</span> (Static) हो सकते हैं, लेकिन उनके अर्थ समय के साथ बदलते हैं। जैसे <span class="hl-rose">"व्यक्तिगत स्वतंत्रता"</span> के अर्थ में अब निजता का अधिकार (Privacy) भी शामिल है। यह कोर्ट की व्याख्या का ही परिणाम है।
+                </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="qa-block">
+                <div class="question-text">Q9. 44वें संविधान संशोधन (1978) का मुख्य उद्देश्य क्या था?</div>
+                <ol class="options-list">
+                    <li>चुनाव कराना</li>
+                    <li>42वें संशोधन द्वारा की गई ज्यादतियों को सुधारना (जैसे आंतरिक अशांति को हटाकर सशस्त्र विद्रोह करना)</li>
+                    <li>आपातकाल लगाना</li>
+                    <li>नए राज्य बनाना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) ज्यादतियों को सुधारना</span>
+                    <span class="explanation-title hl-bronze">सुधारात्मक कदम:</span>
+                    इस संशोधन ने यह सुनिश्चित किया कि भविष्य में <span class="hl-indigo">"नागरिक अधिकारों"</span> को आसानी से छीना न जा सके और राष्ट्रपति शासन का दुरूपयोग रोका जा सके। यह संघवाद को <span class="hl-blue">"पटरी पर लाने"</span> वाला संशोधन था।
+                </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="qa-block">
+                <div class="question-text">Q10. 'संवैधानिक मर्यादा' (Constitutional Conventions) का क्या अर्थ है?</div>
+                <ol class="options-list">
+                    <li>कठिन नियम</li>
+                    <li>ऐसी परंपराएं जो संविधान में लिखी नहीं हैं लेकिन उनका पालन किया जाता है (जैसे बहुमत दल के नेता को PM चुनना)</li>
+                    <li>पुराने कानून</li>
+                    <li>केवल चुनावी वादे</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) अलिखित परंपराएं</span>
+                    <span class="explanation-title hl-indigo">संविधान की आत्मा:</span>
+                    कोई भी दस्तावेज़ इतना <span class="hl-blue">"पूर्ण"</span> नहीं हो सकता कि उसमें हर छोटी बात लिखी हो। कुछ बातें <span class="hl-rose">"नैतिकता और परंपरा"</span> पर टिकी होती हैं, जो संविधान के पहिये को <span class="hl-bronze">"सहज"</span> (Smooth) बनाती हैं।
+                </div>
+            </div>
+
+            <!-- SEGMENT 3: 11-15 (Short/Assertion) -->
+            <div style="background-color: #1e1b4b; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 3: लघु उत्तरीय एवं कथन-कारण पृष्ठ</div>
+
+            <!-- Q11 -->
+            <div class="qa-block">
+                <div class="question-text">Q11. संविधान निर्माताओं ने भारतीय संविधान को बहुत अधिक 'कठोर' (Rigid) क्यों नहीं बनाया?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">भविष्योन्मुखी दूरदर्शिता:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">परिवर्तनशील समाज:</span> हमारे निर्माताओं को पता था कि आने वाली पीढ़ियों की ज़रूरतें और आकांक्षाएं बदलेंगी।</li>
+                        <li><span class="hl-rose">विकास की बाधा न बने:</span> यदि संविधान बहुत कठोर होता, तो वह देश की प्रगति और <span class="hl-bronze">"सामाजिक क्रांतियों"</span> के मार्ग में रुकावट बन सकता था। इसलिए इसमें <span class="hl-indigo">"लचीलेपन"</span> का तत्व रखा गया।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="qa-block">
+                <div class="question-text">Q12. संविधान में 'लगातार संशोधनों' का होना क्या उसकी विफलता को दर्शाता है? तर्क दीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-bronze">सफलता का प्रमाण:</span>
+                    नहीं, यह विफलता नहीं बल्कि <span class="hl-indigo">"सजीवता"</span> का प्रमाण है। 100 से अधिक संशोधन यह दिखाते हैं कि भारतीय संविधान समाज के साथ <span class="hl-blue">"कदम से कदम"</span> मिलाकर चल रहा है। यह बदलती परिस्थितियों (जैसे तकनीक, अर्थव्यवस्था और महिलाओं के अधिकार) के प्रति <span class="hl-rose">"संवेदनशील"</span> है।
+                </div>
+            </div>
+
+            <!-- Q13 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #4338ca;">
+                <div class="question-text">Q13. कथन (Assertion): भारतीय संविधान में अब तक हुए अधिकांश संशोधन 'लोकतांत्रिक प्रक्रिया' का परिणाम रहे हैं।<br>
+                कारण (Reason): संसद को यह शक्ति जन-आकांक्षाओं को पूरा करने के लिए दी गई है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-indigo">जन-इच्छा:</span>
+                    अधिकांश संशोधन जैसे <span class="hl-blue">73वां संशोधन</span> या <span class="hl-rose">शिक्षा का अधिकार</span> (86वां), जनता के लंबे संघर्ष और मांग का परिणाम रहे हैं।
+                </div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="qa-block" style="border-left: 12px solid #4338ca;">
+                <div class="question-text">Q14. कथन (Assertion): संविधान का 'मूल ढांचा' (Basic Structure) संशोधन शक्ति पर एक सीमा है।<br>
+                कारण (Reason): संविधान की मूल आत्मा को नष्ट करने का अधिकार संसद के पास नहीं है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-rose">संवैधानिक संतुलन:</span>
+                    यह सिद्धांत न्यायपालिका और विधायिका के बीच एक <span class="hl-blue">"लक्ष्मण रेखा"</span> खींचता है, ताकि संविधान का <span class="hl-bronze">"लोकतांत्रिक स्वरूप"</span> हमेशा सुरक्षित रहे।
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="qa-block">
+                <div class="question-text">Q15. 'संविधान संशोधन' और 'संविधान की नई व्याख्या' में क्या अंतर है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">परिवर्तन के दो तरीके:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">संशोधन:</span> यह संसद द्वारा संविधान की 'लिखावट' (Text) में बदलाव करना है (अनुच्छेद 368)।</li>
+                        <li><span class="hl-rose">नई व्याख्या:</span> यह कोर्ट द्वारा बिना किसी लिखावट बदले, उन शब्दों का नया और <span class="hl-bronze">"आधुनिक अर्थ"</span> निकालना है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SEGMENT 4: 16-20 (Short/Assertion) -->
+            <div style="background-color: #312e81; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 4: विधिक प्रक्रिया एवं संसदीय शक्ति</div>
+
+            <!-- Q16 -->
+            <div class="qa-block">
+                <div class="question-text">Q16. संविधान संशोधन विधेयक पर 'राष्ट्रपति' की क्या भूमिका होती है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">विशेष संवैधानिक स्थिति:</span>
+                    जब संसद के दोनों सदनों द्वारा पारित संविधान संशोधन विधेयक राष्ट्रपति के पास जाता है, तो राष्ट्रपति उस पर <span class="hl-blue">"अपनी सहमति देने के लिए बाध्य"</span> हैं। वे इसे न तो वापस भेज सकते हैं और न ही अपने पास रोक सकते हैं (24वां संशोधन, 1971)। यह <span class="hl-rose">"संसदीय संप्रभुता"</span> का एक रूप है।
+                </div>
+            </div>
+
+            <!-- Q17 -->
+            <div class="qa-block">
+                <div class="question-text">Q17. संसद की 'संशोधन शक्ति' (Amending Power) और 'सामान्य कानून शक्ति' में क्या अंतर है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-bronze">विधिक पदानुक्रम:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">सामान्य कानून:</span> यह साधारण बहुमत से बनते हैं और संविधान के दायरे में होते हैं।</li>
+                        <li><span class="hl-indigo">संशोधन शक्ति:</span> यह <span class="hl-rose">"Constituent Power"</span> (संविधान निर्माण की शक्ति) जैसा है, जिसके लिए विशेष बहुमत की आवश्यकता होती है और यह स्वयं संविधान की भाषा को बदल सकता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q18 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #1e1b4b;">
+                <div class="question-text">Q18. कथन (Assertion): भारतीय संविधान अमेरिकी संविधान की तुलना में अधिक लचीला है।<br>
+                कारण (Reason): अमेरिकी संविधान में अब तक केवल 27 संशोधन हुए हैं, जबकि भारत में 100 से अधिक।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-indigo">तुलनात्मक कठोरता:</span>
+                    अमेरिका में संशोधन प्रक्रिया इतनी <span class="hl-blue">"जटिल"</span> है कि वहाँ संविधान का बदलना बहुत कठिन है। भारत ने बीच का रास्ता चुना है ताकि वह <span class="hl-rose">"स्थिरता"</span> और <span class="hl-bronze">"गतिशीलता"</span> के बीच संतुलन रख सके।
+                </div>
+            </div>
+
+            <!-- Q19 -->
+            <div class="qa-block" style="border-left: 12px solid #1e1b4b;">
+                <div class="question-text">Q19. कथन (Assertion): 'संविधान का जीवित रहना' केवल लिखित शब्दों पर निर्भर नहीं करता।<br>
+                कारण (Reason): यह उन लोगों की राजनीतिक और नैतिक प्रतिबद्धता पर भी निर्भर करता है जो इसे संचालित करते हैं।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-rose">संवैधानिक नैतिकता:</span>
+                    यदि शासन करने वाले लोग संविधान की <span class="hl-blue">"आत्मा"</span> का सम्मान नहीं करेंगे, तो सर्वोत्तम लिखित संविधान भी विफल हो सकता है। यह डॉ. अंबेडकर का प्रमुख विचार था।
+                </div>
+            </div>
+
+            <!-- Q20 -->
+            <div class="qa-block">
+                <div class="question-text">Q20. 'राजनीतिक सर्वसम्मति' (Political Consensus) संशोधन प्रक्रिया में क्यों महत्वपूर्ण है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-bronze">लोकतांत्रिक वैधता:</span>
+                    संविधान में बदलाव केवल <span class="hl-blue">"संख्या बल"</span> (Numbers) पर नहीं, बल्कि व्यापक राजनीतिक सहमति पर आधारित होना चाहिए। इससे संशोधन को <span class="hl-indigo">"राष्ट्रीय स्वीकार्यता"</span> मिलती है और भविष्य में उसे चुनौती मिलने की संभावना कम हो जाती है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 5: 21-25 (Long/Analytical) -->
+            <div style="background-color: #1e1b4b; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">भाग 3: दीर्घ उत्तरीय एवं विश्लेषणात्मक प्रश्न</div>
+
+            <!-- Q21 -->
+            <div class="qa-block">
+                <div class="question-text">Q21. भारतीय संविधान में 'संशोधन की विभिन्न विधियों' का सविस्तार वर्णन कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">संशोधन प्रक्रिया (अनुच्छेद 368):</span>
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-blue">साधारण बहुमत:</span> संसद के सामान्य कानून की तरह (जैसे राज्यों की सीमा बदलना)।</li>
+                        <li><span class="hl-rose">विशेष बहुमत:</span> प्रत्येक सदन की कुल संख्या का बहुमत और उपस्थित व मतदान करने वालों का दो-तिहाई बहुमत। (जैसे मौलिक अधिकार)।</li>
+                        <li><span class="hl-bronze">विशेष बहुमत + आधे राज्यों का समर्थन:</span> संघीय ढांचे से जुड़े मुद्दों पर राज्यों की सहमति अनिवार्य है (जैसे GST, सुप्रीम कोर्ट की शक्तियाँ)।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q22 -->
+            <div class="qa-block">
+                <div class="question-text">Q22. "संविधान का जीवंत होना उसके लचीलेपन और कठोरता के संतुलन पर निर्भर करता है।" स्पष्ट कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-bronze">संवैधानिक संतुलन:</span>
+                    यदि संविधान बहुत <span class="hl-blue">लचीला</span> होता, तो सत्ताधारी दल अपनी मर्जी से इसे बार-बार बदल देते, जिससे देश में <span class="hl-rose">"अस्थिरता"</span> पैदा होती। यदि यह बहुत <span class="hl-indigo">कठोर</span> होता, तो पुरानी पड़ चुकी सामाजिक मान्यताओं को बदलना मुश्किल होता और समाज हिंसक क्रांतियों की ओर बढ़ सकता था। भारत ने बीच का रास्ता अपनाया, जिससे संविधान <span class="hl-bronze">"न तो जड़ है और न ही बहुत तरल"</span>। यही इसकी जीवंतता का रहस्य है।
+                </div>
+            </div>
+
+            <!-- Q23 -->
+            <div class="qa-block">
+                <div class="question-text">Q23. सर्वोच्च न्यायालय द्वारा प्रतिपादित 'मूल ढांचे' (Basic Structure) के सिद्धांत का महत्व समझाइए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">अंतिम रक्षा तंत्र:</span>
+                    1973 के केशवानंद भारती फैसले में कोर्ट ने माना कि संसद संविधान को बदल तो सकती है, लेकिन वह उसके <span class="hl-blue">"बुनियादी स्तंभों"</span> को नहीं ढहा सकती।
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-rose">महत्व:</span> इससे लोकतंत्र, धर्मनिरपेक्षता और <span class="hl-bronze">"विधि का शासन"</span> हमेशा के लिए सुरक्षित हो गए।</li>
+                        <li>यह सिद्धांत यह सुनिश्चित करता है कि संसद <span class="hl-indigo">"संविधान"</span> का निर्माण तो कर सकती है, लेकिन वह उसकी <span class="hl-rose">"पहचान"</span> नहीं बदल सकती।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q24 -->
+            <div class="qa-block">
+                <div class="question-text">Q24. 42वें और 44वें संविधान संशोधनों के राजनीतिक निहितार्थों का विश्लेषण कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-rose">राजनीतिक संघर्ष का प्रतिबिंब:</span>
+                    <span class="hl-blue">42वां संशोधन (1976)</span> उस समय की सरकार की <span class="hl-indigo">"सर्वोच्च शक्ति"</span> की आकांक्षा का प्रतीक था, जिसने कार्यपालिका को बहुत शक्तिशाली बना दिया। इसके जवाब में, <span class="hl-bronze">44वां संशोधन (1978)</span> लाया गया जिसने उन परिवर्तनों को रद किया जो लोकतांत्रिक मूल्यों के खिलाफ थे। ये दोनों संशोधन यह दिखाते हैं कि भारतीय संविधान ने <span class="hl-rose">"आपातकाल"</span> जैसे कठिन समय से भी सबक सीखा और खुद को और अधिक मज़बूत बनाया।
+                </div>
+            </div>
+
+            <!-- Q25 -->
+            <div class="qa-block">
+                <div class="question-text">Q25. "न्यायपालिका ने संविधान को एक 'जीवंत दस्तावेज़' बनाए रखने में महत्वपूर्ण भूमिका निभाई है।" टिप्पणी कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">व्याख्याकार की भूमिका:</span>
+                    संसद संशोधनों के माध्यम से संविधान का <span class="hl-blue">"शरीर"</span> बदलती है, लेकिन न्यायपालिका अपनी व्याख्याओं से उसकी <span class="hl-rose">"आत्मा"</span> को जीवंत रखती है। कोर्ट ने समय-समय पर अधिकारों की नई व्याख्या की (जैसे स्वच्छ पर्यावरण का अधिकार, निजता का अधिकार)। यदि न्यायपालिका <span class="hl-bronze">"सक्रिय"</span> न होती, तो संविधान के कई शब्द आज <span class="hl-indigo">"अप्रासंगिक"</span> और मृत हो चुके होते।
+                </div>
+            </div>
+
+            <!-- SEGMENT 6: 26-30 (Long/Analytical) -->
+            <div style="background-color: #312e81; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">अंतिम खंड: तुलनात्मक अध्ययन एवं निष्कर्ष</div>
+
+            <!-- Q26 -->
+            <div class="qa-block">
+                <div class="question-text">Q26. भारतीय संविधान और दक्षिण अफ्रीका के संविधान (1996) के बीच 'लचीलेपन' की तुलना कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">तुलनात्मक विश्लेषण:</span>
+                    दक्षिण अफ्रीका का संविधान दुनिया के सबसे <span class="hl-blue">"आधुनिक"</span> संविधानों में से एक है। भारत की तरह, वहाँ भी संविधान को <span class="hl-rose">"अंतिम शब्द"</span> नहीं बल्कि एक विकासशील दस्तावेज़ माना गया है। वहाँ भी अधिकारों की सुरक्षा के लिए विशेष बहुमत की व्यवस्था है। दोनों देशों का अनुभव यह दिखाता है कि लोकतंत्र में संविधान को समाज की <span class="hl-bronze">"नब्ज"</span> के साथ धड़कना चाहिए।
+                </div>
+            </div>
+
+            <!-- Q27 -->
+            <div class="qa-block">
+                <div class="question-text">Q27. संविधान की '9वीं अनुसूची' (9th Schedule) क्या है और यह क्यों विवादों में रही है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-bronze">कानूनी कवच:</span>
+                    9वीं अनुसूची को प्रथम संशोधन (1951) द्वारा बनाया गया था ताकि कुछ कानूनों (जैसे भूमि सुधार) को <span class="hl-blue">"न्यायिक समीक्षा"</span> से सुरक्षित रखा जा सके। लेकिन धीरे-धीरे सरकारों ने इसका दुरुपयोग राजनीतिक उद्देश्यों के लिए करना शुरू किया। अंततः 2007 के <span class="hl-rose">"आई.आर. कोएल्हो केस"</span> में सुप्रीम कोर्ट ने स्पष्ट किया कि 9वीं अनुसूची के कानून भी <span class="hl-indigo">"मूल ढांचे"</span> का उल्लंघन नहीं कर सकते।
+                </div>
+            </div>
+
+            <!-- Q28 -->
+            <div class="qa-block">
+                <div class="question-text">Q28. "इतने वर्षों और इतने संशोधनों के बाद भी भारतीय संविधान की मूल पहचान नहीं बदली।" इसके पीछे क्या कारण हैं?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">स्थिरता के आधार:</span>
+                    इसके पीछे प्रमुख कारण <span class="hl-blue">न्यायपालिका की सक्रियता</span>, <span class="hl-rose">जागरूक नागरिक समाज</span> और <span class="hl-bronze">"लोकतांत्रिक सर्वसम्मति"</span> है। संशोधनों ने केवल बाहरी ढांचे को बदला है, लेकिन जो नींव बाबा साहेब और नेहरू-पटेल जैसे महान नायकों ने रखी थी, वह आज भी उतनी ही मज़बूत है। जनता ने भी संविधान को केवल कानून नहीं, बल्कि अपने <span class="hl-indigo">"अस्तित्व का आधार"</span> मान लिया है।
+                </div>
+            </div>
+
+            <!-- Q29 -->
+            <div class="qa-block">
+                <div class="question-text">Q29. 100 से अधिक संशोधनों ने 'आम भारतीय नागरिक' के जीवन को कैसे प्रभावित किया है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-rose">व्यावहारिक प्रभाव:</span>
+                    संशोधनों के कारण ही आज एक आम नागरिक को <span class="hl-blue">सूचना का अधिकार</span> (RTI), <span class="hl-indigo">शिक्षा का अधिकार</span> और पंचायतों के माध्यम से स्थानीय स्तर पर <span class="hl-bronze">"अपनी आवाज़"</span> मिली है। GST जैसे संशोधनों ने व्यापार को आसान बनाया है। ये संशोधन केवल कागजी नहीं हैं, बल्कि ये नागरिक की <span class="hl-rose">"शक्ति"</span> में वृद्धि के दस्तावेज़ हैं।
+                </div>
+            </div>
+
+            <!-- Q30 -->
+            <div class="qa-block" style="background-color: #f5f3ff; border: 4px solid #1e1b4b;">
+                <div class="question-text">Q30. निष्कर्ष: एक 'जीवंत दस्तावेज़' के रूप में भारतीय संविधान का भविष्य क्या है?</div>
+                <div class="answer-box" style="background-color: #ffffff; border-left-color: #4338ca;">
+                    <span class="explanation-title hl-indigo">अंतिम विचार:</span>
+                    भविष्य में <span class="hl-blue">आर्टिफिशियल इंटेलिजेंस (AI)</span>, डेटा सुरक्षा और पर्यावरण जैसे नए मुद्दे आएंगे। एक जीवंत दस्तावेज़ होने के नाते, हमारा संविधान इन चुनौतियों का सामना करने के लिए भी तैयार है। 2026-27 के भारत के पास एक ऐसा <span class="hl-rose">"मार्गदर्शक"</span> है जो न तो पुराना पढ़ता है और न ही रास्ता भटकता है। यह सदैव नया, सदैव प्रासंगिक रहेगा।
+                    <br><br>
+                    <div style="text-align: center; color: #1e1b4b; font-weight: 900; letter-spacing: 2px;">**[अध्याय 9: संविधान एक जीवंत दस्तावेज़ - मुकम्मल 30 प्रश्नों का प्रीमियम बैंक (2026-27)]**</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

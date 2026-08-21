@@ -2,89 +2,493 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>अध्याय 15: अधिकार - 30+ Mega Q&A BANK</title>
+    <title>Chapter 15: अधिकार - Professional Edition (2026-27)</title>
     <style>
-        #control-header {
-            position: fixed; top: 0; left: 0; width: 100%; background-color: #0f172a; color: #ffffff;
-            padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 1000; font-family: 'Arial', sans-serif; box-sizing: border-box;
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 0; background-color: #f8fafc; font-family: 'Segoe UI', Tahoma, sans-serif; color: #1e1b4b; }
+        
+        .home-btn {
+            position: fixed; bottom: 30px; right: 30px; z-index: 2000;
+            background: linear-gradient(135deg, #4338ca 0%, #312e81 100%);
+            color: white; width: 70px; height: 70px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem; text-decoration: none; box-shadow: 0 10px 25px rgba(67, 56, 202, 0.4);
+            border: 4px solid #ffffff; transition: transform 0.3s;
         }
-        #control-header h1 { margin: 0; font-size: 1.2rem; font-weight: 600; }
-        body { margin-top: 80px; background-color: #f1f5f9; }
-        ul, ol { padding-left: 60px !important; margin-left: 20px !important; }
-        li { padding-left: 15px; margin-bottom: 25px; text-align: justify; line-height: 2.2;}
-        .qa-container {
-            margin-bottom: 40px; padding: 40px; background-color: #ffffff;
-            border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            border: 3px solid #cbd5e1;
+        .home-btn:hover { transform: scale(1.1) rotate(15deg); }
+
+        .master-container {
+            max-width: 1250px; margin: 50px auto; padding: 60px; background-color: #ffffff;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1); border-radius: 40px; border-top: 15px solid #4338ca;
         }
+        
+        .header-box {
+            text-align: center; margin-bottom: 70px; padding: 75px; 
+            border: 10px double #4338ca; background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); 
+            border-radius: 35px;
+        }
+        
+        .qa-block {
+            margin-bottom: 70px; padding: 45px; border: 4px solid #f1f5f9; 
+            border-radius: 30px; background-color: #ffffff;
+        }
+        .question-text { 
+            font-size: 25pt; font-weight: 900; color: #312e81; line-height: 1.5; 
+            margin-bottom: 30px; border-bottom: 5px solid #e2e8f0; padding-bottom: 20px;
+        }
+        .options-list { font-size: 20pt; list-style-type: upper-alpha; padding-left: 70px; color: #334155; font-weight: 700; }
+        .options-list li { margin-bottom: 20px; }
+
         .answer-box {
-            background-color: #f8fafc; padding: 25px; border-left: 8px solid #334155; 
-            margin-top: 15px; border-radius: 5px; font-size: 17pt;
+            margin-top: 35px; padding: 40px; border-radius: 25px; font-size: 20pt; line-height: 2.2;
+            background-color: #f8fafc; border-left: 15px solid #4338ca;
+        }
+        
+        /* Premium Highlights */
+        .hl-indigo { color: #4338ca; font-weight: 800; border-bottom: 2px solid #c7d2fe; }
+        .hl-silver { color: #64748b; font-weight: 800; }
+        .hl-rose { color: #be123c; font-weight: 800; }
+        .hl-blue { color: #2563eb; font-weight: 800; }
+        
+        .correct-ans { 
+            background: #e0e7ff; color: #312e81; padding: 12px 25px; 
+            border-radius: 12px; font-weight: 900; display: inline-block; margin-bottom: 25px;
+        }
+        .explanation-title { 
+            display: block; font-size: 22pt; font-weight: 900; color: #312e81; 
+            margin-top: 25px; border-bottom: 3px solid #cbd5e1; width: fit-content;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, #312e81, #4338ca); color: white; 
+            padding: 25px; border-radius: 20px; text-align: center; 
+            font-size: 28pt; font-weight: 900; margin: 90px 0 50px 0;
+            box-shadow: 0 15px 30px rgba(67, 56, 202, 0.2);
         }
     </style>
-</head>
+head>
 <body>
+    <a href="index.html" class="home-btn" title="Home Screen">🏠</a>
+
     <div id="contentToCopy">
-        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 18pt; line-height: 2.1; color: #1e293b; max-width: 1400px; margin: auto; padding: 20px;">
+        <div class="master-container">
 
-            <!-- Header -->
-            <div style="text-align: center; margin-bottom: 60px; padding: 50px; border: 6px solid #1e293b; background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%); border-radius: 25px;">
-                <h1 style="color: #0f172a; font-size: 48pt; font-weight: 900; margin-bottom: 0px;">अध्याय 15: अधिकार</h1>
-                <h2 style="color: #334155; font-size: 28pt; font-weight: 700;">(30+ Mega Analytical Q&A Bank)</h2>
+            <div class="header-box">
+                <h1 style="color: #312e81; font-size: 52pt; font-weight: 900; margin: 0;">अध्याय 15</h1>
+                <div style="font-size: 42pt; color: #4338ca; font-weight: 900; margin-top: 15px;">अधिकार (Rights)</div>
+                <div style="height: 8px; width: 250px; background: #4338ca; margin: 35px auto; border-radius: 4px;"></div>
+                <p style="font-size: 22pt; color: #312e81; font-weight: 900; text-transform: uppercase;">Academic Session 2026-27 | Professional Edition</p>
             </div>
 
-            <!-- SECTION A -->
-            <div class="qa-container" style="border-left: 12px solid #0f172a;">
-                <h2 style="color: #ffffff; background-color: #0f172a; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग A: अवधारणात्मक बहुविकल्पीय प्रश्न (MCQs)</h2>
-                <div>
-                    <p style="font-weight: bold;">Q1. संयुक्त राष्ट्र संघ द्वारा 'मानवाधिकारों की सार्वभौमिक घोषणा' कब की गई थी?</p>
-                    <ol type="A">
-                        <li>15 अगस्त 1947</li>
-                        <li>26 जनवरी 1950</li>
-                        <li>10 दिसंबर 1948 (✓ उत्तर)</li>
-                        <li>12 मार्च 1930</li>
-                    </ol>
+            <div class="section-divider">भाग 1: वस्तुनिष्ठ प्रश्न (MCQs) - सेगमेंट 1</div>
+
+            <div class="qa-block">
+                <div class="question-text">Q1. 'अधिकार' (Rights) की सबसे सटीक परिभाषा क्या है?</div>
+                <ol class="options-list">
+                    <li>वह जो हम मनमर्जी से करना चाहते हैं</li>
+                    <li>समाज द्वारा स्वीकृत और राज्य द्वारा मान्यता प्राप्त न्यायोचित दावे</li>
+                    <li>वे सुविधाएं जो केवल अमीर लोगों को मिलती हैं</li>
+                    <li>बिना काम के मिलने वाला लाभ</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) समाज द्वारा स्वीकृत न्यायोचित दावे</span>
+                    <span class="explanation-title hl-indigo">दावा और पहचान:</span>
+                    अधिकार केवल इच्छाएं नहीं हैं। वे ऐसे <span class="hl-silver">"हक"</span> हैं जिन्हें समाज <span class="hl-rose">"जरूरी"</span> मानता है और जिन्हें <span class="hl-blue">कानून</span> का समर्थन प्राप्त होता है। अधिकार व्यक्ति के सम्मान और विकास के लिए <span class="hl-indigo">बुनियादी शर्त</span> हैं।
                 </div>
             </div>
 
-            <!-- SECTION B -->
-            <div class="qa-container" style="border-left: 12px solid #dc2626;">
-                <h2 style="color: #ffffff; background-color: #b91c1c; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग B: विश्लेषणात्मक लघु एवं दीर्घ प्रश्न</h2>
-                
-                <div>
-                    <h3 style="color: #991b1b; font-size: 26pt;">Q2. प्राकृतिक अधिकारों (Natural Rights) और कानूनी अधिकारों (Legal Rights) में क्या मुख्य अंतर है?</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> <br>
-                        - **प्राकृतिक अधिकार:** ये वे अधिकार हैं जो मनुष्य को 'ईश्वर' या 'प्रकृति' ने जन्म से दिए हैं (जैसे—जीने का हक़)। जॉन लॉक जैसे विचारकों का मानना था कि राज्य इन्हें नहीं छीन सकता। <br>
-                        - **कानूनी अधिकार:** ये वे अधिकार हैं जिन्हें 'राज्य' या 'संविधान' प्रदान करता है। यदि राज्य कानून बदल दे, तो ये अधिकार भी बदल सकते हैं। <br>
-                        - **निष्कर्ष:** आधुनिक समय में अधिक जोर इस बात पर है कि प्राकृतिक अधिकारों को भी कानूनी मान्यता मिलनी चाहिए।
-                    </div>
-                </div>
-
-                <div style="margin-top: 50px;">
-                    <h3 style="color: #991b1b; font-size: 26pt;">Q3. "अधिकार और कर्तव्य एक ही सिक्के के दो पहलू हैं"—इस कथन की संक्षेप में व्याख्या कीजिए।</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> बिना कर्तव्य के अधिकार 'लापरवाही' है और बिना अधिकार के कर्तव्य 'गुलामी' है। <br>
-                        - **तर्क:** यदि मुझे बोलने का अधिकार है, तो मेरा यह कर्तव्य भी है कि मैं दूसरों के बोलने के अधिकार का सम्मान करूँ। <br>
-                        - **निष्कर्ष:** हमारे अधिकार दूसरों के अधिकारों की रक्षा करने की जिम्मेदारी भी साथ लाते हैं। समाज केवल अधिकारों से नहीं, बल्कि परस्पर जिम्मेदारियों से चलता है।
-                    </div>
+            <div class="qa-block">
+                <div class="question-text">Q2. 'प्राकृतिक अधिकार' (Natural Rights) का विचार क्या है?</div>
+                <ol class="options-list">
+                    <li>वे अधिकार जो सरकार देती है</li>
+                    <li>वे अधिकार जो मनुष्य को जन्म से ही प्रकृति या ईश्वर द्वारा प्राप्त हैं</li>
+                    <li>केवल जानवरों के अधिकार</li>
+                    <li>जंगलों में रहने का अधिकार</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) जन्मजात व प्राकृतिक अधिकार</span>
+                    <span class="explanation-title hl-indigo">जीवन, स्वतंत्रता और संपत्ति:</span>
+                    यह विचार मानता है कि अधिकार किसी <span class="hl-silver">"कानून"</span> की देन नहीं हैं। 17वीं-18वीं सदी के विचारकों (जैसे लॉक) ने कहा कि ये मनुष्य के <span class="hl-rose">"होने"</span> के साथ ही जुड़े हैं और कोई भी <span class="hl-blue">शक्ति</span> इन्हें छीन नहीं सकती।
                 </div>
             </div>
 
-            <!-- SECTION C -->
-            <div class="qa-container" style="border-left: 12px solid #2563eb;">
-                <h2 style="color: #ffffff; background-color: #1e40af; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग C: आधुनिक अधिकारों का परिदृश्य</h2>
-                <div>
-                    <h3 style="color: #1e3a8a; font-size: 26pt;">Q4. क्या 'इंटरनेट' का अधिकार अब एक मौलिक अधिकार बन जाना चाहिए? अपना विचार व्यक्त करें।</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> वैज्ञानिक विकास के साथ अधिकारों की नई श्रेणियां जुड़ती जा रही हैं। <br>
-                        - **पक्ष में तर्क:** चूँकि शिक्षा, बैंकिंग और सरकारी सुविधाएँ अब पूरी तरह ऑनलाइन हैं, इसलिए इंटरनेट न होना व्यक्ति को विकास से वंचित कर सकता है। <br>
-                        - **निष्कर्ष:** भारतीय सुप्रीम कोर्ट ने भी माना है कि 'डिजिटल माध्यमों तक पहुंच' अभिव्यक्ति की स्वतंत्रता का हिस्सा है। आने वाले समय में इंटरनेट का अधिकार एक बुनियादी अधिकार के रूप में उभर रहा है।
-                    </div>
+            <div class="qa-block">
+                <div class="question-text">Q3. 'मानवाधिकारों की सार्वभौमिक घोषणा' (UDHR) कब की गई थी?</div>
+                <ol class="options-list">
+                    <li>15 अगस्त 1947</li>
+                    <li>10 दिसंबर 1948</li>
+                    <li>26 जनवरी 1950</li>
+                    <li>1 जनवरी 2000</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) 10 दिसंबर 1948</span>
+                    <span class="explanation-title hl-indigo">वैश्विक मानक:</span>
+                    संयुक्त राष्ट्र (UN) द्वारा की गई यह घोषणा यह सुनिश्चित करती है कि दुनिया के हर इंसान को <span class="hl-silver">"बिना किसी भेदभाव"</span> के बुनियादी मानवाधिकार मिलने चाहिए। इसलिए 10 दिसंबर को <span class="hl-rose">"मानवाधिकार दिवस"</span> मनाया जाता है।
                 </div>
             </div>
 
+            <div class="qa-block">
+                <div class="question-text">Q4. 'राजनीतिक अधिकार' (Political Rights) में मुख्य रूप से क्या शामिल है?</div>
+                <ol class="options-list">
+                    <li>भोजन की व्यवस्था</li>
+                    <li>मतदान का अधिकार और चुनाव लड़ने का हक</li>
+                    <li>केवल गाना गाने की आज़ादी</li>
+                    <li>बिना टिकट यात्रा करना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) मतदान व चुनाव लड़ने का हक</span>
+                    <span class="explanation-title hl-indigo">लोकतांत्रिक भागीदारी:</span>
+                    ये अधिकार नागरिक को <span class="hl-silver">"शासन चलाने"</span> में अपना योगदान देने के योग्य बनाते हैं। यह <span class="hl-rose">"लोकतंत्र की नींव"</span> है जहाँ नागरिक <span class="hl-blue">"प्रजा"</span> नहीं बल्कि <span class="hl-indigo">"स्वामी"</span> होता है।
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question-text">Q5. अधिकार और 'कर्तव्य' (Duties) के बीच कैसा संबंध है?</div>
+                <ol class="options-list">
+                    <li>दोनों का कोई संबंध नहीं है</li>
+                    <li>वे एक ही सिक्के के दो पहलू हैं (अधिकार के साथ जिम्मेदारी आती है)</li>
+                    <li>कर्तव्य अधिकारों से अधिक महत्वपूर्ण हैं</li>
+                    <li>अधिकार बिना कर्तव्यों के होने चाहिए</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) एक ही सिक्के के दो पहलू</span>
+                    <span class="explanation-title hl-indigo">पारस्परिकता:</span>
+                    मेरा अधिकार दूसरे का <span class="hl-silver">"कर्तव्य"</span> है कि वह उसमें हस्तक्षेप न करे। यदि मुझे <span class="hl-rose">"बोलने का अधिकार"</span> है, तो मेरा यह कर्तव्य भी है कि मैं दूसरों को भी <span class="hl-blue">बोलने दूँ</span>। बिना कर्तव्य के अधिकार <span class="hl-indigo">"स्वार्थ"</span> बन जाते हैं।
+                </div>
+            </div>
+
+            <!-- SEGMENT 2: 6-10 (MCQs) -->
+            <div style="background-color: #4338ca; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 2: विधिक, आर्थिक व सामाजिक आयाम</div>
+
+            <!-- Q6 -->
+            <div class="qa-block">
+                <div class="question-text">Q6. 'विधिक अधिकार' (Legal Rights) और 'नैतिक अधिकार' (Moral Rights) में क्या अंतर है?</div>
+                <ol class="options-list">
+                    <li>दोनों एक ही हैं</li>
+                    <li>विधिक अधिकारों को कानून का संरक्षण प्राप्त है, जबकि नैतिक अधिकार अंतरात्मा और समाज की नैतिकता पर आधारित हैं</li>
+                    <li>विधिक अधिकार बुरे होते हैं</li>
+                    <li>नैतिक अधिकार केवल महान लोगों के लिए हैं</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) कानूनी संरक्षण बनाम नैतिक आधार</span>
+                    <span class="explanation-title hl-indigo">दायरों का अंतर:</span>
+                    यदि कोई <span class="hl-silver">"विधिक अधिकार"</span> छीना जाता है, तो आप अदालत जा सकते हैं। लेकिन <span class="hl-rose">"नैतिक अधिकार"</span> (जैसे माता-पिता की देखभाल) के लिए केवल <span class="hl-blue">"सामाजिक शर्मिंदगी"</span> का सामना करना पड़ता है, सजा का नहीं।
+                </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="qa-block">
+                <div class="question-text">Q7. 'आर्थिक अधिकार' (Economic Rights) का क्या अर्थ है?</div>
+                <ol class="options-list">
+                    <li>पैसे का वितरण</li>
+                    <li>काम करने का अधिकार, न्यूनतम वेतन और बुनियादी सुरक्षा</li>
+                    <li>केवल व्यापार करना</li>
+                    <li>बिना मेहनत के पैसे लेना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) काम व बुनियादी सुरक्षा का हक</span>
+                    <span class="explanation-title hl-silver">सबल नागरिक:</span>
+                    राजनीतिक अधिकार तब तक <span class="hl-indigo">"खोखले"</span> हैं जब तक व्यक्ति का पेट भरा न हो। आर्थिक अधिकार यह सुनिश्चित करते हैं कि नागरिक <span class="hl-rose">आर्थिक गुलामी</span> से मुक्त होकर <span class="hl-blue">स्वतंत्र निर्णय</span> ले सके।
+                </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="qa-block">
+                <div class="question-text">Q8. भारतीय संविधान में 'संपत्ति का अधिकार' (Right to Property) अब किस श्रेणी में आता है?</div>
+                <ol class="options-list">
+                    <li>मौलिक अधिकार (Fundamental Right)</li>
+                    <li>कानूनी/विधिक अधिकार (Legal Right)</li>
+                    <li>नैतिक अधिकार</li>
+                    <li>अधिकारों की श्रेणी से बाहर</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) कानूनी अधिकार (अनुच्छेद 300A)</span>
+                    <span class="explanation-title hl-indigo">संवैधानिक परिवर्तन:</span>
+                    44वें संशोधन (1978) के बाद इसे <span class="hl-silver">"मौलिक अधिकार"</span> से हटाकर <span class="hl-rose">"विधिक अधिकार"</span> बना दिया गया ताकि राज्य <span class="hl-blue">लोक-कल्याण</span> (जैसे भूमि सुधार) के लिए कदम उठा सके।
+                </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="qa-block">
+                <div class="question-text">Q9. अधिकारों के संदर्भ में 'दावा' (Claim) से क्या तात्पर्य है?</div>
+                <ol class="options-list">
+                    <li>किसी भी चीज की माँग करना</li>
+                    <li>ऐसी माँग जो तर्कसंगत (Justified) हो और दूसरों के हितों को नुकसान न पहुँचाए</li>
+                    <li>केवल जोर से बोलना</li>
+                    <li>अवैध कब्जा</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) तर्कसंगत व न्यायोचित माँग</span>
+                    <span class="explanation-title hl-silver">सीमाएं:</span>
+                    हर माँग अधिकार नहीं होती। यदि कोई <span class="hl-rose">"चोरी करने की आज़ादी"</span> माँगे, तो वह दावा <span class="hl-indigo">"अवैध"</span> होगा। अधिकार वही है जो <span class="hl-blue">"सामान्य हित"</span> (Common Good) को बढ़ावा दे।
+                </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="qa-block">
+                <div class="question-text">Q10. 'अधिकारों का विधिक सिद्धांत' (Legal Theory of Rights) क्या मानता है?</div>
+                <ol class="options-list">
+                    <li>अधिकार ईश्वर की देन हैं</li>
+                    <li>अधिकार राज्य की देन हैं (राज्य ही उन्हें बनाता और लागू करता है)</li>
+                    <li>अधिकार केवल पुराने समय की परम्परा हैं</li>
+                    <li>अधिकारों की कोई ज़रूरत नहीं है</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) अधिकार राज्य की देन हैं</span>
+                    <span class="explanation-title hl-indigo">कानूनी सत्ता:</span>
+                    यह सिद्धांत कहता है कि अधिकार केवल तभी <span class="hl-silver">"सत्य"</span> हैं जब उन्हें <span class="hl-rose">"राज्य का संरक्षण"</span> प्राप्त हो। इसके बिना वे केवल <span class="hl-blue">"कागजी इच्छाएं"</span> रह जाएंगे।
+                </div>
+            </div>
+
+            <!-- SEGMENT 3: 11-15 (Short/Assertion) -->
+            <div style="background-color: #312e81; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 3: लघु उत्तरीय एवं कथन-कारण पृष्ठ</div>
+
+            <!-- Q11 -->
+            <div class="qa-block">
+                <div class="question-text">Q11. अधिकार किसी व्यक्ति के लिए क्यों अनिवार्य हैं?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">आत्म-विकास की शर्त:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-silver">मानवीय गरिमा:</span> अधिकार व्यक्ति को <span class="hl-rose">"इंसान"</span> की तरह जीने और अपनी प्रतिभा विकसित करने का अवसर देते हैं।</li>
+                        <li><span class="hl-blue">सुरक्षा:</span> ये व्यक्ति को राज्य या समाज की <span class="hl-indigo">"मनमानी"</span> शक्ति से बचाते हैं। बिना अधिकारों के व्यक्ति केवल <span class="hl-rose">गुलाम</span> बनकर रह जाएगा।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="qa-block">
+                <div class="question-text">Q12. 'मानवाधिकार' (Human Rights) की अवधारणा का नैतिक आधार क्या है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">सार्वभौमिक गरिमा:</span>
+                    मानवाधिकारों का मानना है कि सभी मनुष्य <span class="hl-silver">"समान"</span> पैदा हुए हैं और केवल मनुष्य होने के नाते वे कुछ <span class="hl-rose">"अहस्तांतरणीय"</span> (Inalienable) अधिकारों के हकदार हैं। यह विचार जाति, धर्म या राष्ट्रीयता की सीमाओं को नहीं मानता। यह <span class="hl-blue">"वैश्विक न्याय"</span> का आधार है।
+                </div>
+            </div>
+
+            <!-- Q13 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #312e81;">
+                <div class="question-text">Q13. कथन (Assertion): अधिकार और ज़िम्मेदारियाँ एक साथ चलते हैं।<br>
+                कारण (Reason): यदि मैं अपने लिए घूमने की आज़ादी चाहता हूँ, तो मेरा यह कर्तव्य है कि मैं दूसरों की आज़ादी में बाधा न डालूँ।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-indigo">परस्पर सम्मान:</span>
+                    अधिकार <span class="hl-silver">"अराजकता"</span> नहीं हैं। वे एक <span class="hl-rose">"अनुशासित स्वतंत्रता"</span> का नाम हैं जहाँ व्यक्ति और समाज के बीच <span class="hl-blue">संतुलन</span> बना रहता है।
+                </div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="qa-block" style="border-left: 12px solid #312e81;">
+                <div class="question-text">Q14. कथन (Assertion): सूचना का अधिकार (RTI) लोकतंत्र को मज़बूत करता है।<br>
+                कारण (Reason): यह सरकार के कामकाज में पारदर्शिता लाता है और नागरिकों को अधिक सजग बनाता है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-indigo">सशक्तिकरण:</span>
+                    आधुनिक युग में <span class="hl-silver">"जानकारी ही शक्ति"</span> है। RTI अधिकार ने प्रशासन में <span class="hl-rose">जवाबदेही</span> सुनिश्चित की है।
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="qa-block">
+                <div class="question-text">Q15. किसी 'दावे' को 'अधिकार' की श्रेणी में कब रखा जाता है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">मान्यता की प्रक्रिया:</span>
+                    कोई भी मांग अधिकार तब बनती है जब:
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-silver">तर्कसंगतता:</span> वह समाज की भलाई के लिए <span class="hl-blue">न्यायोचित</span> हो।</li>
+                        <li><span class="hl-rose">सामाजिक स्वीकृति:</span> समाज उसे उचित माने।</li>
+                        <li><span class="hl-indigo">कानूनी मुहर:</span> राज्य उसे कानून के माध्यम से <span class="hl-blue">मान्यता और संरक्षण</span> दे।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SEGMENT 4: 16-20 (Short/Assertion) -->
+            <div style="background-color: #4338ca; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 4: अभिव्यक्ति, सीमाएँ व सामूहिक हित</div>
+
+            <!-- Q16 -->
+            <div class="qa-block">
+                <div class="question-text">Q16. अभिव्यक्ति की स्वतंत्रता (Freedom of Expression) को लोकतंत्र का आधार क्यों माना जाता है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">असहमति का अधिकार:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-silver">विचारों का आदान-प्रदान:</span> यह नागरिकों को सरकार की आलोचना करने और अपनी <span class="hl-rose">"असंतोष"</span> दर्ज करने का मौका देता है।</li>
+                        <li><span class="hl-blue">स्वस्थ लोकतंत्र:</span> बिना बोलने और लिखने की आज़ादी के कोई भी सरकार <span class="hl-indigo">"निरंकुश"</span> बन सकती है। यह अधिकार नागरिकों को <span class="hl-silver">जागरूक</span> बनाए रखता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q17 -->
+            <div class="qa-block">
+                <div class="question-text">Q17. क्या अधिकार असीमित (Absolute) हो सकते हैं? स्पष्ट कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">तर्कसंगत प्रतिबंध:</span>
+                    नहीं, अधिकार कभी भी <span class="hl-silver">"असीमित"</span> नहीं हो सकते। यदि किसी को भी कुछ भी करने की खुली छूट दे दी जाए, तो समाज में <span class="hl-rose">"अराजकता"</span> फैल जाएगी। राज्य <span class="hl-blue">"लोक-व्यवस्था"</span>, राष्ट्रीय सुरक्षा और दूसरों की आज़ादी की रक्षा के लिए अधिकारों पर <span class="hl-indigo">"उचित प्रतिबंध"</span> लगा सकता है। मेरा हाथ घुमाने की आज़ादी वहाँ खत्म होती है जहाँ दूसरे की <span class="hl-silver">"नाक"</span> शुरू होती है।
+                </div>
+            </div>
+
+            <!-- Q18 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #312e81;">
+                <div class="question-text">Q18. कथन (Assertion): राज्य का एकमात्र उद्देश्य अधिकारों की रक्षा करना है।<br>
+                कारण (Reason): शांति और व्यवस्था के अभाव में अधिकारों का उपयोग करना असंभव हो जाता है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-indigo">राज्य की उपयोगिता:</span>
+                    अधिकारों की सुरक्षा के लिए <span class="hl-silver">"सक्षम राज्य"</span> का होना अनिवार्य है। राज्य वह <span class="hl-rose">"गारंटर"</span> है जो समाज में न्याय और सुरक्षा सुनिश्चित करता है।
+                </div>
+            </div>
+
+            <!-- Q19 -->
+            <div class="qa-block" style="border-left: 12px solid #312e81;">
+                <div class="question-text">Q19. कथन (Assertion): सांस्कृतिक अधिकार सामूहिक अधिकारों की श्रेणी में आते हैं।<br>
+                कारण (Reason): किसी भाषा या संस्कृति को बचाना केवल एक व्यक्ति का काम नहीं, बल्कि पूरे समुदाय का साझा हित होता है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-indigo">विविधता का संरक्षण:</span>
+                    लोकतंत्र में <span class="hl-silver">"अल्पसंख्यकों"</span> को अपनी पहचान बचाने का अधिकार देना <span class="hl-rose">"बहुमत के अत्याचार"</span> से बचाव का एक तरीका है।
+                </div>
+            </div>
+
+            <!-- Q20 -->
+            <div class="qa-block">
+                <div class="question-text">Q20. 'कानून के शासन' (Rule of Law) और अधिकारों में क्या संबंध है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">पारदर्शी न्याय:</span>
+                    कानून का शासन यह सुनिश्चित करता है कि अधिकार किसी व्यक्ति की <span class="hl-silver">"मर्जी"</span> पर नहीं, बल्कि <span class="hl-blue">"नियमों"</span> पर आधारित हों। यह अमीर-गरीब और राजा-प्रजा सबको <span class="hl-rose">एक ही कानून</span> के दायरे में लाकर अधिकारों का <span class="hl-indigo">"समान संरक्षण"</span> (Equal Protection) प्रदान करता है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 5: 21-25 (Long/Analytical) -->
+            <div style="background-color: #1e1b4b; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">भाग 3: दीर्घ उत्तरीय एवं विश्लेषणात्मक प्रश्न</div>
+
+            <!-- Q21 -->
+            <div class="qa-block">
+                <div class="question-text">Q21. अधिकारों के विभिन्न प्रकारों (Natural, Legal, Moral, Human Rights) का सविस्तार वर्णन कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">अधिकारों का विस्तृत फलक:</span>
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-silver">प्राकृतिक अधिकार:</span> ये मनुष्य को जन्म से मिलते हैं (जैसे जीवन और आज़ादी)। इन्हें कोई सरकार छीन नहीं सकती।</li>
+                        <li><span class="hl-indigo">विधिक/कानूनी अधिकार:</span> ये वे हैं जिन्हें राज्य द्वारा मान्यता दी जाती है (जैसे मतदान का अधिकार)।</li>
+                        <li><span class="hl-blue">नैतिक अधिकार:</span> ये समाज की नैतिकता और रीतियों पर आधारित हैं (जैसे बड़ों का सम्मान पाना)।</li>
+                        <li><span class="hl-rose">मानवाधिकार:</span> ये वैश्विक स्तर पर हर मनुष्य के लिए अनिवार्य माने गए हैं, चाहे वह किसी भी देश का हो।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q22 -->
+            <div class="qa-block">
+                <div class="question-text">Q22. "अधिकार और कर्तव्य एक ही सिक्के के दो पहलू हैं।" उदाहरणों सहित व्याख्या कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-silver">पारस्परिक संतुलन:</span>
+                    अधिकार कभी भी <span class="hl-indigo">"एकतरफा"</span> नहीं होते। 
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">स्वयं के प्रति कर्तव्य:</span> यदि मुझे अपनी उन्नति का अधिकार है, तो मेरा कर्तव्य है कि मैं अपनी क्षमताओं का सही उपयोग करूँ।</li>
+                        <li><span class="hl-rose">दूसरों के प्रति कर्तव्य:</span> यदि मुझे बोलने की आज़ादी है, तो मेरा कर्तव्य है कि मैं दूसरों को भी <span class="hl-silver">"सुनने"</span> और उन्हें बोलने देने का अवसर दूँ।</li>
+                        <li><span class="hl-indigo">राज्य के प्रति कर्तव्य:</span> अधिकारों की सुरक्षा के बदले नागरिकों का कर्तव्य है कि वे कानून का पालन करें और <span class="hl-blue">टैक्स</span> भरें।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q23 -->
+            <div class="qa-block">
+                <div class="question-text">Q23. लोकतंत्र में अधिकारों की सुरक्षा के लिए 'राज्य' की भूमिका का आलोचनात्मक विश्लेषण कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">रक्षक और भक्षक की बहस:</span>
+                    <ul style="list-style-type: circle; margin-top: 10px;">
+                        <li><span class="hl-silver">राज्य रक्षक के रूप में:</span> राज्य अपनी पुलिस, न्यायपालिका और कानून के माध्यम से यह सुनिश्चित करता है कि ताकतवर लोग <span class="hl-rose">कमज़ोरों के अधिकार</span> न छीनें।</li>
+                        <li><span class="hl-blue">राज्य से खतरा:</span> कभी-कभी राज्य स्वयं <span class="hl-indigo">"शक्ति का दुरुपयोग"</span> कर संवैधानिक अधिकारों को कुचल सकता है (जैसे आपातकाल के दौरान)।</li>
+                    </ul>
+                    अतः अधिकारों की सुरक्षा के लिए केवल राज्य का होना काफी नहीं है, बल्कि एक <span class="hl-silver">"सजक न्यायपालिका"</span> और जागरूक जनता का होना अनिवार्य है।
+                </div>
+            </div>
+
+            <!-- Q24 -->
+            <div class="qa-block">
+                <div class="question-text">Q24. 'सांस्कृतिक अधिकारों' का महत्व स्पष्ट कीजिए। क्या ये व्यक्तिगत अधिकारों से टकराते हैं?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-silver">सांस्कृतिक पहचान:</span>
+                    अल्पसंख्यक समुदायों को अपनी भाषा, लिपि और संस्कृति को बचाने का अधिकार देना विविधतापूर्ण समाज के लिए ज़रूरी है। 
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-blue">टकराव की स्थिति:</span> कभी-कभी "सामूहिक सांस्कृतिक अधिकार" व्यक्ति के <span class="hl-rose">"निजी अधिकारों"</span> (जैसे महिलाओं की शिक्षा) को दबा सकते हैं।</li>
+                        <li><span class="hl-indigo">समाधान:</span> आधुनिक लोकतंत्र में <span class="hl-silver">"मानवतावादी मूल्य"</span> सर्वोपरि होने चाहिए। कोई भी संस्कृति ऐसी परंपरा को अधिकार नहीं मान सकती जो मनुष्य की <span class="hl-blue">गरिमा</span> को ठेस पहुँचाए।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q25 -->
+            <div class="qa-block">
+                <div class="question-text">Q25. "मानवाधिकारों की सार्वभौमिक घोषणा (UDHR)" ने अंतरराष्ट्रीय राजनीति को कैसे प्रभावित किया है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">वैश्विक जागरण:</span>
+                    1948 की इस घोषणा ने:
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">नैतिक दबाव:</span> तानाशाह सरकारों पर अपनी जनता को अधिकार देने के लिए अंतरराष्ट्रीय दबाव बढ़ाया।</li>
+                        <li><span class="hl-rose">कानूनी ढांचा:</span> दुनिया के कई देशों (भारत सहित) ने अपने <span class="hl-silver">"संविधान"</span> में मानवाधिकारों को जगह दी।</li>
+                        <li><span class="hl-indigo">हस्तक्षेप का आधार:</span> जब किसी देश में मानवता का <span class="hl-blue">घोर उल्लंघन</span> होता है, तो अंतरराष्ट्रीय समुदाय हस्तक्षेप करने का आधार पाता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SEGMENT 6: 26-30 (Long/Analytical) -->
+            <div style="background-color: #312e81; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">अंतिम खंड: उभरते अधिकार एवं निष्कर्ष</div>
+
+            <!-- Q26 -->
+            <div class="qa-block">
+                <div class="question-text">Q26. आधुनिक युग में 'सूचना के अधिकार' (Right to Information) का क्या महत्व है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">पारदर्शिता का शस्त्र:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-silver">जवाबदेही:</span> यह अधिकार नागरिकों को यह जानने की शक्ति देता है कि टैक्स का पैसा कहाँ और कैसे खर्च हो रहा है।</li>
+                        <li><span class="hl-blue">भ्रष्टाचार पर रोक:</span> जब प्रशासन को पता होता है कि जनता जानकारी माँग सकती है, तो <span class="hl-rose">"मनमानी"</span> कम होती है। यह नागरिक को <span class="hl-indigo">"दर्शक"</span> से <span class="hl-silver">"निरीक्षक"</span> बनाता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q27 -->
+            <div class="qa-block">
+                <div class="question-text">Q27. 'स्वच्छ पर्यावरण का अधिकार' एक नया मानवाधिकार क्यों बनता जा रहा है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">अस्तित्व की रक्षा:</span>
+                    बिना साफ हवा और पानी के "जीने का अधिकार" (Right to Life) अर्थहीन है। 
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-blue">जलवायु परिवर्तन:</span> बढ़ते प्रदूषण और जलवायु संकट के दौर में, स्वस्थ पर्यावरण की माँग अब एक <span class="hl-rose">"लक्जरी"</span> नहीं बल्कि <span class="hl-indigo">"अनिवार्यता"</span> है।</li>
+                        <li><span class="hl-silver">न्यायिक रुख:</span> अदालतों ने अब इसे अनुच्छेद 21 (जीवन का अधिकार) का अभिन्न अंग मानना शुरू कर दिया है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q28 -->
+            <div class="qa-block">
+                <div class="question-text">Q28. अधिकारों के विस्तार में 'सामाजिक आंदोलनों' (Social Movements) की क्या भूमिका है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">नीचे से ऊपर का सुधार:</span>
+                    अधिकार अक्सर ऊपर से नहीं दिए जाते, वे <span class="hl-silver">"संघर्ष"</span> से पैदा होते हैं। 
+                    <ul style="list-style-type: circle; margin-top: 10px;">
+                        <li><span class="hl-blue">चेतना:</span> महिला आंदोलनों, दलित आंदोलनों और पर्यावरण प्रेमियों ने समाज को नई <span class="hl-rose">"अन्याय की श्रेणियों"</span> के प्रति जागरूक किया।</li>
+                        <li><span class="hl-indigo">कानूनी पहचान:</span> इन संघर्षों के दबाव में ही राज्य नए कानून (जैसे मनरेगा या लोकपाल) बनाने पर मजबूर होता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q29 -->
+            <div class="qa-block">
+                <div class="question-text">Q29. 'न्यायिक सक्रियता' (Judicial Activism) अधिकारों की रक्षा में कैसे सहायक है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-indigo">संविधान का प्रहरी:</span>
+                    जब सरकार या प्रशासनिक अधिकारी नागरिकों के अधिकारों का उल्लंघन करते हैं या चुप्पी साध लेते हैं, तब <span class="hl-silver">"न्यायपालिका"</span> आगे आकर आदेश देती है। 
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">लोकहित याचिका (PIL):</span> इसके माध्यम से कोई भी व्यक्ति समाज के कमज़ोर वर्गों के लिए अदालत का दरवाज़ा खटखटा सकता है। यह अधिकारों को <span class="hl-rose">"गरीब की झोपड़ी"</span> तक पहुँचाने का माध्यम है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q30 -->
+            <div class="qa-block" style="background-color: #f8fafc; border: 4px solid #1e1b4b;">
+                <div class="question-text">Q30. निष्कर्ष: भविष्य में अधिकारों की चुनौतियाँ क्या होंगी?</div>
+                <div class="answer-box" style="background-color: #ffffff; border-left-color: #4338ca;">
+                    <span class="explanation-title hl-indigo">अंतिम विचार:</span>
+                    21वीं सदी में "डिजिटल प्राइवेसी" और "आर्टिफिशियल इंटेलिजेंस" के दौर में अधिकारों की परिभाषा फिर बदल रही है। 2026-27 के शैक्षणिक सत्र के लिए संदेश यह है कि अधिकार कोई <span class="hl-silver">"उपहार"</span> नहीं हैं, बल्कि एक <span class="hl-rose">"निरंतर जागरूकता"</span> हैं। एक स्वतंत्र समाज वही है जहाँ हर नागरिक अपने और दूसरों के अधिकारों के लिए <span class="hl-blue">"खड़ा होने"</span> का साहस रखता हो।
+                    <br><br>
+                    <div style="text-align: center; color: #312e81; font-weight: 900; letter-spacing: 2px;">**[अध्याय 15: अधिकार - मुकम्मल 30 प्रश्नों का प्रीमियम बैंक (2026-27)]**</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

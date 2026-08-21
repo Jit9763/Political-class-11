@@ -2,88 +2,484 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>अध्याय 14: सामाजिक न्याय - प्रश्न-उत्तर</title>
+    <title>Chapter 14: सामाजिक न्याय - Professional Edition (2026-27)</title>
     <style>
-        #control-header {
-            position: fixed; top: 0; left: 0; width: 100%; background-color: #1e3a8a; color: #ffffff;
-            padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 1000; font-family: 'Arial', sans-serif; box-sizing: border-box;
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 0; background-color: #fffaf0; font-family: 'Segoe UI', Tahoma, sans-serif; color: #334155; }
+        
+        .home-btn {
+            position: fixed; bottom: 30px; right: 30px; z-index: 2000;
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+            color: white; width: 70px; height: 70px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem; text-decoration: none; box-shadow: 0 10px 25px rgba(234, 88, 12, 0.4);
+            border: 4px solid #ffffff; transition: transform 0.3s;
         }
-        #control-header h1 { margin: 0; font-size: 1.2rem; font-weight: 600; }
-        body { margin-top: 80px; background-color: #f8fafc; }
-        ul, ol { padding-left: 60px !important; margin-left: 20px !important; }
-        li { padding-left: 15px; margin-bottom: 25px; text-align: justify; line-height: 2.2;}
-        .qa-container {
-            margin-bottom: 40px; padding: 40px; background-color: #ffffff;
-            border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            border: 3px solid #3b82f6;
+        .home-btn:hover { transform: scale(1.1) rotate(15deg); }
+
+        .master-container {
+            max-width: 1250px; margin: 50px auto; padding: 60px; background-color: #ffffff;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1); border-radius: 40px; border-top: 15px solid #ea580c;
         }
+        
+        .header-box {
+            text-align: center; margin-bottom: 70px; padding: 75px; 
+            border: 10px double #ea580c; background: linear-gradient(135deg, #fffaf0 0%, #ffedd5 100%); 
+            border-radius: 35px;
+        }
+        
+        .qa-block {
+            margin-bottom: 70px; padding: 45px; border: 4px solid #f1f5f9; 
+            border-radius: 30px; background-color: #ffffff;
+        }
+        .question-text { 
+            font-size: 25pt; font-weight: 900; color: #9a3412; line-height: 1.5; 
+            margin-bottom: 30px; border-bottom: 5px solid #e2e8f0; padding-bottom: 20px;
+        }
+        .options-list { font-size: 20pt; list-style-type: upper-alpha; padding-left: 70px; color: #334155; font-weight: 700; }
+        .options-list li { margin-bottom: 20px; }
+
         .answer-box {
-            background-color: #eff6ff; padding: 25px; border-left: 8px solid #1e40af; 
-            margin-top: 15px; border-radius: 5px; font-size: 17pt;
+            margin-top: 35px; padding: 40px; border-radius: 25px; font-size: 20pt; line-height: 2.2;
+            background-color: #f8fafc; border-left: 15px solid #ea580c;
+        }
+        
+        /* Premium Highlights */
+        .hl-saffron { color: #ea580c; font-weight: 800; border-bottom: 2px solid #fdba74; }
+        .hl-charcoal { color: #1e293b; font-weight: 800; }
+        .hl-rose { color: #be123c; font-weight: 800; }
+        .hl-blue { color: #1d4ed8; font-weight: 800; }
+        
+        .correct-ans { 
+            background: #ffedd5; color: #9a3412; padding: 12px 25px; 
+            border-radius: 12px; font-weight: 900; display: inline-block; margin-bottom: 25px;
+        }
+        .explanation-title { 
+            display: block; font-size: 22pt; font-weight: 900; color: #9a3412; 
+            margin-top: 25px; border-bottom: 3px solid #cbd5e1; width: fit-content;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, #9a3412, #ea580c); color: white; 
+            padding: 25px; border-radius: 20px; text-align: center; 
+            font-size: 28pt; font-weight: 900; margin: 90px 0 50px 0;
+            box-shadow: 0 15px 30px rgba(234, 88, 12, 0.2);
         }
     </style>
-</head>
+head>
 <body>
+    <a href="index.html" class="home-btn" title="Home Screen">🏠</a>
+
     <div id="contentToCopy">
-        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 18pt; line-height: 2.1; color: #1e293b; max-width: 1400px; margin: auto; padding: 20px;">
+        <div class="master-container">
 
-            <!-- Header -->
-            <div style="text-align: center; margin-bottom: 60px; padding: 50px; border: 6px solid #1e3a8a; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-radius: 25px;">
-                <h1 style="color: #1e3a8a; font-size: 48pt; font-weight: 900; margin-bottom: 0px;">अध्याय 14: सामाजिक न्याय</h1>
-                <h2 style="color: #2563eb; font-size: 28pt; font-weight: 700;">(प्रश्न-उत्तर संकलन)</h2>
+            <div class="header-box">
+                <h1 style="color: #9a3412; font-size: 52pt; font-weight: 900; margin: 0;">अध्याय 14</h1>
+                <div style="font-size: 42pt; color: #ea580c; font-weight: 900; margin-top: 15px;">सामाजिक न्याय (Social Justice)</div>
+                <div style="height: 8px; width: 250px; background: #ea580c; margin: 35px auto; border-radius: 4px;"></div>
+                <p style="font-size: 22pt; color: #9a3412; font-weight: 900; text-transform: uppercase;">Academic Session 2026-27 | Professional Edition</p>
             </div>
 
-            <!-- SECTION A -->
-            <div class="qa-container" style="border-left: 12px solid #1e3a8a;">
-                <h2 style="color: #ffffff; background-color: #1e3a8a; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग A: अवधारणात्मक बहुविकल्पीय प्रश्न (MCQs)</h2>
-                <div>
-                    <p style="font-weight: bold;">Q1. 'अज्ञानता का आवरण' (Veil of Ignorance) का सिद्धांत किस दार्शनिक ने दिया था?</p>
-                    <ol type="A">
-                        <li>अरस्तू</li>
-                        <li>जॉन रॉल्स (✓ उत्तर)</li>
-                        <li>कार्ल मार्क्स</li>
-                        <li>महात्मा गांधी</li>
-                    </ol>
+            <div class="section-divider">भाग 1: वस्तुनिष्ठ प्रश्न (MCQs) - सेगमेंट 1</div>
+
+            <div class="qa-block">
+                <div class="question-text">Q1. 'न्याय' (Justice) शब्द की उत्पत्ति किस लैटिन शब्द से हुई है?</div>
+                <ol class="options-list">
+                    <li>Jus (जस)</li>
+                    <li>Justitia (जस्टिटिया)</li>
+                    <li>Judex (जुडेक्स)</li>
+                    <li>Jorum (जोरम)</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) Justitia व Jus</span>
+                    <span class="explanation-title hl-saffron">शाब्दिक अर्थ:</span>
+                    'जस' का अर्थ है <span class="hl-charcoal">"जोड़ना"</span> या <span class="hl-rose">"बाँधना"</span>। न्याय वह सूत्र है जो समाज के विभिन्न अंगों को <span class="hl-blue">"उचित और नैतिक"</span> रूप से एक साथ बाँधकर रखता है। यह समाज का <span class="hl-charcoal">संतुलन</span> है।
                 </div>
             </div>
 
-            <!-- SECTION B -->
-            <div class="qa-container" style="border-left: 12px solid #dc2626;">
-                <h2 style="color: #ffffff; background-color: #b91c1c; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग B: विश्लेषणात्मक लघु एवं दीर्घ प्रश्न</h2>
-                
-                <div>
-                    <h3 style="color: #991b1b; font-size: 26pt;">Q2. 'समान लोगों के साथ समान व्यवहार' और 'विशेष ज़रूरतों' का सिद्धांत न्याय में कैसे संतुलन बनाता है?</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> न्याय का मुख्य लक्ष्य 'संतुलन' है। <br>
-                        - **तर्क:** यदि समाज में सबको एक जैसी ही सुविधा दी जाए, तो जो लोग पहले से ही गरीब या शारीरिक रूप से कमज़ोर हैं, वे पीछे छूट जाएंगे। <br>
-                        - **समाधान:** न्याय कहता है कि जो लोग बराबर हैं, उनके साथ बराबर व्यवहार हो। लेकिन जिनके पास सुविधाएँ नहीं हैं (जैसे—विकलांग या पिछड़े वर्ग), उनके साथ **'विशेष व्यवहार' (Reserved Seats, Scholarships)** किया जाना चाहिए ताकि वे भी मुख्यधारा में आ सकें। यही न्याय की सच्ची सुंदरता है।
-                    </div>
-                </div>
-
-                <div style="margin-top: 50px;">
-                    <h3 style="color: #991b1b; font-size: 26pt;">Q3. जॉन रॉल्स के 'अज्ञानता के आवरण' (Veil of Ignorance) की संक्षेप में व्याख्या कीजिए।</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> रॉल्स के अनुसार, जब हम समाज के नियम बनाते हैं, तो हम अक्सर अपने स्वार्थ (जैसे—अपनी जाति या अमीरी) के बारे में सोचते हैं। <br>
-                        - **समाधान:** रॉल्स कहते हैं कि यदि हमें यह न पता हो कि जन्म के बाद हम किस हाल में पैदा होंगे, तो हम डर के मारे ऐसे नियम बनाएंगे जो 'सबसे निचले स्तर' के व्यक्ति के लिए भी अच्छे हों। <br>
-                        - **महत्व:** यह सिद्धांत स्वार्थ को खत्म करता है और निष्पक्षता को जन्म देता है।
-                    </div>
+            <div class="qa-block">
+                <div class="question-text">Q2. 'अज्ञानता का आवरण' (Veil of Ignorance) का सिद्धांत किसने दिया था?</div>
+                <ol class="options-list">
+                    <li>प्लेटो</li>
+                    <li>जॉन रॉल्स (John Rawls)</li>
+                    <li>अरस्तू</li>
+                    <li>कार्ल मार्क्स</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) जॉन रॉल्स</span>
+                    <span class="explanation-title hl-saffron">निष्पक्ष न्याय:</span>
+                    रॉल्स का तर्क था कि यदि हमें यह न पता हो कि समाज में हमारी <span class="hl-charcoal">जाति, वर्ग या लिंग</span> क्या होगा, तो हम ऐसे नियम बनाएंगे जो <span class="hl-rose">"सबके लिए"</span> (विशेषकर सबसे कमज़ोर के लिए) न्यायपूर्ण हों। यह <span class="hl-blue">निष्पक्षता की पराकाष्ठा</span> है।
                 </div>
             </div>
 
-            <!-- SECTION C -->
-            <div class="qa-container" style="border-left: 12px solid #059669;">
-                <h2 style="color: #ffffff; background-color: #059669; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग C: भारत और सामाजिक न्याय</h2>
-                <div>
-                    <h3 style="color: #047857; font-size: 26pt;">Q4. सरकारी नौकरियों में 'आरक्षण' को क्या आप न्याय के खिलाफ मानते हैं? तार्किक जवाब दें।</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> नहीं! आरक्षण न्याय का एक औजार है। <br>
-                        - **तार्किक आधार:** सदियों से जाति व्यवस्था के कारण कुछ लोगों को शिक्षा और सम्मान से दूर रखा गया। <br>
-                        - **निष्कर्ष:** आरक्षण 'दौड़' शुरू करने से पहले पटरियों को बराबर करने का एक तरीका है। जब तक समाज में समानता नहीं आती, तब तक 'समान अवसर' केवल एक दिखावा रहेगा। आरक्षण उन बाधाओं को हटाता है।
-                    </div>
+            <div class="qa-block">
+                <div class="question-text">Q3. प्राचीन भारत में न्याय का संबंध किससे जोड़ा गया था?</div>
+                <ol class="options-list">
+                    <li>शक्ति</li>
+                    <li>धर्म (Dharma)</li>
+                    <li>धन</li>
+                    <li>शिक्षा</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) धर्म</span>
+                    <span class="explanation-title hl-saffron">नैतिक व्यवस्था:</span>
+                    प्राचीन भारत में न्याय का अर्थ केवल कानून नहीं था, बल्कि वह <span class="hl-charcoal">"धर्म"</span> पर आधारित था। राजा का पहला कर्तव्य <span class="hl-rose">"न्याय की स्थापना"</span> करना था ताकि समाज में <span class="hl-blue">सदाचार</span> बना रहे।
                 </div>
             </div>
 
+            <div class="qa-block">
+                <div class="question-text">Q4. 'समान लोगों के साथ समान व्यवहार' किसका बुनियादी सिद्धांत है?</div>
+                <ol class="options-list">
+                    <li>केवल अमीर लोगों के लिए</li>
+                    <li>न्याय का (Justice)</li>
+                    <li>तानाशाही का</li>
+                    <li>पुलिस का</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) न्याय का</span>
+                    <span class="explanation-title hl-saffron">तार्किक समानता:</span>
+                    न्याय का यह सिद्धांत कहता है कि यदि दो व्यक्ति <span class="hl-charcoal">"समान श्रेणी"</span> के हैं, तो उनके साथ व्यवहार में कोई <span class="hl-rose">भेदभाव</span> नहीं होना चाहिए। यह <span class="hl-blue">जाति और धर्म</span> के आधार पर भेदभाव को अवैध बनाता है।
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question-text">Q5. 'अनुपातिक न्याय' (Proportional Justice) का क्या अर्थ है?</div>
+                <ol class="options-list">
+                    <li>सबको बराबर पैसे देना</li>
+                    <li>योग्यता और प्रयास के अनुसार फल देना (जैसे तेज़ भागने वाले को पहला इनाम)</li>
+                    <li>बिना काम के इनाम देना</li>
+                    <li>केवल उम्र के हिसाब से वेतन</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) योग्यता व प्रयास के अनुसार प्रतिफल</span>
+                    <span class="explanation-title hl-saffron">रचनात्मक न्याय:</span>
+                    हमेशा सबको "एक बराबर" देना न्याय नहीं होता। यदि कोई <span class="hl-charcoal">अधिक मेहनत</span> करता है या अधिक <span class="hl-rose">कुशल</span> है, तो उसे अधिक प्रतिफल मिलना भी <span class="hl-blue">न्यायसंगत</span> है। इसे <span class="hl-charcoal">"आनुपातिक समानता"</span> भी कहा जाता है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 2: 6-10 (MCQs) -->
+            <div style="background-color: #ea580c; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 2: विशेष आवश्यकताएं व वितरण</div>
+
+            <!-- Q6 -->
+            <div class="qa-block">
+                <div class="question-text">Q6. न्याय का तीसरा महत्वपूर्ण सिद्धांत 'विशेष ज़रूरतों' (Special Needs) की पहचान करना क्यों है?</div>
+                <ol class="options-list">
+                    <li>भेदभाव करने के लिए</li>
+                    <li>समाज के कमज़ोर और शारीरिक रूप से अक्षम लोगों को समान स्तर पर लाने के लिए</li>
+                    <li>केवल अमीरों की मदद के लिए</li>
+                    <li>पुलिस की शक्ति बढ़ाने के लिए</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) कमज़ोरों को समान स्तर पर लाने के लिए</span>
+                    <span class="explanation-title hl-saffron">मानवीय न्याय:</span>
+                    न्याय का केवल यह अर्थ नहीं है कि सबको <span class="hl-charcoal">"एक जैसी लाठी"</span> से हांका जाए। यदि कोई विकलांग है या <span class="hl-rose">अत्यधिक गरीब</span> है, तो उसे दूसरों के मुकाबले <span class="hl-blue">"विशेष रियायत"</span> देना ही असली न्याय है। यह मानवता का तकाज़ा है।
+                </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="qa-block">
+                <div class="question-text">Q7. 'संसाधनों का न्यायोचित वितरण' (Just Distribution) का प्रणेता कौन है?</div>
+                <ol class="options-list">
+                    <li>केवल व्यापारी</li>
+                    <li>लोकतांत्रिक राज्य (Democratic State)</li>
+                    <li>केवल भगवान</li>
+                    <li>पुलिस</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) लोकतांत्रिक राज्य</span>
+                    <span class="explanation-title hl-charcoal">कल्याणकारी भूमिका:</span>
+                    संसाधनों के वितरण का अर्थ यह नहीं है कि सबकी संपत्ति <span class="hl-saffron">"बराबर"</span> कर दी जाए। इसका अर्थ है कि राज्य ऐसी नीतियां बनाए ताकि <span class="hl-rose">"बुनियादी अभाव"</span> खत्म हो और धन का संकेंद्रण <span class="hl-blue">मुट्ठी भर लोगों</span> तक सीमित न रहे।
+                </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="qa-block">
+                <div class="question-text">Q8. क्या 'मुक्त बाज़ार' (Free Market) हमेशा न्याय की स्थापना करता है?</div>
+                <ol class="options-list">
+                    <li>हाँ, बाज़ार हमेशा सही होता है।</li>
+                    <li>नहीं, बाज़ार केवल 'खरीदने की क्षमता' देखता है, 'ज़रूरत' नहीं।</li>
+                    <li>दोनों का कोई संबंध नहीं है।</li>
+                    <li>बाज़ार केवल अमीरों के लिए है।</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) बाज़ार केवल क्षमता देखता है, ज़रूरत नहीं</span>
+                    <span class="explanation-title hl-saffron">बाज़ार की सीमाएं:</span>
+                    मुक्त बाज़ार में <span class="hl-charcoal">"कुशलता"</span> को पुरस्कार मिलता है, लेकिन <span class="hl-rose">"सामाजिक रूप से पिछड़े"</span> लोग इस दौड़ में पीछे रह जाते हैं। इसलिए सामाजिक न्याय के लिए <span class="hl-blue">राज्य का हस्तक्षेप</span> ज़रूरी है।
+                </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="qa-block">
+                <div class="question-text">Q9. 'न्यूनतम आवश्यकता' (Basic Minimum) की अवधारणा में क्या शामिल है?</div>
+                <ol class="options-list">
+                    <li>केवल रहने के लिए घर</li>
+                    <li>भोजन, स्वास्थ्य, शिक्षा, आवास और साफ पानी</li>
+                    <li>केवल मनोरंजन के साधन</li>
+                    <li>लक्जरी कार और गहने</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) भोजन, स्वास्थ्य, शिक्षा व मूलभूत ज़रूरतें</span>
+                    <span class="explanation-title hl-charcoal">गरिमापूर्ण जीवन:</span>
+                    सामाजिक न्याय का पहला कदम यह है कि हर इंसान को <span class="hl-saffron">"इंसान"</span> की तरह जीने के लिए ज़रूरी <span class="hl-rose">न्यूनतम सुविधाएँ</span> मिलें। यह खैरात नहीं, बल्कि नागरिक का <span class="hl-blue">"हक"</span> है।
+                </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="qa-block">
+                <div class="question-text">Q10. जॉन रॉल्स के अनुसार न्याय के नियम बनाने के लिए क्या ज़रूरी है?</div>
+                <ol class="options-list">
+                    <li>स्वार्थ की भावना</li>
+                    <li>तर्कसंगत और निष्पक्ष सोच (Rational & Impartial thinking)</li>
+                    <li>अंधविश्वास</li>
+                    <li>केवल अमीरों की सलाह</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) तर्कसंगत व निष्पक्ष सोच</span>
+                    <span class="explanation-title hl-saffron">बौद्धिक ईमानदारी:</span>
+                    रॉल्स का कहना था कि <span class="hl-charcoal">"निष्पक्षता"</span> ही न्याय की आत्मा है। जब हम अपने <span class="hl-rose">"निजी हितों"</span> से ऊपर उठकर सोचते हैं, तभी हम ऐसे कानून बना सकते हैं जो <span class="hl-blue">पूरे समाज</span> के हित में हों।
+                </div>
+            </div>
+
+            <!-- SEGMENT 3: 11-15 (Short/Assertion) -->
+            <div style="background-color: #9a3412; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 3: लघु उत्तरीय एवं कथन-कारण पृष्ठ</div>
+
+            <!-- Q11 -->
+            <div class="qa-block">
+                <div class="question-text">Q11. जॉन रॉल्स का 'अज्ञानता का आवरण' (Veil of Ignorance) सिद्धांत क्या सिखाता है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">विवेकपूर्ण चुनाव:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-charcoal">स्वार्थ का त्याग:</span> यह हमें कल्पना करने को कहता है कि हम अपनी पहचान भूलकर नियम बनाएं।</li>
+                        <li><span class="hl-rose">पक्षपात रहित नियम:</span> जब हमें नहीं पता होगा कि हम कौन हैं, तो हम स्वाभाविक रूप से ऐसे नियम बनाएंगे जो <span class="hl-blue">"सबसे निचले स्तर"</span> के व्यक्ति के लिए भी सुरक्षात्मक हों। यह <span class="hl-charcoal">निष्पक्ष न्याय</span> की गारंटी है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="qa-block">
+                <div class="question-text">Q12. 'विभेदात्मक व्यवहार' (Differential Treatment) न्याय के लिए क्यों आवश्यक है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-charcoal">वास्तविक समानता:</span>
+                    समान लोगों के साथ समान व्यवहार पर्याप्त नहीं है। यदि एक बच्चा स्वस्थ है और एक कुपोषित, तो दोनों को <span class="hl-saffron">"बराबर का खाना"</span> देना न्याय नहीं होगा। कुपोषित को <span class="hl-rose">"विशेष आहार"</span> देना ही न्याय है। इसी प्रकार, समाज के पिछड़े वर्गों को <span class="hl-blue">"आरक्षण या विशेष मदद"</span> देना उन्हें दूसरों के बराबर लाने के लिए अनिवार्य है।
+                </div>
+            </div>
+
+            <!-- Q13 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #9a3412;">
+                <div class="question-text">Q13. कथन (Assertion): बाजार आधारित अर्थव्यवस्था में गरीबों के हितों की रक्षा करना राज्य का कर्तव्य है।<br>
+                कारण (Reason): मुक्त बाजार अक्सर उन्हीं की मदद करता है जिनके पास पहले से साधन और क्रय शक्ति (Purchasing Power) है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-saffron">हस्तक्षेप की आवश्यकता:</span>
+                    बाजार <span class="hl-charcoal">"अंधा"</span> हो सकता है। सामाजिक न्याय सुनिश्चित करने के लिए <span class="hl-rose">राज्य को एक मार्गदर्शक</span> की भूमिका निभानी पड़ती है।
+                </div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="qa-block" style="border-left: 12px solid #9a3412;">
+                <div class="question-text">Q14. कथन (Assertion): 'अनुपातिक न्याय' योग्यता को पुरस्कृत करने पर जोर देता है।<br>
+                कारण (Reason): यदि सभी को बराबर वेतन दिया जाए, तो कोई भी कठिन परिश्रम या विशेष कौशल सीखने के लिए प्रेरित नहीं होगा।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-charcoal">योग्यता का मूल्य:</span>
+                    न्याय का अर्थ केवल <span class="hl-saffron">"बराबर बाँटना"</span> नहीं है, बल्कि <span class="hl-rose">"मेहनत का सम्मान"</span> करना भी है।
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="qa-block">
+                <div class="question-text">Q15. 'समान अवसर' (Equal Opportunity) पर्याप्त क्यों नहीं है? एक उदाहरण दीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">दौड़ का तर्क:</span>
+                    मान लीजिए एक रेस हो रही है। सबको <span class="hl-charcoal">"शुरुआती बिंदु"</span> (Starting line) पर खड़े होने का समान अवसर दिया गया है। लेकिन एक धावक के पास जूते हैं और दूसरे के पैरों में चोट है। यहाँ "समान अवसर" केवल एक <span class="hl-rose">"मजाक"</span> है। न्याय के लिए ज़रूरी है कि दूसरे धावक का <span class="hl-blue">इलाज कर उसे जूतों की व्यवस्था</span> की जाए, तभी दौड़ <span class="hl-charcoal">अर्थपूर्ण</span> होगी।
+                </div>
+            </div>
+
+            <!-- SEGMENT 4: 16-20 (Short/Assertion) -->
+            <div style="background-color: #ea580c; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 4: वितरण, बाजार व वैश्विक चुनौतियां</div>
+
+            <!-- Q16 -->
+            <div class="qa-block">
+                <div class="question-text">Q16. 'वितरणात्मक न्याय' (Distributive Justice) का मुख्य उद्देश्य क्या है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">संसाधनों का बँटवारा:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-charcoal">उचित हिस्सेदारी:</span> इसका अर्थ है कि समाज के लाभ और बोध (जैसे टैक्स, शिक्षा, स्वास्थ्य) का वितरण इस प्रकार हो कि किसी भी वर्ग का <span class="hl-rose">"लगातार शोषण"</span> न हो।</li>
+                        <li><span class="hl-blue">संवैधानिक लक्ष्य:</span> यह सुनिश्चित करना कि धन का संकेंद्रण कुछ ही हाथों में न रहे, बल्कि वह <span class="hl-charcoal">"लोक-कल्याण"</span> के लिए उपलब्ध हो।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q17 -->
+            <div class="qa-block">
+                <div class="question-text">Q17. सामाजिक न्याय सुनिश्चित करने में 'राज्य' की क्या भूमिका होती है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-charcoal">कल्याणकारी प्रहरी:</span>
+                    राज्य केवल कानून बनाने वाला नहीं, बल्कि एक <span class="hl-saffron">"प्रदाता"</span> (Provider) भी है। वह <span class="hl-rose">टैक्स</span> के माध्यम से संपन्नों से संसाधन लेता है और उन्हें <span class="hl-blue">शिक्षा, सब्सिडी और स्वास्थ्य</span> सेवाओं के रूप में गरीबों तक पहुँचाता है। राज्य वह माध्यम है जो सामाजिक असमानता की खाई को <span class="hl-charcoal">"पाटने"</span> का काम करता है।
+                </div>
+            </div>
+
+            <!-- Q18 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #9a3412;">
+                <div class="question-text">Q18. कथन (Assertion): मुक्त बाजार अर्थव्यवस्था अक्सर सामाजिक न्याय के लक्ष्यों से टकराती है।<br>
+                कारण (Reason): बाजार केवल उन सेवाओं को प्राथमिकता देता है जो 'लाभकारी' (Profitable) हों, न कि उन्हें जो 'अनिवार्य' (Essential) हों (जैसे दूरदराज के क्षेत्रों में स्वास्थ्य)।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-saffron">बाजार का विरोधाभास:</span>
+                    बाजार <span class="hl-charcoal">"कीमत"</span> जानता है, पर <span class="hl-rose">"मूल्य"</span> नहीं। सामाजिक न्याय के लिए बाजार पर <span class="hl-blue">इथिकल (Moral) नियंत्रण</span> आवश्यक है।
+                </div>
+            </div>
+
+            <!-- Q19 -->
+            <div class="qa-block" style="border-left: 12px solid #9a3412;">
+                <div class="question-text">Q19. कथन (Assertion): वैश्विक स्तर पर गरीबी एक राजनीतिक न्याय का मुद्दा है।<br>
+                कारण (Reason): अमीर देशों की नीतियां अक्सर विकासशील देशों के संसाधनों के शोषण और असमान व्यापारिक नियमों पर आधारित होती हैं।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-charcoal">वैश्विक जिम्मेदारी:</span>
+                    न्याय की अवधारणा केवल <span class="hl-saffron">"एक देश"</span> तक सीमित नहीं हो सकती। पूरी दुनिया को एक <span class="hl-rose">"न्यायपूर्ण वैश्विक व्यवस्था"</span> की आवश्यकता है।
+                </div>
+            </div>
+
+            <!-- Q20 -->
+            <div class="qa-block">
+                <div class="question-text">Q20. 'सामाजिक न्याय' और 'दया' (Charity) में क्या अंतर है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">हक बनाम खैरात:</span>
+                    खैरात या दान <span class="hl-charcoal">"मर्जी"</span> पर निर्भर करता है और इसमें पाने वाला नीचा महसूस कर सकता है। लेकिन सामाजिक न्याय <span class="hl-rose">"अधिकार"</span> (Right) पर आधारित है। यह समाज का <span class="hl-blue">"कर्तव्य"</span> है कि वह अपने हर सदस्य की गरिमा की रक्षा करे। न्याय माँगने में किसी को <span class="hl-charcoal">लज्जित</span> होने की आवश्यकता नहीं होती।
+                </div>
+            </div>
+
+            <!-- SEGMENT 5: 21-25 (Long/Analytical) -->
+            <div style="background-color: #1e293b; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">भाग 3: दीर्घ उत्तरीय एवं विश्लेषणात्मक प्रश्न</div>
+
+            <!-- Q21 -->
+            <div class="qa-block">
+                <div class="question-text">Q21. न्याय के तीन मुख्य सिद्धांतों (Equal Treatment, Proportionality, Special Needs) का सविस्तार वर्णन कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">न्याय के आधार स्तंभ:</span>
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-charcoal">समान लोगों के साथ समान व्यवहार:</span> यह नागरिक, राजनीतिक और कानूनी अधिकारों में बराबरी की बात करता है (जैसे सबको वोट का हक)।</li>
+                        <li><span class="hl-saffron">समानुपातिक न्याय:</span> यह कहता है कि योग्यता और मेहनत को पुरस्कार मिलना चाहिए। "बराबर" का अर्थ केवल गणितीय बराबरी नहीं, बल्कि प्रयास का सम्मान भी है।</li>
+                        <li><span class="hl-blue">विशेष ज़रूरतों की पहचान:</span> यह उन लोगों की मदद की बात करता है जो किसी शारीरिक या सामाजिक कमजोरी के कारण दूसरों से पीछे हैं। यह <span class="hl-rose">"सबको एक बराबर अवसर"</span> देने से अधिक <span class="hl-charcoal">"परिणाम की निष्पक्षता"</span> पर ध्यान देता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q22 -->
+            <div class="qa-block">
+                <div class="question-text">Q22. जॉन रॉल्स के अनुसार, न्यायपूर्ण समाज बनाने के लिए 'स्वार्थ' को त्यागना क्यों ज़रूरी है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-charcoal">तार्किक निष्पक्षता का विज़न:</span>
+                    रॉल्स का मानना था कि अधिकांश लोग <span class="hl-saffron">"पक्षपाती"</span> होते हैं क्योंकि वे अपने हितों को जानते हैं। 
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">अज्ञानता का आवरण:</span> यदि हम यह न जानें कि हम अमीर हैं या गरीब, तो हम ऐसे नियम बनाएंगे जो <span class="hl-rose">"हर स्थिति"</span> में सुरक्षित हों।</li>
+                        <li><span class="hl-charcoal">तर्क:</span> यहाँ न्याय की प्रेरणा <span class="hl-saffron">"परोपकार"</span> नहीं, बल्कि <span class="hl-blue">"बुद्धिमत्ता"</span> (Rationality) है। हम डरते हैं कि कहीं हम सबसे गरीब वर्ग में न हों, इसलिए हम गरीबों के लिए <span class="hl-rose">बेहतर अधिकार</span> सुरक्षित करते हैं।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q23 -->
+            <div class="qa-block">
+                <div class="question-text">Q23. सामाजिक न्याय सुनिश्चित करने में 'बाजार' की भूमिका और उसकी सीमाओं का विश्लेषण कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">बाजार बनाम न्याय:</span>
+                    <ul style="list-style-type: circle; margin-top: 10px;">
+                        <li><span class="hl-charcoal">बाजार के पक्ष में:</span> यह कुशलता, पसंद की आज़ादी और प्रतिस्पर्धा को बढ़ाता है। यह योग्यता का <span class="hl-blue">सम्मान</span> करता है।</li>
+                        <li><span class="hl-rose">बाजार की सीमाएं:</span> बाजार बीमारों, बुजुर्गों और उन बच्चों की मदद नहीं कर सकता जो <span class="hl-saffron">"क्रय शक्ति"</span> नहीं रखते।</li>
+                    </ul>
+                    अतः एक <span class="hl-blue">"कल्याणकारी राज्य"</span> बाजार की कुशलता को तो बनाए रखता है, लेकिन साथ ही बुनियादी सेवाओं (शिक्षा, स्वास्थ्य) को बाजार के हवाले नहीं छोड़ता।
+                </div>
+            </div>
+
+            <!-- Q24 -->
+            <div class="qa-block">
+                <div class="question-text">Q24. "सामाजिक न्याय केवल संसाधनों का बँटवारा नहीं, बल्कि मानवीय गरिमा का प्रश्न है।" टिप्पणी कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-charcoal">इथिकल (Moral) विज़न:</span>
+                    न्याय का असली लक्ष्य <span class="hl-saffron">"आत्म-सम्मान"</span> है। 
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-blue">पहचान का सम्मान:</span> जाति या धर्म के आधार पर अपमान का अंत भी न्याय है।</li>
+                        <li><span class="hl-rose">भागीदारी:</span> जब दलित या पिछड़ा वर्ग शासन में शामिल होता है, तो वह केवल <span class="hl-charcoal">"साधन"</span> नहीं माँगता, बल्कि समाज में अपनी <span class="hl-saffron">"बराबर का दर्जा"</span> माँगता है।</li>
+                    </ul>
+                    अतः न्याय का अर्थ है—ऐसी दुनिया जहाँ कोई भी किसी का <span class="hl-blue">गुलाम या मोहताज</span> न हो।
+                </div>
+            </div>
+
+            <!-- Q25 -->
+            <div class="qa-block">
+                <div class="question-text">Q25. डॉ. बी.आर. अंबेडकर के अनुसार सामाजिक न्याय प्राप्त करने का सही मार्ग क्या है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">क्रांतिकारी सुधार:</span>
+                    बाबासाहेब के लिए सामाजिक न्याय का अर्थ था <span class="hl-charcoal">"अन्यायकारी जाति व्यवस्था का अंत"</span>। 
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">शिक्षित बनो:</span> ज्ञान ही वह हथियार है जो बेड़ियाँ काट सकता है।</li>
+                        <li><span class="hl-rose">संगठित हो:</span> शक्ति के बिना अधिकार नहीं पाए जा सकते।</li>
+                        <li><span class="hl-charcoal">संवैधानिक मार्ग:</span> उन्होंने सड़कों के संघर्ष के साथ-साथ <span class="hl-saffron">"कानूनी और संवैधानिक प्रावधानों"</span> को अनिवार्य माना ताकि न्याय स्थायी हो सके।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SEGMENT 6: 26-30 (Long/Analytical) -->
+            <div style="background-color: #9a3412; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">अंतिम खंड: तुलनात्मक न्याय एवं निष्कर्ष</div>
+
+            <!-- Q26 -->
+            <div class="qa-block">
+                <div class="question-text">Q26. प्राचीन यूनानी विचारक 'प्लेटो' और आधुनिक विचारक 'जॉन रॉल्स' के न्याय संबंधी विचारों की तुलना कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">वैचारिक विकास:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-charcoal">प्लेटो (अहम् और कर्तव्य):</span> प्लेटो के लिए न्याय का अर्थ था कि समाज का हर वर्ग अपना निर्धारित <span class="hl-rose">"कर्तव्य"</span> (जैसे सैनिक का लड़ना, किसान का उगाना) बिना किसी हस्तक्षेप के निभाए। यह <span class="hl-blue">"सामूहिक व्यवस्था"</span> पर आधारित था।</li>
+                        <li><span class="hl-saffron">जॉन रॉल्स (प्रक्रिया और अधिकार):</span> रॉल्स के लिए न्याय का अर्थ <span class="hl-blue">"निष्पक्ष वितरण"</span> है। उनका ध्यान व्यक्ति के अधिकारों और <span class="hl-charcoal">"सबसे कमज़ोर"</span> की स्थिति को बेहतर बनाने पर है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q27 -->
+            <div class="qa-block">
+                <div class="question-text">Q27. "आर्थिक विकास के बिना सामाजिक न्याय संभव नहीं है।" क्या आप सहमत हैं?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-charcoal">विकास और न्याय का रिश्ता:</span>
+                    यह सच है कि संसाधनों को बाँटने के लिए पहले <span class="hl-saffron">"संसाधनों का होना"</span> ज़रूरी है। 
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-blue">साधनों की उपलब्धता:</span> गरीबी में न्याय केवल <span class="hl-rose">"दुख का बँटवारा"</span> बनकर रह जाता है। आर्थिक विकास से ही शिक्षा और स्वास्थ्य के लिए <span class="hl-charcoal">बजट</span> मिलता है।</li>
+                        <li><span class="hl-saffron">सावधानी:</span> यदि विकास केवल <span class="hl-blue">"अमीरों की तिजोरी"</span> भरे, तो वह सामाजिक न्याय के खिलाफ है। विकास <span class="hl-rose">"समावेशी"</span> (Inclusive) होना चाहिए।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q28 -->
+            <div class="qa-block">
+                <div class="question-text">Q28. 'पर्यावरणीय न्याय' (Environmental Justice) क्या है और यह क्यों ज़रूरी है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">भावी न्याय:</span>
+                    इसका अर्थ है कि पर्यावरण के नुकसान (प्रदूषण, कचरा) का भार समाज के केवल <span class="hl-charcoal">"गरीब वर्गों"</span> पर न पड़े। अक्सर फैक्ट्रियाँ और कचरे के ढेर गरीब बस्तियों के पास होते हैं। न्याय का तकाज़ा है कि <span class="hl-blue">"स्वच्छ वातावरण"</span> पर सबका समान अधिकार हो और आने वाली पीढ़ियों के संसाधनों के साथ <span class="hl-rose">अन्याय</span> न हो।
+                </div>
+            </div>
+
+            <!-- Q29 -->
+            <div class="qa-block">
+                <div class="question-text">Q29. 21वीं सदी में सामाजिक न्याय के मार्ग में सबसे बड़ी बाधाएँ क्या हैं?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-charcoal">आधुनिक चुनौतियाँ:</span>
+                    <ul style="list-style-type: circle; margin-top: 10px;">
+                        <li><span class="hl-saffron">असमान वैश्वीकरण:</span> देशों के बीच अमीर-गरीब की खाई बढ़ रही है।</li>
+                        <li><span class="hl-blue">डिजिटल भेदभाव:</span> बिना इंटरनेट के लोग शिक्षा और अवसरों से कट रहे हैं।</li>
+                        <li><span class="hl-rose">भ्रष्टाचार:</span> नीतियां कागज़ पर अच्छी हैं, पर <span class="hl-charcoal">"जमीनी स्तर"</span> पर गरीब तक नहीं पहुँच पातीं।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q30 -->
+            <div class="qa-block" style="background-color: #fffaf0; border: 4px solid #9a3412;">
+                <div class="question-text">Q30. निष्कर्ष: सामाजिक न्याय की निरंतर खोज का क्या महत्व है?</div>
+                <div class="answer-box" style="background-color: #ffffff; border-left-color: #ea580c;">
+                    <span class="explanation-title hl-saffron">अंतिम विचार:</span>
+                    सामाजिक न्याय कोई ऐसी मंज़िल नहीं है जहाँ पहुँचकर काम खत्म हो जाए। यह एक <span class="hl-charcoal">"सतत प्रक्रिया"</span> है। जैसे-जैसे समाज बदलता है, अन्याय के नए रूप सामने आते हैं। 2026-27 के शैक्षणिक सत्र के लिए हमें याद रखना होगा कि <span class="hl-blue">"न्याय की मशाल"</span> को जलाए रखना ही लोकतंत्र की सुरक्षा का एकमात्र रास्ता है। 
+                    <br><br>
+                    <div style="text-align: center; color: #9a3412; font-weight: 900; letter-spacing: 2px;">**[अध्याय 14: सामाजिक न्याय - मुकम्मल 30 प्रश्नों का प्रीमियम बैंक (2026-27)]**</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

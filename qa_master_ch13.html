@@ -2,86 +2,484 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>अध्याय 13: समानता - 30+ Mega Q&A BANK</title>
+    <title>Chapter 13: समानता - Professional Edition (2026-27)</title>
     <style>
-        #control-header {
-            position: fixed; top: 0; left: 0; width: 100%; background-color: #064e3b; color: #ffffff;
-            padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 1000; font-family: 'Arial', sans-serif; box-sizing: border-box;
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 0; background-color: #f0fdfa; font-family: 'Segoe UI', Tahoma, sans-serif; color: #134e4a; }
+        
+        .home-btn {
+            position: fixed; bottom: 30px; right: 30px; z-index: 2000;
+            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+            color: white; width: 70px; height: 70px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem; text-decoration: none; box-shadow: 0 10px 25px rgba(13, 148, 136, 0.4);
+            border: 4px solid #ffffff; transition: transform 0.3s;
         }
-        #control-header h1 { margin: 0; font-size: 1.2rem; font-weight: 600; }
-        body { margin-top: 80px; background-color: #f0fdf4; }
-        ul, ol { padding-left: 60px !important; margin-left: 20px !important; }
-        li { padding-left: 15px; margin-bottom: 25px; text-align: justify; line-height: 2.2;}
-        .qa-container {
-            margin-bottom: 40px; padding: 40px; background-color: #ffffff;
-            border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            border: 3px solid #10b981;
+        .home-btn:hover { transform: scale(1.1) rotate(15deg); }
+
+        .master-container {
+            max-width: 1250px; margin: 50px auto; padding: 60px; background-color: #ffffff;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1); border-radius: 40px; border-top: 15px solid #0d9488;
         }
+        
+        .header-box {
+            text-align: center; margin-bottom: 70px; padding: 75px; 
+            border: 10px double #0d9488; background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%); 
+            border-radius: 35px;
+        }
+        
+        .qa-block {
+            margin-bottom: 70px; padding: 45px; border: 4px solid #f1f5f9; 
+            border-radius: 30px; background-color: #ffffff;
+        }
+        .question-text { 
+            font-size: 25pt; font-weight: 900; color: #115e59; line-height: 1.5; 
+            margin-bottom: 30px; border-bottom: 5px solid #e2e8f0; padding-bottom: 20px;
+        }
+        .options-list { font-size: 20pt; list-style-type: upper-alpha; padding-left: 70px; color: #334155; font-weight: 700; }
+        .options-list li { margin-bottom: 20px; }
+
         .answer-box {
-            background-color: #f0fdf4; padding: 25px; border-left: 8px solid #059669; 
-            margin-top: 15px; border-radius: 5px; font-size: 17pt;
+            margin-top: 35px; padding: 40px; border-radius: 25px; font-size: 20pt; line-height: 2.2;
+            background-color: #f8fafc; border-left: 15px solid #0d9488;
+        }
+        
+        /* Premium Highlights */
+        .hl-teal { color: #0d9488; font-weight: 800; border-bottom: 2px solid #99f6e4; }
+        .hl-gold { color: #854d0e; font-weight: 800; }
+        .hl-rose { color: #be123c; font-weight: 800; }
+        .hl-blue { color: #1d4ed8; font-weight: 800; }
+        
+        .correct-ans { 
+            background: #ccfbf1; color: #115e59; padding: 12px 25px; 
+            border-radius: 12px; font-weight: 900; display: inline-block; margin-bottom: 25px;
+        }
+        .explanation-title { 
+            display: block; font-size: 22pt; font-weight: 900; color: #115e59; 
+            margin-top: 25px; border-bottom: 3px solid #cbd5e1; width: fit-content;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, #115e59, #0d9488); color: white; 
+            padding: 25px; border-radius: 20px; text-align: center; 
+            font-size: 28pt; font-weight: 900; margin: 90px 0 50px 0;
+            box-shadow: 0 15px 30px rgba(13, 148, 136, 0.2);
         }
     </style>
-</head>
+head>
 <body>
+    <a href="index.html" class="home-btn" title="Home Screen">🏠</a>
+
     <div id="contentToCopy">
-        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 18pt; line-height: 2.1; color: #1e293b; max-width: 1400px; margin: auto; padding: 20px;">
+        <div class="master-container">
 
-            <!-- Header -->
-            <div style="text-align: center; margin-bottom: 60px; padding: 50px; border: 6px solid #064e3b; background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-radius: 25px;">
-                <h1 style="color: #064e3b; font-size: 48pt; font-weight: 900; margin-bottom: 0px;">अध्याय 13: समानता</h1>
-                <h2 style="color: #059669; font-size: 28pt; font-weight: 700;">(30+ Mega Analytical Q&A Bank)</h2>
+            <div class="header-box">
+                <h1 style="color: #115e59; font-size: 52pt; font-weight: 900; margin: 0;">अध्याय 13</h1>
+                <div style="font-size: 42pt; color: #0d9488; font-weight: 900; margin-top: 15px;">समानता (Equality)</div>
+                <div style="height: 8px; width: 250px; background: #0d9488; margin: 35px auto; border-radius: 4px;"></div>
+                <p style="font-size: 22pt; color: #115e59; font-weight: 900; text-transform: uppercase;">Academic Session 2026-27 | Professional Edition</p>
             </div>
 
-            <!-- SECTION A -->
-            <div class="qa-container" style="border-left: 12px solid #064e3b;">
-                <h2 style="color: #ffffff; background-color: #064e3b; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग A: अवधारणात्मक बहुविकल्पीय प्रश्न (MCQs)</h2>
-                <div>
-                    <p style="font-weight: bold;">Q1. 'पितृसत्ता' (Patriarchy) शब्द का संबंध किससे है?</p>
-                    <ol type="A">
-                        <li>पुरुषों के प्रभुत्व वाली सामाजिक व्यवस्था (✓ उत्तर)</li>
-                        <li>आर्थिक समानता का सिद्धांत</li>
-                        <li>वोट देने का अधिकार</li>
-                        <li>लोकतंत्र का केंद्र</li>
-                    </ol>
+            <div class="section-divider">भाग 1: वस्तुनिष्ठ प्रश्न (MCQs) - सेगमेंट 1</div>
+
+            <div class="qa-block">
+                <div class="question-text">Q1. 'समानता' (Equality) का सबसे महत्वपूर्ण निहितार्थ क्या है?</div>
+                <ol class="options-list">
+                    <li>सभी को समान वेतन देना</li>
+                    <li>विशेषाधिकारों का अंत और सभी को विकास के समान अवसर मिलना</li>
+                    <li>सभी के साथ एक जैसा व्यवहार करना (चाहे ज़रूरतें अलग हों)</li>
+                    <li>अमीरों से धन छीन लेना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) विशेषाधिकारों का अंत व समान अवसर</span>
+                    <span class="explanation-title hl-teal">सकारात्मक समानता:</span>
+                    समानता का अर्थ यह नहीं है कि सभी लोग <span class="hl-gold">"हुबहू एक जैसे"</span> हो जाएं, बल्कि यह है कि किसी को भी <span class="hl-rose">जन्म या धर्म</span> के आधार पर "ऊँचा या नीचा" न माना जाए। यह <span class="hl-blue">प्रतिस्पर्धा के लिए समान मैदान</span> (Level Playing Field) तैयार करने का नाम है।
                 </div>
             </div>
 
-            <!-- SECTION B -->
-            <div class="qa-container" style="border-left: 12px solid #dc2626;">
-                <h2 style="color: #ffffff; background-color: #b91c1c; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग B: विश्लेषणात्मक लघु एवं दीर्घ प्रश्न</h2>
-                
-                <div>
-                    <h3 style="color: #991b1b; font-size: 26pt;">Q2. 'नारीवाद' (Feminism) का मुख्य तर्क क्या है? "निजी ही राजनैतिक है" (Private is Political) का अर्थ स्पष्ट करें।</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> नारीवाद का मानना है कि स्त्री और पुरुष के बीच असमानता प्राकृतिक नहीं, बल्कि समाज की बनाई हुई है। <br>
-                        - **"निजी ही राजनैतिक है":** का अर्थ यह है कि घर के भीतर के मामले (जैसे—बच्चों की देखभाल कौन करेगा, झाड़ू-पोछा कौन करेगा) भी राजनीति का हिस्सा हैं। अगर घर में स्त्री दबकर रहती है, तो वह बाहर समाज में कभी स्वतंत्र नहीं हो सकती। समानता की शुरुआत घर की रसोई से होनी चाहिए—यही नारीवाद का मूल मंत्र है।
-                    </div>
-                </div>
-
-                <div style="margin-top: 50px;">
-                    <h3 style="color: #991b1b; font-size: 26pt;">Q3. भारत सरकार द्वारा दी जाने वाली 'सकारात्मक कार्रवाई' (Affirmative Action/आरक्षण) क्या समानता के खिलाफ है? तर्क दें।</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> नहीं! समानता को "सबके साथ एक जैसा व्यवहार" समझना गलत है। <br>
-                        - **तार्किक आधार:** यदि दो लोग अलग-अलग हालातों (जातिगत भेदभाव या गरीबी) से आए हैं, तो उनके साथ समानता लाने के लिए **'विशेष व्यवहार' (Special Treatment)** अनिवार्य है। <br>
-                        - **निष्कर्ष:** आरक्षण समानता के सिद्धांत को नष्ट नहीं करता, बल्कि वह उन लोगों को 'समान धरातल' पर लाता है जो सदियों से पीछे छूट गए थे। समानता लाने के लिए कुछ लोगों को 'सीढ़ी' देना ज़रूरी है।
-                    </div>
+            <div class="qa-block">
+                <div class="question-text">Q2. 'नकारात्मक समानता' (Negative Equality) का क्या अर्थ है?</div>
+                <ol class="options-list">
+                    <li>बुरी समानता</li>
+                    <li>किसी भी प्रकार के भेदभाव का न होना (अभाव)</li>
+                    <li>गरीबों की मदद न करना</li>
+                    <li>बिना मेहनत के सब कुछ मिलना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) भेदभाव का अभाव</span>
+                    <span class="explanation-title hl-gold">औपचारिक समानता:</span>
+                    इसका अर्थ है कि कानून की नज़र में कोई भी <span class="hl-teal">वेरिएंट या विशेषाधिकार</span> प्राप्त वर्ग नहीं होना चाहिए। यह <span class="hl-rose">"कानूनी समानता"</span> पर ज़ोर देती है जहाँ राज्य केवल एक रेफरी की भूमिका निभाता है।
                 </div>
             </div>
 
-            <!-- SECTION C -->
-            <div class="qa-container" style="border-left: 12px solid #059669;">
-                <h2 style="color: #ffffff; background-color: #059669; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग C: मार्क्सवाद और आर्थिक समानता</h2>
-                <div>
-                    <h3 style="color: #047857; font-size: 26pt;">Q4. कार्ल मार्क्स के अनुसार आर्थिक असमानता को कैसे समाप्त किया जा सकता है?</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> मार्क्स का मानना था कि अमीरी और गरीबी का मूल कारण 'निजी संपत्ति' (Private Property) है। जब तक कुछ लोग उत्पादन के साधनों (Factory, Land) पर कब्ज़ा रखेंगे, वे गरीबों का शोषण करते रहेंगे। <br>
-                        - **समाधान:** वे निजी संपत्ति को ख़त्म करके **'सामुदायिक नियंत्रण'** की वकालत करते थे। उनके अनुसार, सच्ची समानता तभी आएगी जब संसाधनों पर समाज का बराबर हक होगा।
-                    </div>
+            <div class="qa-block">
+                <div class="question-text">Q3. 'प्राकृतिक असमानता' (Natural Inequality) और 'सामाजिक असमानता' में क्या अंतर है?</div>
+                <ol class="options-list">
+                    <li>दोनों एक ही हैं</li>
+                    <li>प्राकृतिक असमानता जन्मजात क्षमताओं से जुड़ी है, जबकि सामाजिक असमानता समाज द्वारा निर्मित भेदभाव है</li>
+                    <li>प्राकृतिक अच्छी है, सामाजिक बुरी</li>
+                    <li>कोई अंतर नहीं है</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) जन्मजात क्षमता बनाम सामाजिक निर्मिति</span>
+                    <span class="explanation-title hl-teal">दार्शनिक भेद:</span>
+                    कोई व्यक्ति लंबा है या कोई तेज़ दौड़ता है—यह <span class="hl-gold">"प्राकृतिक"</span> है। लेकिन किसी को उसकी जाति के कारण स्कूल न जाने देना—यह <span class="hl-rose">"सामाजिक"</span> है। समाज का लक्ष्य <span class="hl-blue">सामाजिक असमानता</span> को खत्म करना है।
                 </div>
             </div>
 
+            <div class="qa-block">
+                <div class="question-text">Q4. 'अवसर की समानता' (Equality of Opportunity) का क्या तात्पर्य है?</div>
+                <ol class="options-list">
+                    <li>सभी को एक ही नौकरी देना</li>
+                    <li>शिक्षा और करियर के मार्ग सभी के लिए खुले होना, बिना किसी भेदभाव के</li>
+                    <li>केवल सरकारी नौकरी</li>
+                    <li>बिना परीक्षा के पास करना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) सभी के लिए खुले मार्ग</span>
+                    <span class="explanation-title hl-gold">समान मंच:</span>
+                    इसका अर्थ है कि समाज की <span class="hl-teal">"सर्वोत्तम उपलब्धियाँ"</span> केवल संपन्नों के लिए आरक्षित न हों। एक गरीब बालक भी अपनी <span class="hl-rose">मेहनत</span> से उच्चतम पद पर पहुँच सके, यही <span class="hl-blue">अवसर की समानता</span> है।
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question-text">Q5. नारीवाद (Feminism) का मुख्य संदेश क्या है?</div>
+                <ol class="options-list">
+                    <li>पुरुषों का विरोध करना</li>
+                    <li>स्त्री और पुरुष को समान अधिकार और दर्जा मिलना चाहिए</li>
+                    <li>केवल महिलाओं का शासन</li>
+                    <li>कोई समानता नहीं</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) स्त्री-पुरुष की समानता</span>
+                    <span class="explanation-title hl-teal">लैंगिक न्याय:</span>
+                    नारीवाद का तर्क है कि स्त्री और पुरुष के बीच की असमानता <span class="hl-gold">"प्राकृतिक"</span> से अधिक <span class="hl-rose">"पितृसत्तात्मक"</span> (Patriarchal) है। यह मानव समाज में <span class="hl-blue">आधी आबादी</span> को बराबरी का हक दिलाने का आंदोलन है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 2: 6-10 (MCQs) -->
+            <div style="background-color: #0d9488; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 2: सकारात्मक कार्यवाही व व्यापक समानता</div>
+
+            <!-- Q6 -->
+            <div class="qa-block">
+                <div class="question-text">Q6. 'सकारात्मक कार्यवाही' (Affirmative Action) का क्या अर्थ है?</div>
+                <ol class="options-list">
+                    <li>केवल दंड देना</li>
+                    <li>समाज के वंचित और पिछड़े वर्गों को आगे बढ़ाने के लिए विशेष सुविधाएँ (जैसे आरक्षण) देना</li>
+                    <li>सभी को बराबर पैसे बाँटना</li>
+                    <li>कोई भेदभाव न करना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) वंचितों के लिए विशेष सुविधाएँ</span>
+                    <span class="explanation-title hl-teal">न्यायोचित भेदभाव:</span>
+                    समानता का अर्थ केवल <span class="hl-gold">"एक जैसा व्यवहार"</span> नहीं है। यदि कोई बरसों से पीछे है, तो उसे दूसरों के बराबर लाने के लिए <span class="hl-rose">"अतिरिक्त मदद"</span> देना भी समानता का ही एक रूप है। इसे <span class="hl-blue">"सकारात्मक भेदभाव"</span> भी कहा जाता है।
+                </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="qa-block">
+                <div class="question-text">Q7. 'आर्थिक समानता' (Economic Equality) का वास्तविक उद्देश्य क्या है?</div>
+                <ol class="options-list">
+                    <li>सभी के पास एक समान संपत्ति होना</li>
+                    <li>बुनियादी ज़रूरतों की पूर्ति और अमीरी-गरीबी के बीच की खाई को कम करना</li>
+                    <li>पैसे का अंत करना</li>
+                    <li>केवल सरकारी काम</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) बुनियादी ज़रूरतों की पूर्ति व खाई को कम करना</span>
+                    <span class="explanation-title hl-gold">वितरणात्मक न्याय:</span>
+                    आर्थिक समानता का अर्थ <span class="hl-teal">"गणितीय समानता"</span> नहीं है। इसका अर्थ है कि किसी का भी <span class="hl-rose">"शोषण"</span> न हो और समाज में धन का इतना असमान वितरण न हो कि वह <span class="hl-blue">लोकतंत्र</span> को खतरा पहुँचा दे।
+                </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="qa-block">
+                <div class="question-text">Q8. 'विभेदात्मक व्यवहार' (Differential Treatment) कब उचित माना जाता है?</div>
+                <ol class="options-list">
+                    <li>जब वह जाति के आधार पर हो</li>
+                    <li>जब वह न्याय और वास्तविक समानता प्राप्त करने के लिए हो (जैसे विकलांगों के लिए अलग रैंप)</li>
+                    <li>जब वह केवल अमीरों के लिए हो</li>
+                    <li>कभी नहीं</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) न्यायपूर्ण उद्देश्य के लिए विशेष व्यवहार</span>
+                    <span class="explanation-title hl-teal">समानता का मर्म:</span>
+                    समानता का अर्थ है <span class="hl-gold">"समान के साथ समान"</span> और <span class="hl-rose">"असमान के साथ असमान"</span> व्यवहार। यदि हम एक शारीरिक रूप से अक्षम व्यक्ति की मदद करते हैं, तो हम <span class="hl-blue">"वास्तविक समानता"</span> के करीब पहुँचते हैं।
+                </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="qa-block">
+                <div class="question-text">Q9. 'राजनीतिक समानता' (Political Equality) का आधार क्या है?</div>
+                <ol class="options-list">
+                    <li>केवल चुनाव लड़ना</li>
+                    <li>एक व्यक्ति - एक वोट और कानून का समान संरक्षण</li>
+                    <li>सिर्फ नेताओं का सम्मान</li>
+                    <li>बहुमत का शासन</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) एक व्यक्ति - एक वोट व कानूनी सुरक्षा</span>
+                    <span class="explanation-title hl-gold">नागरिक दर्जा:</span>
+                    राजनीतिक समानता यह सुनिश्चित करती है कि <span class="hl-teal">"प्रधानमंत्री और आम नागरिक"</span> के वोट की कीमत बराबर है। यह <span class="hl-rose">"गरिमापूर्ण नागरिकता"</span> का प्रवेश द्वार है।
+                </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="qa-block">
+                <div class="question-text">Q10. "समानता का अर्थ अमानवीय एकरूपता (Sameness) नहीं है।" इसका क्या तात्पर्य है?</div>
+                <ol class="options-list">
+                    <li>सभी को रोबोट बनाना</li>
+                    <li>सभी की विशिष्टताओं और प्रतिभाओं का सम्मान करते हुए भेदभाव मिटाना</li>
+                    <li>समानता का विरोध</li>
+                    <li>केवल नकल करना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) विशिष्टताओं का सम्मान व भेदभाव का अंत</span>
+                    <span class="explanation-title hl-teal">रचनात्मक समानता:</span>
+                    समाज को <span class="hl-gold">"एक ही सांचे"</span> में नहीं ढाला जा सकता। समानता का विज़न यह है कि किसी की <span class="hl-rose">प्रतिभा</span> उसकी पहचान (जाति/धर्म) के कारण न दबे। यह <span class="hl-blue">"विविधतापूर्ण बराबरी"</span> का विचार है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 3: 11-15 (Short/Assertion) -->
+            <div style="background-color: #115e59; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 3: लघु उत्तरीय एवं कथन-कारण पृष्ठ</div>
+
+            <!-- Q11 -->
+            <div class="qa-block">
+                <div class="question-text">Q11. प्राकृतिक और सामाजिक असमानता के बीच अंतर समझना क्यों आवश्यक है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">न्याय की दिशा:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-gold">बदलाव की संभावना:</span> प्राकृतिक असमानताओं (जैसे ऊँचाई या आंखों का रंग) को बदला नहीं जा सकता, इसलिए राज्य उन्हें सुधारने की कोशिश नहीं करता।</li>
+                        <li><span class="hl-rose">सामाजिक जिम्मेदारी:</span> सामाजिक असमानताएं (जैसे छुआछूत या गरीबी) <span class="hl-blue">"मानव निर्मित"</span> हैं। इन्हें कानून और नीतियों के माध्यम से सुधारा जा सकता है और सुधारा जाना चाहिए।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="qa-block">
+                <div class="question-text">Q12. मार्क्सवाद (Marxism) समानता के मुद्दे को किस प्रकार देखता है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-gold">आर्थिक आधार:</span>
+                    मार्क्सवाद का तर्क है कि जब तक समाज में <span class="hl-teal">"निजी संपत्ति"</span> (Private Property) रहेगी, तब तक समानता नहीं आ सकती। उनके अनुसार, आर्थिक शक्ति ही सामाजिक और राजनीतिक शक्ति की जड़ है। असली समानता तब आएगी जब उत्पादन के साधनों पर <span class="hl-rose">"पूरे समाज का नियंत्रण"</span> होगा। यह <span class="hl-blue">"वर्गहीन समाज"</span> का सपना है।
+                </div>
+            </div>
+
+            <!-- Q13 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #115e59;">
+                <div class="question-text">Q13. कथन (Assertion): स्त्रियों को समान अधिकार देने मात्र से समानता स्थापित नहीं हो जाती।<br>
+                कारण (Reason): पितृसत्तात्मक समाज में महिलाओं पर घरेलू काम का बोझ और सामाजिक रूढ़ियां उन्हें समान अवसरों का लाभ उठाने से रोकती हैं।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-teal">वास्तविक बाधाएं:</span>
+                    समानता के लिए केवल <span class="hl-gold">"कानूनी हक"</span> काफी नहीं है, बल्कि <span class="hl-rose">"सामाजिक मानसिकता"</span> और ढाँचे को बदलना भी ज़रूरी है।
+                </div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="qa-block" style="border-left: 12px solid #115e59;">
+                <div class="question-text">Q14. कथन (Assertion): समानता और स्वतंत्रता एक-दूसरे के पूरक हैं।<br>
+                कारण (Reason): बिना समानता के स्वतंत्रता कुछ ही लोगों का विशेषाधिकार बन जाएगी।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-gold">लोकतांत्रिक संतुलन:</span>
+                    यदि समाज में भारी असमानता है, तो गरीब व्यक्ति अपनी <span class="hl-teal">"आजादी"</span> का आनंद नहीं ले सकता। वह अमीरों के हाथों की <span class="hl-rose">कठपुतली</span> बनकर रह जाएगा।
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="qa-block">
+                <div class="question-text">Q15. 'रंगीन भेदभाव' (Racial Discrimination) समानता के विचार के विरुद्ध क्यों है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">मानवीय गरिमा:</span>
+                    त्वचा का रंग एक <span class="hl-gold">"प्राकृतिक विशेषता"</span> है जो व्यक्ति के गुणों या बुद्धिमत्ता को तय नहीं करती। इसके आधार पर भेदभाव करना मनुष्य की <span class="hl-rose">"बुनियादी गरिमा"</span> (Human Dignity) पर हमला है। यह वैज्ञानिक रूप से भी गलत है और नैतिक रूप से <span class="hl-blue">अक्षम्य</span> है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 4: 16-20 (Short/Assertion) -->
+            <div style="background-color: #0d9488; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 4: विशेष व्यवहार व वैश्विक परिदृश्य</div>
+
+            <!-- Q16 -->
+            <div class="qa-block">
+                <div class="question-text">Q16. "असमानों के साथ समान व्यवहार करना अन्याय है।" इस कथन का अर्थ स्पष्ट कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">समानता का मर्म:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-gold">विभेदात्मक न्याय:</span> यदि एक भूखा व्यक्ति और एक समृद्ध व्यक्ति के लिए एक ही नियम बना दिया जाए, तो वह गरीब के लिए अनुपयोगी होगा।</li>
+                        <li><span class="hl-rose">विशेष प्रावधान:</span> समाज के कमज़ोर वर्गों (जैसे दलितों, महिलाओं या विकलांगों) को दूसरों के बराबर लाने के लिए <span class="hl-blue">"विशेष व्यवहार"</span> (जैसे सुरक्षित सीटें या छात्रवृत्ति) देना वास्तविक समानता की स्थापना करता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q17 -->
+            <div class="qa-block">
+                <div class="question-text">Q17. 'वैश्विक असमानता' (Global Inequality) क्या है और यह क्यों चिंताजनक है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-gold">अमीर बनाम गरीब राष्ट्र:</span>
+                    वैश्विक असमानता का अर्थ है—दुनिया के चंद अमीर देशों के पास साधनों का <span class="hl-teal">"अत्यधिक संकेंद्रण"</span> और गरीब देशों में बुनियादी ज़रूरतों का अभाव। यह चिंताजनक है क्योंकि यह <span class="hl-rose">"वैश्विक संघर्ष"</span> और पलायन (Migration) को जन्म देता है। एक असमान दुनिया कभी भी <span class="hl-blue">"शांतिपूर्ण"</span> नहीं रह सकती।
+                </div>
+            </div>
+
+            <!-- Q18 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #115e59;">
+                <div class="question-text">Q18. कथन (Assertion): 'समानता' और 'कुशलता' (Efficiency) के बीच अक्सर टकराव देखा जाता है।<br>
+                कारण (Reason): यदि सभी को बराबर वेतन दिया जाए, तो मेहनती लोग अधिक कार्य करने के लिए प्रोत्साहित नहीं होंगे।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-teal">संतुलन की चुनौती:</span>
+                    पूर्ण आर्थिक समानता (सबको बराबर पैसा) समाज की <span class="hl-gold">"उत्पादकता"</span> को कम कर सकती है। इसलिए लक्ष्य <span class="hl-rose">"अवसर की समानता"</span> होना चाहिए, न कि <span class="hl-blue">"परिणाम की पूर्ण समानता"</span>।
+                </div>
+            </div>
+
+            <!-- Q19 -->
+            <div class="qa-block" style="border-left: 12px solid #115e59;">
+                <div class="question-text">Q19. कथन (Assertion): अस्पृश्यता (Untouchability) का अंत सामाजिक समानता की दिशा में क्रांतिकारी कदम था।<br>
+                कारण (Reason): यह व्यवस्था जन्म के आधार पर करोड़ों लोगों को मानवीय अधिकारों और गरिमा से वंचित रखती थी।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-gold">संवैधानिक न्याय:</span>
+                    अनुच्छेद 17 ने भारतीय लोकतंत्र में <span class="hl-teal">"मानवीय समानता"</span> को कानूनी रूप दिया, जो किसी भी <span class="hl-rose">आर्थिक आज़ादी</span> से अधिक महत्वपूर्ण है।
+                </div>
+            </div>
+
+            <!-- Q20 -->
+            <div class="qa-block">
+                <div class="question-text">Q20. 'सामाजिक न्याय' (Social Justice) का समानता से क्या संबंध है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">व्यापक विज़न:</span>
+                    समानता के बिना सामाजिक न्याय की कल्पना नहीं की जा सकती। सामाजिक न्याय का अर्थ है—समाज के सभी लाभों का <span class="hl-gold">"उचित वितरण"</span> और यह सुनिश्चित करना कि <span class="hl-rose">"पीछे छूटे हुए लोगों"</span> को प्राथमिकता मिले। यह समानता को केवल कागज़ से निकालकर <span class="hl-blue">"जमीनी हकीकत"</span> बनाने की प्रक्रिया है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 5: 21-25 (Long/Analytical) -->
+            <div style="background-color: #134e4a; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">भाग 3: दीर्घ उत्तरीय एवं विश्लेषणात्मक प्रश्न</div>
+
+            <!-- Q21 -->
+            <div class="qa-block">
+                <div class="question-text">Q21. समानता के तीन मुख्य आयामों (Political, Social, Economic) की व्याख्या कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">विस्तृत वर्गीकरण:</span>
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-gold">राजनीतिक समानता:</span> इसका अर्थ है कानून के सामने बराबरी और निर्णय प्रक्रिया में भाग लेने का समान अवसर (जैसे मतदान का अधिकार)।</li>
+                        <li><span class="hl-teal">सामाजिक समानता:</span> इसका लक्ष्य जाहिरा और छिपे हुए भेदभावों (जैसे जाति, धर्म या लिंग) को मिटाना है ताकि हर व्यक्ति <span class="hl-rose">"आत्म-सम्मान"</span> के साथ जी सके।</li>
+                        <li><span class="hl-blue">आर्थिक समानता:</span> यह समाज में धन के वितरण से जुड़ी है। इसका लक्ष्य पूर्ण बराबरी नहीं, बल्कि <span class="hl-rose">"बुनियादी ज़रूरतों की गारंटी"</span> और अवसरों की उपलब्धता सुनिश्चित करना है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q22 -->
+            <div class="qa-block">
+                <div class="question-text">Q22. "आरक्षण की नीति (Reservation) समानता के सिद्धांत का उल्लंघन नहीं, बल्कि उसे पूरा करती है।" स्पष्ट कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-gold">ऐतिहासिक न्याय:</span>
+                    आरक्षण को समानता का <span class="hl-teal">"सकारात्मक रूप"</span> माना जाता है क्योंकि:
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">समानता का मर्म:</span> यदि दो घोड़ों की दौड़ में एक का पैर बंधा हो, तो उन्हें एक साथ दौड़ाना समानता नहीं है। आरक्षण <span class="hl-rose">"पैर के बंधन"</span> (ऐतिहासिक अन्याय) को खोलता है।</li>
+                        <li><span class="hl-teal">प्रतिनिधित्व:</span> यह सुनिश्चित करता है कि शासन और प्रशासन में समाज के सभी वर्गों की आवाज़ सुनी जाए।</li>
+                        <li><span class="hl-rose">समान मंच:</span> यह पिछड़े वर्गों को उस स्तर पर लाता है जहाँ से वे दूसरों के साथ <span class="hl-gold">"सही प्रतिस्पर्धा"</span> कर सकें।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q23 -->
+            <div class="qa-block">
+                <div class="question-text">Q23. 'अवसर की समानता' बनाम 'परिणाम की समानता' की बहस का विश्लेषण कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">दो प्रतिस्पर्धी विचार:</span>
+                    <ul style="list-style-type: circle; margin-top: 10px;">
+                        <li><span class="hl-gold">अवसर की समानता:</span> यह कहती है कि दौड़ के लिए सभी को <span class="hl-blue">"एक ही शुरुआती बिंदु"</span> मिलना चाहिए (लिबरल सोच)। इसके बाद जो जीतेगा वह उसकी काबिलियत होगी।</li>
+                        <li><span class="hl-rose">परिणाम की समानता:</span> यह कहती है कि केवल अवसर काफी नहीं है। समाज को यह सुनिश्चित करना चाहिए कि अंत में सभी के पास <span class="hl-teal">"लगभग बराबर"</span> संसाधन हों (समाजवादी सोच)।</li>
+                    </ul>
+                    अधिकांश आधुनिक लोकतंत्र <span class="hl-blue">"अवसर की समानता"</span> को प्राथमिकता देते हैं, लेकिन गरीब के लिए <span class="hl-gold">"न्यूनतम गरिमा"</span> के परिणाम को भी सुरक्षित रखते हैं।
+                </div>
+            </div>
+
+            <!-- Q24 -->
+            <div class="qa-block">
+                <div class="question-text">Q24. भारतीय संविधान में समानता को स्थापित करने के लिए कौन-कौन से मुख्य प्रावधान किए गए हैं?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-gold">संवैधानिक ढांचा:</span>
+                    भारतीय संविधान के <span class="hl-teal">"मौलिक अधिकार"</span> (अनुच्छेद 14 से 18) समानता की नींव रखते हैं:
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-blue">अनुच्छेद 14:</span> विधि के समक्ष समानता (समान कानून)।</li>
+                        <li><span class="hl-rose">अनुच्छेद 15:</span> भेदभाव का निषेध (जाति, धर्म, लिंग)।</li>
+                        <li><span class="hl-teal">अनुच्छेद 16:</span> अवसरों की समानता (सरकारी नौकरियों में)।</li>
+                        <li><span class="hl-gold">अनुच्छेद 17:</span> अस्पृश्यता का अंत।</li>
+                        <li><span class="hl-blue">अनुच्छेद 18:</span> उपाधियों का अंत (विशेषाधिकार प्राप्त वर्ग की समाप्ति)।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q25 -->
+            <div class="qa-block">
+                <div class="question-text">Q25. "बिना समानता के स्वतंत्रता केवल एक भ्रम है।" तर्क सहित स्पष्ट कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">पारस्परिक निर्भरता:</span>
+                    यदि समाज में भारी असमानता है, तो गरीब व्यक्ति के लिए <span class="hl-gold">"स्वतंत्रता"</span> बेमानी है।
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">शोषण:</span> अधिक असमानता में शक्तिशाली लोग कमज़ोरों की स्वतंत्रता को <span class="hl-rose">"खरीद"</span> लेते हैं।</li>
+                        <li><span class="hl-teal">क्षमता:</span> स्वतंत्रता का प्रयोग करने के लिए भी एक <span class="hl-gold">"न्यूनतम स्तर की समानता"</span> अनिवार्य है।</li>
+                    </ul>
+                    अतः स्वतंत्रता और समानता लोकतंत्र के <span class="hl-rose">"दो पहिए"</span> हैं; एक के बिना दूसरा निरर्थक है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 6: 26-30 (Long/Analytical) -->
+            <div style="background-color: #115e59; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">अंतिम खंड: वैचारिक संघर्ष एवं निष्कर्ष</div>
+
+            <!-- Q26 -->
+            <div class="qa-block">
+                <div class="question-text">Q26. समानता पर 'उदारवादी' (Liberal) और 'समाजवादी' (Socialist) विचारों के बीच मुख्य अंतर क्या है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">विचारधारात्मक भेद:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-gold">उदारवादी:</span> ये "अवसर की समानता" और कानूनी बराबरी पर ज़ोर देते हैं। वे मुक्त बाज़ार और व्यक्तिगत योग्यता का समर्थन करते हैं।</li>
+                        <li><span class="hl-rose">समाजवादी:</span> ये संसाधनों के "समान वितरण" और सामूहिक स्वामित्व पर बल देते हैं। इनका तर्क है कि जब तक बुनियादी आर्थिक असमानता रहेगी, अवसर की समानता एक <span class="hl-blue">"धोखा"</span> है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q27 -->
+            <div class="qa-block">
+                <div class="question-text">Q27. 21वीं सदी में 'डिजिटल डिवाइड' (Digital Divide) समानता के लिए किस प्रकार एक चुनौती है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-gold">तकनीकी असमानता:</span>
+                    आज के दौर में जानकारी ही शक्ति है। जिन लोगों के पास <span class="hl-teal">"इंटरनेट और आधुनिक तकनीक"</span> पहुँच उपलब्ध है, वे दूसरों से कहीं आगे निकल रहे हैं। यह <span class="hl-rose">"सूचना की खाई"</span> शिक्षा और रोजगार के क्षेत्र में नई <span class="hl-blue">"सामाजिक असमानता"</span> पैदा कर रही है। डिजिटल साक्षरता आज <span class="hl-gold">"समान नागरिकता"</span> का नया पैमाना है।
+                </div>
+            </div>
+
+            <!-- Q28 -->
+            <div class="qa-block">
+                <div class="question-text">Q28. "समानता का अर्थ प्रतिभाओं का दमन नहीं है।" इस कथन की व्याख्या कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">योग्यता और न्याय:</span>
+                    समानता का उद्देश्य सबको <span class="hl-gold">"एक जैसा औसत"</span> बनाना नहीं है। इसका वास्तविक अर्थ यह है कि किसी की <span class="hl-rose">"प्रतिभा"</span> उसकी गरीबी या सामाजिक स्थिति के कारण दम न तोड़े। समाज को <span class="hl-blue">"कुशलता"</span> (Excellence) को प्रोत्साहित करना चाहिए, लेकिन यह सुनिश्चित करते हुए कि सभी को उस कुशलता तक पहुँचने का <span class="hl-teal">"समान दरवाजा"</span> मिले।
+                </div>
+            </div>
+
+            <!-- Q29 -->
+            <div class="qa-block">
+                <div class="question-text">Q29. 'शिक्षा' समानता स्थापित करने का सबसे प्रभावशाली उपकरण कैसे हो सकती है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-gold">परिवर्तनकारी शक्ति:</span>
+                    शिक्षा व्यक्ति को <span class="hl-teal">"मानसिक गुलामी"</span> और अज्ञानता से मुक्त करती है।
+                    <ul style="list-style-type: circle; margin-top: 10px;">
+                        <li><span class="hl-blue">आर्थिक:</span> यह गरीब छात्रों को बेहतर करियर के अवसर देकर <span class="hl-rose">"आय की खाई"</span> कम करती है।</li>
+                        <li><span class="hl-teal">सामाजिक:</span> यह रूढ़ियों और जातिवादी सोच को खत्म कर <span class="hl-gold">"वैज्ञानिक दृष्टिकोण"</span> विकसित करती है।</li>
+                    </ul>
+                    अतः गुणवत्तापूर्ण शिक्षा का <span class="hl-blue">"लोकतांत्रिकरण"</span> ही समानता की पहली सीढ़ी है।
+                </div>
+            </div>
+
+            <!-- Q30 -->
+            <div class="qa-block" style="background-color: #f0fdfa; border: 4px solid #134e4a;">
+                <div class="question-text">Q30. निष्कर्ष: एक आदर्श समान समाज का विज़न क्या होना चाहिए?</div>
+                <div class="answer-box" style="background-color: #ffffff; border-left-color: #0d9488;">
+                    <span class="explanation-title hl-teal">अंतिम विचार:</span>
+                    समानता कोई मृत सिद्धांत नहीं, बल्कि एक <span class="hl-gold">"जीवंत लक्ष्य"</span> है। एक आदर्श समाज वह है जहाँ कोई इतना अमीर न हो कि वह दूसरों को खरीद सके, और कोई इतना गरीब न हो कि वह खुद को बेचने पर मजबूर हो जाए। 2026-27 के शैक्षणिक सत्र के लिए हमें यह समझना होगा कि <span class="hl-rose">"विविधता का सम्मान"</span> करते हुए <span class="hl-blue">"भेदभाव का अंत"</span> ही समानता की असली जीत है।
+                    <br><br>
+                    <div style="text-align: center; color: #115e59; font-weight: 900; letter-spacing: 2px;">**[अध्याय 13: समानता - मुकम्मल 30 प्रश्नों का प्रीमियम बैंक (2026-27)]**</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

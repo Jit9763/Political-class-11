@@ -2,196 +2,470 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>Chapter 4: Q&A - 20+ Questions</title>
+    <title>Chapter 4: कार्यपालिका - Super-Premium Edition (2026-27)</title>
     <style>
-        ul, ol { padding-left: 50px !important; }
-        li { padding-left: 10px; margin-bottom: 12px; }
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 0; background-color: #fef2f2; font-family: 'Segoe UI', Tahoma, sans-serif; color: #7f1d1d; }
+        
+        .home-btn {
+            position: fixed; bottom: 30px; right: 30px; z-index: 2000;
+            background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%);
+            color: white; width: 70px; height: 70px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem; text-decoration: none; box-shadow: 0 10px 25px rgba(127, 29, 29, 0.4);
+            border: 4px solid #ffffff; transition: transform 0.3s;
+        }
+        .home-btn:hover { transform: scale(1.1) rotate(15deg); }
+
+        .master-container {
+            max-width: 1250px; margin: 50px auto; padding: 60px; background-color: #ffffff;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12); border-radius: 40px; border-top: 15px solid #991b1b;
+        }
+        
+        .header-box {
+            text-align: center; margin-bottom: 70px; padding: 75px; 
+            border: 10px double #991b1b; background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); 
+            border-radius: 35px;
+        }
+        
+        .qa-block {
+            margin-bottom: 70px; padding: 45px; border: 4px solid #f1f5f9; 
+            border-radius: 30px; background-color: #ffffff;
+        }
+        .question-text { 
+            font-size: 25pt; font-weight: 900; color: #7f1d1d; line-height: 1.5; 
+            margin-bottom: 30px; border-bottom: 5px solid #e2e8f0; padding-bottom: 20px;
+        }
+        .options-list { font-size: 20pt; list-style-type: upper-alpha; padding-left: 70px; color: #334155; font-weight: 700; }
+        .options-list li { margin-bottom: 20px; }
+
+        .answer-box {
+            margin-top: 35px; padding: 40px; border-radius: 25px; font-size: 20pt; line-height: 2.2;
+            background-color: #f8fafc; border-left: 15px solid #991b1b;
+        }
+        
+        /* Premium Highlights */
+        .hl-red { color: #b91c1c; font-weight: 800; border-bottom: 2px solid #fecaca; }
+        .hl-blue { color: #1d4ed8; font-weight: 800; border-bottom: 2px solid #bfdbfe; }
+        .hl-rose { color: #be123c; font-weight: 800; }
+        .hl-teal { color: #0f766e; font-weight: 800; }
+        
+        .correct-ans { 
+            background: #fee2e2; color: #991b1b; padding: 12px 25px; 
+            border-radius: 12px; font-weight: 900; display: inline-block; margin-bottom: 25px;
+        }
+        .explanation-title { 
+            display: block; font-size: 22pt; font-weight: 900; color: #7f1d1d; 
+            margin-top: 25px; border-bottom: 3px solid #cbd5e1; width: fit-content;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, #7f1d1d, #dc2626); color: white; 
+            padding: 25px; border-radius: 20px; text-align: center; 
+            font-size: 28pt; font-weight: 900; margin: 90px 0 50px 0;
+            box-shadow: 0 15px 30px rgba(127, 29, 29, 0.2);
+        }
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-btn" title="Home Screen">🏠</a>
+
     <div id="contentToCopy">
-        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 16pt; line-height: 1.8; color: #1a202c; max-width: 1400px; margin: auto; padding: 20px;">
+        <div class="master-container">
 
-            <!-- Header -->
-            <div style="text-align: center; margin-bottom: 50px; padding: 40px; border: 4px double #065f46; background-color: #ecfdf5; border-radius: 15px;">
-                <h1 style="color: #065f46; font-size: 45pt; font-weight: 900; border-bottom: 5px solid #10b981; padding-bottom: 20px; margin-bottom: 30px; text-transform: uppercase;">
-                    प्रश्न-उत्तर बैंक: अध्याय 4<br/>
-                    <span style="font-size: 26pt; color:#047857; font-weight: 600;">(कार्यपालिका)</span>
-                </h1>
-                <p style="font-size: 24pt; color: #0f172a; margin-top: 10px; font-weight: bold;">[20+ महत्वपूर्ण प्रश्न - UPSC & Board Analysis Based]</p>
+            <div class="header-box">
+                <h1 style="color: #7f1d1d; font-size: 52pt; font-weight: 900; margin: 0;">अध्याय 4</h1>
+                <div style="font-size: 42pt; color: #450a0a; font-weight: 900; margin-top: 15px;">कार्यपालिका (Executive)</div>
+                <div style="height: 8px; width: 250px; background: #7f1d1d; margin: 35px auto; border-radius: 4px;"></div>
+                <p style="font-size: 22pt; color: #7f1d1d; font-weight: 900; text-transform: uppercase;">Academic Session 2026-27 | Professional Edition</p>
             </div>
 
-            <!-- MCQs Section -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #ffffff; background-color: #2563eb; padding: 15px 20px; border-radius: 8px; font-size: 28pt; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">खंड A: बहुविकल्पीय प्रश्न (MCQs - 1 अंक)</h2>
-                
-                <div style="background-color: #f8fafc; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q1. निम्नलिखित में से कौन 'राजनीतिक कार्यपालिका' का हिस्सा नहीं है?</p>
-                    <ol style="padding-left: 50px; margin-left: 20px; font-size: 18pt; color: #334155;" type="A">
-                        <li>प्रधानमंत्री</li>
-                        <li>रक्षा मंत्री</li>
-                        <li>जिलाधिकारी (DM / IAS Officer) (✓ उत्तर)</li>
-                        <li>राष्ट्रपति</li>
-                    </ol>
-                </div>
+            <div class="section-divider">भाग 1: वस्तुनिष्ठ प्रश्न (MCQs) - सेगमेंट 1</div>
 
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q2. भारत में 'राज्य का प्रमुख' (Head of State) और 'सरकार का प्रमुख' (Head of Government) क्रमशः कौन हैं?</p>
-                    <ol style="padding-left: 50px; margin-left: 20px; font-size: 18pt; color: #334155;" type="A">
-                        <li>प्रधानमंत्री और राष्ट्रपति</li>
-                        <li>राष्ट्रपति और प्रधानमंत्री (✓ उत्तर)</li>
-                        <li>राष्ट्रपति और मुख्य न्यायाधीश</li>
-                        <li>उपराष्ट्रपति और प्रधानमंत्री</li>
-                    </ol>
-                </div>
-
-                <div style="background-color: #f8fafc; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q3. भारत का राष्ट्रपति किस प्रणाली द्वारा चुना जाता है?</p>
-                    <ol style="padding-left: 50px; margin-left: 20px; font-size: 18pt; color: #334155;" type="A">
-                        <li>सर्वाधिक वोट पाने वाले की जीत (FPTP)</li>
-                        <li>एकल संक्रमणीय मत प्रणाली (Single Transferable Vote) (✓ उत्तर)</li>
-                        <li>आम जनता के प्रत्यक्ष मतदान द्वारा</li>
-                        <li>सूची प्रणाली</li>
-                    </ol>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q4. 91वें संविधान संशोधन (2003) के अनुसार, मंत्रिपरिषद का आकार लोकसभा के कुल सदस्यों के कितने प्रतिशत से अधिक नहीं हो सकता?</p>
-                    <ol style="padding-left: 50px; margin-left: 20px; font-size: 18pt; color: #334155;" type="A">
-                        <li>10%</li>
-                        <li>15% (✓ उत्तर)</li>
-                        <li>20%</li>
-                        <li>33%</li>
-                    </ol>
-                </div>
-
-                <div style="background-color: #f8fafc; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q5. राज्यसभा का 'पदेन सभापति' (Ex-officio Chairman) कौन होता है?</p>
-                    <ol style="padding-left: 50px; margin-left: 20px; font-size: 18pt; color: #334155;" type="A">
-                        <li>भारत का राष्ट्रपति</li>
-                        <li>भारत का उपराष्ट्रपति (✓ उत्तर)</li>
-                        <li>प्रधानमंत्री</li>
-                        <li>लोकसभा स्पीकर</li>
-                    </ol>
+            <div class="qa-block">
+                <div class="question-text">Q1. 'कार्यपालिका' (Executive) का मुख्य उत्तरदायित्व (Primary Responsibility) क्या है?</div>
+                <ol class="options-list">
+                    <li>कानून बनाना</li>
+                    <li>विधायिका द्वारा बनाए गए कानूनों और नीतियों को लागू करना (Implementation)</li>
+                    <li>अदालतों में न्याय करना</li>
+                    <li>संविधान में संशोधन करना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) कानूनों और नीतियों को लागू करना</span>
+                    <span class="explanation-title hl-red">प्रशासनिक विज़न:</span>
+                    कार्यपालिका सरकार का वह अंग है जो <span class="hl-blue">"शासन के दैनिक कार्यों"</span> के लिए उत्तरदायी है। इसमें न केवल मंत्री और नेता आते हैं, बल्कि पूरा <span class="hl-rose">प्रशासनिक ढांचा</span> (Bureaucracy) भी शामिल है।
                 </div>
             </div>
 
-            <!-- Very Short Answer Section -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #ffffff; background-color: #16a34a; padding: 15px 20px; border-radius: 8px; font-size: 28pt; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">खंड B: अति लघु उत्तरीय प्रश्न (2 अंक)</h2>
-                
-                <div style="background-color: #f0fdf4; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q6. 'कार्यपालिका' का क्या अर्थ है?</p>
-                    <p style="font-size: 18pt; color: #166534;"><b>उत्तर:</b> सरकार की वह शाखा या मशीनरी जो विधायिका द्वारा बनाए गए कानूनों और नीतियों को ज़मीन पर लागू करने (Execute) का काम करती है, कार्यपालिका कहलाती है।</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q7. संसदीय प्रणाली में 'जवाबदेही' (Accountability) किसके प्रति होती है?</p>
-                    <p style="font-size: 18pt; color: #166534;"><b>उत्तर:</b> इस प्रणाली में प्रधानमंत्री और उनका पूरा मंत्रिमंडल सीधे तौर पर देश की विधायिका (संसद/विशेषकर लोकसभा) के प्रति जवाबदेह होते हैं।</p>
-                </div>
-
-                <div style="background-color: #f0fdf4; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q8. राष्ट्रपति का 'जेबी वीटो' (Pocket Veto) क्या है?</p>
-                    <p style="font-size: 18pt; color: #166534;"><b>उत्तर:</b> संविधान में बिल पास करने की कोई समय-सीमा तय नहीं है। जब राष्ट्रपति किसी विवादित बिल को न तो स्वीकार करते हैं, न लौटाते हैं, बल्कि उसे अनिश्चित काल के लिए अपने पास (Pocket में) रख लेते हैं, उसे जेबी वीटो कहते हैं।</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q9. 'स्थायी कार्यपालिका' (Permanent Executive) किसे कहते हैं?</p>
-                    <p style="font-size: 18pt; color: #166534;"><b>उत्तर:</b> सिविल सेवकों (जैसे IAS, IPS) और प्रशासनिक अधिकारियों के समूह को, जो योग्यता के आधार पर चुने जाते हैं और रिटायरमेंट (60 वर्ष उम्र) तक काम करते हैं (सरकार बदलने पर भी उनका पद नहीं जाता)।</p>
-                </div>
-
-                <div style="background-color: #f0fdf4; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q10. 'त्रिशंकु संसद' (Hung Parliament) किसे कहते हैं?</p>
-                    <p style="font-size: 18pt; color: #166534;"><b>उत्तर:</b> जब लोकसभा चुनाव के बाद किसी भी एक राजनैतिक दल या चुनाव-पूर्व गठबंधन को सरकार बनाने के लिए स्पष्ट बहुमत (272 सीटें) प्राप्त न हो, तो उसी स्थिति को त्रिशंकु संसद कहते हैं।</p>
+            <div class="qa-block">
+                <div class="question-text">Q2. 'संसदीय कार्यपालिका' (Parliamentary Executive) में सरकार का प्रधान कौन होता है?</div>
+                <ol class="options-list">
+                    <li>राष्ट्रपति</li>
+                    <li>प्रधानमंत्री (जो विधायिका में बहुमत प्राप्त दल का नेता होता है)</li>
+                    <li>लोकसभा अध्यक्ष</li>
+                    <li>मुख्य न्यायाधीश</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) प्रधानमंत्री</span>
+                    <span class="explanation-title hl-blue">लोकतांत्रिक शक्ति:</span>
+                    संसदीय प्रणाली में प्रधानमंत्री <span class="hl-rose">"वास्तविक कार्यपालिका"</span> (Real Executive) होते हैं, जबकि राष्ट्रपति <span class="hl-teal">"नाममात्र की कार्यपालिका"</span> (Nominal Executive) के रूप में कार्य करते हैं। भारत और ब्रिटेन इसके प्रमुख उदाहरण हैं।
                 </div>
             </div>
 
-            <!-- Short Answer Section -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #ffffff; background-color: #d97706; padding: 15px 20px; border-radius: 8px; font-size: 28pt; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">खंड C: लघु उत्तरीय विश्लेषणात्मक प्रश्न (4 अंक)</h2>
-                
-                <div style="background-color: #fffbeb; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f59e0b;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q11. राजनीतिक और स्थायी कार्यपालिका में दो प्रमुख अंतर बताइए।</p>
-                    <p style="font-size: 18pt; color: #92400e; text-align: justify;"><b>उत्तर:</b><br/> 
-                    1. <b>चयन व कार्यकाल:</b> राजनीतिक कार्यपालिका (नेता/मंत्री) जनता द्वारा 5 साल के लिए चुनी जाती है, जबकि स्थायी कार्यपालिका (UPSC अधिकारी) योग्यता (Merit) के आधार पर परीक्षा द्वारा 60 वर्ष की आयु तक के लिए चुनी जाती है。<br/> 
-                    2. <b>नीति निर्माण बनाम क्रियान्वयन:</b> मंत्री देश के लिए मुख्य नीतियाँ (Policies) तय करते हैं, जबकि सिविल सेवक उन नीतियों को तकनीकी रूप से ड्राफ्ट करते हैं और ज़मीन पर लागू करवाते हैं।</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f59e0b;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q12. "राष्ट्रपति केवल एक रबर स्टाम्प नहीं है।" राष्ट्रपति की 'पुनर्विचार' (Reconsideration) शक्ति इसे कैसे साबित करती है?</p>
-                    <p style="font-size: 18pt; color: #92400e; text-align: justify;"><b>उत्तर:</b> अनुच्छेद 74 कहता है कि राष्ट्रपति मंत्री-परिषद की सलाह मानेगा। लेकिन वह एक 'रोबोट' नहीं है। यदि एक मंत्री-परिषद कोई ऐसा कानून भेजती है जो संविधान के खिलाफ है या जल्दबाज़ी में है, तो राष्ट्रपति <b>'पुनर्विचार'</b> के लिए उसे लौटा सकता है। हालाँकि सरकार इसे दोबारा पास करके भेजे तो राष्ट्रपति को साइन करने होते हैं, फिर भी यह लौटाना देश की मीडिया में बड़ी खबर बन जाता है जिससे जनता का दबाव सरकार पर पड़ता है। यह एक बड़ा 'नैतिक' हथियार है।</p>
-                </div>
-
-                <div style="background-color: #fffbeb; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f59e0b;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q13. गठबंधन सरकार (Coalition Govt) के युग में प्रधानमंत्री की शक्तियों में क्यों और कैसे कमी आ जाती है?</p>
-                    <p style="font-size: 18pt; color: #92400e; text-align: justify;"><b>उत्तर:</b> जब एक पार्टी (जैसे पूर्ण बहुमत वाली सरकार) होती है, तो प्रधानमंत्री तानाशाह की तरह काम कर सकता है। लेकिन गठबंधन युग (1989-2014) में, सरकार कई छोटी-छोटी पार्टियों के समर्थन से बनती है। प्रधानमंत्री अपनी मर्ज़ी से नीतियाँ नहीं बना पाता। उसे अपने सहयोगी दलों के नेताओं को खुश रखना पड़ता है, वर्ना वे समर्थन खींचकर सरकार गिरा सकते हैं। ऐसे में प्रधानमंत्री 'निर्णय लेने वाला' कम और 'मध्यस्थ' (Negotiator) ज़्यादा बन जाता है।</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f59e0b;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q14. अध्यक्षीय प्रणाली (Presidential) और संसदीय प्रणाली (Parliamentary) के बीच क्या मूलभूत अंतर है?</p>
-                    <p style="font-size: 18pt; color: #92400e; text-align: justify;"><b>उत्तर:</b> अध्यक्षीय (अमेरिका) में राष्ट्रपति राज्य और सरकार दोनों का प्रमुख होता है, उसका कार्यकाल तय होता है (4 साल) और वह संसद के प्रति जवाबदेह नहीं होता। इसके विपरीत, संसदीय (भारत) में राष्ट्रपति केवल नाममात्र का प्रमुख है, असली ताकत प्रधानमंत्री के पास है, और प्रधानमंत्री तब तक सत्ता में रहता है जब तक 'लोकसभा' में उसका बहुमत है (जवाबदेही)।</p>
-                </div>
-
-                <div style="background-color: #fffbeb; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f59e0b;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q15. अखिल भारतीय सेवाएँ (All India Services) क्या होती हैं और ये राष्ट्र की एकता के लिए क्यों महत्त्वपूर्ण हैं?</p>
-                    <p style="font-size: 18pt; color: #92400e; text-align: justify;"><b>उत्तर:</b> IAS और IPS जैसी सेवाएँ 'अखिल भारतीय' हैं। इसका मतलब है कि केंद्र सरकार (UPSC) इन अधिकारियों का चयन करती है, लेकिन इन्हें राज्य सरकारों (DM/SP के रूप में) के नीचे काम करने भेजा जाता है। यह इसलिए महत्वपूर्ण है क्योंकि इससे न केवल हर राज्य को शानदार विशेषज्ञता (Talent) मिलती है, बल्कि पूरे भारत में प्रशासन का एक 'राष्ट्रीय ढाँचा' (Uniform Standard) कायम रहता है जो देश को बाँट कर रखता है।</p>
+            <div class="qa-block">
+                <div class="question-text">Q3. अमेरिका में किस प्रकार की कार्यपालिका व्यवस्था प्रचलित है?</div>
+                <ol class="options-list">
+                    <li>संसदीय कार्यपालिका</li>
+                    <li>अध्यक्षात्मक कार्यपालिका (Presidential Executive)</li>
+                    <li>अर्ध-अध्यक्षात्मक कार्यपालिका</li>
+                    <li>राजतंत्रीय कार्यपालिका</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) अध्यक्षात्मक कार्यपालिका</span>
+                    <span class="explanation-title hl-red">शक्ति का केंद्र:</span>
+                    अमेरिका में राष्ट्रपति राज्य और सरकार दोनों का प्रधान होता है। वह <span class="hl-blue">विधायिका (Congress)</span> के प्रति उत्तरदायी नहीं होता और उनका चुनाव सीधे जनता द्वारा (निर्वाचक मंडल के माध्यम से) किया जाता है।
                 </div>
             </div>
 
-            <!-- Long Answer Section -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #ffffff; background-color: #dc2626; padding: 15px 20px; border-radius: 8px; font-size: 28pt; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">खंड D: दीर्घ उत्तरीय विश्लेषणात्मक प्रश्न (6 अंक)</h2>
-                
-                <div style="background-color: #fef2f2; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #ef4444;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q16. भारत ने अध्यक्षीय प्रणाली (Presidential system) के बजाय संसदीय प्रणाली (Parliamentary System) को क्यों चुना? इसके पीछे संविधान निर्माताओं के मुख्य तर्कों का विश्लेषण करें।</p>
-                    <p style="font-size: 18pt; color: #991b1b; text-align: justify;"><b>उत्तर:</b><br/> 
-                    भारत के निर्माताओं के पास दो विकल्प थे: या तो वे 'एक ताकतवर और स्थिर' (अध्यक्षीय) सरकार चुनते, या एक 'नाज़ुक लेकिन जवाबदेह' (संसदीय) सरकार चुनते। उन्होंने निम्नलिखित कारणों से संसदीय प्रणाली को ज्यादा बेहतर माना:<br/> 
-                    <b>1. तानाशाही का डर (Executive dominance):</b> डॉ. बी.आर. अंबेडकर ने कहा था कि एक लोकतंत्र को रोज़ाना 'उत्तरदायी' (Accountable) होना चाहिए। अमेरिका का राष्ट्रपति 4 साल में एक बार जवाबदेह होता है, लेकिन संसदीय प्रणाली में प्रधानमंत्री रोज़ाना संसद में 'प्रश्नकाल' का सामना करता है। इससे किसी एक व्यक्ति के तानाशाह (Dictator) बनने की सम्भावना ख़त्म हो जाती है।<br/>
-                    <b>2. भारत की विविधता:</b> भारत एक बहुत बड़ा और बहुलवादी देश है (भाषा, धर्म, जाति)। संसदीय कैबिनेट में देश के हर कोने (जैसे तमिलनाडु, नागालैंड) के राजनीतिक दल और नेता मंत्री बनकर भागीदार बन सकते हैं। अध्यक्षीय प्रणाली में इतना बड़ा 'प्रतिनिधित्व' (Representation) संभव नहीं था।<br/>
-                    <b>3. इतिहास का अनुभव:</b> भारत अंग्रेजों के तहत कुछ हद तक संसदीय ढाँचे (1919 और 1935 के अधिनियम) का आदी हो चुका था, अतः पुरानी सीखी हुई प्रणाली से एक अनजान प्रणाली में जाना खतरे से भरा था।</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #ef4444;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q17. भारतीय संसदीय व्यवस्था का सबसे अहम सिद्धांत "सामूहिक उत्तरदायित्व (Collective Responsibility)" है। इसका क्या अर्थ है और यह कैसे काम करता है?</p>
-                    <p style="font-size: 18pt; color: #991b1b; text-align: justify;"><b>उत्तर:</b><br/> 
-                    सामूहिक उत्तरदायित्व (अनुच्छेद 75(3)) का अर्थ है "मंत्रिपरिषद (Council of Ministers) सामूहिक रूप से लोकसभा के प्रति उत्तरदायी होगी।"<br/>
-                    <b>गहन विश्लेषण:</b><br/>
-                    1. <b>एक साथ तैरना और एक साथ डूबना:</b> सरकार का कोई भी फैसला सिर्फ एक मंत्री का नहीं, बल्कि 'पूरी सरकार' का फैसला माना जाता है। यदि लोकसभा किसी एक भी कैबिनेट मंत्री के गलत बिल पर 'अविश्वास प्रस्ताव' (No-confidence Motion) पास कर दे, तो वह हार पूरे मंत्रिमंडल की हार मानी जाती है और प्रधानमंत्री समेत सभी मंत्रियों को इस्तीफा देना पड़ता है (पूरी सरकार गिर जाती है)।<br/>
-                    2. <b>कैबिनेट की एकजुटता:</b> कैबिनेट की बैठक में कोई मंत्री किसी मुद्दे का विरोध कर सकता है, लेकिन बाहर आकर (मीडिया या संसद में) उसे सरकार के फैसले का बचाव (Defend) ही करना होगा। वह यह नहीं कह सकता कि "मैं इस बिल के खिलाफ था"। यदि वह ऐसा करता है या सहमत नहीं है, तो उसे <b>'इस्तीफा' (Resign)</b> देना ही पड़ता है (जैसे 1950 में डॉ. श्यामा प्रसाद मुखर्जी और डॉ. अंबेडकर के इस्तीफे)। यह सिद्धांत सरकार में अनुशासन कायम करता है।</p>
-                </div>
-
-                <div style="background-color: #fef2f2; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #ef4444;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q18. "जब चुनाव में किसी भी पार्टी को बहुमत नहीं मिलता, तब राष्ट्रपति की भूमिका एक रबर स्टाम्प से बदलकर 'किंगमेकर' की हो जाती है।" भारत के राजनीतिक सन्दर्भ में इस कथन पर चर्चा करें।</p>
-                    <p style="font-size: 18pt; color: #991b1b; text-align: justify;"><b>उत्तर:</b><br/> 
-                    यह कथन बिल्कुल सही है। आमतौर पर राष्ट्रपति अनुच्छेद 74 के तहत केवल 'नाममात्र का प्रमुख' होता है। लेकिन <b>'त्रिशंकु लोकसभा' (Hung Parliament)</b> के समय उसकी शक्तियां चरम पर होती हैं:<br/>
-                    1. <b>विवेकाधीन शक्ति (Discretion):</b> 1989 के बाद जब किसी गठबंधन (NDA या UPA) को स्पष्ट 272 सीटें नहीं मिल रही थीं, तब यह कोई नहीं बता सकता था कि कौन-सा गठबंधन सरकार बनाने (Majority साबित करने) लायक है। ऐसे में यह राष्ट्रपति (जैसे आर. वेंकटरमन या के.आर. नारायणन) का अपना दिमाग़ और विवेक (Discretion) था कि वे किस नेता को <b>'पहले आमंत्रित (Invite)'</b> करें।<br/>
-                    2. <b>किंगमेकर का रोल:</b> जिस नेता को राष्ट्रपति प्रधानमंत्री पद की शपथ दिला देता है, उसके पास बाद में फ्लोर टेस्ट (संसद में बहुमत साबित करने) में अन्य छोटे दलों को अपने साथ खींचने की "नैतिक ताकत" आ जाती है। जब सभी दावेदार भ्रम (Confusion) में होते हैं, तब राष्ट्रपति का निष्पक्ष फैसला ही देश को राजनीतिक संकट से निकालता है।</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #ef4444;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q19. क्या आप इस बात से सहमत हैं कि वर्तमान में ब्यूरोक्रेसी (Permanent Executive) का 'राजनीतिकरण' (Politicization) हो गया है? इससे आम नागरिक पर क्या असर पड़ता है?</p>
-                    <p style="font-size: 18pt; color: #991b1b; text-align: justify;"><b>उत्तर:</b><br/> 
-                    <b>हाँ, यह एक कड़वी सच्चाई है।</b> संविधान सभा चाहती थी कि सिविल सेवक (IAS/IPS) राजनीतिक रूप से 'तटस्थ' (Neutral) रहें और बिना इस बात की परवाह किए कि सत्ता में कौन सी पार्टी है, निडर होकर अपना टेक्निकल/एडमिनिस्ट्रेटिव काम करें। लेकिन आज स्थिति बदल गई है:<br/>
-                    1. <b>राजनीतिकरण के कारण:</b> कई अधिकारी अपने 'प्रमोशन' या राजधानी में 'मलाईदार पोस्टिंग' (Lucrative Posts) पाने के लिए सत्ताधारी नेताओं के साथ साँठ-गाँठ कर लेते हैं। वे संविधान के बजाय नेता के 'यस-मैन' (Yes Man) बन जाते हैं।<br/>
-                    2. <b>ईमानदार अधिकारियों का उत्पीड़न:</b> जब अशोक खेमका जैसा कोई अधिकारी राजनेताओं के भ्रष्टाचार के खिलाफ खड़ा होता है, तो नेता 'मनमाने ट्रांसफर' (Arbittrary transfers) का हथियार इस्तेमाल करते हैं।<br/>
-                    3. <b>आम नागरिक पर असर:</b> जब एक IAS/IPS अधिकारी का उद्देश्य 'जनता की सेवा' की जगह 'नेता की सेवा' बन जाता है, तो सरकारी योजनाएं ज़मीन पर भ्रष्टाचार की भेंट चढ़ जाती हैं। जनता थानों और ब्लॉकों में चक्कर काटती रह जाती है और 'लालफीताशाही' (Red-tapism) बढ़ जाती है।</p>
-                </div>
-                
-                <div style="background-color: #fef2f2; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #ef4444;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q20. अभिकथन और कारण (Assertion and Reasoning) प्रकार का प्रश्न:</p>
-                    <p style="font-size: 18pt; color: #991b1b; text-align: justify;">
-                        <b>अभिकथन (A):</b> यदि प्रधानमंत्री किसी बात पर त्यागपत्र दे देता है, तो संपूर्ण मंत्रिमंडल भंग (Dissolve) हो जाता है।<br/>
-                        <b>कारण (R):</b> प्रधानमंत्री मंत्रिपरिषद का सिर्फ 'प्रथम सदस्य' नहीं है, बल्कि वह मंत्रिपरिषद की नींव (Key-stone) है और उसके हटने से पूरी सरकार शून्य हो जाती है।<br/><br/>
-                        <b>विकल्प:</b><br/>
-                        (a) A और R दोनों सही हैं, और R, A की सही व्याख्या है।<br/>
-                        (b) A और R दोनों सही हैं, लेकिन R, A की सही व्याख्या नहीं है।<br/>
-                        (c) A सही है लेकिन R गलत है।<br/>
-                        (d) A गलत है लेकिन R सही है।<br/><br/>
-                        <b>उत्तर (a):</b> A और R दोनों सही हैं, और R सीधा व्याख्या कर रहा है कि क्यों एक पीएम के हटने से पूरी 80 मंत्रियों की फ़ौज बर्खास्त हो जाती है (सामूहिक उत्तरदायित्व और सरकार का केंद्र बिंदु होने के कारण)।
-                    </p>
+            <div class="qa-block">
+                <div class="question-text">Q4. भारत में राष्ट्रपति का चुनाव किस विधि द्वारा किया जाता है?</div>
+                <ol class="options-list">
+                    <li>जनता द्वारा प्रत्यक्ष मतदान</li>
+                    <li>समानुपातिक प्रतिनिधित्व प्रणाली और एकल संक्रमणीय मत (Single Transferable Vote) द्वारा अप्रत्यक्ष चुनाव</li>
+                    <li>केवल लोकसभा द्वारा</li>
+                    <li>सर्वोच्च न्यायालय द्वारा मनोनीत</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) समानुपातिक प्रतिनिधित्व और एकल संक्रमणीय मत</span>
+                    <span class="explanation-title hl-teal">संवैधानिक बारीकी:</span>
+                    राष्ट्रपति का चुनाव एक <span class="hl-blue">"निर्वाचक मंडल"</span> (Electoral College) द्वारा होता है, जिसमें संसद के दोनों सदनों और राज्यों की विधान सभाओं के <span class="hl-rose">"निर्वाचित सदस्य"</span> शामिल होते हैं।
                 </div>
             </div>
 
+            <div class="qa-block">
+                <div class="question-text">Q5. 'बहुमत दल का नेता' होना प्रधानमंत्री बनने की पहली शर्त क्यों है?</div>
+                <ol style="font-size: 20pt; list-style-type: upper-alpha; padding-left: 70px; color: #334155; font-weight: 700;">
+                    <li>यह केवल एक परंपरा है।</li>
+                    <li>ताकि कार्यपालिका को विधायिका (लोकसभा) का निरंतर समर्थन प्राप्त रहे और सरकार स्थिर बनी रहे।</li>
+                    <li>विपक्ष को डराने के लिए।</li>
+                    <li>विदेशी दौरों पर जाने के लिए।</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) ताकि कार्यपालिका को विधायिका का समर्थन प्राप्त रहे</span>
+                    <span class="explanation-title hl-red">संसदीय उत्तरदायित्व:</span>
+                    भारत की संसदीय प्रणाली <span class="hl-blue">"उत्तरदायित्व"</span> (Accountability) पर आधारित है। प्रधानमंत्री और मंत्रिपरिषद तभी तक सत्ता में रह सकते हैं जब तक उन्हें लोकसभा का <span class="hl-rose">"विश्वास"</span> प्राप्त है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 2: 6-10 (MCQs) -->
+            <div style="background-color: #991b1b; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 2: राष्ट्रपति की शक्तियां व स्थायी कार्यपालिका</div>
+
+            <!-- Q6 -->
+            <div class="qa-block">
+                <div class="question-text">Q6. राष्ट्रपति की 'विवेकाधीन शक्तियों' (Discretionary Powers) का क्या अर्थ है?</div>
+                <ol class="options-list">
+                    <li>बिना किसी नियम के काम करना</li>
+                    <li>ऐसी परिस्थितियाँ जब राष्ट्रपति मंत्रिपरिषद की सलाह के बिना स्वयं निर्णय ले सकते हैं (जैसे त्रिशंकु लोकसभा में PM की नियुक्ति)</li>
+                    <li>संसद को भंग करना</li>
+                    <li>विदेशों से संधि करना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) सलाह के बिना स्वयं निर्णय लेना</span>
+                    <span class="explanation-title hl-red">संवैधानिक मर्यादा:</span>
+                    यद्यपि राष्ट्रपति <span class="hl-blue">"नाममात्र"</span> के प्रधान हैं, लेकिन जब किसी दल को बहुमत न मिले या मंत्रिपरिषद को भंग करने की बात हो, तो वे अपनी <span class="hl-rose">"बुद्धि और विवेक"</span> का उपयोग करके लोकतंत्र की रक्षा करते हैं।
+                </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="qa-block">
+                <div class="question-text">Q7. 'सामूहिक उत्तरदायित्व' (Collective Responsibility) का सिद्धांत क्या है?</div>
+                <ol class="options-list">
+                    <li>सभी मंत्रियों का मिलकर पुलिस से लड़ना</li>
+                    <li>यदि किसी एक मंत्री के विरुद्ध अविश्वास प्रस्ताव पारित होता है, तो पूरी मंत्रिपरिषद को त्यागपत्र देना पड़ता है</li>
+                    <li>जनता की सेवा करना</li>
+                    <li>पार्टी के नियमों का पालन करना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) एक के खिलाफ प्रस्ताव, तो सबका त्यागपत्र</span>
+                    <span class="explanation-title hl-blue">संसदीय नियम:</span>
+                    यह <span class="hl-rose">अनुच्छेद 75</span> का मुख्य आधार है। इसका अर्थ है कि सरकार एक <span class="hl-teal">"टीम"</span> की तरह कार्य करती है; वे एक साथ तैरते हैं और एक साथ डूबते हैं। मंत्रिपरिषद लोकसभा के प्रति सामूहिक रूप से उत्तरदायी होती है।
+                </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="qa-block">
+                <div class="question-text">Q8. 'स्थायी कार्यपालिका' (Permanent Executive) में कौन शामिल होते हैं?</div>
+                <ol class="options-list">
+                    <li>प्रधानमंत्री और उनके मंत्री</li>
+                    <li>लोक सेवक (IAS, IPS और अन्य प्रशासनिक अधिकारी)</li>
+                    <li>केवल सेना के जवान</li>
+                    <li>नगर निगम के सदस्य</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) लोक सेवक (IAS, IPS आदि)</span>
+                    <span class="explanation-title hl-red">प्रशासनिक रीढ़:</span>
+                    जहाँ राजनेता <span class="hl-blue">"अस्थायी कार्यपालिका"</span> (हर 5 वर्ष में बदलते) हैं, वहीं नौकरशाही स्थायी होती है। ये अधिकारी नीतियों के <span class="hl-rose">"कार्यान्वयन"</span> में निरन्तरता बनाए रखते हैं, चाहे सरकार किसी भी दल की हो।
+                </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="qa-block">
+                <div class="question-text">Q9. 'अर्ध-अध्यक्षात्मक' (Semi-Presidential) व्यवस्था का एक प्रमुख उदाहरण कौन सा देश है?</div>
+                <ol class="options-list">
+                    <li>अमेरिका</li>
+                    <li>श्रीलंका (या फ्रांस)</li>
+                    <li>ब्रिटेन</li>
+                    <li>कनाडा</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) श्रीलंका (या फ्रांस)</span>
+                    <span class="explanation-title hl-teal">मिश्रित मॉडल:</span>
+                    इस व्यवस्था में राष्ट्रपति और प्रधानमंत्री <span class="hl-blue">दोनों</span> के पास महत्वपूर्ण शक्तियाँ होती हैं। राष्ट्रपति सीधे जनता द्वारा चुना जाता है, लेकिन शासन चलाने के लिए प्रधानमंत्री और मंत्रिपरिषद की आवश्यकता होती है।
+                </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="qa-block">
+                <div class="question-text">Q10. राष्ट्रपति द्वारा संसद में पारित किसी विधेयक को 'पुनर्विचार' के लिए वापस भेजने की शक्ति किस श्रेणी में आती है?</div>
+                <ol class="options-list">
+                    <li>न्यायिक शक्ति</li>
+                    <li>वीटो शक्ति (Veto Power) - सस्पेंसिव वीटो</li>
+                    <li>सैन्य शक्ति</li>
+                    <li>आपातकालीन शक्ति</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) वीटो शक्ति (सस्पेंसिव वीटो)</span>
+                    <span class="explanation-title hl-red">मर्यादित रोक:</span>
+                    राष्ट्रपति किसी बिल को एक बार <span class="hl-blue">पुनर्विचार</span> के लिए वापस भेज सकते हैं, लेकिन यदि संसद उसे दोबारा बिना किसी बदलाव के पारित कर दे, तो राष्ट्रपति उस पर हस्ताक्षर करने के लिए <span class="hl-rose">"बाध्य"</span> हैं।
+                </div>
+            </div>
+
+            <!-- SEGMENT 3: 11-15 (Short/Assertion) -->
+            <div style="background-color: #7f1d1d; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 3: लघु उत्तरीय एवं कथन-कारण पृष्ठ</div>
+
+            <!-- Q11 -->
+            <div class="qa-block">
+                <div class="question-text">Q11. भारत ने 'संसदीय प्रणाली' (Parliamentary System) को ही क्यों चुना? मुख्य कारण बताइए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-red">ऐतिहासिक और व्यावहारिक तर्क:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">अनुभव:</span> भारत में ब्रिटिश शासन के दौरान संसदीय व्यवस्था का थोड़ा बहुत अनुभव पहले ही मिल चुका था।</li>
+                        <li><span class="hl-rose">उत्तरदायित्व:</span> संविधान निर्माता चाहते थे कि कार्यपालिका (सरकार) हमेशा जनता के प्रतिनिधियों (संसद) के प्रति <span class="hl-teal">"उत्तरदायी"</span> बनी रहे, ताकि तानाशाही की संभावना न रहे।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="qa-block">
+                <div class="question-text">Q12. प्रधानमंत्री को 'मंत्रिपरिषद का प्रधान' (Head of the Council) क्यों कहा जाता है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-blue">केंद्रीय शक्ति:</span>
+                    प्रधानमंत्री <span class="hl-red">"सूर्य"</span> की तरह हैं जिसके चारों ओर अन्य मंत्री चक्कर लगाते हैं। वे ही तय करते हैं कि कौन मंत्री बनेगा, उसे कौन सा विभाग मिलेगा, और यदि वे <span class="hl-rose">त्यागपत्र</span> दे दें, तो पूरी मंत्रिपरिषद अपने आप भंग हो जाती है।
+                </div>
+            </div>
+
+            <!-- Q13 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #991b1b;">
+                <div class="question-text">Q13. कथन (Assertion): भारत का राष्ट्रपति केवल एक 'नाममात्र' का प्रधान (Head of State) है।<br>
+                कारण (Reason): राष्ट्रपति मंत्रिपरिषद की सलाह मानने के लिए संवैधानिक रूप से बाध्य (Bound) है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-teal">संवैधानिक मर्यादा:</span>
+                    <span class="hl-blue">42वें और 44वें संशोधनों</span> ने यह स्पष्ट कर दिया कि राष्ट्रपति को अपनी शक्तियों का प्रयोग <span class="hl-rose">प्रधानमंत्री युक्त मंत्रिपरिषद</span> की सलाह पर ही करना होगा।
+                </div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="qa-block" style="border-left: 12px solid #991b1b;">
+                <div class="question-text">Q14. कथन (Assertion): गठबंधन सरकारों (Coalition Governments) में प्रधानमंत्री की शक्ति कम हो जाती है।<br>
+                कारण (Reason): उन्हें सहयोगी दलों की मांगों को मनवाना पड़ता है और वे स्वतंत्र रूप से निर्णय नहीं ले पाते।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-rose">राजनीतिक वास्तविकता:</span>
+                    1989 से 2014 के बीच के दौर में हमने देखा कि गठबंधन की वजह से PM को अपनी <span class="hl-blue">विवेकाधीन शक्तियों</span> का प्रयोग करने में काफी चुनौतियों का सामना करना पड़ा।
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="qa-block">
+                <div class="question-text">Q15. 'मंत्रिपरिषद' और 'मंत्रिमंडल' (Cabinet) में क्या अंतर है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-red">संरचनात्मक अंतर:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">मंत्रिपरिषद:</span> यह एक बड़ा निकाय है जिसमें सभी श्रेणियों के मंत्री (कैबिनेट, राज्य मंत्री, उपमंत्री) शामिल होते हैं (आकार: लगभग 60-80)।</li>
+                        <li><span class="hl-rose">मंत्रिमंडल:</span> यह मंत्रिपरिषद का <span class="hl-teal">"भीतरी कोर"</span> है, जिसमें केवल सबसे वरिष्ठ (कैबिनेट स्तर के) मंत्री शामिल होते हैं, जो मुख्य नीतिगत निर्णय लेते हैं।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SEGMENT 4: 16-20 (Short/Assertion) -->
+            <div style="background-color: #991b1b; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 4: प्रशासनिक संरचना एवं उपराष्ट्रपति</div>
+
+            <!-- Q16 -->
+            <div class="qa-block">
+                <div class="question-text">Q16. 'राजनीतिक कार्यपालिका' और 'स्थायी कार्यपालिका' में दो मुख्य अंतर स्पष्ट कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-red">प्रशासनिक तुलना:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">राजनीतिक कार्यपालिका:</span> इसमें जनता द्वारा निर्वाचित प्रतिनिधि (PM और मंत्री) होते हैं। इनका कार्यकाल <span class="hl-rose">अल्पकालिक</span> (5 वर्ष) होता है।</li>
+                        <li><span class="hl-orange">स्थायी कार्यपालिका:</span> इसमें लोक सेवक (Bureaucrats) होते हैं जो योग्यता के आधार पर चुने जाते हैं। ये <span class="hl-teal">रिटायरमेंट की आयु</span> तक पद पर बने रहते हैं।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q17 -->
+            <div class="qa-block">
+                <div class="question-text">Q17. भारत के 'उपराष्ट्रपति' (Vice President) के दो प्रमुख कार्य क्या हैं?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-blue">दोहरी भूमिका:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li>वे <span class="hl-rose">राज्यसभा के पदेन सभापति</span> (Ex-officio Chairman) होते हैं और सदन की कार्यवाही का संचालन करते हैं।</li>
+                        <li>राष्ट्रपति का पद रिक्त होने पर (मृत्यु, त्यागपत्र या निष्कासन की स्थिति में) वे <span class="hl-orange">कार्यवाहक राष्ट्रपति</span> के रूप में कार्य करते हैं।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q18 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #7f1d1d;">
+                <div class="question-text">Q18. कथन (Assertion): नौकरशाही (Bureaucracy) के लिए 'राजनीतिक तटस्थता' (Political Neutrality) अनिवार्य है।<br>
+                कारण (Reason): प्रशासनिक अधिकारियों को सरकार बदलने पर भी निष्पक्ष रूप से नीतियों को लागू करना होता है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-red">नैतिक मूल्य:</span>
+                    नौकरशाही किसी विशेष राजनीतिक दल की "सेवक" नहीं, बल्कि <span class="hl-blue">"संविधान और कानून"</span> की सेवक है। उसे बिना किसी पक्षपात के शासन चलाना चाहिए।
+                </div>
+            </div>
+
+            <!-- Q19 -->
+            <div class="qa-block" style="border-left: 12px solid #7f1d1d;">
+                <div class="question-text">Q19. कथन (Assertion): भारत में सिविल सेवा का ढांचा 'अखिल भारतीय' (All India Services) स्वरूप का है।<br>
+                कारण (Reason): IAS और IPS अधिकारियों की नियुक्ति केंद्र सरकार करती है, लेकिन वे राज्यों में सेवा देते हैं।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-teal">संघीय एकता:</span>
+                    यह व्यवस्था केंद्र और राज्यों के बीच <span class="hl-blue">"प्रशासनिक समन्वय"</span> बनाए रखने के लिए की गई है, जिससे पूरे देश में एक समान शासन मानक सुनिश्चित हो सकें।
+                </div>
+            </div>
+
+            <!-- Q20 -->
+            <div class="qa-block">
+                <div class="question-text">Q20. 'मंत्रियों' और 'लोक सेवकों' के बीच कैसा संबंध होना चाहिए?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-orange">विशेषज्ञता बनाम जनमत:</span>
+                    मंत्री जनता के विज़न को लाते हैं, जबकि लोक सेवक उसे <span class="hl-blue">"कानूनी और तकनीकी"</span> जामा पहनाते हैं। एक सफल लोकतंत्र में इन दोनों के बीच <span class="hl-rose">"विश्वास और सहयोग"</span> का होना अनिवार्य है। मंत्री नीति बनाते हैं, सचिव सुधार सुझाते हैं।
+                </div>
+            </div>
+
+            <!-- SEGMENT 5: 21-25 (Long/Analytical) -->
+            <div style="background-color: #7f1d1d; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">भाग 3: दीर्घ उत्तरीय एवं विश्लेषणात्मक प्रश्न</div>
+
+            <!-- Q21 -->
+            <div class="qa-block">
+                <div class="question-text">Q21. भारत के 'प्रधानमंत्री' की शक्तियों और उनकी स्थिति का विस्तृत विवेचन कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-red">सत्ता का वास्तविक केंद्र:</span>
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-blue">मंत्रिपरिषद का गठन:</span> वे तय करते हैं कि कौन मंत्री बनेगा और किसे कौन सा विभाग मिलेगा।</li>
+                        <li><span class="hl-rose">सदन का नेता:</span> वे लोकसभा में सरकार की मुख्य नीतियों के प्रवक्ता होते हैं।</li>
+                        <li><span class="hl-teal">राजनयिक भूमिका:</span> वे विदेशों में भारत का प्रतिनिधित्व करते हैं और विदेश नीति का निर्धारण करते हैं।</li>
+                        <li><span class="hl-orange">शक्ति का आधार:</span> उनकी शक्ति <span class="hl-blue">"विधायिका में उनके बहुमत"</span> पर निर्भर करती है। पूर्ण बहुमत में वे अत्यंत शक्तिशाली होते हैं, जबकि गठबंधन में उन्हें समझौता करना पड़ता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q22 -->
+            <div class="qa-block">
+                <div class="question-text">Q22. राष्ट्रपति की 'विवेकाधीन शक्तियों' (Discretionary Powers) का किन विशेष परिस्थितियों में उपयोग किया जाता है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-blue">संवैधानिक रक्षक:</span>
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-rose">त्रिशंकु संसद:</span> यदि किसी दल को बहुमत न मिले, तो राष्ट्रपति अपनी पसंद के नेता को सरकार बनाने के लिए आमंत्रित कर सकते हैं।</li>
+                        <li><span class="hl-teal">विधेयक को लौटाना:</span> वे किसी साधारण बिल को <span class="hl-orange">"पुनर्विचार"</span> के लिए वापस भेज सकते हैं।</li>
+                        <li><span class="hl-blue">पॉकेट वीटो:</span> वे किसी बिल पर अनिश्चित काल तक कोई निर्णय न लेकर उसे रोक सकते हैं (जैसे ज्ञानी जैल सिंह ने 'डाक विधेयक' के समय किया)।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q23 -->
+            <div class="qa-block">
+                <div class="question-text">Q23. भारत में 'सिविल सेवाओं' (Civil Services) का वर्गीकरण किस प्रकार किया गया है? स्पष्ट करें।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-red">प्रशासनिक ढांचा:</span>
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-blue">अखिल भारतीय सेवाएँ:</span> IAS और IPS (इनकी नियुक्ति केंद्र करता है, पर ये राज्यों में काम करते हैं)।</li>
+                        <li><span class="hl-rose">केंद्रीय सेवाएँ:</span> IFS (विदेशी सेवा) और IRS (सीमा शुल्क)—ये केवल केंद्र सरकार के अधीन काम करते हैं।</li>
+                        <li><span class="hl-teal">राज्य सेवाएँ:</span> डिप्टी कलेक्टर, तहसीलदार—जो पूरी तरह राज्य सरकार के नियंत्रण में होते हैं।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q24 -->
+            <div class="qa-block">
+                <div class="question-text">Q24. '91वें संविधान संशोधन' (2003) का मंत्रिपरिषद के आकार पर क्या प्रभाव पड़ा?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-orange">प्रशासनिक सुधार:</span>
+                    इससे पहले, गठबंधन राजनीति में मंत्रियों की संख्या बहुत बढ़ जाती थी। इस संशोधन द्वारा यह सीमा तय कर दी गई कि मंत्रिपरिषद का आकार लोकसभा (या विधानसभा) की कुल सदस्य संख्या के <span class="hl-rose">"15 प्रतिशत"</span> से अधिक नहीं होगा। यह <span class="hl-blue">"मितव्ययिता"</span> और कुशल शासन की ओर एक बड़ा कदम था।
+                </div>
+            </div>
+
+            <!-- Q25 -->
+            <div class="qa-block">
+                <div class="question-text">Q25. "संसदीय कार्यपालिका में मंत्रिपरिषद विधायिका के नियंत्रण में होती है।" इस कथन की व्याख्या कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">जवाबदेही का तंत्र:</span>
+                    संसद प्रश्न काल, शून्य काल और <span class="hl-blue">"अविश्वास प्रस्ताव"</span> (No Confidence Motion) के माध्यम से सरकार पर नियंत्रण रखती है। यदि सरकार लोकसभा का विश्वास खो दे, तो कार्यपालिका को त्यागपत्र देना अनिवार्य है। यही नियंत्रण लोकतंत्र को <span class="hl-rose">"निरंकुश"</span> होने से बचाता है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 6: 26-30 (Long/Analytical) -->
+            <div style="background-color: #450a0a; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">अंतिम खंड: राजनीतिक गतिशीलता एवं निष्कर्ष</div>
+
+            <!-- Q26 -->
+            <div class="qa-block">
+                <div class="question-text">Q26. गठबंधन सरकारों (Coalition Governments) के दौर में प्रधानमंत्री की चयन प्रक्रिया और उनकी शक्तियों में क्या बदलाव आए?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-red">बदलते समीकरण:</span>
+                    गठबंधन के दौर में प्रधानमंत्री की शक्ति <span class="hl-blue">"निरंकुश"</span> नहीं रह जाती। उन्हें अपनी नीतियों और निर्णयों के लिए सहयोगी दलों (Alliance Partners) पर निर्भर रहना पड़ता है। प्रधानमंत्री अब केवल अपनी पार्टी के नेता नहीं, बल्कि एक <span class="hl-rose">"समन्वयकर्ता"</span> (Coordinator) की भूमिका निभाते हैं। इसमें <span class="hl-teal">"न्यूनतम साझा कार्यक्रम"</span> (Common Minimum Programme) महत्वपूर्ण हो जाता है।
+                </div>
+            </div>
+
+            <!-- Q27 -->
+            <div class="qa-block">
+                <div class="question-text">Q27. 'लोक सेवाओं' (Bureaucracy) को निष्पक्ष और तटस्थ बनाए रखना लोकतंत्र के लिए क्यों आवश्यक है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-blue">प्रशासनिक शुचिता:</span>
+                    नीतियाँ सरकारें बनाती हैं, लेकिन उन्हें <span class="hl-rose">"जमीनी हकीकत"</span> में नौकरशाही बदलती है। यदि लोक सेवक किसी विचारधारा की ओर झुक जाएंगे, तो वे विपक्षी समर्थकों के साथ न्याय नहीं कर पाएंगे। एक कुशल नौकरशाह को <span class="hl-teal">"तथ्यों और जनहित"</span> के आधार पर सलाह देनी चाहिए, न कि राजनीतिक लाभ के लिए।
+                </div>
+            </div>
+
+            <!-- Q28 -->
+            <div class="qa-block">
+                <div class="question-text">Q28. राज्यों में 'राज्यपाल' (Governor) की स्थिति और राज्य कार्यपालिका में उनकी भूमिका क्या है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-red">दोहरी भूमिका:</span>
+                    राज्यपाल राज्य का <span class="hl-blue">संवैधानिक प्रधान</span> होता है, जिसकी नियुक्ति राष्ट्रपति करते हैं। जैसे केंद्र में राष्ट्रपति हैं, वैसे ही राज्य में राज्यपाल हैं। वे केंद्र और राज्य के बीच एक <span class="hl-rose">"कड़ी"</span> (Link) का काम करते हैं और मुख्यमंत्री की नियुक्ति व राज्य सरकार की स्थिरता सुनिश्चित करने में उनकी भूमिका अत्यंत विवादित और महत्वपूर्ण रही है।
+                </div>
+            </div>
+
+            <!-- Q29 -->
+            <div class="qa-block">
+                <div class="question-text">Q29. "भारत में कार्यपालिका विधायिका के प्रति उत्तरदायी है।" इस सिद्धांत के लाभ बताइए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">संसदीय शासन के लाभ:</span>
+                    यह व्यवस्था सुनिश्चित करती है कि सरकार <span class="hl-blue">"अहंकारी"</span> न बने। हर दिन संसद में मंत्रियों को विपक्ष के तीखे सवालों का सामना करना पड़ता है। इससे नीतियों में पारदर्शिता आती है और जनता को पता चलता है कि उनके टैक्स का पैसा कहाँ खर्च हो रहा है। यदि सरकार विफल होती है, तो उसे <span class="hl-rose">अविश्वास प्रस्ताव</span> द्वारा आसानी से बदला जा सकता है।
+                </div>
+            </div>
+
+            <!-- Q30 -->
+            <div class="qa-block" style="background-color: #fef2f2; border: 4px solid #7f1d1d;">
+                <div class="question-text">Q30. निष्कर्ष: एक मज़बूत कार्यपालिका और एक सचेत नागरिक समाज के बीच कैसा संतुलन होना चाहिए?</div>
+                <div class="answer-box" style="background-color: #ffffff; border-left-color: #991b1b;">
+                    <span class="explanation-title hl-red">अंतिम विचार:</span>
+                    अंततः, कार्यपालिका की सफलता केवल कानूनों को बनाने में नहीं, बल्कि उन्हें <span class="hl-blue">"ईमानदारी से लागू करने"</span> में है। नागरिकों को जागरूक होना होगा ताकि वे कार्यपालिका को संविधान के दायरे में रहने के लिए मजबूर कर सकें। 2026-27 के शैक्षिक सत्र के लिए यह अध्याय हमें सिखाता है कि <span class="hl-rose">"शक्ति के साथ जिम्मेदारी"</span> भी आती है।
+                    <br><br>
+                    <div style="text-align: center; color: #7f1d1d; font-weight: 900; letter-spacing: 2px;">**[अध्याय 4: कार्यपालिका - मुकम्मल 30 प्रश्नों का प्रीमियम बैंक (2026-27)]**</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

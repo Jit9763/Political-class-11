@@ -2,75 +2,466 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>अध्याय 10: संविधान का राजनीतिक दर्शन - 30+ Mega Q&A BANK</title>
+    <title>Chapter 10: संविधान का राजनीतिक दर्शन - Professional Edition (2026-27)</title>
     <style>
-        #control-header {
-            position: fixed; top: 0; left: 0; width: 100%; background-color: #1e3a8a; color: #ffffff;
-            padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 1000; font-family: 'Arial', sans-serif; box-sizing: border-box;
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 0; background-color: #fffaf0; font-family: 'Segoe UI', Tahoma, sans-serif; color: #451a03; }
+        
+        .home-btn {
+            position: fixed; bottom: 30px; right: 30px; z-index: 2000;
+            background: linear-gradient(135deg, #7c2d12 0%, #9a3412 100%);
+            color: white; width: 70px; height: 70px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem; text-decoration: none; box-shadow: 0 10px 25px rgba(124, 45, 18, 0.4);
+            border: 4px solid #ffffff; transition: transform 0.3s;
         }
-        #control-header h1 { margin: 0; font-size: 1.2rem; font-weight: 600; }
-        body { margin-top: 80px; background-color: #eff6ff; }
-        ul, ol { padding-left: 60px !important; margin-left: 20px !important; }
-        li { padding-left: 15px; margin-bottom: 25px; text-align: justify;}
-        .qa-container {
-            margin-bottom: 40px; padding: 40px; background-color: #ffffff;
-            border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            border: 3px solid #bfdbfe;
+        .home-btn:hover { transform: scale(1.1) rotate(15deg); }
+
+        .master-container {
+            max-width: 1250px; margin: 50px auto; padding: 60px; background-color: #ffffff;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12); border-radius: 40px; border-top: 15px solid #ea580c;
         }
+        
+        .header-box {
+            text-align: center; margin-bottom: 70px; padding: 75px; 
+            border: 10px double #ea580c; background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); 
+            border-radius: 35px;
+        }
+        
+        .qa-block {
+            margin-bottom: 70px; padding: 45px; border: 4px solid #f1f5f9; 
+            border-radius: 30px; background-color: #ffffff;
+        }
+        .question-text { 
+            font-size: 25pt; font-weight: 900; color: #451a03; line-height: 1.5; 
+            margin-bottom: 30px; border-bottom: 5px solid #e2e8f0; padding-bottom: 20px;
+        }
+        .options-list { font-size: 20pt; list-style-type: upper-alpha; padding-left: 70px; color: #334155; font-weight: 700; }
+        .options-list li { margin-bottom: 20px; }
+
         .answer-box {
-            background-color: #f1f5f9; padding: 25px; border-left: 8px solid #1e40af; 
-            margin-top: 15px; border-radius: 5px; font-size: 17pt;
+            margin-top: 35px; padding: 40px; border-radius: 25px; font-size: 20pt; line-height: 2.2;
+            background-color: #f8fafc; border-left: 15px solid #ea580c;
+        }
+        
+        /* Premium Highlights */
+        .hl-saffron { color: #ea580c; font-weight: 800; border-bottom: 2px solid #fed7aa; }
+        .hl-ash { color: #475569; font-weight: 800; }
+        .hl-rose { color: #be123c; font-weight: 800; }
+        .hl-blue { color: #1d4ed8; font-weight: 800; }
+        
+        .correct-ans { 
+            background: #ffedd5; color: #451a03; padding: 12px 25px; 
+            border-radius: 12px; font-weight: 900; display: inline-block; margin-bottom: 25px;
+        }
+        .explanation-title { 
+            display: block; font-size: 22pt; font-weight: 900; color: #451a03; 
+            margin-top: 25px; border-bottom: 3px solid #cbd5e1; width: fit-content;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, #7c2d12, #ea580c); color: white; 
+            padding: 25px; border-radius: 20px; text-align: center; 
+            font-size: 28pt; font-weight: 900; margin: 90px 0 50px 0;
+            box-shadow: 0 15px 30px rgba(234, 88, 12, 0.2);
         }
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-btn" title="Home Screen">🏠</a>
+
     <div id="contentToCopy">
-        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 18pt; line-height: 2.1; color: #1e293b; max-width: 1400px; margin: auto; padding: 20px;">
+        <div class="master-container">
 
-            <!-- Header -->
-            <div style="text-align: center; margin-bottom: 60px; padding: 50px; border: 6px solid #1e3a8a; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-radius: 25px;">
-                <h1 style="color: #1e3a8a; font-size: 48pt; font-weight: 900; margin-bottom: 0px;">अध्याय 10: संविधान का राजनीतिक दर्शन</h1>
-                <h2 style="color: #2563eb; font-size: 28pt; font-weight: 700;">(30+ Mega Analytical Q&A Bank)</h2>
+            <div class="header-box">
+                <h1 style="color: #451a03; font-size: 52pt; font-weight: 900; margin: 0;">अध्याय 10</h1>
+                <div style="font-size: 42pt; color: #ea580c; font-weight: 900; margin-top: 15px;">संविधान का राजनीतिक दर्शन</div>
+                <div style="height: 8px; width: 250px; background: #ea580c; margin: 35px auto; border-radius: 4px;"></div>
+                <p style="font-size: 22pt; color: #451a03; font-weight: 900; text-transform: uppercase;">Academic Session 2026-27 | Professional Edition</p>
             </div>
 
-            <!-- Q&A Content -->
-            <div class="qa-container" style="border-left: 12px solid #1e40af;">
-                <h2 style="color: #ffffff; background-color: #1e40af; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग A: गहन वैचारिक एवं विश्लेषणात्मक प्रश्न</h2>
-                
-                <div>
-                    <h3 style="color: #1e3a8a; font-size: 26pt;">Q1. भारतीय धर्मनिरपेक्षता (Secularism) को "सैद्धांतिक दूरी" (Principled Distance) का मॉडल क्यों कहा जाता है?</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> राजीव भार्गव जैसे विचारकों के अनुसार, भारत का राज्य धर्म से केवल 'दूरी' नहीं रखता, बल्कि **'हस्तक्षेप'** का अधिकार भी रखता है। <br>
-                        - **Western Model:** धर्म और राज्य के बीच एक दीवार है। राज्य धार्मिक बुराइयों (जैसे सती प्रथा) में दखल नहीं दे सकता। <br>
-                        - **Indian Model:** राज्य सभी धर्मों का सम्मान करता है, लेकिन सामाजिक न्याय कायम करने के लिए वह धार्मिक मामलों में 'सकारात्मक हस्तक्षेप' (जैसे छुआछूत का अंत) कर सकता है। इसे ही 'प्रिंसिपल्ड डिस्टेंस' कहा गया है।
-                    </div>
-                </div>
+            <div class="section-divider">भाग 1: वस्तुनिष्ठ प्रश्न (MCQs) - सेगमेंट 1</div>
 
-                <div style="margin-top: 50px;">
-                    <h3 style="color: #1e3a8a; font-size: 26pt;">Q2. क्या भारतीय संविधान "उधार का थैला" (A Bag of Borrowings) है? इस आलोचना का सविस्तार खंडन कीजिए।</h3>
-                    <div class="answer-box">
-                        <b>उत्तर विश्लेषण:</b> यह कहना गलत है कि हमने केवल कॉपी-पेस्ट किया है। <br>
-                        - **तर्क:** हमने दुनिया के सर्वश्रेष्ठ विचारों को लिया लेकिन उन्हें **'भारतीय मिट्टी'** के अनुसार ढाला। <br>
-                        - **उदाहरण:** हमने ब्रिटेन से संसदीय प्रणाली ली, लेकिन वहां की तरह 'संसद सर्वोच्च' नहीं है, यहाँ 'संविधान सर्वोच्च' है। हमने अमेरिका से 'मौलिक अधिकार' लिए लेकिन उन पर 'उचित प्रतिबंध' (Reasonable Restrictions) भी लगाए। यह चोरी नहीं, बल्कि बुद्धिमत्तापूर्ण चयन है।
-                    </div>
+            <div class="qa-block">
+                <div class="question-text">Q1. संविधान के 'दर्शन' (Philosophy) का क्या अर्थ है?</div>
+                <ol class="options-list">
+                    <li>केवल नियमों की किताब</li>
+                    <li>वे नैतिक मूल्य और आदर्श जिन पर संविधान टिका है (जैसे स्वतंत्रता, समानता, न्याय)</li>
+                    <li>केवल नेताओं के भाषण</li>
+                    <li>पुरानी कहानियाँ</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) नैतिक मूल्य और आदर्श</span>
+                    <span class="explanation-title hl-saffron">आत्मीय आधार:</span>
+                    संविधान केवल <span class="hl-blue">"कानूनी दस्तावेज़"</span> नहीं है, बल्कि यह हमारे समाज के विज़न का आईना है। इसके पीछे एक गहरा <span class="hl-rose">"नैतिक संकल्प"</span> है जो हमें बताता है कि हम कैसा भारत बनाना चाहते हैं।
                 </div>
             </div>
 
-            <!-- SECTION B: ASSERTION & REASONING -->
-            <div class="qa-container" style="border-left: 12px solid #dc2626;">
-                <h2 style="color: #ffffff; background-color: #b91c1c; padding: 20px 30px; border-radius: 8px; font-size: 32pt; margin-top: 0;">अनुभाग B: कथन और कारण (Analytical Logic)</h2>
-                <div>
-                    <p style="font-weight: bold;">Q3. कथन (A): भारतीय संविधान ने "अवसर की समानता" के बजाय "परिणाम की समानता" पर ध्यान दिया। <br>
-                    कारण (R): सदियों के शोषण और जातिगत असमानता को केवल बराबरी का हक़ देने से नहीं सुधारा जा सकता था, इसके लिए 'विशेष प्रावधानों' (आरक्षण) की आवश्यकता थी।</p>
-                    <p><b>उत्तर: A और R दोनों सही हैं और R, A का सही स्पष्टीकरण है।</b></p>
+            <div class="qa-block">
+                <div class="question-text">Q2. भारतीय संविधान की 'प्रस्तावना' (Preamble) में निम्नलिखित में से कौन सा शब्द नहीं है?</div>
+                <ol class="options-list">
+                    <li>समाजवादी</li>
+                    <li>लोकतंत्रात्मक</li>
+                    <li>निरंकुशता (Autocracy)</li>
+                    <li>पंथनिरपेक्ष</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (C) निरंकुशता</span>
+                    <span class="explanation-title hl-ash">लोकतांत्रिक दर्शन:</span>
+                    प्रस्तावना हमारे संविधान की <span class="hl-saffron">"आत्मा"</span> है। यह भारत को एक प्रभुत्वसंपन्न, समाजवादी, और <span class="hl-blue">लोकतांत्रिक गणराज्य</span> घोषित करती है। यहाँ <span class="hl-rose">"व्यक्ति की गरिमा"</span> सर्वोपरि है।
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 50px;">
-                <p style="font-size: 20pt; color: #1e3a8a; font-weight: bold;">[इस चैप्टर के कुल 30+ प्रीमियम प्रश्न पोर्टल पर अपडेट कर दिए गए हैं]</p>
+            <div class="qa-block">
+                <div class="question-text">Q3. भारतीय संविधान में 'पंथनिरपेक्षता' (Secularism) का अर्थ क्या है?</div>
+                <ol class="options-list">
+                    <li>धर्म का विरोध करना</li>
+                    <li>सभी धर्मों को राज्य द्वारा समान सम्मान और संरक्षण (सर्वधर्म समभाव)</li>
+                    <li>केवल एक धर्म को मानना</li>
+                    <li>धर्म को राजनीति से ऊपर रखना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) सभी धर्मों का समान सम्मान</span>
+                    <span class="explanation-title hl-saffron">भारतीय मॉडल:</span>
+                    पश्चिमी पंथनिरपेक्षता धर्म और राज्य को <span class="hl-blue">"पूरी तरह अलग"</span> करती है, जबकि भारतीय मॉडल राज्य को सभी धर्मों के प्रति <span class="hl-rose">"समान दूरी"</span> और <span class="hl-ash">"सैद्धांतिक हस्तक्षेप"</span> की अनुमति देता है ताकि सुधार हो सकें।
+                </div>
             </div>
 
+            <div class="qa-block">
+                <div class="question-text">Q4. 'सामाजिक न्याय' (Social Justice) के दर्शन का क्या तात्पर्य है?</div>
+                <ol class="options-list">
+                    <li>अदालत में केस लड़ना</li>
+                    <li>जाति, धर्म या लिंग के आधार पर भेदभाव को खत्म करना और कमज़ोर वर्गों को आगे बढ़ाना</li>
+                    <li>केवल अमीरों की मदद करना</li>
+                    <li>केवल कानून बनाना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) भेदभाव का अंत और समानता</span>
+                    <span class="explanation-title hl-ash">समावेशी विकास:</span>
+                    संविधान का लक्ष्य केवल <span class="hl-saffron">"कानूनी समानता"</span> नहीं, बल्कि वास्तविक <span class="hl-blue">"सामाजिक समानता"</span> है। आरक्षण और <span class="hl-rose">अस्पृश्यता का अंत</span> इसी दर्शन के परिणाम हैं।
+                </div>
+            </div>
+
+            <div class="qa-block">
+                <div class="question-text">Q5. डॉ. बी.आर. अंबेडकर ने किस अधिकार को संविधान की 'आत्मा और हृदय' कहा था?</div>
+                <ol class="options-list">
+                    <li>संपत्ति का अधिकार</li>
+                    <li>संवैधानिक उपचारों का अधिकार (अनुच्छेद 32)</li>
+                    <li>स्वतंत्रता का अधिकार</li>
+                    <li>भाषण देने का अधिकार</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) संवैधानिक उपचारों का अधिकार</span>
+                    <span class="explanation-title hl-saffron">सुरक्षा कवच:</span>
+                    अधिकारों का होना तब तक बेमानी है जब तक उनकी <span class="hl-blue">"सुरक्षा की गारंटी"</span> न हो। अनुच्छेद 32 नागरिकों को सीधे <span class="hl-rose">सुप्रीम कोर्ट</span> जाने की शक्ति देता है, जो लोकतंत्र को <span class="hl-ash">जमीन पर</span> जीवित रखता है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 2: 6-10 (MCQs) -->
+            <div style="background-color: #ea580c; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 2: लोकतंत्र की जड़ें व उदारवाद</div>
+
+            <!-- Q6 -->
+            <div class="qa-block">
+                <div class="question-text">Q6. 'वयस्क मताधिकार' (Universal Adult Franchise) को भारतीय संविधान का सबसे बड़ा 'सकारात्मक जुआ' क्यों कहा जाता है?</div>
+                <ol class="options-list">
+                    <li>क्योंकि भारत में गरीबी और अशिक्षा के बावजूद सभी को वोट का अधिकार दिया गया।</li>
+                    <li>क्योंकि चुनाव में पैसा उड़ता है।</li>
+                    <li>क्योंकि हार-जीत का पता नहीं होता।</li>
+                    <li>क्योंकि यह केवल अमीरों के लिए था।</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) विषम परिस्थितियों में समानता का साहस</span>
+                    <span class="explanation-title hl-saffron">लोकतांत्रिक विज़न:</span>
+                    जब पश्चिम के कई विकसित देश <span class="hl-blue">"शिक्षित और संपन्न"</span> लोगों को ही वोट का हक दे रहे थे, तब भारत ने अपने हर नागरिक पर भरोसा जताया। यह इस दर्शन पर आधारित था कि हर व्यक्ति का <span class="hl-rose">"आत्म-सम्मान"</span> बराबर है।
+                </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="qa-block">
+                <div class="question-text">Q7. पश्चिमी उदारवाद की तुलना में 'भारतीय उदारवाद' (Indian Liberalism) की क्या विशेषता है?</div>
+                <ol class="options-list">
+                    <li>यह केवल व्यक्तिगत अधिकारों की बात करता है।</li>
+                    <li>यह व्यक्तिगत अधिकारों के साथ-साथ 'सामुदायिक अधिकारों' (जैसे अल्पसंख्यकों के अधिकार) को भी महत्व देता है।</li>
+                    <li>यह धर्म का पूर्ण विरोधी है।</li>
+                    <li>इसमें कोई स्वतंत्रता नहीं है।</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) व्यक्तिगत व सामुदायिक अधिकारों का संगम</span>
+                    <span class="explanation-title hl-ash">सामुदायिक संवेदनशीलता:</span>
+                    भारतीय समाज <span class="hl-blue">"समूहों"</span> का बना है। इसलिए यहाँ उदारवाद केवल अकेले व्यक्ति का नहीं, बल्कि उसकी <span class="hl-rose">"पहचान"</span> और उसके समुदाय की सुरक्षा का भी ध्यान रखता है। यह <span class="hl-saffron">"विविधता"</span> का उदारवाद है।
+                </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="qa-block">
+                <div class="question-text">Q8. 'प्रक्रियात्मक लोकतंत्र' (Procedural Democracy) और 'तात्विक लोकतंत्र' में क्या अंतर है?</div>
+                <ol class="options-list">
+                    <li>केवल चुनाव होना प्रक्रियात्मक है, जबकि जनता की वास्तविक भलाई तात्विक है।</li>
+                    <li>दोनों एक ही हैं।</li>
+                    <li>प्रक्रियात्मक बेहतर है।</li>
+                    <li>इसका कोई मतलब नहीं है।</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) केवल चुनाव बनाम वास्तविक कल्याण</span>
+                    <span class="explanation-title hl-saffron">दार्शनिक गहराई:</span>
+                    संविधान का लक्ष्य केवल वोट डलवाना नहीं है, बल्कि <span class="hl-blue">"लोकतंत्र की रूह"</span> को जीवित रखना है। तात्विक लोकतंत्र का अर्थ है—<span class="hl-rose">"न्याय और समानता"</span> का वास्तविकता में मौजूद होना।
+                </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="qa-block">
+                <div class="question-text">Q9. भारतीय संविधान के दर्शन में 'राष्ट्रीय पहचान' (National Identity) का क्या स्थान है?</div>
+                <ol class="options-list">
+                    <li>यह क्षेत्रीय पहचान को खत्म करती है।</li>
+                    <li>यह विविध क्षेत्रीय और भाषाई पहचानों को स्वीकार करते हुए एक 'साझा नागरिकता' प्रदान करती है।</li>
+                    <li>यह केवल हिंदी बोलने वालों के लिए है।</li>
+                    <li>इसमें कोई एकता नहीं है।</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) साझा नागरिकता व विविधता का मेल</span>
+                    <span class="explanation-title hl-ash">एकात्म दर्शन:</span>
+                    हमारा संविधान <span class="hl-blue">"अनेकता में एकता"</span> के दर्शन पर चलता है। हम पंजाबी, तमिल या बंगाली हो सकते हैं, लेकिन <span class="hl-saffron">"संवैधानिक रूप से"</span> हम केवल भारतीय हैं। यह एक <span class="hl-rose">"छाता-पहचान"</span> (Umbrella Identity) है।
+                </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="qa-block">
+                <div class="question-text">Q10. भारतीय संविधान 'धर्मनिरपेक्षता' को किसका आधार मानता है?</div>
+                <ol class="options-list">
+                    <li>अराजकता का</li>
+                    <li>व्यक्ति की गरिमा और धार्मिक स्वतंत्रता का</li>
+                    <li>धर्म के विनाश का</li>
+                    <li>चुनावी राजनीति का</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) गरिमा व स्वतंत्रता का आधार</span>
+                    <span class="explanation-title hl-saffron">नैतिक प्रतिबद्धता:</span>
+                    धर्मनिरपेक्षता का अर्थ <span class="hl-blue">"आधारहीनता"</span> नहीं, बल्कि राज्य का किसी एक धर्म के साथ न जुड़ना है ताकि <span class="hl-rose">"सभी नागरिकों"</span> को बराबरी का एहसास हो। यह भारतीय लोकतंत्र का <span class="hl-ash">बुनियादी स्तंभ</span> है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 3: 11-15 (Short/Assertion) -->
+            <div style="background-color: #451a03; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 3: लघु उत्तरीय एवं कथन-कारण पृष्ठ</div>
+
+            <!-- Q11 -->
+            <div class="qa-block">
+                <div class="question-text">Q11. भारतीय संविधान की 'प्रस्तावना' (Preamble) का क्या महत्व है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">संविधान का सार:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">परिचय पत्र:</span> एन.ए. पालकीवाला ने प्रस्तावना को संविधान का <span class="hl-rose">"परिचय पत्र"</span> कहा है।</li>
+                        <li><span class="hl-ash">मार्गदर्शक:</span> यह हमें उन उद्देश्यों और <span class="hl-saffron">"आदर्शों"</span> की जानकारी देता है जिन्हें पाने के लिए संविधान बनाया गया है। यदि कोई अनुच्छेद स्पष्ट न हो, तो कोर्ट प्रस्तावना का सहारा लेता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="qa-block">
+                <div class="question-text">Q12. 'संवैधानिक नैतिकता' (Constitutional Morality) से आप क्या समझते हैं?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ash">नैतिक प्रतिबद्धता:</span>
+                    इसका अर्थ केवल नियमों का पालन करना नहीं, बल्कि संविधान की <span class="hl-saffron">"आत्मा"</span> और लोकतांत्रिक परंपराओं का सम्मान करना है। डॉ. अंबेडकर के अनुसार, संविधान चाहे कितना भी अच्छा हो, यदि उसे चलाने वालों में <span class="hl-blue">"संवैधानिक नैतिकता"</span> नहीं होगी, तो वह विफल हो जाएगा। यह शासन में <span class="hl-rose">"आत्म-संयम"</span> का नाम है।
+                </div>
+            </div>
+
+            <!-- Q13 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #ea580c;">
+                <div class="question-text">Q13. कथन (Assertion): भारतीय संविधान 'धर्मनिरपेक्ष' है, लेकिन यह धर्म-विरोधी नहीं है।<br>
+                कारण (Reason): भारतीय सेक्युलरवाद राज्य को सभी धर्मों के प्रति 'समान सम्मान' रखने का निर्देश देता है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-saffron">सर्वधर्म समभाव:</span>
+                    भारत में राज्य धर्म का <span class="hl-blue">"बहिष्कार"</span> नहीं करता, बल्कि सभी को अपनी आस्था पालने की <span class="hl-rose">"समान स्वतंत्रता"</span> देता है।
+                </div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="qa-block" style="border-left: 12px solid #ea580c;">
+                <div class="question-text">Q14. कथन (Assertion): वयस्क मताधिकार राष्ट्रीय एकता का एक शक्तिशाली साधन है।<br>
+                कारण (Reason): इसने जाति और धर्म की दीवारों को तोड़कर सभी को 'समान नागरिक' के रूप में खड़ा किया है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-ash">समानता का दर्शन:</span>
+                    जब एक ब्राह्मण और एक दलित, या एक अमीर और गरीब <span class="hl-blue">"एक ही कतार"</span> में खड़े होकर वोट देते हैं, तो यह <span class="hl-rose">"राजनीतिक समानता"</span> का सबसे बड़ा प्रमाण होता है।
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="qa-block">
+                <div class="question-text">Q15. भारतीय संविधान के दर्शन में 'स्वतंत्रता' (Liberty) का क्या अर्थ है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">सकारात्मक पक्ष:</span>
+                    स्वतंत्रता का अर्थ केवल <span class="hl-blue">"बंधनों का अभाव"</span> नहीं है, बल्कि ऐसी परिस्थितियों का होना है जहाँ व्यक्ति अपने <span class="hl-rose">"व्यक्तित्त्व का विकास"</span> कर सके। इसमें विचार, अभिव्यक्ति, विश्वास, धर्म और उपासना की स्वतंत्रता शामिल है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 4: 16-20 (Short/Assertion) -->
+            <div style="background-color: #ea580c; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 4: न्याय, संप्रभुता व विविधता</div>
+
+            <!-- Q16 -->
+            <div class="qa-block">
+                <div class="question-text">Q16. 'प्रक्रियात्मक न्याय' (Procedural Justice) और 'तात्विक न्याय' (Substantive Justice) में क्या अंतर है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">न्याय के दो पहलू:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">प्रक्रियात्मक न्याय:</span> इसका अर्थ है कि नियम सभी के लिए समान हों और कानूनी प्रक्रिया का पालन हो।</li>
+                        <li><span class="hl-rose">तात्विक न्याय:</span> इसका अर्थ है कि न्याय का <span class="hl-ash">"परिणाम"</span> भी न्यायोचित हो, यानी समाज के वंचित वर्गों को वास्तव में फल मिले। भारतीय संविधान इन <span class="hl-saffron">"दोनों"</span> का समर्थन करता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q17 -->
+            <div class="qa-block">
+                <div class="question-text">Q17. भारतीय संविधान के दर्शन में 'संप्रभुता' (Sovereignty) का क्या अर्थ है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ash">सर्वोच्च शक्ति:</span>
+                    इसका अर्थ है कि भारत अपने निर्णय लेने के लिए किसी विदेशी शक्ति पर निर्भर नहीं है (बाहरी संप्रभुता) और देश के भीतर जनता का शासन <span class="hl-blue">"सर्वोच्च"</span> है (आंतरिक संप्रभुता)। प्रस्तावना के पहले शब्द <span class="hl-rose">"हम भारत के लोग"</span> इसी संप्रभुता की घोषणा करते हैं।
+                </div>
+            </div>
+
+            <!-- Q18 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #7c2d12;">
+                <div class="question-text">Q18. कथन (Assertion): भारतीय संघवाद विविधता को 'खतरा' नहीं, बल्कि 'शक्ति' मानता है।<br>
+                कारण (Reason): संविधान विभिन्न क्षेत्रों को अपनी विशिष्ट पहचान और संस्कृति बनाए रखने के लिए स्वायत्तता देता है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-saffron">विविधतापूर्ण एकता:</span>
+                    हमारा दर्शन <span class="hl-blue">"एकरूपता"</span> (Uniformity) में विश्वास नहीं रखता, बल्कि <span class="hl-rose">"सद्भाव"</span> (Harmony) में विश्वास रखता है। यही कारण है कि भारत एक <span class="hl-ash">स्थिर लोकतंत्र</span> बना हुआ है।
+                </div>
+            </div>
+
+            <!-- Q19 -->
+            <div class="qa-block" style="border-left: 12px solid #7c2d12;">
+                <div class="question-text">Q19. कथन (Assertion): संविधान सभा के सदस्यों में गहरे मतभेद थे, फिर भी वे एक सर्वसम्मत दस्तावेज़ बना सके।<br>
+                कारण (Reason): उन्होंने 'विचार-विमर्श और तर्क' (Deliberation and Logic) को निजी हितों से ऊपर रखा।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-ash">संवैधानिक वाद-विवाद:</span>
+                    संविधान सभा में हर छोटे विषय पर बहस हुई। यह इस दर्शन का प्रमाण है कि लोकतंत्र <span class="hl-blue">"बहुमत की तानाशाही"</span> नहीं, बल्कि <span class="hl-rose">"सहमति की कला"</span> है।
+                </div>
+            </div>
+
+            <!-- Q20 -->
+            <div class="qa-block">
+                <div class="question-text">Q20. 'गरिमापूर्ण जीवन' (Dignified Life) का विचार भारतीय दर्शन के लिए क्यों केंद्रीय है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">मानवीय मूल्य:</span>
+                    संविधान केवल <span class="hl-blue">"जीवित रहने"</span> की बात नहीं करता, बल्कि सम्मान के साथ जीने की बात करता है। अनुच्छेद 21 की व्यापक व्याख्या और <span class="hl-rose">छुआछूत का अंत</span> इसी दर्शन पर टिकी है कि हर मनुष्य का <span class="hl-ash">"आत्म-सम्मान"</span> पवित्र है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 5: 21-25 (Long/Analytical) -->
+            <div style="background-color: #451a03; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">भाग 3: दीर्घ उत्तरीय एवं विश्लेषणात्मक प्रश्न</div>
+
+            <!-- Q21 -->
+            <div class="qa-block">
+                <div class="question-text">Q21. भारतीय संविधान के राजनीतिक दर्शन की मुख्य विशेषताओं का विस्तृत वर्णन कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">दर्शन के आधार स्तंभ:</span>
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-blue">लोकतांत्रिक उदारवाद:</span> व्यक्तिगत स्वतंत्रता और अधिकारों की मज़बूत सुरक्षा।</li>
+                        <li><span class="hl-rose">सामाजिक न्याय:</span> जाति और वर्ग आधारित असमानताओं को मिटाने का संकल्प।</li>
+                        <li><span class="hl-ash">धर्मनिरपेक्षता:</span> राज्य का कोई धर्म न होना और सभी धर्मों का समान सम्मान।</li>
+                        <li><span class="hl-saffron">विविधता का सम्मान:</span> भाषाई और सांस्कृतिक अल्पसंख्यकों को अपनी पहचान बनाए रखने का अधिकार।</li>
+                        <li><span class="hl-blue">शांतिपूर्ण सह-अस्तित्व:</span> वैश्विक शांति और अंतर्राष्ट्रीय कानूनों के प्रति निष्ठा।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q22 -->
+            <div class="qa-block">
+                <div class="question-text">Q22. "भारतीय संविधान एक 'उधार का थैला' है।" इस आलोचना का तार्किक उत्तर दीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ash">सृजनात्मक चयन:</span>
+                    यह सच है कि हमारे विचारकों ने विभिन्न देशों के संविधानों से प्रेरणा ली, लेकिन उन्होंने उसे <span class="hl-blue">"अन्धानुकरण"</span> (Blind Imitation) नहीं किया। उन्होंने विदेशी प्रावधानों को भारतीय <span class="hl-rose">परिस्थितियों और आवश्यकताओं</span> के अनुसार ढाला। उदाहरण के लिए, हमने संसदीय प्रणाली ब्रिटेन से ली, लेकिन उसे <span class="hl-saffron">"गणतंत्र"</span> बनाया, जबकि ब्रिटेन एक राजतंत्र है। अतः यह उधार नहीं, बल्कि दुनिया के सर्वोत्तम अनुभवों का <span class="hl-ash">"भारतीय परिष्करण"</span> है।
+                </div>
+            </div>
+
+            <!-- Q23 -->
+            <div class="qa-block">
+                <div class="question-text">Q23. भारत में 'व्यक्तिगत अधिकार' और 'सामुदायिक पहचान' के बीच संतुलन कैसे बनाया गया है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">दोहरी सुरक्षा:</span>
+                    भारतीय संविधान केवल व्यक्ति को स्वतंत्र नहीं बनाता, बल्कि उसे उस <span class="hl-blue">"समूह"</span> के साथ भी सुरक्षा देता है जिससे वह जुड़ा है।
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-rose">अनुच्छेद 25-28:</span> व्यक्ति को अपनी धार्मिक स्वतंत्रता देते हैं।</li>
+                        <li><span class="hl-ash">अनुच्छेद 29-30:</span> अल्पसंख्यकों को अपनी भाषा और संस्कृति बचाने का अधिकार देते हैं।</li>
+                    </ul>
+                    यह दर्शन मानता है कि एक व्यक्ति तभी वास्तव में स्वतंत्र हो सकता है जब उसकी <span class="hl-saffron">कौमी और सांस्कृतिक जड़ें</span> भी सुरक्षित हों।
+                </div>
+            </div>
+
+            <!-- Q24 -->
+            <div class="qa-block">
+                <div class="question-text">Q24. भारतीय संविधान के दर्शन में 'धर्मनिरपेक्षता' (Secularism) का पश्चिमी मॉडल से क्या अंतर है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ash">स्वदेशी सेक्युलरवाद:</span>
+                    पश्चिमी मॉडल धर्म और राज्य के बीच <span class="hl-blue">"एक दीवार"</span> (Wall of Separation) खड़ा करता है। इसके विपरीत, भारतीय मॉडल <span class="hl-rose">"सैद्धांतिक हस्तक्षेप"</span> (Principled Intervention) की अनुमति देता है। राज्य धर्म से अलग तो है, लेकिन वह धार्मिक कुरीतियों (जैसे तीन तलाक या अस्पृश्यता) को मिटाने के लिए <span class="hl-saffron">कानून</span> बना सकता है। भारतीय दर्शन <span class="hl-ash">"नेगेटिव सेक्युलरवाद"</span> नहीं, बल्कि <span class="hl-blue">"पॉजिटिव सेक्युलरवाद"</span> है।
+                </div>
+            </div>
+
+            <!-- Q25 -->
+            <div class="qa-block">
+                <div class="question-text">Q25. "संविधान सभा की चर्चाएं भारतीय दर्शन का सजीव उदाहरण हैं।" इस कथन की व्याख्या कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">संवाद का दर्शन:</span>
+                    संविधान सभा के सदस्यों ने किसी भी बात को <span class="hl-blue">"बिना बहस"</span> स्वीकार नहीं किया। वहाँ कांग्रेस का बहुमत होने के बावजूद हर छोटे विपक्षी स्वर को सम्मान दिया गया। यह दर्शाता है कि भारतीय दर्शन का आधार <span class="hl-rose">"मतों का थोपा जाना"</span> नहीं, बल्कि <span class="hl-ash">"तर्कसंगत सहमति"</span> (Rational Consensus) है। यह गौरवशाली परंपरा ही आज हमारे लोकतंत्र की <span class="hl-saffron">वैचारिक मज़बूती</span> का कारण है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 6: 26-30 (Long/Analytical) -->
+            <div style="background-color: #7c2d12; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">अंतिम खंड: उपलब्धियां एवं भविष्य</div>
+
+            <!-- Q26 -->
+            <div class="qa-block">
+                <div class="question-text">Q26. भारतीय संविधान की तीन सबसे बड़ी 'दार्शनिक उपलब्धियां' (Achievements) क्या हैं?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">ऐतिहासिक गौरव:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">बिना हिंसा के क्रांति:</span> इसने पुराने पितृसत्तात्मक और जातिवादी ढांचे को कानूनी रूप से चुनौती दी।</li>
+                        <li><span class="hl-rose">अधिकारों का संतुलन:</span> इसने व्यक्ति, समाज और राज्य के बीच एक <span class="hl-ash">"स्वस्थ तालमेल"</span> बिठाया।</li>
+                        <li><span class="hl-saffron">सफल संघीय प्रयोग:</span> इतनी विविधता के बावजूद देश को <span class="hl-blue">"लोकतांत्रिक सूत्र"</span> में पिरोए रखा।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q27 -->
+            <div class="qa-block">
+                <div class="question-text">Q27. 'संवैधानिक मर्यादा' (Constitutional Morality) और 'सामाजिक मर्यादा' में क्या तनाव हो सकता है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-ash">दार्शनिक द्वंद्व:</span>
+                    अक्सर समाज की अपनी पुरानी मान्यताएं (जैसे छुआछूत या लिंगभेद) होती हैं, जिन्हें समाज <span class="hl-blue">"सही"</span> मानता है। लेकिन संविधान इन मान्यताओं को नकार कर <span class="hl-rose">"संवैधानिक नैतिकता"</span> (समानता और न्याय) को लागू करता है। यह तनाव ही समाज को सुधार की ओर ले जाता है। संविधान का लक्ष्य समाज को <span class="hl-saffron">"पिछड़ेपन"</span> से निकालकर आधुनिक मूल्यों की ओर ले जाना है।
+                </div>
+            </div>
+
+            <!-- Q28 -->
+            <div class="qa-block">
+                <div class="question-text">Q28. "भारतीय संविधान एक 'सामाजिक दस्तावेज़' (Social Document) है।" स्पष्ट कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-blue">समाज सुधार का साधन:</span>
+                    ग्रैनविले ऑस्टिन ने इसे सामाजिक दस्तावेज़ कहा क्योंकि यह केवल सरकार चलाने का तरीका नहीं बताता, बल्कि समाज में <span class="hl-rose">"परिवर्तन"</span> (Change) लाने का रोडमैप भी देता है। नीति-निर्देशक तत्व (DPSP) और मौलिक अधिकार मिलकर एक ऐसी व्यवस्था की कल्पना करते हैं जहाँ <span class="hl-ash">शोषण खत्म हो</span> और हर व्यक्ति को विकास का अवसर मिले।
+                </div>
+            </div>
+
+            <!-- Q29 -->
+            <div class="qa-block">
+                <div class="question-text">Q29. राज्य के 'नीति-निर्देशक तत्वों' (DPSP) का दार्शनिक महत्व क्या है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-saffron">राज्य का नैतिक उत्तरदायित्व:</span>
+                    DPSP राज्य को यह याद दिलाते रहते हैं कि उसका अंतिम ध्येय <span class="hl-blue">"जनकल्याण"</span> (Welfare of People) है। यद्यपि ये अदालत द्वारा लागू नहीं किए जा सकते, लेकिन ये देश के <span class="hl-rose">"शासन में मूलभूत"</span> हैं। ये दर्शन दिखाते हैं कि स्वतंत्रता केवल <span class="hl-ash">राजनीतिक</span> नहीं, बल्कि <span class="hl-blue">आर्थिक और सामाजिक</span> भी होनी चाहिए।
+                </div>
+            </div>
+
+            <!-- Q30 -->
+            <div class="qa-block" style="background-color: #fffaf0; border: 4px solid #451a03;">
+                <div class="question-text">Q30. निष्कर्ष: एक विचारशील नागरिक के रूप में हमें संविधान के दर्शन के प्रति क्या दृष्टिकोण रखना चाहिए?</div>
+                <div class="answer-box" style="background-color: #ffffff; border-left-color: #ea580c;">
+                    <span class="explanation-title hl-saffron">अंतिम विचार:</span>
+                    संविधान का दर्शन कोई मृत विचार नहीं है, बल्कि यह एक <span class="hl-blue">"निरंतर चलने वाली प्रक्रिया"</span> है। हमें इसे केवल पढ़ना नहीं है, बल्कि अपने दैनिक जीवन और नागरिक व्यवहार में <span class="hl-rose">"आत्मसात"</span> करना है। 2026-27 के दौर में, जब भारत विश्व पटल पर अपनी जगह बना रहा है, हमारे संविधान का दर्शन ही हमारी सबसे बड़ी <span class="hl-ash">"बैद्धिक और नैतिक शक्ति"</span> है। 
+                    <br><br>
+                    <div style="text-align: center; color: #451a03; font-weight: 900; letter-spacing: 2px;">**[अध्याय 10: संविधान का राजनीतिक दर्शन - मुकम्मल 30 प्रश्नों का प्रीमियम बैंक (2026-27)]**</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

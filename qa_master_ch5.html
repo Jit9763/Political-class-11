@@ -2,200 +2,469 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>Chapter 5: Q&A - 20+ Questions</title>
+    <title>Chapter 5: विधायिका - Super-Premium Edition (2026-27)</title>
     <style>
-        ul, ol { padding-left: 50px !important; }
-        li { padding-left: 10px; margin-bottom: 12px; }
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 0; background-color: #f0fdf4; font-family: 'Segoe UI', Tahoma, sans-serif; color: #14532d; }
+        
+        .home-btn {
+            position: fixed; bottom: 30px; right: 30px; z-index: 2000;
+            background: linear-gradient(135deg, #14532d 0%, #064e3b 100%);
+            color: white; width: 70px; height: 70px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem; text-decoration: none; box-shadow: 0 10px 25px rgba(20, 83, 45, 0.4);
+            border: 4px solid #ffffff; transition: transform 0.3s;
+        }
+        .home-btn:hover { transform: scale(1.1) rotate(15deg); }
+
+        .master-container {
+            max-width: 1250px; margin: 50px auto; padding: 60px; background-color: #ffffff;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12); border-radius: 40px; border-top: 15px solid #16a34a;
+        }
+        
+        .header-box {
+            text-align: center; margin-bottom: 70px; padding: 75px; 
+            border: 10px double #16a34a; background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); 
+            border-radius: 35px;
+        }
+        
+        .qa-block {
+            margin-bottom: 70px; padding: 45px; border: 4px solid #f1f5f9; 
+            border-radius: 30px; background-color: #ffffff;
+        }
+        .question-text { 
+            font-size: 25pt; font-weight: 900; color: #14532d; line-height: 1.5; 
+            margin-bottom: 30px; border-bottom: 5px solid #e2e8f0; padding-bottom: 20px;
+        }
+        .options-list { font-size: 20pt; list-style-type: upper-alpha; padding-left: 70px; color: #334155; font-weight: 700; }
+        .options-list li { margin-bottom: 20px; }
+
+        .answer-box {
+            margin-top: 35px; padding: 40px; border-radius: 25px; font-size: 20pt; line-height: 2.2;
+            background-color: #f8fafc; border-left: 15px solid #16a34a;
+        }
+        
+        /* Premium Highlights */
+        .hl-green { color: #16a34a; font-weight: 800; border-bottom: 2px solid #bbf7d0; }
+        .hl-blue { color: #1d4ed8; font-weight: 800; border-bottom: 2px solid #bfdbfe; }
+        .hl-rose { color: #be123c; font-weight: 800; }
+        .hl-gold { color: #854d0e; font-weight: 800; }
+        
+        .correct-ans { 
+            background: #dcfce7; color: #166534; padding: 12px 25px; 
+            border-radius: 12px; font-weight: 900; display: inline-block; margin-bottom: 25px;
+        }
+        .explanation-title { 
+            display: block; font-size: 22pt; font-weight: 900; color: #14532d; 
+            margin-top: 25px; border-bottom: 3px solid #cbd5e1; width: fit-content;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, #14532d, #16a34a); color: white; 
+            padding: 25px; border-radius: 20px; text-align: center; 
+            font-size: 28pt; font-weight: 900; margin: 90px 0 50px 0;
+            box-shadow: 0 15px 30px rgba(22, 163, 74, 0.2);
+        }
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-btn" title="Home Screen">🏠</a>
+
     <div id="contentToCopy">
-        <div style="font-family: 'Arial', verdana, sans-serif; font-size: 16pt; line-height: 1.8; color: #1a202c; max-width: 1400px; margin: auto; padding: 20px;">
+        <div class="master-container">
 
-            <!-- Header -->
-            <div style="text-align: center; margin-bottom: 50px; padding: 40px; border: 4px double #065f46; background-color: #ecfdf5; border-radius: 15px;">
-                <h1 style="color: #065f46; font-size: 45pt; font-weight: 900; border-bottom: 5px solid #10b981; padding-bottom: 20px; margin-bottom: 30px; text-transform: uppercase;">
-                    प्रश्न-उत्तर बैंक: अध्याय 5<br/>
-                    <span style="font-size: 26pt; color:#047857; font-weight: 600;">(विधायिका)</span>
-                </h1>
-                <p style="font-size: 24pt; color: #0f172a; margin-top: 10px; font-weight: bold;">[20+ महत्वपूर्ण प्रश्न - Board & UPSC Analysis Based]</p>
+            <div class="header-box">
+                <h1 style="color: #14532d; font-size: 52pt; font-weight: 900; margin: 0;">अध्याय 5</h1>
+                <div style="font-size: 42pt; color: #064e3b; font-weight: 900; margin-top: 15px;">विधायिका (Legislature)</div>
+                <div style="height: 8px; width: 250px; background: #854d0e; margin: 35px auto; border-radius: 4px;"></div>
+                <p style="font-size: 22pt; color: #14532d; font-weight: 900; text-transform: uppercase;">Academic Session 2026-27 | Professional Edition</p>
             </div>
 
-            <!-- MCQs Section -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #ffffff; background-color: #2563eb; padding: 15px 20px; border-radius: 8px; font-size: 28pt; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">खंड A: बहुविकल्पीय प्रश्न (MCQs - 1 अंक)</h2>
-                
-                <div style="background-color: #f8fafc; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q1. निम्नलिखित में से कौन भारत की संसद का हिस्सा नहीं है?</p>
-                    <ol style="padding-left: 50px; margin-left: 20px; font-size: 18pt; color: #334155;" type="A">
-                        <li>राष्ट्रपति</li>
-                        <li>लोकसभा</li>
-                        <li>राज्यसभा</li>
-                        <li>मुख्य न्यायाधीश (Supreme Court) (✓ उत्तर)</li>
-                    </ol>
-                </div>
+            <div class="section-divider">भाग 1: वस्तुनिष्ठ प्रश्न (MCQs) - सेगमेंट 1</div>
 
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q2. राज्यसभा में राष्ट्रपति द्वारा कितने विशेषज्ञों को मनोनीत (Nominated) किया जाता है?</p>
-                    <ol style="padding-left: 50px; margin-left: 20px; font-size: 18pt; color: #334155;" type="A">
-                        <li>2</li>
-                        <li>12 (✓ उत्तर)</li>
-                        <li>20</li>
-                        <li>15</li>
-                    </ol>
-                </div>
-
-                <div style="background-color: #f8fafc; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q3. 'धन विधेयक' (Money Bill) के मामले में राज्यसभा को कितने दिनों के भीतर फैसला लेना होता है?</p>
-                    <ol style="padding-left: 50px; margin-left: 20px; font-size: 18pt; color: #334155;" type="A">
-                        <li>7 दिन</li>
-                        <li>14 दिन (✓ उत्तर)</li>
-                        <li>30 दिन</li>
-                        <li>6 महीने</li>
-                    </ol>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q4. किस संविधान संशोधन द्वारा 'दलबदल निरोधक कानून' (Anti-defection Law) लागू किया गया?</p>
-                    <ol style="padding-left: 50px; margin-left: 20px; font-size: 18pt; color: #334155;" type="A">
-                        <li>42वां (1976)</li>
-                        <li>44वां (1978)</li>
-                        <li>52वां (1985) (✓ उत्तर)</li>
-                        <li>91वां (2003)</li>
-                    </ol>
-                </div>
-
-                <div style="background-color: #f8fafc; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q5. राज्यसभा की विशेष शक्ति (अनुच्छेद 312) किससे संबंधित है?</p>
-                    <ol style="padding-left: 50px; margin-left: 20px; font-size: 18pt; color: #334155;" type="A">
-                        <li>संविधान संशोधन से</li>
-                        <li>राष्ट्रपति को हटाने से</li>
-                        <li>नई अखिल भारतीय सेवाओं (All India Services) के गठन से (✓ उत्तर)</li>
-                        <li>धन विधेयक पेश करने से</li>
-                    </ol>
+            <div class="qa-block">
+                <div class="question-text">Q1. हमें 'विधायिका' (Legislature) की आवश्यकता क्यों है? इसका मुख्य कार्य क्या है?</div>
+                <ol class="options-list">
+                    <li>कानूनों को लागू करना</li>
+                    <li>जनता की इच्छाओं के अनुरूप कानून बनाना (Law Making) और कार्यपालिका पर नियंत्रण रखना</li>
+                    <li>अपराधियों को सजा देना</li>
+                    <li>विदेशी दौरों का आयोजन करना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) कानून बनाना और सरकार पर नियंत्रण</span>
+                    <span class="explanation-title hl-green">लोकतांत्रिक दर्शन:</span>
+                    विधायिका केवल <span class="hl-blue">"कानून बनाने वाली संस्था"</span> नहीं है, बल्कि यह वह मंच है जहाँ जनप्रतिनिधि बहस करते हैं और सरकार को <span class="hl-rose">"जवाबदेह"</span> (Accountable) ठहराते हैं। यह लोकतंत्र का हृदय है।
                 </div>
             </div>
 
-            <!-- Very Short Answer Section -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #ffffff; background-color: #16a34a; padding: 15px 20px; border-radius: 8px; font-size: 28pt; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">खंड B: अति लघु उत्तरीय प्रश्न (2 अंक)</h2>
-                
-                <div style="background-color: #f0fdf4; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q6. 'द्विसदनीय विधायिका' (Bicameralism) क्या है?</p>
-                    <p style="font-size: 18pt; color: #166534;"><b>उत्तर:</b> जब किसी देश की राष्ट्रीय विधायिका (संसद) में कानून बनाने और बहस करने के लिए दो अलग-अलग सदन (जैसे भारत में लोकसभा और राज्यसभा) होते हैं, तो उसे द्विसदनीय व्यवस्था कहते हैं।</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q7. 'प्रश्नकाल' (Question Hour) किसे कहा जाता है?</p>
-                    <p style="font-size: 18pt; color: #166534;"><b>उत्तर:</b> जब संसद का सत्र चलता है, तो दिन का पहला एक घंटा (11 AM - 12 PM) सांसदों द्वारा मंत्रियों से उनके विभागों के कामकाज पर तीखे सवाल पूछने के लिए आरक्षित होता है। इसे प्रश्नकाल कहते हैं।</p>
-                </div>
-
-                <div style="background-color: #f0fdf4; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q8. विधेयक (Bill) और कानून (Act/Law) में क्या अंतर है?</p>
-                    <p style="font-size: 18pt; color: #166534;"><b>उत्तर:</b> कानून का जो कच्चा और शुरुआती ड्राफ्ट (प्रस्ताव) संसद में पेश किया जाता है, उसे विधेयक कहते हैं। जब वह दोनों सदनों से पास हो जाए और राष्ट्रपति उस पर हस्ताक्षर कर दे, तब वह कानून (Act) बन जाता है।</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q9. दलबदल निरोधक (Anti-defection) कानून का मुख्य उद्देश्य क्या था?</p>
-                    <p style="font-size: 18pt; color: #166534;"><b>उत्तर:</b> इसका उद्देश्य 'आया राम, गया राम' की राजनीति को रोकना था, जहाँ चुनाव जीतने के बाद नेता पैसे के लालच में अपनी पार्टी छोड़कर दूसरी पार्टी में चले जाते थे, जिससे सरकारें गिर जाती थीं।</p>
-                </div>
-
-                <div style="background-color: #f0fdf4; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #22c55e;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q10. राज्यसभा 'संघवाद' (Federalism) की रक्षक कैसे है?</p>
-                    <p style="font-size: 18pt; color: #166534;"><b>उत्तर:</b> लोकसभा पूरे देश का प्रतिनिधित्व करती है, जबकि राज्यसभा में अलग-अलग राज्यों ('States') के प्रतिनिधि होते हैं जो केंद्र सरकार के दबाव के खिलाफ राज्यों के अधिकारों (Rights of states) की रक्षा करते हैं।</p>
+            <div class="qa-block">
+                <div class="question-text">Q2. भारत की संसद में कितने सदन हैं और उनके नाम क्या हैं?</div>
+                <ol class="options-list">
+                    <li>एक सदन (केवल लोकसभा)</li>
+                    <li>दो सदन (लोकसभा और राज्यसभा)</li>
+                    <li>तीन सदन</li>
+                    <li>चार सदन</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) दो सदन (द्विसदनात्मक व्यवस्था)</span>
+                    <span class="explanation-title hl-blue">संवैधानिक ढांचा:</span>
+                    भारत की संसद <span class="hl-rose">"द्विसदनात्मक"</span> (Bicameral) है। लोकसभा (House of the People) जनता का प्रतिनिधित्व करती है, जबकि राज्यसभा (Council of States) राज्यों का प्रतिनिधित्व करती है। संसद का तीसरा महत्वपूर्ण अंग <span class="hl-gold">"राष्ट्रपति"</span> होते हैं।
                 </div>
             </div>
 
-            <!-- Short Answer Section -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #ffffff; background-color: #d97706; padding: 15px 20px; border-radius: 8px; font-size: 28pt; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">खंड C: लघु उत्तरीय विश्लेषणात्मक प्रश्न (4 अंक)</h2>
-                
-                <div style="background-color: #fffbeb; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f59e0b;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q11. लोकसभा के पास 'धन विधेयक' (Money Bill) को लेकर राज्यसभा से ज्यादा शक्तियां क्यों हैं?</p>
-                    <p style="font-size: 18pt; color: #92400e; text-align: justify;"><b>उत्तर:</b> एक सच्चे लोकतंत्र का सिद्धांत है 'प्रतिनिधित्व के बिना कोई कर नहीं।' चूँकि 'धन विधेयक' का मतलब जनता पर नया टैक्स लगाना या जनता का पैसा खर्च करना है, यह फ़ैसला <b>केवल उस सदन को होना चाहिए जिसे जनता ने सीधे वोट देकर चुना हो (अर्थात लोकसभा)</b>। राज्यसभा के नेता अप्रत्यक्ष रूप से चुने जाते हैं, इसलिए उन्हें जनता का पैसा नियंत्रित करने का 'पूर्ण अधिकार' नहीं दिया गया है। राज्यसभा इसे न तो रद्द कर सकती है, बस 14 दिन तक रोक सकती है।</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f59e0b;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q12. संसदीय समितियों (Parliamentary Committees) को 'संसद की रीढ़' क्यों कहा जाता है?</p>
-                    <p style="font-size: 18pt; color: #92400e; text-align: justify;"><b>उत्तर:</b> संसद के पास साल में सिर्फ कुछ ही दिन होते हैं (सत्र के दौरान), और सांसदों के पास कानूनों का तकनीकी ज्ञान (Technical knowledge) नहीं होता। संसदीय समितियां 'बंद कमरों' में पूरे साल काम करती हैं। यहाँ नेता टीवी कैमरों की नज़र से दूर होकर, विशेषज्ञों (Experts) के साथ बैठकर कानून की बारीक जाँच-पड़ताल करते हैं। एक तरह से 80% बिल अप्रत्यक्ष रूप से इन्ही कमेटियों द्वारा ठोंक-बजाकर पास किये जाते हैं, जिससे 'संसद का बहुमूल्य समय' बचता है।</p>
-                </div>
-
-                <div style="background-color: #fffbeb; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f59e0b;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q13. शून्यकाल (Zero Hour) क्या है और यह प्रश्नकाल (Question Hour) से कैसे अलग है?</p>
-                    <p style="font-size: 18pt; color: #92400e; text-align: justify;"><b>उत्तर:</b> <b>प्रश्नकाल</b> में मंत्री से सवाल पूछने के लिए सांसद को पहले से 'लिखित 'नोटिस' (Adv. Notice) देना पड़ता है। लेकिन प्रश्नकाल के ठीक बाद (दोपहर 12 बजे के करीब) एक <b>'शून्यकाल'</b> होता है। शून्यकाल में कोई नियम नहीं होता, इसमें सांसद 'बिना किसी पूर्व सूचना' के देश-दुनिया का कोई भी अत्यंत आवश्यक और 'तुरंत' चर्चा योग्य मुद्दा (जैसे अचानक आई बाढ़ या दंगा) उठा सकते हैं। यह भारत का अपना आविष्कार है।</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f59e0b;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q14. संविधान में 'दलबदल निरोधक कानून' के तहत सांसद को अयोग्य करार करने की शर्तें क्या हैं?</p>
-                    <p style="font-size: 18pt; color: #92400e; text-align: justify;"><b>उत्तर:</b> यदि एक सांसद चुनाव जीतने के बाद अपनी पार्टी 'स्वेच्छा' (Voluntarily) से छोड़ दे, या अगर वह संसद में किसी महत्वपूर्ण मुद्दे पर वोटिंग के दौरान अपनी पार्टी के 'ह्विप' (Whip / आदेश) के विरुद्ध जाकर वोट दे दे (या जानबूझकर ग़ायब रहे), तो उसे 'अयोग्य' (Disqualified) कर दिया जाएगा। हालाँकि, यदि किसी पार्टी के दो-तिहाई (2/3) सांसद एक साथ पार्टी तोड़ें (Split), तो इसे दलबदल नहीं माना जाता।</p>
-                </div>
-
-                <div style="background-color: #fffbeb; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #f59e0b;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q15. राज्यसभा की दो 'विशेष/अनन्य शक्तियों' (Exclusive powers) का वर्णन करें जो लोकसभा के पास भी नहीं हैं?</p>
-                    <p style="font-size: 18pt; color: #92400e; text-align: justify;"><b>उत्तर:</b><br/> 1. <b>अनुच्छेद 249:</b> यदि राज्य सूची (State List) के किसी विषय पर राष्ट्रीय कानून बनाना हो, तो पहले राज्यसभा को 2/3 बहुमत से प्रस्ताव पास करना होगा। इसके बिना लोकसभा राज्य सूची में हस्तक्षेप नहीं कर सकती。<br/>2. <b>अनुच्छेद 312:</b> यदि देश में कोई 'नई अखिल भारतीय सेवा' (New All India Service) बनानी हो, तो ऐसा करने का पहला प्रस्ताव राज्यसभा में ही आएगा, न कि लोकसभा में।</p>
+            <div class="qa-block">
+                <div class="question-text">Q3. राज्यसभा (Upper House) के सदस्यों की अधिकतम संख्या कितनी हो सकती है?</div>
+                <ol class="options-list">
+                    <li>545</li>
+                    <li>250</li>
+                    <li>300</li>
+                    <li>12</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) 250</span>
+                    <span class="explanation-title hl-green">सीटों का गणित:</span>
+                    वर्तमान में 245 सदस्य हैं। इनमें से <span class="hl-blue">238</span> राज्यों और केंद्र शासित प्रदेशों से चुने जाते हैं, और <span class="hl-rose">12 सदस्यों</span> को राष्ट्रपति मनोनीत (Nominate) करते हैं, जो साहित्य, कला, विज्ञान या समाज सेवा में विशेषज्ञ हों।
                 </div>
             </div>
 
-            <!-- Long Answer Section -->
-            <div style="margin-bottom: 60px;">
-                <h2 style="color: #ffffff; background-color: #dc2626; padding: 15px 20px; border-radius: 8px; font-size: 28pt; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">खंड D: दीर्घ उत्तरीय विश्लेषणात्मक प्रश्न (6 अंक)</h2>
-                
-                <div style="background-color: #fef2f2; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #ef4444;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q16. संसद (विधायिका) कार्यपालिका (सरकार) को मनमानी करने या तानाशाह बनने से कैसे रोकती है? (How parliament controls the executive?)</p>
-                    <p style="font-size: 18pt; color: #991b1b; text-align: justify;"><b>उत्तर:</b><br/> 
-                    लोकतंत्र में कार्यपालिका ही देश चलाती है, लेकिन अगर उस पर कोई लगाम न हो, तो वह तानाशाही बन सकती है। संसद निम्नलिखित शक्तिशाली हथियारों (Tools) से सरकार को नियंत्रण में रखती है:<br/> 
-                    <b>1. प्रश्नकाल (Question Hour) और बहसें:</b> मंत्रियों से रोज़ाना कड़े सवाल पूछे जाते हैं, जो टीवी के माध्यम से देश भर में देखे जाते हैं। सरकार कोई भी बात छुपा नहीं पाती। निंदा प्रस्ताव और कटौती प्रस्ताव इस काम को और गति देते हैं。<br/>
-                    <b>2. कानूनों और नीतियों को स्वीकृति देना (Approval of Laws):</b> सरकार कोई कानून नहीं थोप सकती। अगर सरकार कोई ऐसा कानून लाती है जो जन-हित में नहीं है, तो राज्यसभा या लोकसभा उसे वोट देकर 'गिरा' (Reject) सकती है।<br/>
-                    <b>3. वित्तीय नियंत्रण (Financial Control):</b> जब तक संसद (लोकसभा) 'बजट' पास करके मंज़ूरी न दे, तब तक सरकार खजाने से 1 रुपया भी न जनता से ले सकती है और न निकाल सकती है। पैसे की यह डोर सरकार को सीधा रखती है।<br/>
-                    <b>4. अविश्वास प्रस्ताव (No-Confidence Motion):</b> सबसे बड़ा 'ब्रह्मस्त्र' (Nuclear weapon)। अगर सरकार अपनी हद पार कर दे और लोकसभा के 50 सांसद अविश्वास प्रस्ताव ले आएं, और यह पास हो जाए—तो रातों-रात प्रधानमंत्री समेत पूरी सरकार (मंत्रिपरिषद) का तख्तापलट हो जाता है। अतः, "संसद ही सुप्रीम है।"</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #ef4444;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q17. क्या भारत के लिए 'द्विसदनीय व्यवस्था' (Bicameralism) केवल समय और धन की बर्बादी है? राज्यसभा के महत्व (Relevance of Rajya Sabha) पर एक 'पक्ष और विपक्ष' वाली बहस करें।</p>
-                    <p style="font-size: 18pt; color: #991b1b; text-align: justify;"><b>उत्तर:</b><br/> 
-                    <b>पक्ष (यह धन की बर्बादी क्यों लगती है?):</b> जब लोकसभा में जनता द्वारा चुने गए असली प्रतिनिधि बैठते हैं, तो राज्यसभा एक 'सफ़ेद हाथी' (White Elephant) लगती है। अक्सर ऐसा होता है कि जो नेता लोकसभा चुनाव हार जाते हैं, पार्टी उन्हें राज्यसभा (बैक-डोर) के रास्ते संसद भेज देती है। इसके अलावा, कई बार राज्यसभा सिर्फ 'विपक्ष के फायदे' के लिए किसी अच्छे बिल पर गतिरोध (Deadlock) पैदा करके देश के सुधारों (Reforms) को 6-6 महीने रोक देती है।<br/><br/>
-                    <b>विपक्ष (राज्यसभा की अपरिहार्यता और बचाव):</b><br/>
-                    1. <b>सेकंड-लुक का सिद्धांत:</b> लोकतंत्र भावना (Emotion) नहीं, तर्क (Logic) पर चलता है। अगर लोकसभा जल्दबाजी में कोई लोकलुभावन (गलत) कानून तुरंत पास कर दे, तो देश को कौन बचाएगा? राज्यसभा उस कानून पर 'ब्रेक' (Brake) लगाकर उसे ठन्डे दिमाग से सोचने का एक 'पुनर्विचार चेंबर' देती है।<br/>
-                    2. <b>राज्यों का अधिकार (Federal safeguard):</b> भारत सिर्फ दिल्ली से नहीं चलता, यह 28 राज्यों का संघ है। राज्यसभा 'राज्यों के मुख्यमंत्रियों' के डर और अधिकारों को सुरक्षित रखती है। एक राज्य का हित दूसरे से न दबे, यह राज्यसभा देखती है।<br/>
-                    3. <b>बुद्धिजीवियों का सदन:</b> भारत को सचिन तेंदुलकर या बड़े अर्थशास्त्रियों का भी मार्गदर्शन चाहिए जो चुनाव की कीचड़ में नहीं उतरना चाहते। 12 मनोनीत सदस्यों के माध्यम से राज्यसभा देश को उनका 'बुद्धिजीवी' टैलेंट देती है। <br/><b>निष्कर्ष:</b> राज्यसभा कोई बाधा (Hurdle) नहीं, बल्कि एक 'सेफ्टी वाल्व' (Safety valve) है।</p>
-                </div>
-
-                <div style="background-color: #fef2f2; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #ef4444;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q18. एक साधारण विधेयक (Ordinary Bill) के 'कानून' (Law) बनने की पूरी यात्रा का वर्णन करें।</p>
-                    <p style="font-size: 18pt; color: #991b1b; text-align: justify;"><b>उत्तर:</b><br/> 
-                    कानून बनने की पूरी यात्रा 5 से 6 कठिन चरणों से गुज़रती है:<br/>
-                    1. <b>प्रथम पठन (First Reading):</b> मंत्री या सांसद लोकसभा या राज्यसभा में <u>विधेयक (कच्चा ड्राफ्ट)</u> पेश करता है और इसके उद्देश्य बताता है। (यहाँ वोटिंग नहीं होती)।<br/>
-                    2. <b>समिति स्तर (Committee Phase):</b> सदन बिल को अपनी एक विशेष समिति (Parliamentary Committee) के पास विशेषज्ञता (Expert) जांच के लिए भेज देता है। समिति रिपोर्ट वापस देती है।<br/>
-                    3. <b>द्वितीय पठन (Second Reading):</b> यहाँ लाइन-दर-लाइन (Clause by clause) लंबी बहस होती है। विपक्षी दल इसमें बदलाव (Amends) करवाने के लिए भारी दबाव बनाते हैं और उन बदलावों पर वोटिंग होती है।<br/>
-                    4. <b>तृतीय पठन (Third Reading):</b> यहाँ बिल में मौजूद पूरे संशोधनों के बाद फाइनल (अंतिम) वोटिंग होती है। यदि पास हो गया, तो बिल दूसरे सदन भेजा जाता है।<br/>
-                    5. <b>दूसरे सदन में यात्रा:</b> दूसरे सदन में भी बिल को इन्हीं तीन चरणों (पहला, दूसरा, तीसरा पठन) से गुज़ारना पड़ता है। (विरोध होने पर संयुक्त अधिवेशन होता है)।<br/>
-                    6. <b>राष्ट्रपति की अनुमति (President's Assent):</b> जब दोनों सदन इसे पास कर दें, तो बिल राष्ट्रपति की मेज़ पर जाता है। राष्ट्रपति हस्ताक्षर कर दे तो वह <b>'कानून (Act)'</b> बन जाता है। (यही पर राष्ट्रपति 'जेबी वीटो' का इस्तेमाल कर सकता है)।</p>
-                </div>
-
-                <div style="background-color: #ffffff; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #ef4444;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q19. क्या 'दलबदल निरोधक कानून' (Anti-Defection Law) ने सांसदों की व्यक्तिगत "सोच की आज़ादी" और "बोलने की आज़ादी" का गला घोंट दिया है? आलोचनात्मक व्याख्या करें।</p>
-                    <p style="font-size: 18pt; color: #991b1b; text-align: justify;"><b>उत्तर:</b><br/> 
-                    संविधान का 52वां संशोधन (1985) इसलिए लाया गया था ताकि पैसे के लालच में विधायक/सांसद अपनी 'पार्टी और जनता' को धोखा देकर 'आया राम-गया राम' की राजनीति न करें। सरकारें बार-बार गिरने से बच गईं। इस लिहाज़ से यह लोकतंत्र के लिए बहुत अच्छा साबित हुआ।<br/>
-                    <b>आलोचना (Negative Impact):</b><br/>
-                    इस कानून की सबसे बड़ी आलोचना यह है कि इसने सांसद को <b>'पार्टी हाई-कमान' का गुलाम</b> बना दिया है। यदि एक सांसद को अपनी पार्टी का कोई फैसला (जैसे कोई बिल) अपनी 'अंतरात्मा' या 'अपने क्षेत्र की जनता' के खिलाफ लगता है, तब भी वह संसद में अपनी पार्टी के <u>'व्हिप (Whip / आदेश)'</u> के विरुद्ध वोट नहीं दे सकता। यदि वो अपनी आज़ादी से वोट देगा, तो उसकी सांसदी (Disqualification) रद्द हो जाएगी। 
-                    <br>परिणामस्वरूप, सांसदों ने संसद में मुद्दे पर गहराई से बहस करना छोड़ दिया है, क्योंकि अंततः उन्हें वही वोट करना होता है जो पार्टी बॉस (Party Bosses) तय करते हैं। इससे "प्रतिनिधित्व" कमज़ोर हुआ है और "पार्टी-शासन" तानाशाह बन गया है।</p>
-                </div>
-                
-                <div style="background-color: #fef2f2; padding: 20px 40px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #ef4444;">
-                    <p style="font-size: 18pt; font-weight: bold;">Q20. अभिकथन और कारण (Assertion and Reasoning) प्रकार का प्रश्न:</p>
-                    <p style="font-size: 18pt; color: #991b1b; text-align: justify;">
-                        <b>अभिकथन (A):</b> किसी भी धन विधेयक (Money Bill) को संसद में पास करवाने के लिए दोनों सदनों (लोकसभा और राज्यसभा) की बराबर सहमति आवश्यक नहीं है।<br/>
-                        <b>कारण (R):</b> राज्यसभा धन विधेयक को 14 दिन तक रोक सकती है और उसमें संशोधन का सुझाव दे सकती है, लेकिन यदि लोकसभा सुझावों को न माने, तो 14 दिन बाद वह विधेयक स्वतः (Automatically) पास माना जाता है।<br/><br/>
-                        <b>विकल्प:</b><br/>
-                        (a) A और R दोनों सही हैं, और R, A की सही व्याख्या है।<br/>
-                        (b) A और R दोनों सही हैं, लेकिन R, A की सही व्याख्या नहीं है।<br/>
-                        (c) A सही है लेकिन R गलत है।<br/>
-                        (d) A गलत है लेकिन R सही है।<br/><br/>
-                        <b>उत्तर (a):</b> A और R दोनों सही हैं, और R सीधा व्याख्या कर रहा है कि 'सहमति क्यों आवश्यक नहीं है' (Equal consent is not needed) क्योंकि सारा 'असली' नियंत्रण लोकसभा के पास होता है और राज्यसभा इसे अस्वीकार (Reject) नहीं कर सकती।
-                    </p>
+            <div class="qa-block">
+                <div class="question-text">Q4. लोकसभा (Lower House) का कार्यकाल सामान्यतः कितने वर्ष का होता है?</div>
+                <ol class="options-list">
+                    <li>6 वर्ष</li>
+                    <li>5 वर्ष</li>
+                    <li>4 वर्ष</li>
+                    <li>असीमित</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) 5 वर्ष</span>
+                    <span class="explanation-title hl-gold">राजनीतिक स्थिरता:</span>
+                    लोकसभा का कार्यकाल 5 वर्ष है, लेकिन प्रधानमंत्री की सलाह पर <span class="hl-blue">राष्ट्रपति</span> इसे समय से पहले भी भंग कर सकते हैं। इसके विपरीत, राज्यसभा एक <span class="hl-rose">"स्थायी सदन"</span> है जो कभी भंग नहीं होता।
                 </div>
             </div>
 
+            <div class="qa-block">
+                <div class="question-text">Q5. राज्यसभा का सदस्य बनने के लिए न्यूनतम आयु क्या है?</div>
+                <ol class="options-list">
+                    <li>21 वर्ष</li>
+                    <li>25 वर्ष</li>
+                    <li>30 वर्ष</li>
+                    <li>35 वर्ष</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (C) 30 वर्ष</span>
+                    <span class="explanation-title hl-green">अनुभव की आवश्यकता:</span>
+                    जहाँ लोकसभा के लिए <span class="hl-blue">25 वर्ष</span> की आयु चाहिए, वहीं राज्यसभा के लिए <span class="hl-rose">30 वर्ष</span> अनिवार्य है। यह माना जाता है कि उच्च सदन में अधिक <span class="hl-gold">"परिपक्व और अनुभवी"</span> लोगों की आवश्यकता है जो कानून निर्माण में गंभीरता ला सकें।
+                </div>
+            </div>
+
+            <!-- SEGMENT 2: 6-10 (MCQs) -->
+            <div style="background-color: #16a34a; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 2: सदनों की कार्यप्रणाली व धन विधेयक</div>
+
+            <!-- Q6 -->
+            <div class="qa-block">
+                <div class="question-text">Q6. राज्यसभा को 'स्थायी सदन' (Permanent House) क्यों कहा जाता है?</div>
+                <ol class="options-list">
+                    <li>इसके सदस्य कभी रिटायर नहीं होते।</li>
+                    <li>यह कभी पूरी तरह भंग (Dissolve) नहीं होता; इसके एक-तिहाई सदस्य हर दो वर्ष में रिटायर होते हैं।</li>
+                    <li>यह दिल्ली में स्थित है।</li>
+                    <li>इसका चुनाव सीधे जनता द्वारा होता है।</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) यह कभी पूरी तरह भंग नहीं होता</span>
+                    <span class="explanation-title hl-green">निरंतरता का सिद्धांत:</span>
+                    राज्यसभा का प्रत्येक सदस्य <span class="hl-blue">6 वर्ष</span> के लिए चुना जाता है। हर दो साल में नए सदस्य आते हैं और पुराने जाते हैं, जिससे देश की सर्वोच्च विधायी संस्था में हमेशा <span class="hl-rose">"निरंतरता"</span> बनी रहती है।
+                </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="qa-block">
+                <div class="question-text">Q7. 'धन विधेयक' (Money Bill) सबसे पहले किस सदन में पेश किया जा सकता है?</div>
+                <ol class="options-list">
+                    <li>केवल राज्यसभा में</li>
+                    <li>केवल लोकसभा में</li>
+                    <li>दोनों में से किसी में भी</li>
+                    <li>सुप्रीम कोर्ट में</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) केवल लोकसभा में</span>
+                    <span class="explanation-title hl-blue">वित्तीय शक्तियां:</span>
+                    चूँकि लोकसभा जनता द्वारा <span class="hl-rose">प्रत्यक्ष</span> चुनी जाती है, इसीलिए देश के खजाने (Tax) पर उसका अधिक नियंत्रण होता है। राज्यसभा धन विधेयक को केवल <span class="hl-gold">14 दिनों</span> तक रोक सकती है, लेकिन वह उसे खारिज नहीं कर सकती।
+                </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="qa-block">
+                <div class="question-text">Q8. राज्य की विधायिका में 'द्विसदनात्मक' (Bicameral) व्यवस्था भारत के कितने राज्यों में है?</div>
+                <ol class="options-list">
+                    <li>सभी राज्यों में</li>
+                    <li>केवल 6 राज्यों में (जैसे UP, बिहार, महाराष्ट्र)</li>
+                    <li>केवल दिल्ली में</li>
+                    <li>केवल एक राज्य में</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) केवल 6 राज्यों में</span>
+                    <span class="explanation-title hl-green">विविधता का सम्मान:</span>
+                    संविधान ने राज्यों को यह विकल्प दिया है कि वे केवल एक सदन (विधान सभा) रखें या दूसरा सदन (विधान परिषद) भी बना सकें। वर्तमान में उत्तर प्रदेश, बिहार, कर्नाटक, महाराष्ट्र, आंध्र प्रदेश और तेलंगाना में <span class="hl-blue">दो सदन</span> हैं।
+                </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="qa-block">
+                <div class="question-text">Q9. लोकसभा के 'अध्यक्ष' (Speaker) का मुख्य कार्य क्या है?</div>
+                <ol class="options-list">
+                    <li>कानून को लागू करना</li>
+                    <li>सदन की कार्यवाही का निष्पक्ष संचालन करना और अनुशासन बनाए रखना</li>
+                    <li>विदेशों से संधि करना</li>
+                    <li>न्यायपालिका को आदेश देना</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) सदन की कार्यवाही का संचालन</span>
+                    <span class="explanation-title hl-blue">सदन की मर्यादा:</span>
+                    अध्यक्ष सदन के विशेषाधिकारों के <span class="hl-rose">"प्रहरी"</span> होते हैं। वे ही तय करते हैं कि कौन सा विधेयक <span class="hl-gold">"धन विधेयक"</span> है या नहीं। उनका निर्णय अंतिम माना जाता है।
+                </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="qa-block">
+                <div class="question-text">Q10. राज्यसभा का चुनाव लड़ने के लिए सदस्यों का निर्वाचन कौन करता है?</div>
+                <ol class="options-list">
+                    <li>भारत की समस्त जनता</li>
+                    <li>राज्यों की विधान सभाओं के निर्वाचित सदस्य (MLAs)</li>
+                    <li>केवल प्रधानमंत्री</li>
+                    <li>सर्वोच्च न्यायालय द्वारा</li>
+                </ol>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (B) राज्यों की विधान सभाओं के निर्वाचित सदस्य</span>
+                    <span class="explanation-title hl-green">संघीय प्रतिनिधित्व:</span>
+                    राज्यसभा सीधे जनता द्वारा नहीं, बल्कि राज्यों के माध्यम से चुनी जाती है। यह प्रणाली <span class="hl-blue">"समानुपातिक प्रतिनिधित्व"</span> (Proportional Representation) पर आधारित है, जिससे संघीय स्तर पर राज्यों के हितों की रक्षा सुनिश्चित होती है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 3: 11-15 (Short/Assertion) -->
+            <div style="background-color: #14532d; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 3: लघु उत्तरीय एवं कथन-कारण पृष्ठ</div>
+
+            <!-- Q11 -->
+            <div class="qa-block">
+                <div class="question-text">Q11. भारत में 'संसद के दो सदनों' (Bicameralism) की क्या आवश्यकता है? कोई दो कारण दीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-green">तार्किक आधार:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">पुनर्विचार का अवसर:</span> दो सदन होने से हर विधेयक पर दो बार चर्चा होती है, जिससे जल्दबाजी में लिए गए गलत फैसलों को सुधारा जा सकता है।</li>
+                        <li><span class="hl-rose">सभी वर्गों का प्रतिनिधित्व:</span> द्विसदनात्मक व्यवस्था समाज के <span class="hl-gold">"विविध वर्गों"</span> और राज्यों को राष्ट्रीय विधायिका में उचित स्थान प्रदान करती है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="qa-block">
+                <div class="question-text">Q12. 'प्रश्न काल' (Question Hour) और 'शून्य काल' (Zero Hour) में क्या अंतर है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-blue">संसदीय कार्यवाही:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-green">प्रश्न काल:</span> संसद की बैठक का पहला घंटा, जहाँ सांसद मंत्रियों से <span class="hl-blue">"तारांकित"</span> और "अतारांकित" प्रश्न पूछते हैं। इसमें उत्तर देना अनिवार्य है।</li>
+                        <li><span class="hl-rose">शून्य काल:</span> प्रश्न काल के तुरंत बाद का समय (बिना किसी पूर्व सूचना के), जहाँ सांसद लोक महत्व के मुद्दे उठा सकते हैं। यह भारतीय संसद की अपनी <span class="hl-gold">"नवाचार"</span> (Innovation) है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q13 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #16a34a;">
+                <div class="question-text">Q13. कथन (Assertion): लोकसभा, राज्यसभा की तुलना में अधिक शक्तिशाली है।<br>
+                कारण (Reason): चूँकि लोकसभा की सदस्य संख्या अधिक है, इसीलिए संयुक्त बैठक (Joint Session) में उसका पलड़ा भारी रहता है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-gold">शक्ति का संतुलन:</span>
+                    वित्त और साधारण विधेयकों के मामले में लोकसभा की प्रधानता स्पष्ट है। <span class="hl-blue">"अधिक संख्या"</span> होने के कारण वह राष्ट्रीय नीतियों पर अधिक प्रभाव डालती है।
+                </div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="qa-block" style="border-left: 12px solid #16a34a;">
+                <div class="question-text">Q14. कथन (Assertion): राज्यसभा को समाज के विशेषज्ञों के लिए एक मंच माना जाता है।<br>
+                कारण (Reason): राष्ट्रपति इसमें कला, विज्ञान और साहित्य के 12 सदस्यों को मनोनीत करते हैं।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-green">बौद्धिक योगदान:</span>
+                    यह व्यवस्था सुनिश्चित करती है कि देश के <span class="hl-blue">"प्रतिष्ठित विद्वान"</span> बिना किसी चुनावी जटिलता के कानून निर्माण की प्रक्रिया में अपना बहुमूल्य योगदान दे सकें।
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="qa-block">
+                <div class="question-text">Q15. 'अविश्वास प्रस्ताव' (No Confidence Motion) का क्या महत्व है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-blue">सरकार पर नियंत्रण:</span>
+                    यह लोकसभा में विपक्ष द्वारा लाया जाता है। यदि इसे <span class="hl-rose">बहुमत</span> मिल जाए, तो पूरी सरकार को तुरंत इस्तीफा देना पड़ता है। यह कार्यपालिका पर संसद का सबसे <span class="hl-gold">"शक्तिशाली हथियार"</span> है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 4: 16-20 (Short/Assertion) -->
+            <div style="background-color: #15803d; color: white; padding: 10px 20px; border-radius: 10px; font-size: 20pt; margin-bottom: 30px; font-weight: bold; text-align: center;">सेगमेंट 4: विधि निर्माण एवं विधायी नियंत्रण</div>
+
+            <!-- Q16 -->
+            <div class="qa-block">
+                <div class="question-text">Q16. एक साधारण विधेयक (Ordinary Bill) के कानून बनने के मुख्य चरणों को संक्षेप में बताइए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-green">कानून निर्माण की यात्रा:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">प्रथम वाचन:</span> विधेयक का सदन में पेश किया जाना।</li>
+                        <li><span class="hl-rose">द्वितीय वाचन:</span> विधेयक के प्रत्येक खंड पर <span class="hl-gold">"गहन चर्चा"</span> और यदि आवश्यक हो, तो समिति को भेजना।</li>
+                        <li><span class="hl-teal">तृतीय वाचन:</span> विधेयक को पूर्ण रूप से स्वीकार या अस्वीकार करने पर मतदान।</li>
+                        <li><span class="hl-blue">राष्ट्रपति की स्वीकृति:</span> दोनों सदनों से पारित होने के बाद राष्ट्रपति के हस्ताक्षर होना।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q17 -->
+            <div class="qa-block">
+                <div class="question-text">Q17. 'दल-बदल विरोधी कानून' (Anti-Defection Law) क्या है और इसका क्या महत्व है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-blue">राजनीतिक स्थिरता:</span>
+                    यह <span class="hl-blue">52वें संविधान संशोधन (1985)</span> द्वारा लाया गया (10वीं अनुसूची)। इसका उद्देश्य उन नेताओं को हतोत्साहित करना है जो निजी स्वार्थ के लिए अपनी पार्टी बदलते हैं। यदि कोई सदस्य पार्टी व्हिप (Whip) का उल्लंघन करता है, तो उसकी <span class="hl-rose">"सदन की सदस्यता"</span> समाप्त की जा सकती है।
+                </div>
+            </div>
+
+            <!-- Q18 (Assertion-Reasoning) -->
+            <div class="qa-block" style="border-left: 12px solid #14532d;">
+                <div class="question-text">Q18. कथन (Assertion): संसदीय समितियाँ (Parliamentary Committees) 'लघु संसद' (Mini-Parliament) कही जाती हैं।<br>
+                कारण (Reason): संसद के पास समय की कमी होती है, इसीलिए ये समितियाँ विधयकों पर विस्तार से विचार और विशेषज्ञों से राय लेती हैं।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-teal">दक्षता का आधार:</span>
+                    लोक लेखा समिति (PAC) और प्राक्कलन समिति (Estimate Committee) जैसे निकाय सरकारी खर्चों पर पैनी नज़र रखते हैं, जिससे <span class="hl-blue">शासन में शुचिता</span> बनी रहती है।
+                </div>
+            </div>
+
+            <!-- Q19 -->
+            <div class="qa-block" style="border-left: 12px solid #14532d;">
+                <div class="question-text">Q19. कथन (Assertion): राज्यसभा 'धन विधेयक' में संशोधन की सिफारिश कर सकती है, लेकिन लोकसभा उसे मानने के लिए बाध्य नहीं है।<br>
+                कारण (Reason): वित्तीय मामलों में लोकसभा की स्थिति सर्वोच्च है।</div>
+                <div class="answer-box">
+                    <span class="correct-ans">✅ सही उत्तर: (A) कथन और कारण दोनों सही हैं, और कारण, कथन की सही व्याख्या है।</span>
+                    <span class="explanation-title hl-rose">संवैधानिक मर्यादा:</span>
+                    राज्यसभा केवल <span class="hl-blue">"सलाहकारी"</span> भूमिका निभाती है। यदि 14 दिन में वह बिल वापस न करे, तो उसे अपने आप पारित मान लिया जाता है।
+                </div>
+            </div>
+
+            <!-- Q20 -->
+            <div class="qa-block">
+                <div class="question-text">Q20. 'विपक्षी दल' (Opposition) की संसद में क्या भूमिका होती है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-gold">लोकतांत्रिक प्रहरी:</span>
+                    विपक्ष का कार्य केवल विरोध करना नहीं, बल्कि सरकार की नीतियों की <span class="hl-blue">"रचनात्मक आलोचना"</span> करना है। वह वैकल्पिक नीतियां पेश करता है और सुनिश्चित करता है कि बहुमत दल अपनी शक्तियों का <span class="hl-rose">"दुरुपयोग"</span> न करे। एक मज़बूत विपक्ष ही जीवंत लोकतंत्र की पहचान है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 5: 21-25 (Long/Analytical) -->
+            <div style="background-color: #14532d; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">भाग 3: दीर्घ उत्तरीय एवं विश्लेषणात्मक प्रश्न</div>
+
+            <!-- Q21 -->
+            <div class="qa-block">
+                <div class="question-text">Q21. 'लोकसभा' और 'राज्यसभा' की शक्तियों की तुलना कीजिए। कौन सा सदन अधिक शक्तिशाली है और क्यों?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-green">शक्ति का संतुलन:</span>
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-blue">लोकसभा की प्रधानता:</span> धन विधेयक केवल लोकसभा में पेश हो सकता है। मंत्रिपरिषद केवल लोकसभा के प्रति उत्तरदायी होती है। संयुक्त बैठक में अधिक सदस्य होने के कारण लोकसभा प्रभावी रहती है।</li>
+                        <li><span class="hl-rose">राज्यसभा की विशेष शक्तियाँ:</span> यह राज्य सूची के किसी विषय को <span class="hl-gold">"राष्ट्रीय महत्व"</span> का घोषित कर सकती है। नई अखिल भारतीय सेवाएँ (All India Services) शुरू करने की शक्ति भी इसी के पास है।</li>
+                        <li><span class="hl-teal">निष्कर्ष:</span> लोकतांत्रिक आधार पर <span class="hl-blue">लोकसभा</span> अधिक शक्तिशाली है क्योंकि यह सीधे जनता का प्रतिनिधित्व करती है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q22 -->
+            <div class="qa-block">
+                <div class="question-text">Q22. संसद कार्यपालिका (정부) पर किस प्रकार नियंत्रण रखती है? प्रमुख साधनों का वर्णन करें।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-blue">जवाबदेही के उपकरण:</span>
+                    <ul style="list-style-type: disc; margin-top: 10px;">
+                        <li><span class="hl-green">बहस और चर्चा:</span> प्रश्न काल और शून्य काल के दौरान मंत्रियों से तीखे सवाल पूछना।</li>
+                        <li><span class="hl-rose">कानूनों की स्वीकृति:</span> सरकार कोई भी कानून संसद की मंजूरी के बिना नहीं बना सकती।</li>
+                        <li><span class="hl-gold">वित्तीय नियंत्रण:</span> बजट पर चर्चा और <span class="hl-blue">"कटौती प्रस्ताव"</span> (Cut Motions) के माध्यम से खर्चों पर रोक लगाना।</li>
+                        <li><span class="hl-teal">अविश्वास प्रस्ताव:</span> सरकार को सत्ता से हटाने का अंतिम और सबसे बड़ा हथियार।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q23 -->
+            <div class="qa-block">
+                <div class="question-text">Q23. 'संसदीय समितियों' के महत्व और उनके कार्यों का विस्तार से वर्णन कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-green">विशेषज्ञता और गहराई:</span>
+                    संसद के पास समय कम होता है और मुद्दे जटिल। ये समितियाँ (जैसे <span class="hl-blue">स्थायी समितियाँ</span>) विधेयकों की बारीकियों की जाँच करती हैं। ये विभिन्न मंत्रालयों के बजट की समीक्षा करती हैं और भ्रष्टाचार को रोकने के लिए <span class="hl-rose">"लोक लेखा समिति"</span> (PAC) सरकार के खर्चों का ऑडिट करती है। इनके बिना संसद का कार्य बोझिल और अपूर्ण रह जाता।
+                </div>
+            </div>
+
+            <!-- Q24 -->
+            <div class="qa-block">
+                <div class="question-text">Q24. भारत में 'कानून निर्माण' (Law Making) की प्रक्रिया के विभिन्न सोपानों की विवेचना कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-gold">विधिक प्रक्रिया:</span>
+                    कानून बनने की शुरुआत <span class="hl-blue">"प्रारूप"</span> (Draft) से होती है जिसे विधेयक कहा जाता है। इसे प्रथम, द्वितीय और तृतीय वाचन से गुजरना पड़ता है। दूसरे सदन की सहमति के बाद इसे <span class="hl-rose">"राष्ट्रपति"</span> के पास भेजा जाता है। यदि राष्ट्रपति हस्ताक्षर कर दें, तो वह <span class="hl-teal">"अधिनियम"</span> (Act) बन जाता है। वित्तीय विधेयकों के लिए प्रक्रिया थोड़ी अलग और त्वरित होती है।
+                </div>
+            </div>
+
+            <!-- Q25 -->
+            <div class="qa-block">
+                <div class="question-text">Q25. "राज्यसभा राज्यों की प्रतिनिधि सभा है।" इस कथन की पुष्टि कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">संघीय आधार:</span>
+                    चूँकि राज्यसभा के सदस्य <span class="hl-blue">"राज्यों की विधानसभाओं"</span> द्वारा निर्वाचित होते हैं, इसीलिए वे संसद में अपने-अपने राज्यों के हितों का प्रतिनिधित्व करते हैं। यह सुनिश्चित करती है कि केंद्र सरकार राज्यों के अधिकारों का अतिक्रमण न करे। <span class="hl-rose">अनुच्छेद 249</span> के तहत राज्यों के विषयों पर कानून बनाने की शक्ति देना इसका श्रेष्ठ उदाहरण है।
+                </div>
+            </div>
+
+            <!-- SEGMENT 6: 26-30 (Long/Analytical) -->
+            <div style="background-color: #064e3b; color: white; padding: 15px 30px; border-radius: 10px; font-size: 24pt; margin-bottom: 40px; font-weight: bold; text-align: center;">अंतिम खंड: विधायी चुनौतियां एवं निष्कर्ष</div>
+
+            <!-- Q26 -->
+            <div class="qa-block">
+                <div class="question-text">Q26. आधुनिक युग में 'विधायिका के पतन' (Decline of Legislature) के क्या कारण माने जाते हैं?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-green">चुनौतियां:</span>
+                    <ul style="list-style-type: square; margin-top: 10px;">
+                        <li><span class="hl-blue">कार्यपालिका की बढ़ती शक्ति:</span> अब अधिकांश कानून नौकरशाही और मंत्रिपरिषद तैयार करते हैं, संसद केवल मुहर लगाती है।</li>
+                        <li><span class="hl-rose">अनुशासनहीनता:</span> सदन में बार-बार होने वाले हंगामे और <span class="hl-gold">"शोर-शराबे"</span> के कारण सार्थक बहस का समय कम हो रहा है।</li>
+                        <li><span class="hl-teal">दल-बदल कानून:</span> इसने सांसदों को स्वतंत्र रूप से सोचने के बजाय पार्टी लाइन पर चलने को मजबूर कर दिया है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q27 -->
+            <div class="qa-block">
+                <div class="question-text">Q27. 'दल-बदल विरोधी कानून' (10वीं अनुसूची) के लाभ और सीमाओं का आलोचनात्मक परीक्षण कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-blue">संवैधानिक संतुलन:</span>
+                    जहाँ इसके <span class="hl-teal">लाभ</span> यह हैं कि इसने सरकारों को स्थिरता दी और <span class="hl-rose">"आया राम गया राम"</span> की राजनीति खत्म की, वहीं इसकी <span class="hl-blue">सीमा</span> यह है कि यह सांसदों की अभिव्यक्ति की स्वतंत्रता को कम करता है। यदि कोई सांसद अपनी पार्टी की गलत नीति का विरोध करता है, तो उसे अपनी सदस्यता खोनी पड़ सकती है।
+                </div>
+            </div>
+
+            <!-- Q28 -->
+            <div class="qa-block">
+                <div class="question-text">Q28. "संसद केवल कानून बनाने वाली नहीं, बल्कि जनता की शिकायतों का मंच है।" स्पष्ट कीजिए।</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-green">जनता की आवाज़:</span>
+                    संसद वह स्थान है जहाँ देश के सबसे दूरदराज के क्षेत्रों के प्रतिनिधि अपनी <span class="hl-blue">"स्थानीय समस्याओं"</span> को राष्ट्रीय स्तर पर उठाते हैं। चाहे वह बेरोजगारी हो, महंगाई हो या किसानों की समस्याएँ—संसद में होने वाली बहसें सरकार पर दबाव डालती हैं कि वह जनहित में कार्य करे। यह <span class="hl-rose">"राष्ट्रीय विमर्श"</span> का केंद्र है।
+                </div>
+            </div>
+
+            <!-- Q29 -->
+            <div class="qa-block">
+                <div class="question-text">Q29. विधायी नियंत्रण बनाए रखने में 'प्रश्न काल' का विशेष महत्व क्यों है?</div>
+                <div class="answer-box">
+                    <span class="explanation-title hl-teal">पारदर्शिता और जवाबदेही:</span>
+                    यह वह समय है जब सरकार <span class="hl-rose">"कटघरे"</span> में होती है। सांसदों द्वारा पूछे गए तीखे सवालों का जवाब देना मंत्रियों के लिए अनिवार्य है। इसमें दी गई जानकारी सार्वजनिक होती है, जिससे जनता को सरकार की <span class="hl-blue">"असली कार्यक्षमता"</span> का पता चलता है। यह भ्रष्टाचार को रोकने का एक स्वतः-चालित (Self-acting) तंत्र है।
+                </div>
+            </div>
+
+            <!-- Q30 -->
+            <div class="qa-block" style="background-color: #f0fdf4; border: 4px solid #14532d;">
+                <div class="question-text">Q30. निष्कर्ष: संसदीय लोकतंत्र की सफलता के लिए एक स्वस्थ विपक्ष का होना क्यों अनिवार्य है?</div>
+                <div class="answer-box" style="background-color: #ffffff; border-left-color: #16a34a;">
+                    <span class="explanation-title hl-green">अंतिम विचार:</span>
+                    बिना विपक्ष के लोकतंत्र <span class="hl-blue">"एकदलीय तानाशाही"</span> में बदल सकता है। विपक्ष सरकार को उसकी गलतियों का आईना दिखाता है। 2026-27 के भारत में, संसद की शक्ति तभी बनी रहेगी जब सत्ता पक्ष और विपक्ष दोनों <span class="hl-rose">"मर्यादा और तर्क"</span> के साथ संविधान की गरिमा बनाए रखेंगे।
+                    <br><br>
+                    <div style="text-align: center; color: #14532d; font-weight: 900; letter-spacing: 2px;">**[अध्याय 5: विधायिका - मुकम्मल 30 प्रश्नों का प्रीमियम बैंक (2026-27)]**</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

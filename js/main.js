@@ -51,7 +51,8 @@ function renderChapters(data) {
       <div class="chapter-num">${String(chapter.id).padStart(2, '0')}</div>
       <h3 class="chapter-title">${chapter.title}</h3>
       <div class="chapter-actions" style="display:flex; gap:10px; flex-direction: column; margin-top:20px; position:relative; z-index:10;">
-        <button class="btn-primary" onclick="window.open('notes_html_view.html?id=${chapter.id}', '_blank')">🌍 संपूर्ण नोट्स देखें (Premium HTML)</button>
+        <button class="btn-primary" onclick="window.open('notes_html_view.html?id=${chapter.id}', '_blank')">📖 NOTES</button>
+        <button class="btn-primary" style="background: #059669; border-color: #047857;" onclick="window.open('qa_html_view.html?id=${chapter.id}', '_blank')">📝 Q&A</button>
       </div>
     `;
     grid.appendChild(card);
